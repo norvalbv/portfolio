@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* colours */
+/* Edits */
+/* Text */
+/* Resets */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
+}
+
+html::-webkit-scrollbar {
+  width: 0;
+  /* For Chrome, Safari, and Opera */
+}
+
+body {
+  background-color: #121212;
+  color: #d8d8d8;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+a:visited,
+a:link {
+  text-decoration: none;
+  color: #ddd;
+}
+
+/* Utility Classes */
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.portfolio {
+  background-color: #121212;
+  background-image: radial-gradient(at 0% 100%, #292929 0, transparent 50%), radial-gradient(at 50% 45%, #1b1b32 0, transparent 25%), radial-gradient(at 50% 55%, #1b1b32 0, transparent 60%);
+}
+
+#my-work {
+  padding-top: 3rem;
+  color: #ffa0c7;
+  letter-spacing: 5px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+}
+
+.item-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.item-container .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4rem 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.text-flex {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 1;
+}
+
+.text-flex .featured-project {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #72d865;
+}
+
+.text-flex .project-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.text-flex .project-desc-wrap {
+  background: #292929;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+  width: 125%;
+  border-radius: 5px;
+  padding: 1rem;
+  -webkit-box-shadow: 5px 5px 3px #121212;
+          box-shadow: 5px 5px 3px #121212;
+  margin: 1rem 0;
+}
+
+.text-flex .project-desc-wrap .project-desc {
+  font-size: 14px;
+}
+
+.text-flex .icons ul li {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.text-flex .more-info-button {
+  text-transform: uppercase;
+  font-size: 14px;
+  background: none;
+  border: none;
+  color: lightgray;
+  border-bottom: 1px solid rgba(179, 179, 179, 0.25);
+  cursor: pointer;
+}
+
+.text-flex .more-info-button:hover {
+  color: #72d865;
+}
+
+.image-flex {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 15rem;
+}
+
+.image-flex .project-screenshot {
+  width: 100%;
+  height: 16rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 6px #3c3c3c;
+          box-shadow: 3px 3px 6px #3c3c3c;
+}
+
+.first {
+  padding-left: 5rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.first .icons ul li {
+  margin-right: 1rem;
+}
+
+.first .icons ul li:not(:first-child) {
+  margin: 0 1rem;
+}
+
+.first .more-info-button {
+  margin-right: 1rem;
+}
+
+.second {
+  padding-right: 5rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.second .project-details {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.second .project-desc-wrap {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.second .project-desc-wrap .project-desc {
+  text-align: right;
+}
+
+.second .icons ul li {
+  margin-left: 1rem;
+}
+
+.second .icons ul li:not(:last-child) {
+  margin: 0 1rem;
+}
+
+.second .more-info-button {
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .first,
+  .second {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .text-flex #second-project:hover {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  .text-flex .project-desc-wrap {
+    -webkit-transition: 0.75s ease;
+    transition: 0.75s ease;
+  }
+  .text-flex .project-desc-wrap:hover {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  .second .project-title {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .item-container .item {
+    height: 20rem;
+    position: relative;
+    border: none;
+    margin: 0.5rem 0;
+  }
+  .image-flex .project-screenshot {
+    display: none;
+  }
+  .project-details {
+    z-index: 1;
+  }
+  .text-flex {
+    padding: 1rem 0;
+    background-color: #292929;
+    position: absolute;
+    top: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 5px #121212;
+            box-shadow: 5px 5px 5px #121212;
+    border: 1px solid #121212;
+  }
+  .text-flex::before {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    position: absolute;
+    -webkit-filter: brightness(0.25) grayscale(60%);
+            filter: brightness(0.25) grayscale(60%);
+    background-size: cover;
+    z-index: -1;
+  }
+  .text-flex .project-desc-wrap {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0.5rem;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .text-flex .project-desc-wrap .project-desc {
+    text-align: center;
+  }
+  #todo::before {
+    background-image: url("../../../files/images/todo-application.png");
+  }
+  #google::before {
+    background-image: url("../../../files/images/google-clone.png");
+  }
+  #ecom::before {
+    background-image: url("../../../files/images/landingpage.png");
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .item-container .item {
+    height: 25rem;
+  }
+}
+/*# sourceMappingURL=mywork.css.map */

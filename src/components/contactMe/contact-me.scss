@@ -1,0 +1,115 @@
+@import "../../index.scss";
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0), $primary-dark);
+
+  #contact-title {
+    @include header2;
+  }
+
+  #contact-text {
+    font-size: 14px;
+  }
+
+  .input-container {
+    width: 35%;
+
+    .input {
+      position: relative;
+
+      &::before {
+        width: 100%;
+        height: 0.25rem;
+        background: linear-gradient(
+          to right,
+          $secondary-clr-1,
+          $secondary-clr-2
+        );
+        position: absolute;
+        bottom: .5rem;
+        content: "";
+      }
+    }
+
+    .input-field {
+      width: 100%;
+      height: 2.25rem;
+      margin: 0.5rem 0;
+      background: rgba(0, 0, 0, 0.25);
+      border: none;
+      padding: 0.5rem;
+      color: $primary-light;
+      position: relative;
+
+      &:focus {
+        outline: none;
+        color: $primary-light;
+      }
+    }
+
+    #submit {
+      width: 5rem;
+      height: 2rem;
+      margin: 0.25rem 0;
+      background: $primary-light;
+      border: 2px solid transparent;
+      border-image: linear-gradient(
+        to right,
+        $secondary-clr-1,
+        $secondary-clr-2
+      );
+      border-image-slice: 1;
+      cursor: pointer;
+    }
+  }
+}
+
+.input-label {
+  color: $secondary-clr-1;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+}
+
+#socials li {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0 1rem;
+  &:hover {
+    text-decoration: underline;
+    opacity: 0.5;
+  }
+}
+
+textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+@media only screen and (max-width: 800px) {
+  #contact {
+    .input-container {
+      width: 70%;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #contact {
+    #contact-text {
+      text-align: center;
+    }
+
+    .input-container {
+      width: 90%;
+    }
+  }
+}

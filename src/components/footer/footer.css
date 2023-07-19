@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* colours */
+/* Edits */
+/* Text */
+/* Resets */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
+}
+
+html::-webkit-scrollbar {
+  width: 0;
+  /* For Chrome, Safari, and Opera */
+}
+
+body {
+  background-color: #121212;
+  color: #d8d8d8;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+a:visited,
+a:link {
+  text-decoration: none;
+  color: #ddd;
+}
+
+/* Utility Classes */
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.portfolio {
+  background-color: #121212;
+  background-image: radial-gradient(at 0% 100%, #292929 0, transparent 50%), radial-gradient(at 50% 45%, #1b1b32 0, transparent 25%), radial-gradient(at 50% 55%, #1b1b32 0, transparent 60%);
+}
+
+footer {
+  background-color: #292929;
+  font-weight: lighter;
+  text-transform: uppercase;
+  height: 75px;
+  text-align: center;
+  font-size: 12px;
+  border-top: solid 1px rgba(179, 179, 179, 0.25);
+  color: lightgray;
+}
+
+footer p {
+  margin: 1rem 0;
+  text-transform: capitalize;
+}
+
+footer .email {
+  font-size: 11px;
+  text-transform: none;
+}
+/*# sourceMappingURL=footer.css.map */
