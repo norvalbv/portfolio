@@ -1007,6 +1007,7 @@ __metadata:
     eslint-plugin-react-hooks: ^4.6.0
     eslint-plugin-tailwindcss: ^3.13.0
     husky: ^8.0.3
+    ityped: ^1.0.3
     lint-staged: ^13.2.3
     postcss: ^8.4.26
     prettier: ^3.0.0
@@ -3302,6 +3303,13 @@ __metadata:
   version: 2.0.0
   resolution: "isexe@npm:2.0.0"
   checksum: 26bf6c5480dda5161c820c5b5c751ae1e766c587b1f951ea3fcfc973bafb7831ae5b54a31a69bd670220e42e99ec154475025a468eae58ea262f813fdc8d1c62
+  languageName: node
+  linkType: hard
+
+"ityped@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "ityped@npm:1.0.3"
+  checksum: 5ac80688afcd51bbaef895dead6eebb1b272fa488e200cfd186f37f3cf4f64f196111067844cf1c672491ade29450a0fcd8c3bfd5e48d8f920e127edd2e1f4cc
   languageName: node
   linkType: hard
 
