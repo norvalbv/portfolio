@@ -1,5 +1,5 @@
-import AboutMe from "components/about-me";
-import ContactMe from "components/contact-me";
+import AboutMe from "components/AboutMe";
+import ContactMe from "components/ContactMe";
 import Intro from "components/intro";
 import MyWork from "components/mywork/featuredprojects/mywork";
 import MoreProjects from "components/mywork/moreprojects/moreprojects";
@@ -10,11 +10,11 @@ const PortfolioPage = () => {
     <div className="portfolio">
       <div className="screen-container">
         <Intro />
-        <AboutMe />
+        {/* <AboutMe />
         <MyWork />
         <MoreProjects />
         <Skills />
-        <ContactMe />
+        <ContactMe /> */}
       </div>
     </div>
   );
