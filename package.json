@@ -7,7 +7,7 @@
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "postinstall": "cd ../../../ && husky install services/management-portal/management-portal-web-app/.husky",
+    "postinstall": "husky install .husky",
     "lint": "eslint src",
     "format:check": "prettier --check src",
     "format:fix": "prettier --write src"
@@ -27,11 +27,14 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-custom-rules": "^0.0.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
     "postcss": "^8.4.26",
     "prettier": "^3.0.0",
@@ -60,5 +63,5 @@
       "yarn lint"
     ]
   },
-  "packageManager": "yarn@3.6.0"
+  "packageManager": "yarn@3.6.1"
 }
