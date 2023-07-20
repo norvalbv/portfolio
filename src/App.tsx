@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react';
-import LandingPage from 'pages/landing/landing';
+import Portfolio from 'pages/Portfolio';
 
 const App = (): ReactElement => {
-  return <LandingPage />;
+  return <Portfolio />;
 };
 
 export default App;

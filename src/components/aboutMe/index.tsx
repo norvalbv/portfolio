@@ -1,6 +1,7 @@
+import React, { ReactElement } from "react";
 import profilePhoto from "../../files/images/profile-photo.png";
 
-const AboutMe = () => {
+const AboutMe = (): ReactElement => {
   return (
     <div className="flex items-center h-screen -mt-12 md:flex-col-reverse md:justify-start md:h-auto">
       <div className="w-full grid grid-cols-16 grid-rows-16 md:w-auto md:inline-block">
@@ -22,14 +23,16 @@ const AboutMe = () => {
           years of experience in web development.
           <br />
           <br />
-          After obtaining my First Class Honours in my degree at The
-          University of Reading I picked up a liking for programming and have
-          been coding ever since.
+          After obtaining my First Class Honours in my degree at The University
+          of Reading I picked up a liking for programming and have been coding
+          ever since.
           <br />
           <br />I would love for you to check out my projects and even reach
           out!
         </p>
-        <button className="h-10 border-none rounded-xl cursor-pointer w-32 text-white bg-secondary-1">View Projects</button>
+        <button className="h-10 border-none rounded-xl cursor-pointer w-32 text-white bg-secondary-1">
+          View Projects
+        </button>
       </div>
     </div>
   );
