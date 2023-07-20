@@ -26,8 +26,8 @@ const Hero = (): ReactElement => {
   ];
 
   return (
-    <div id="intro" className="relative h-[calc(100vh-3rem)] p-16 uppercase">
-      <div className="text flex flex-col gap-8">
+    <div id="hero" className="relative h-[calc(100vh-3rem)] p-16 uppercase">
+      <div className="flex flex-col gap-8">
         <h1 className="text-8xl font-semibold tracking-wide">
           {heading.split('').map((item, i) => (
             <span className={classname[Math.floor(Math.random() * classname.length)]} key={i}>
@@ -44,11 +44,7 @@ const Hero = (): ReactElement => {
         <h2 className="text-sm leading-7 tracking-wide">
           A year old
           <br />
-          <span
-            ref={textRef}
-            id="typed"
-            className="font-medium tracking-wider text-blue-500"
-          ></span>
+          <span ref={textRef} id="typed" className="font-medium tracking-wider text-blue-500" />
           <br />
           from the
         </h2>

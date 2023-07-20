@@ -11,7 +11,7 @@ const PortfolioPage = (): ReactElement => {
   return (
     <MainLayout>
       <Intro />
-      <AboutMe />
+      {/* <AboutMe /> */}
       {/* <MyWork /> */}
       {/* <MoreProjects /> */}
       <Skills />
