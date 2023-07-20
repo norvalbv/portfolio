@@ -1,21 +1,21 @@
 import React, { ReactElement } from 'react';
-import Intro from 'components/intro';
+import Intro from 'components/Hero';
 import MainLayout from 'layout/MainLayout';
-// import AboutMe from "components/AboutMe";
-// import ContactMe from "components/ContactMe";
-// import MyWork from "components/mywork/featuredprojects/mywork";
-// import MoreProjects from "components/mywork/moreprojects/moreprojects";
-// import Skills from "components/skills";
+import AboutMe from 'components/AboutMe';
+import ContactMe from 'components/ContactMe';
+import MyWork from 'components/mywork/featuredprojects/mywork';
+import MoreProjects from 'components/mywork/moreprojects/moreprojects';
+import Skills from 'components/skills';
 
 const PortfolioPage = (): ReactElement => {
   return (
     <MainLayout>
       <Intro />
-      {/* <AboutMe />
-        <MyWork />
-        <MoreProjects />
-        <Skills />
-        <ContactMe /> */}
+      <AboutMe />
+      {/* <MyWork /> */}
+      {/* <MoreProjects /> */}
+      <Skills />
+      <ContactMe />
     </MainLayout>
   );
 };

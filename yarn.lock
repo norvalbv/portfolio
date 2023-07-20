@@ -661,6 +661,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/ityped@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@types/ityped@npm:1.0.1"
+  checksum: 025b57e0e8330dd96719e400c8ba17c0775cc2b0891c9821732b76afbb902335efdf7c322b7d6a13fd519b39dfed838875479aa19cb64df246b7f162b328fc1a
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:^7.0.12":
   version: 7.0.12
   resolution: "@types/json-schema@npm:7.0.12"
@@ -989,6 +996,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "application@workspace:."
   dependencies:
+    "@types/ityped": ^1.0.1
     "@types/react": ^18.2.15
     "@types/react-dom": ^18.2.7
     "@typescript-eslint/eslint-plugin": ^6.1.0
