@@ -31,7 +31,7 @@ const Hero = (): ReactElement => {
   return (
     <div className="relative grid h-[calc(100vh-5rem)] place-items-center p-16 text-center uppercase">
       <div className="flex flex-col gap-8">
-        <h1 className="mb-4 text-8xl font-semibold tracking-wide">
+        <h1 className="mb-4 text-6xl font-semibold tracking-wide md:text-8xl">
           {heading.split('').map((item, i) => (
             <span
               className={classNames(

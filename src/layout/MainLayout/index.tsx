@@ -9,7 +9,7 @@ type MainLayoutProps = {
 
 const MainLayout = ({ children }: MainLayoutProps): ReactElement => {
   return (
-    <div className="dark relative min-h-screen bg-[#1A181E]">
+    <div className="dark relative min-h-screen bg-[#1A181E] text-white">
       <NavBar />
       {children}
       <Footer />

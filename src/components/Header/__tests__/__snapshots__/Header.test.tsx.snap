@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render correctly with all props 1`] = `
+<header
+  className="grid grid-cols-1 gap-1"
+>
+  <section
+    className="flex w-full flex-col gap-1"
+  >
+    <h3
+      className="text-h2"
+      data-testid="Custom title test id"
+    >
+      Test title
+    </h3>
+    <h4
+      className="text-sm"
+      data-testid="Custom subtitle test id"
+    >
+      Test subtitle
+    </h4>
+    <p
+      className="text-neutral-N00"
+      data-testid="Test Description Id"
+    >
+      Test Description
+    </p>
+  </section>
+  <a
+    className="justify-center group relative flex h-6 items-center gap-1 transition ease-productive text-primary-P500 hover:text-primary-P700"
+    data-testid="Test Title Link"
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <span
+      className="inline-block select-none text-sm"
+    >
+      Test Title
+    </span>
+    <span>
+      <svg
+        className="text-inherit"
+        color="#58585C"
+        fill="none"
+        height={16}
+        viewBox="0 0 16 16"
+        width={16}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11 8C9.6 9.4 5 14 5 14"
+          stroke="url(#0506cbdda73c368)"
+          strokeLinecap="round"
+          strokeMiterlimit="10"
+          strokeWidth="1.5"
+        />
+        <path
+          d="M5 2C5 2 9.6 6.6 11 8"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeMiterlimit="10"
+          strokeWidth="1.5"
+        />
+        <defs>
+          <linearGradient
+            gradientUnits="userSpaceOnUse"
+            id="0506cbdda73c368"
+            x1="4.5"
+            x2="11.5"
+            y1="11"
+            y2="11"
+          >
+            <stop
+              stopColor="currentColor"
+              stopOpacity="0"
+            />
+            <stop
+              offset="0.7"
+              stopColor="currentColor"
+            />
+          </linearGradient>
+        </defs>
+      </svg>
+    </span>
+  </a>
+</header>
+`;
+
+exports[`<Header /> should render correctly with subtitle provided 1`] = `
+<header
+  className="flex items-center justify-between"
+>
+  <section
+    className="flex w-full flex-col gap-1"
+  >
+    <h4
+      className="truncate text-body text-neutral-N300"
+      data-testid="Test subtitle Subtitle"
+    >
+      Test subtitle
+    </h4>
+  </section>
+</header>
+`;
+
+exports[`<Header /> should render correctly with title provided 1`] = `
+<header
+  className="flex items-center justify-between"
+>
+  <section
+    className="flex w-full flex-col gap-1"
+  >
+    <h3
+      className="truncate text-h3"
+      data-testid="Test title Title"
+    >
+      Test title
+    </h3>
+  </section>
+</header>
+`;
+
+exports[`<Header /> should render nothing if title and subtitle are not provided 1`] = `null`;
