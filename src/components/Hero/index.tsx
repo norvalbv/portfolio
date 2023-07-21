@@ -1,10 +1,12 @@
 import React, { ReactElement, useEffect, useRef } from 'react';
 import { init } from 'ityped';
+import classNames from 'utils/classNames';
 
 const Hero = (): ReactElement => {
-  const textRef = useRef();
+  const textRef = useRef<null | HTMLDivElement>(null);
 
   useEffect(() => {
+    if (!textRef.current) return;
     init(textRef.current, {
       typeSpeed: 90,
       backSpeed: 60,
@@ -14,42 +16,55 @@ const Hero = (): ReactElement => {
     });
   }, []);
 
-  const heading = 'Hello,';
+  const heading = 'Hello';
   const heading2 = 'I am Benjamin';
-  const classname = [
-    'text-purple-500',
-    'text-yellow-400',
-    'text-teal-500',
-    'text-red-500',
-    'text-blue-500',
-    'text-green-500',
+  const textClasses = [
+    'text-purple-50',
+    'text-yellow-50',
+    'text-teal-50',
+    'text-red-50',
+    'text-blue-50',
+    'text-green-50',
   ];
 
   return (
-    <div id="hero" className="relative h-[calc(100vh-3rem)] p-16 uppercase">
+    <div className="relative grid h-[calc(100vh-3rem)] place-items-center p-16 text-center uppercase">
       <div className="flex flex-col gap-8">
-        <h1 className="text-8xl font-semibold tracking-wide">
+        <h1 className="mb-4 text-8xl font-semibold tracking-wide">
           {heading.split('').map((item, i) => (
-            <span className={classname[Math.floor(Math.random() * classname.length)]} key={i}>
+            <span
+              className={classNames(
+                'mb-10 inline-block text-purple-500',
+                `hover:${textClasses[Math.floor(Math.random() * textClasses.length)]}`
+              )}
+              key={i}
+            >
               {item}
             </span>
           ))}
           <br />
           {heading2.split('').map((item, i) => (
-            <span className={classname[Math.floor(Math.random() * classname.length)]} key={i}>
+            <span
+              className={`hover:${
+                textClasses[Math.floor(Math.random() * textClasses.length)]
+              } text-white`}
+              key={i}
+            >
               {item}
             </span>
           ))}
         </h1>
-        <h2 className="text-sm leading-7 tracking-wide">
-          A year old
-          <br />
-          <span ref={textRef} id="typed" className="font-medium tracking-wider text-blue-500" />
-          <br />
-          from the
+        <h2 className="text-sm leading-7 tracking-wide text-white">
+          A 24 year old
+          {/* <span
+            ref={textRef}
+            id="typed"
+            className="my-4 block font-medium tracking-wider text-blue-500"
+          /> */}
+          from the United Kingdom
         </h2>
       </div>
-      <div className="scroll absolute bottom-2 left-0 right-0 flex flex-col items-center gap-1 text-xs hover:underline">
+      <div className="absolute inset-x-0 bottom-2 flex flex-col items-center gap-1 text-xs hover:underline">
         <p className="relative animate-bounce">Get to know me</p>
         {/* <ArrowDownwardIcon fontSize="small" /> */}
       </div>
