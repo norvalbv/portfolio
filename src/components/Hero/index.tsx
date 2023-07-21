@@ -1,6 +1,7 @@
 import React, { ReactElement, useEffect, useRef } from 'react';
 import { init } from 'ityped';
 import classNames from 'utils/classNames';
+import DownArrowIcon from 'components/SVG/DownArrowIcon';
 
 const Hero = (): ReactElement => {
   const textRef = useRef<null | HTMLDivElement>(null);
@@ -28,7 +29,7 @@ const Hero = (): ReactElement => {
   ];
 
   return (
-    <div className="relative grid h-[calc(100vh-3rem)] place-items-center p-16 text-center uppercase">
+    <div className="relative grid h-[calc(100vh-5rem)] place-items-center p-16 text-center uppercase">
       <div className="flex flex-col gap-8">
         <h1 className="mb-4 text-8xl font-semibold tracking-wide">
           {heading.split('').map((item, i) => (
@@ -64,9 +65,9 @@ const Hero = (): ReactElement => {
           from the United Kingdom
         </h2>
       </div>
-      <div className="absolute inset-x-0 bottom-2 flex flex-col items-center gap-1 text-xs hover:underline">
-        <p className="relative animate-bounce">Get to know me</p>
-        {/* <ArrowDownwardIcon fontSize="small" /> */}
+      <div className="absolute inset-x-0 bottom-2 flex flex-col items-center gap-1 text-xs text-white hover:underline">
+        <p className="relative animate-bounce text-lg">Get to know me</p>
+        <DownArrowIcon />
       </div>
     </div>
   );
