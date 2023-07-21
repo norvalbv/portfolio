@@ -6,10 +6,12 @@ import ContactMe from 'components/ContactMe';
 import MyWork from 'components/mywork/featuredprojects/mywork';
 import MoreProjects from 'components/mywork/moreprojects/moreprojects';
 import Skills from 'components/skills';
+import Background from 'components/Background';
 
 const PortfolioPage = (): ReactElement => {
   return (
     <MainLayout>
+      <Background />
       <Intro />
       {/* <AboutMe /> */}
       {/* <MyWork /> */}
