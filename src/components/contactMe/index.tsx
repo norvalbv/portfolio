@@ -1,5 +1,5 @@
-import CardWrapper from 'components/CardWrapper';
 import React, { ReactElement } from 'react';
+import CardWrapper from 'components/CardWrapper';
 
 const ContactMe = (): ReactElement => {
   return (
@@ -46,39 +46,13 @@ const ContactMe = (): ReactElement => {
         <div className="relative mb-4">
           <textarea
             required
-            className="text-primary-light h-40 w-full resize-y border-none bg-transparent px-2 outline-none"
+            className="h-40 w-full resize-y border-none bg-transparent px-2 outline-none"
             placeholder="Send me a message!"
-          ></textarea>
-          <div className="from-secondary-1 to-secondary-2 absolute bottom-2 left-0 h-1 w-full bg-gradient-to-r" />
+          />
+          <div className="absolute bottom-2 left-0 h-1 w-full bg-gradient-to-r" />
         </div>
-        <input
-          type="submit"
-          className="bg-primary-light border-gradient-to-r from-secondary-1 to-secondary-2 mb-1 h-8 w-20 cursor-pointer border-2 border-transparent"
-        />
+        <input type="submit" className="mb-1 h-8 w-20 cursor-pointer border-2 border-transparent" />
       </form>
-      <p className="text-sm">Reach me on my socials...</p>
-      <ul className="flex justify-center gap-4">
-        <li>
-          <a
-            href="https://github.com/norvalbv/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cursor-pointer text-base font-light uppercase hover:underline hover:opacity-50"
-          >
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/benjamin-norval/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cursor-pointer text-base font-light uppercase hover:underline hover:opacity-50"
-          >
-            Linked In
-          </a>
-        </li>
-      </ul>
     </CardWrapper>
   );
 };

@@ -1,4 +1,3 @@
-/* eslint-disable tailwindcss/no-custom-classname */
 import React, { ReactElement } from 'react';
 import NavBar from './NavBar';
 import Footer from './Footer';
