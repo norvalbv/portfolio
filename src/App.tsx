@@ -10,7 +10,7 @@ const App = (): ReactElement => {
   useScrollToTop();
   return (
     <div className={classNames('relative scroll-smooth', isDarkMode ? 'dark' : '')}>
-      <Portfolio />;
+      <Portfolio />
     </div>
   );
 };

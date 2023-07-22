@@ -6,6 +6,7 @@ type CardWrapperProps = {
   className?: string;
   children: JSX.Element | JSX.Element[];
   title: string;
+  titleClassName?: string;
   subTitle?: string;
   description?: string;
   id?: string;
@@ -14,6 +15,7 @@ type CardWrapperProps = {
 const CardWrapper = ({
   description,
   subTitle,
+  titleClassName,
   className,
   children,
   title,
@@ -24,7 +26,12 @@ const CardWrapper = ({
       className={classNames('relative z-10 mx-auto my-52', className || 'w-10/12 min-w-[20rem]')}
       id={id}
     >
-      <Header title={title} subtitle={subTitle} description={description} />
+      <Header
+        title={title}
+        titleClassName={titleClassName}
+        subtitle={subTitle}
+        description={description}
+      />
       {children}
     </div>
   );

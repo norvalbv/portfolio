@@ -16,7 +16,7 @@ const footerLinks = [
 const Footer = (): ReactElement => {
   const { isDarkMode } = useTheme();
   return (
-    <footer className="relative z-10 m-4 rounded-lg bg-white text-center text-xs shadow dark:bg-dark-dark">
+    <footer className="relative z-10 mx-4 mt-4 rounded-lg bg-white text-center text-xs shadow dark:bg-dark-dark">
       <div className="mx-auto w-full max-w-screen-xl p-4 md:py-8">
         <div className="flex flex-col items-center sm:flex-row sm:justify-between">
           <div>

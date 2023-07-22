@@ -27,7 +27,8 @@ const Title = ({ children, className, testId, level = 2 }: TitleProps): ReactEle
     return (
       <h1
         className={classNames(
-          className || 'mb-20 text-5xl font-semibold underline underline-offset-8 md:text-8xl'
+          className,
+          'mb-20 text-5xl font-semibold underline underline-offset-8 md:text-8xl'
         )}
         data-testid={titleTestId}
       >
@@ -41,8 +42,8 @@ const Title = ({ children, className, testId, level = 2 }: TitleProps): ReactEle
     return (
       <h2
         className={classNames(
-          className ||
-            'mb-10 text-4xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl'
+          className,
+          'mb-10 text-4xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl'
         )}
         data-testid={titleTestId}
       >
@@ -54,7 +55,7 @@ const Title = ({ children, className, testId, level = 2 }: TitleProps): ReactEle
   // Level 3
   return (
     <h3
-      className={classNames(className || 'mb-10 text-2xl font-semibold  md:text-4xl')}
+      className={classNames(className, 'mb-10 text-2xl font-semibold  md:text-4xl')}
       data-testid={titleTestId}
     >
       {children}
