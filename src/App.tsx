@@ -9,7 +9,7 @@ const App = (): ReactElement => {
   const { isDarkMode } = useTheme();
   useScrollToTop();
   return (
-    <div className={classNames('relative', isDarkMode ? 'dark' : '')}>
+    <div className={classNames('relative scroll-smooth', isDarkMode ? 'dark' : '')}>
       <Portfolio />;
     </div>
   );

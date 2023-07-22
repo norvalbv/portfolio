@@ -4,7 +4,7 @@ import React, { ReactElement } from 'react';
 
 const AboutMe = (): ReactElement => {
   return (
-    <CardWrapper title="About Me" className="w-10/12 min-w-[20rem] text-center">
+    <CardWrapper title="About Me" className="w-10/12 min-w-[20rem] text-center" id="about-me">
       <p className="mt-20 text-lg">
         Experienced Full Stack software engineer with 3 years of experience in web development. I am
         part of the core team that developed the entire Elysia &#40;a WAE subsidiary&#41; cloud

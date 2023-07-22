@@ -1,14 +1,14 @@
 import React, { useState, ReactElement } from 'react';
 import useTheme from 'hooks/useTheme';
 import classNames from 'utils/classNames';
-import { MoonIcon, SunIcon } from 'components/SVG';
+import ThemeToggle from 'components/ThemeToggle';
+import Hamburger from './Hamburger';
 import BenjaminNorvalBlack from '../../../../public/BenjaminNorvalBlack.png';
 import BenjaminNorvalWhite from '../../../../public/BenjaminNorvalWhite.png';
-import ThemeToggle from 'components/ThemeToggle';
 
 const NavBar = (): ReactElement => {
   const [navOpen, setNavOpen] = useState(false);
-  const { isDarkMode, toggleDarkMode } = useTheme();
+  const { isDarkMode } = useTheme();
 
   const navbarTabs = [
     { id: 'home', title: 'Home' },
@@ -18,7 +18,7 @@ const NavBar = (): ReactElement => {
   ];
 
   return (
-    <nav className="sticky top-1 z-10 mx-4 flex h-20 items-center justify-center rounded-b-lg bg-white shadow-lg before:absolute before:top-[-0.25rem] before:h-1 before:w-full before:bg-gradient-to-r before:from-accent-secondary before:to-accent-main dark:bg-black dark:shadow-dark-neutral">
+    <nav className="sticky top-1 z-10 mx-4 flex h-20 items-center justify-center rounded-b-lg bg-white shadow-lg before:absolute before:top-[-0.25rem] before:h-1 before:w-full before:bg-gradient-to-r before:from-accent-secondary before:to-accent-main dark:bg-dark-dark dark:shadow-dark-neutral">
       <div className="mx-auto w-full max-w-screen-xl px-10">
         <div className="hidden items-center justify-between md:flex">
           <img
@@ -43,60 +43,37 @@ const NavBar = (): ReactElement => {
           </div>
         </div>
 
-        <div
-          className="right-0 flex max-w-screen-xl flex-wrap items-center justify-between p-4 md:hidden"
-          onClick={(): void => setNavOpen(!navOpen)}
-        >
+        <div className="right-0 flex max-w-screen-xl flex-wrap items-center justify-between p-4 md:hidden">
           <img
             src={isDarkMode ? BenjaminNorvalWhite : BenjaminNorvalBlack}
             className="h-4 w-32"
             alt="Benjamin Norval logo"
           />
           <div className="flex flex-row-reverse items-center">
-            <button
-              type="button"
-              className="ml-3 inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm focus:outline-none"
-              aria-controls="navbar-hamburger"
-              aria-expanded="false"
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="h-5 w-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
+            <Hamburger onclick={(): void => setNavOpen(!navOpen)} />
             <div className="flex items-center justify-end md:h-3 md:w-32 lg:h-4 lg:w-40">
               <ThemeToggle />
             </div>
           </div>
-          <div
-            className={classNames({ hidden: navOpen }, 'fixed top-12 h-screen w-1/2 text-center')}
+          <ul
+            className={classNames(
+              { hidden: navOpen },
+              // positioning
+              'absolute right-0 top-[5.25rem]',
+              // colours
+              'divide-y divide-light-text bg-white dark:divide-dark-text dark:bg-dark-dark',
+              // sizing
+              'flex w-60 flex-col items-center justify-center rounded-lg py-2 text-center'
+            )}
           >
-            <ul className="flex flex-col items-center justify-center gap-4 divide-y divide-white rounded-lg bg-gray-50 font-medium dark:bg-black">
-              {navbarTabs.map((tab) => (
-                <li
-                  className="relative w-28 px-2 hover:text-accent-secondary"
-                  onClick={(): void => setNavOpen(!navOpen)}
-                  key={tab.id}
-                >
-                  <a href={`#${tab.id}`} className="text-center hover:text-accent-secondary">
-                    {tab.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+            {navbarTabs.map((tab) => (
+              <li className="relative py-3" onClick={(): void => setNavOpen(false)} key={tab.id}>
+                <a href={`#${tab.id}`} className="hover:text-accent-secondary">
+                  {tab.title}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </nav>

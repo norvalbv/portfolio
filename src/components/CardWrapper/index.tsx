@@ -8,6 +8,7 @@ type CardWrapperProps = {
   title: string;
   subTitle?: string;
   description?: string;
+  id?: string;
 };
 
 const CardWrapper = ({
@@ -16,9 +17,10 @@ const CardWrapper = ({
   className,
   children,
   title,
+  id,
 }: CardWrapperProps): ReactElement => {
   return (
-    <div className={classNames('mx-auto my-52', className || 'w-10/12 min-w-[20rem]')}>
+    <div className={classNames('mx-auto my-52', className || 'w-10/12 min-w-[20rem]')} id={id}>
       <Header title={title} subtitle={subTitle} description={description} />
       {children}
     </div>
