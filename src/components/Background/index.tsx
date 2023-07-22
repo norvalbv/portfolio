@@ -1,9 +1,9 @@
 import React, { ReactElement } from 'react';
 import classNames from 'utils/classNames';
-import { mySkills } from 'constants/index';
+import { MY_SKILLS } from 'constants/index';
 
 const Background = (): ReactElement => {
-  const skillsRepeated = Array(12).fill(mySkills.split(',')).flat();
+  const skillsRepeated = Array(12).fill(MY_SKILLS.split(',')).flat();
 
   const exponentialDistribution = (num: number): number => {
     return -Math.log(1.0 - Math.random()) / num;

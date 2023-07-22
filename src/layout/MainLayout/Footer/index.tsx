@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react';
 import useTheme from 'hooks/useTheme';
+import { GITHUB, LINKED_IN } from 'constants/index';
 import BenjaminNorvalBlack from '../../../../public/BenjaminNorvalBlack.png';
 import BenjaminNorvalWhite from '../../../../public/BenjaminNorvalWhite.png';
 
@@ -7,9 +8,9 @@ const footerLinks = [
   {
     id: 'github',
     label: 'GitHub',
-    link: 'https://github.com/norvalbv/',
+    link: GITHUB,
   },
-  { id: 'linkedin', label: 'Linked In', link: 'https://www.linkedin.com/in/benjamin-norval/' },
+  { id: 'linkedin', label: 'Linked In', link: LINKED_IN },
 ];
 
 const Footer = (): ReactElement => {

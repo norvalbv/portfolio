@@ -1,6 +1,7 @@
 import React, { ReactElement, useState } from 'react';
 import CardWrapper from 'components/CardWrapper';
 import TextField from 'components/TextField';
+import ContactDetails from 'components/ContactDetails';
 
 const ContactMe = (): ReactElement => {
   const [query, setQuery] = useState({
@@ -20,6 +21,7 @@ const ContactMe = (): ReactElement => {
         method="POST"
         className="rounded-lg bg-white/70 p-6 dark:bg-dark-dark/30 lg:w-3/5"
       >
+        <h2 className="mb-6">Contact Form:</h2>
         <TextField
           label="Name"
           value={query.name}
@@ -44,6 +46,7 @@ const ContactMe = (): ReactElement => {
           Submit
         </button>
       </form>
+      <ContactDetails />
     </CardWrapper>
   );
 };
