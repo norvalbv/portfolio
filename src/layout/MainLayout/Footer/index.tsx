@@ -16,7 +16,7 @@ const footerLinks = [
 const Footer = (): ReactElement => {
   const { isDarkMode } = useTheme();
   return (
-    <footer className="relative z-10 mx-4 mt-4 rounded-lg bg-white text-center text-xs shadow dark:bg-dark-dark">
+    <footer className="relative z-10 mx-4 mt-20 rounded-lg bg-white text-center text-xs shadow dark:bg-dark-dark">
       <div className="mx-auto w-full max-w-screen-xl p-4 md:py-8">
         <div className="flex flex-col items-center sm:flex-row sm:justify-between">
           <div>
@@ -26,7 +26,7 @@ const Footer = (): ReactElement => {
               alt="Benjamin Norval logo"
             />
           </div>
-          <ul className="mt-6 flex items-center justify-center gap-6 text-sm text-light-text/75 dark:text-dark-text/75 sm:mt-0">
+          <ul className="flex items-center justify-center gap-6 text-sm text-light-text/75 dark:text-dark-text/75 sm:mt-0">
             {footerLinks.map((link) => (
               <li
                 key={link.id}

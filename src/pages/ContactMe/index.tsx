@@ -15,7 +15,7 @@ const ContactMe = (): ReactElement => {
   };
 
   return (
-    <CardWrapper title="Come Say Hi!">
+    <CardWrapper title="Come Say Hi!" className="top-[2rem] w-10/12 min-w-[20rem] lg:top-[4rem]">
       <div className="flex flex-col gap-6 lg:flex-row">
         <form
           action="https://formsubmit.co/benjinorval@gmail.com"

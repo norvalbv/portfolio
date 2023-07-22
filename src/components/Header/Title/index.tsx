@@ -46,7 +46,7 @@ const Title = ({ children, className, level = 2 }: TitleProps): ReactElement | n
 
   // Level 3
   return (
-    <h3 className={classNames(className, 'mb-10 text-2xl font-semibold  md:text-4xl')}>
+    <h3 className={classNames(className, 'mb-10 text-2xl font-semibold md:text-4xl')}>
       {children}
     </h3>
   );

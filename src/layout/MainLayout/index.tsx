@@ -8,8 +8,8 @@ const MainLayout = (): ReactElement => {
   return (
     <div className="relative min-h-screen bg-light-neutral text-light-text dark:bg-dark-neutral dark:text-dark-text">
       <ScrollRestoration />
-      <NavBar />
       <Background />
+      <NavBar />
       <div className="mx-auto max-w-screen-2xl">
         <Outlet />
       </div>

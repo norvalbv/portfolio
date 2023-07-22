@@ -33,7 +33,7 @@ const Header = ({
 }: HeaderProps): ReactElement | null => {
   const processedTitle = useRandomReveal({
     isPlaying: true,
-    duration: 3,
+    duration: 2,
     characters: title || '',
   });
 

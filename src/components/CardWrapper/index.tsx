@@ -24,18 +24,20 @@ const CardWrapper = ({
   return (
     <div
       className={classNames(
-        'relative z-10 mx-auto my-52',
-        className || 'top-[-5rem] h-screen w-10/12 min-w-[20rem]'
+        'relative top-[-4rem] z-10 mx-auto min-h-screen',
+        className || 'grid w-10/12 min-w-[20rem] place-items-center'
       )}
       id={id}
     >
-      <Header
-        title={title}
-        titleClassName={titleClassName}
-        subtitle={subTitle}
-        description={description}
-      />
-      {children}
+      <div>
+        <Header
+          title={title}
+          titleClassName={titleClassName}
+          subtitle={subTitle}
+          description={description}
+        />
+        {children}
+      </div>
     </div>
   );
 };

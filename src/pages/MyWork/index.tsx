@@ -8,7 +8,11 @@ import ParisnHomepage from '../../../public/ParisnHomepage.png';
 
 const MyWork = (): ReactElement => {
   return (
-    <CardWrapper title="My Work" className="min-w-[20rem] md:w-10/12" titleClassName="ml-6">
+    <CardWrapper
+      title="My Work"
+      className="top-[4rem] min-w-[20rem] md:w-10/12"
+      titleClassName="md:ml-0 ml-6"
+    >
       <div className="relative mb-10 rounded-t-xl bg-dark-dark/20 py-6 text-center before:absolute before:bottom-[-0.25rem] before:left-0 before:h-1 before:w-full before:bg-gradient-to-r before:from-blue-500 before:to-green-500 dark:bg-dark-dark/30 md:px-6">
         <h3 className="mb-6 px-6 text-lg uppercase underline md:p-0 lg:text-xl">
           &apos;PARISN&apos; - An e-commerce application with a twist

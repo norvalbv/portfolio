@@ -3,7 +3,7 @@ import { classNames } from 'utils';
 import { MY_SKILLS } from 'constants/index';
 
 const Background = (): ReactElement => {
-  const skillsRepeated = Array(12).fill(MY_SKILLS.split(',')).flat();
+  const skillsRepeated = Array(7).fill(MY_SKILLS.split(',')).flat();
 
   const exponentialDistribution = (num: number): number => {
     return -Math.log(1.0 - Math.random()) / num;
@@ -19,7 +19,7 @@ const Background = (): ReactElement => {
 
         // const opacity = (1.05 - fontSize / 1.5).toFixed(2); // The bigger the font, the smaller the opacity (max 1)
         const opacity = fontSize / 2; // The bigger the font, the higher the opacity (max 1)
-        const duration = (2 - fontSize) * 30; // The smaller the font, the longer the duration of the animation
+        const duration = (2 - fontSize) * 20; // The smaller the font, the longer the duration of the animation
 
         // Start point of text before the animation starts.
         const startPoint = exponentialDistribution(0.01);
