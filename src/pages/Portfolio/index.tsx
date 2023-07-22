@@ -10,10 +10,12 @@ const PortfolioPage = (): ReactElement => {
   return (
     <MainLayout>
       <Background />
-      <Intro />
-      <AboutMe />
-      <MyWork />
-      <ContactMe />
+      <div className="mx-auto max-w-screen-2xl">
+        <Intro />
+        <AboutMe />
+        <MyWork />
+        <ContactMe />
+      </div>
     </MainLayout>
   );
 };

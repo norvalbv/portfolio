@@ -1,22 +1,8 @@
-import React, { ReactElement, useEffect, useRef } from 'react';
-import { init } from 'ityped';
+import React, { ReactElement } from 'react';
 import classNames from 'utils/classNames';
 import DownArrowIcon from 'components/SVG/DownArrowIcon';
 
 const Hero = (): ReactElement => {
-  const textRef = useRef<null | HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!textRef.current) return;
-    init(textRef.current, {
-      typeSpeed: 90,
-      backSpeed: 60,
-      backDelay: 1250,
-      showCursor: true,
-      strings: ['Full Stack developer', 'Blockchain Enthusiast'],
-    });
-  }, []);
-
   const heading = 'Hello';
   const heading2 = 'I am Benjamin';
   const textClasses = [
@@ -56,13 +42,7 @@ const Hero = (): ReactElement => {
           ))}
         </h1>
         <h2 className="text-sm leading-7 tracking-wide text-white">
-          A 24 year old
-          {/* <span
-            ref={textRef}
-            id="typed"
-            className="my-4 block font-medium tracking-wider text-blue-500"
-          /> */}
-          from the United Kingdom
+          A 24 year old Full Stack Developer from the United Kingdom
         </h2>
       </div>
       <div className="absolute inset-x-0 bottom-2 flex flex-col items-center gap-1 text-xs text-white hover:underline">
