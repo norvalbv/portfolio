@@ -21,7 +21,7 @@ const NavBar = (): ReactElement => {
   return (
     <nav className="sticky top-1 z-50 mx-4 flex h-16 items-center justify-center rounded-b-lg bg-white shadow-lg before:absolute before:top-[-0.25rem] before:h-1 before:w-full before:bg-gradient-to-r before:from-accent-secondary before:to-accent-main dark:bg-dark-dark dark:shadow-dark-neutral md:mx-20">
       <div className="mx-auto w-full max-w-screen-xl px-10">
-        <div className="hidden items-center justify-between md:flex">
+        <div className="hidden items-center justify-between lg:flex">
           <img
             src={isDarkMode ? BenjaminNorvalWhite : BenjaminNorvalBlack}
             className="h-4 md:w-32 lg:w-40"
@@ -44,7 +44,7 @@ const NavBar = (): ReactElement => {
           </div>
         </div>
 
-        <div className="right-0 flex max-w-screen-xl flex-wrap items-center justify-between p-4 md:hidden">
+        <div className="right-0 flex max-w-screen-xl flex-wrap items-center justify-between p-4 lg:hidden">
           <img
             src={isDarkMode ? BenjaminNorvalWhite : BenjaminNorvalBlack}
             className="h-4 w-32"
@@ -60,7 +60,7 @@ const NavBar = (): ReactElement => {
             className={classNames(
               { hidden: !navOpen },
               // positioning
-              'absolute right-0 top-[5.25rem]',
+              'absolute right-0 top-[4.25rem]',
               // colours
               'divide-y divide-light-text bg-white dark:divide-dark-text dark:bg-dark-dark',
               // sizing

@@ -15,7 +15,7 @@ const Landing = (): ReactElement => {
   });
 
   return (
-    <div className="grid h-screen place-items-center text-center uppercase">
+    <div className="relative top-[-4rem] grid h-screen place-items-center text-center uppercase">
       <div className="flex flex-col gap-8">
         <h1 className="mb-4 text-6xl font-semibold tracking-wide transition-colors md:text-8xl">
           <span className="mb-10 inline-block text-accent-main transition-colors duration-150">
