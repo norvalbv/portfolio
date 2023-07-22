@@ -1,17 +1,16 @@
 import React, { ReactElement } from 'react';
-import DownArrowIcon from 'components/SVG/DownArrowIcon';
 import { useRandomReveal } from 'hooks/useRandomReveal';
 
-const Hero = (): ReactElement => {
+const Landing = (): ReactElement => {
   const heading = useRandomReveal({
     isPlaying: true,
-    duration: 3,
+    duration: 2,
     characters: 'Hello',
   });
 
   const heading2 = useRandomReveal({
     isPlaying: true,
-    duration: 3,
+    duration: 4,
     characters: 'I am Benjamin',
   });
 
@@ -29,12 +28,8 @@ const Hero = (): ReactElement => {
           A 24 year old Full Stack Developer from the United Kingdom
         </h2>
       </div>
-      <div className="absolute bottom-2 flex flex-col items-center">
-        <p className="relative animate-bounce text-lg">Get to know me</p>
-        <DownArrowIcon />
-      </div>
     </div>
   );
 };
 
-export default Hero;
+export default Landing;

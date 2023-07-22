@@ -23,7 +23,10 @@ const CardWrapper = ({
 }: CardWrapperProps): ReactElement => {
   return (
     <div
-      className={classNames('relative z-10 mx-auto my-52', className || 'w-10/12 min-w-[20rem]')}
+      className={classNames(
+        'relative z-10 mx-auto my-52',
+        className || 'top-[-5rem] h-screen w-10/12 min-w-[20rem]'
+      )}
       id={id}
     >
       <Header

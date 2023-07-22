@@ -1,4 +1,5 @@
 import React, { useState, ReactElement } from 'react';
+import { Link } from 'react-router-dom';
 import useTheme from 'hooks/useTheme';
 import { classNames } from 'utils';
 import ThemeToggle from 'components/ThemeToggle';
@@ -11,10 +12,10 @@ const NavBar = (): ReactElement => {
   const { isDarkMode } = useTheme();
 
   const navbarTabs = [
-    { id: 'home', title: 'Home' },
-    { id: 'about-me', title: 'About Me' },
-    { id: 'my-work', title: 'My Work' },
-    { id: 'contact', title: 'Contact Me' },
+    { id: '/', title: 'Home' },
+    { id: '/about-me', title: 'About Me' },
+    { id: '/my-work', title: 'My Work' },
+    { id: '/contact', title: 'Contact Me' },
   ];
 
   return (
@@ -32,9 +33,9 @@ const NavBar = (): ReactElement => {
                 className="underline-offset-4 hover:text-accent-secondary hover:underline"
                 key={tab.id}
               >
-                <a href={`#${tab.id}`} className="hover:text-accent-secondary">
+                <Link to={tab.id} className="hover:text-accent-secondary">
                   {tab.title}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -68,9 +69,9 @@ const NavBar = (): ReactElement => {
           >
             {navbarTabs.map((tab) => (
               <li className="relative py-3" onClick={(): void => setNavOpen(false)} key={tab.id}>
-                <a href={`#${tab.id}`} className="hover:text-accent-secondary">
+                <Link to={tab.id} className="hover:text-accent-secondary">
                   {tab.title}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
