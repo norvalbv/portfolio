@@ -29,7 +29,7 @@ const Background = (): ReactElement => {
           <div
             key={i}
             className={classNames(
-              'absolute -top-96 animate-fall font-semibold uppercase tracking-wider text-accent-main'
+              'absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main'
             )}
             style={{
               left: `${Math.round(Math.random() * 100)}%`,

@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
+import useTheme from 'hooks/useTheme';
 import BenjaminNorvalBlack from '../../../../public/BenjaminNorvalBlack.png';
 import BenjaminNorvalWhite from '../../../../public/BenjaminNorvalWhite.png';
-import useTheme from 'hooks/useTheme';
 
 const footerLinks = [
   {
@@ -15,7 +15,7 @@ const footerLinks = [
 const Footer = (): ReactElement => {
   const { isDarkMode } = useTheme();
   return (
-    <footer className="m-4 rounded-lg bg-white text-center text-xs shadow dark:bg-dark-dark">
+    <footer className="relative z-10 m-4 rounded-lg bg-white text-center text-xs shadow dark:bg-dark-dark">
       <div className="mx-auto w-full max-w-screen-xl p-4 md:py-8">
         <div className="flex flex-col items-center sm:flex-row sm:justify-between">
           <div>

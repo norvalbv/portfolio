@@ -2,6 +2,8 @@ import React, { useState, ReactElement } from 'react';
 import useTheme from 'hooks/useTheme';
 import classNames from 'utils/classNames';
 import { MoonIcon, SunIcon } from 'components/SVG';
+import BenjaminNorvalBlack from '../../../../public/BenjaminNorvalBlack.png';
+import BenjaminNorvalWhite from '../../../../public/BenjaminNorvalWhite.png';
 
 const NavBar = (): ReactElement => {
   const [navOpen, setNavOpen] = useState(false);
@@ -15,28 +17,35 @@ const NavBar = (): ReactElement => {
   ];
 
   return (
-    <nav className="sticky top-1 z-10 flex h-20 w-full items-center justify-center border-b border-gray-400 bg-light-dark before:absolute before:top-[-0.25rem] before:h-1 before:w-full before:bg-gradient-to-r before:from-accent-secondary before:to-accent-main dark:bg-black">
-      <div className="relative grid w-[50rem] max-w-screen-xl place-content-center">
-        <div className="md:visible md:absolute md:right-0">
-          {isDarkMode ? (
-            <MoonIcon onClick={toggleDarkMode} className="cursor-pointer hover:fill-light-dark" />
-          ) : (
-            <SunIcon onClick={toggleDarkMode} className="cursor-pointer hover:fill-dark-dark" />
-          )}
+    <nav className="sticky top-1 z-10 mx-4 flex h-20 items-center justify-center rounded-b-lg bg-white shadow-lg before:absolute before:top-[-0.25rem] before:h-1 before:w-full before:bg-gradient-to-r before:from-accent-secondary before:to-accent-main dark:bg-black dark:shadow-dark-neutral">
+      <div className="mx-auto w-full max-w-screen-xl px-10">
+        <div className="hidden items-center justify-between md:flex">
+          <img
+            src={isDarkMode ? BenjaminNorvalWhite : BenjaminNorvalBlack}
+            className="h-4 w-40"
+            alt="Benjamin Norval logo"
+          />
+          <ul className="flex flex-1 cursor-pointer justify-center space-x-10 text-sm">
+            {navbarTabs.map((tab) => (
+              <li
+                className="underline-offset-4 hover:text-accent-secondary hover:underline"
+                key={tab.id}
+              >
+                <a href={`#${tab.id}`} className="hover:text-accent-secondary">
+                  {tab.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <div className="flex w-40 justify-end md:visible">
+            {isDarkMode ? (
+              <MoonIcon onClick={toggleDarkMode} className="cursor-pointer hover:fill-light-dark" />
+            ) : (
+              <SunIcon onClick={toggleDarkMode} className="cursor-pointer hover:fill-dark-dark" />
+            )}
+          </div>
         </div>
 
-        <ul className="hidden cursor-pointer space-x-10 text-sm md:visible md:flex">
-          {navbarTabs.map((tab) => (
-            <li
-              className="underline-offset-4 hover:text-accent-secondary hover:underline"
-              key={tab.id}
-            >
-              <a href={`#${tab.id}`} className="hover:text-accent-secondary">
-                {tab.title}
-              </a>
-            </li>
-          ))}
-        </ul>
         <div
           className="right-0 flex max-w-screen-xl flex-wrap items-center p-4 md:hidden"
           onClick={(): void => setNavOpen(!navOpen)}
