@@ -9,7 +9,7 @@ import ParisnHomepage from '../../../public/ParisnHomepage.png';
 const MyWork = (): ReactElement => {
   return (
     <CardWrapper title="My Work">
-      <div className="relative mb-10 rounded-t-xl bg-gray-700/75 px-6 py-10 text-center before:absolute before:bottom-[-0.25rem] before:left-0 before:h-1 before:w-full before:bg-gradient-to-r before:from-blue-500 before:to-green-500">
+      <div className="relative mb-10 rounded-t-xl bg-dark-dark/20 px-6 py-10 text-center before:absolute before:bottom-[-0.25rem] before:left-0 before:h-1 before:w-full before:bg-gradient-to-r before:from-blue-500 before:to-green-500 dark:bg-dark-dark/30">
         <h3 className="mb-6 text-xl uppercase underline">
           &apos;PARISN&apos; - An e-commerce application with a twist
         </h3>
@@ -24,7 +24,7 @@ const MyWork = (): ReactElement => {
           <p>Built with: {parisnSkills}</p>
         </div>
       </div>
-      <div className="relative my-10 rounded-t-xl bg-gray-700/75 px-6 py-10 text-center before:absolute before:bottom-[-0.25rem] before:left-0 before:h-1 before:w-full before:bg-gradient-to-r before:from-blue-500 before:to-green-500">
+      <div className="relative my-10 rounded-t-xl bg-dark-dark/20 px-6 py-10 text-center before:absolute before:bottom-[-0.25rem] before:left-0 before:h-1 before:w-full before:bg-gradient-to-r before:from-blue-500 before:to-green-500 dark:bg-dark-dark/30">
         <h3 className="mb-6 text-xl uppercase underline">Weather App</h3>
         <CodeLink
           link="https://github.com/norvalbv/cool-weather-app"
