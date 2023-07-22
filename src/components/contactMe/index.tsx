@@ -18,7 +18,7 @@ const ContactMe = (): ReactElement => {
       <form
         action="https://formsubmit.co/benjinorval@gmail.com"
         method="POST"
-        className="w-3/5 rounded-lg bg-white/70 p-6 dark:bg-dark-dark/30"
+        className="rounded-lg bg-white/70 p-6 dark:bg-dark-dark/30 lg:w-3/5"
       >
         <TextField
           label="Name"

@@ -173,7 +173,7 @@ const TextField = ({
               autoComplete={autoComplete}
               className={classNames(
                 'appearance-none rounded focus:text-accent-secondary focus:outline focus:outline-light-text focus:ring-transparent dark:focus:outline-dark-text',
-                'borber-b h-12 w-full bg-light-neutral p-4 transition-[height] duration-300 dark:bg-dark-neutral'
+                'borber-b h-12 w-full bg-dark-dark/50 p-4 transition-[height] duration-300 dark:bg-light-dark/50'
               )}
               data-testid={dataAtt}
               disabled={disabled}
@@ -194,7 +194,7 @@ const TextField = ({
             autoComplete={autoComplete}
             className={classNames(
               'appearance-none rounded focus:text-accent-secondary focus:outline focus:outline-light-text focus:ring-transparent dark:focus:outline-dark-text',
-              'borber-b w-full bg-light-neutral p-4 transition-[height] duration-300 dark:bg-dark-neutral',
+              'borber-b w-full bg-dark-dark/50 p-4 transition-[height] duration-300 dark:bg-light-dark/50',
               active || value ? 'h-52' : 'h-12'
             )}
             data-testid={dataAtt}

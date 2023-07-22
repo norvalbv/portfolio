@@ -41,7 +41,8 @@ const Title = ({ children, className, testId, level = 2 }: TitleProps): ReactEle
     return (
       <h2
         className={classNames(
-          className || 'mb-20 text-4xl font-semibold underline underline-offset-8 md:text-6xl'
+          className ||
+            'mb-10 text-4xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl'
         )}
         data-testid={titleTestId}
       >
