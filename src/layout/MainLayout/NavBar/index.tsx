@@ -18,7 +18,7 @@ const NavBar = (): ReactElement => {
   ];
 
   return (
-    <nav className="sticky top-1 z-50 mx-4 flex h-20 items-center justify-center rounded-b-lg bg-white shadow-lg before:absolute before:top-[-0.25rem] before:h-1 before:w-full before:bg-gradient-to-r before:from-accent-secondary before:to-accent-main dark:bg-dark-dark dark:shadow-dark-neutral">
+    <nav className="sticky top-1 z-50 mx-4 flex h-16 items-center justify-center rounded-b-lg bg-white shadow-lg before:absolute before:top-[-0.25rem] before:h-1 before:w-full before:bg-gradient-to-r before:from-accent-secondary before:to-accent-main dark:bg-dark-dark dark:shadow-dark-neutral md:mx-20">
       <div className="mx-auto w-full max-w-screen-xl px-10">
         <div className="hidden items-center justify-between md:flex">
           <img
