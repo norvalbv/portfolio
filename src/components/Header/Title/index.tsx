@@ -1,26 +1,20 @@
 import React, { ReactElement } from 'react';
+import { Characters } from 'types';
 import { classNames } from 'utils';
 
 export type TitleProps = {
-  children?: string | JSX.Element;
+  children?: string | JSX.Element | Characters;
   className?: string;
-  testId?: string;
   /**
    * Default 3.
    */
   level?: 1 | 2 | 3;
 };
 
-const Title = ({ children, className, testId, level = 2 }: TitleProps): ReactElement | null => {
+const Title = ({ children, className, level = 2 }: TitleProps): ReactElement | null => {
   if (!children) {
     return null;
   }
-
-  if (typeof children !== 'string') {
-    return children;
-  }
-
-  const titleTestId = testId || `${children} Title`;
 
   // Level 1
   if (level === 1) {
@@ -30,7 +24,6 @@ const Title = ({ children, className, testId, level = 2 }: TitleProps): ReactEle
           className,
           'mb-20 text-5xl font-semibold underline underline-offset-8 md:text-8xl'
         )}
-        data-testid={titleTestId}
       >
         {children}
       </h1>
@@ -45,7 +38,6 @@ const Title = ({ children, className, testId, level = 2 }: TitleProps): ReactEle
           className,
           'mb-10 text-4xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl'
         )}
-        data-testid={titleTestId}
       >
         {children}
       </h2>
@@ -54,10 +46,7 @@ const Title = ({ children, className, testId, level = 2 }: TitleProps): ReactEle
 
   // Level 3
   return (
-    <h3
-      className={classNames(className, 'mb-10 text-2xl font-semibold  md:text-4xl')}
-      data-testid={titleTestId}
-    >
+    <h3 className={classNames(className, 'mb-10 text-2xl font-semibold  md:text-4xl')}>
       {children}
     </h3>
   );

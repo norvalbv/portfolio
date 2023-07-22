@@ -1,5 +1,5 @@
-import Header from 'components/Header';
 import React, { ReactElement } from 'react';
+import Header from 'components/Header';
 import { classNames } from 'utils';
 
 type CardWrapperProps = {
