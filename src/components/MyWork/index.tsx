@@ -2,6 +2,7 @@ import React, { ReactElement } from 'react';
 import CardWrapper from 'components/CardWrapper';
 import CodeLink from 'components/CodeLink';
 import { parisnDescription, parisnSkills, weatherAppSkills } from 'constants';
+import StyledLink from 'components/StyledLink';
 import WeatherApp from '../../../public/WeatherAppHomepage.png';
 import ParisnHomepage from '../../../public/ParisnHomepage.png';
 
@@ -31,9 +32,7 @@ const MyWork = (): ReactElement => {
         />
         <p>
           A front end weather application built with the&nbsp;
-          <a href="https://openweathermap.org/api" className="text-accent-main hover:underline">
-            Open Weather Api
-          </a>
+          <StyledLink label="Open Weather Api" link="https://openweathermap.org/api" />
           &nbsp;that uses live data and the ability to search for weather worldwide.
         </p>
         <div>

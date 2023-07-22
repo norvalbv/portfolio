@@ -57,7 +57,7 @@ const NavBar = (): ReactElement => {
           </div>
           <ul
             className={classNames(
-              { hidden: navOpen },
+              { hidden: !navOpen },
               // positioning
               'absolute right-0 top-[5.25rem]',
               // colours

@@ -1,14 +1,17 @@
-import CardWrapper from 'components/CardWrapper';
-import { mySkills } from 'constants';
 import React, { ReactElement } from 'react';
+import CardWrapper from 'components/CardWrapper';
+import StyledLink from 'components/StyledLink';
+import { mySkills } from 'constants';
 
 const AboutMe = (): ReactElement => {
   return (
     <CardWrapper title="About Me" className="w-10/12 min-w-[20rem] text-center" id="about-me">
       <p className="mt-20 text-lg">
         Experienced Full Stack software engineer with 3 years of experience in web development. I am
-        part of the core team that developed the entire Elysia &#40;a WAE subsidiary&#41; cloud
-        platform. I would love for you to check out my projects and even reach out!
+        part of the core team that developed the entire&nbsp;
+        <StyledLink label="Elysia" link="https://elysia.co" />
+        &nbsp;&#40;a WAE subsidiary&#41; cloud platform. I would love for you to check out my
+        projects and even reach out!
       </p>
       <p className="my-10 text-accent-main">
         My skills? They&apos;re floating around on the background. Have a look around &#58;&#41;
