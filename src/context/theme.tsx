@@ -12,7 +12,7 @@ type ThemeProviderProps = {
 };
 
 export const ThemeContextProvider = ({ children }: ThemeProviderProps): ReactElement => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   const toggleDarkMode = (): void => setIsDarkMode(!isDarkMode);
 

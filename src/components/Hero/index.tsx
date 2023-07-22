@@ -32,9 +32,7 @@ const Hero = (): ReactElement => {
           <br />
           {heading2.split('').map((item, i) => (
             <span
-              className={`hover:${
-                textClasses[Math.floor(Math.random() * textClasses.length)]
-              } text-white`}
+              className={`hover:${textClasses[Math.floor(Math.random() * textClasses.length)]}`}
               key={i}
             >
               {item}

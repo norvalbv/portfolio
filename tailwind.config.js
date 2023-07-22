@@ -3,6 +3,23 @@ module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      colors: {
+        // Numbers represent the darkness / lightness compared to the main colour.
+        dark: {
+          dark: '#000000',
+          neutral: '#1A181E',
+          text: '#E9EBE6',
+        },
+        light: {
+          dark: '#E9EBE6',
+          neutral: '#F3F4F6',
+          text: '#1A181E',
+        },
+        accent: {
+          main: '#16A34A',
+          secondary: '#0284C7',
+        },
+      },
       fontFamily: { sans: ['Victor Mono', 'monospace'] },
       keyframes: {
         fall: {

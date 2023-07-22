@@ -14,23 +14,24 @@ const NavBar = (): ReactElement => {
     { id: 'contact', title: 'Contact Me' },
   ];
 
-  console.log(isDarkMode);
-
   return (
-    <nav className="sticky top-1 z-10 flex h-20 w-full items-center justify-center border-b border-gray-400 bg-white opacity-75 before:absolute before:top-[-0.25rem] before:h-1 before:w-full before:bg-gradient-to-r before:from-blue-500 before:to-green-500 dark:bg-black">
+    <nav className="sticky top-1 z-10 flex h-20 w-full items-center justify-center border-b border-gray-400 bg-light-dark before:absolute before:top-[-0.25rem] before:h-1 before:w-full before:bg-gradient-to-r before:from-accent-secondary before:to-accent-main dark:bg-black">
       <div className="relative grid w-[50rem] max-w-screen-xl place-content-center">
         <div className="md:visible md:absolute md:right-0">
           {isDarkMode ? (
-            <MoonIcon onClick={toggleDarkMode} className="cursor-pointer hover:fill-slate-100" />
+            <MoonIcon onClick={toggleDarkMode} className="cursor-pointer hover:fill-light-dark" />
           ) : (
-            <SunIcon onClick={toggleDarkMode} className="cursor-pointer hover:fill-slate-100" />
+            <SunIcon onClick={toggleDarkMode} className="cursor-pointer hover:fill-dark-dark" />
           )}
         </div>
 
         <ul className="hidden cursor-pointer space-x-10 text-sm md:visible md:flex">
           {navbarTabs.map((tab) => (
-            <li className="underline-offset-4 hover:text-blue-500 hover:underline" key={tab.id}>
-              <a href={`#${tab.id}`} className="text-white hover:text-blue-500">
+            <li
+              className="underline-offset-4 hover:text-accent-secondary hover:underline"
+              key={tab.id}
+            >
+              <a href={`#${tab.id}`} className="hover:text-accent-secondary">
                 {tab.title}
               </a>
             </li>
@@ -43,7 +44,7 @@ const NavBar = (): ReactElement => {
           <button
             data-collapse-toggle="navbar-hamburger"
             type="button"
-            className="ml-3 inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm focus:outline-none dark:text-gray-400"
+            className="ml-3 inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm focus:outline-none"
             aria-controls="navbar-hamburger"
             aria-expanded="false"
           >
@@ -70,14 +71,14 @@ const NavBar = (): ReactElement => {
               'fixed top-12 h-screen w-1/2 text-center'
             )}
           >
-            <ul className="flex flex-col items-center justify-center gap-4 divide-y divide-white rounded-lg bg-gray-50 font-medium text-white dark:bg-black">
+            <ul className="flex flex-col items-center justify-center gap-4 divide-y divide-white rounded-lg bg-gray-50 font-medium dark:bg-black">
               {navbarTabs.map((tab) => (
                 <li
-                  className="relative w-28 px-2 hover:text-blue-500"
+                  className="relative w-28 px-2 hover:text-accent-secondary"
                   onClick={(): void => setNavOpen(!navOpen)}
                   key={tab.id}
                 >
-                  <a href={`#${tab.id}`} className="text-center hover:text-blue-500">
+                  <a href={`#${tab.id}`} className="text-center hover:text-accent-secondary">
                     {tab.title}
                   </a>
                 </li>
