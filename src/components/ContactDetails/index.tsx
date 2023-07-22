@@ -38,7 +38,7 @@ const ContactDetails = (): ReactElement => {
   return (
     <div className="flex flex-col gap-2 rounded-lg bg-white/70 p-6 dark:bg-dark-dark/30 lg:w-2/5">
       <h2 className="mb-6 underline underline-offset-8">Contact Details:</h2>
-      <p>If you would like to contact me directly;</p>
+      <p className="mb-6">If you would like to contact me directly;</p>
       {contactDetails.map((contact) => (
         <span className="my-2" key={contact.id}>
           {contact.key}:&nbsp;
@@ -51,6 +51,7 @@ const ContactDetails = (): ReactElement => {
           </a>
         </span>
       ))}
+      <p className="mt-6 italic">I look forward to hearing from you!</p>
     </div>
   );
 };
