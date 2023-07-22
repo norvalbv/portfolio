@@ -21,7 +21,7 @@ const Hero = (): ReactElement => {
           {heading.split('').map((item, i) => (
             <span
               className={classNames(
-                'mb-10 inline-block text-purple-500',
+                'mb-10 inline-block text-accent-main',
                 `hover:${textClasses[Math.floor(Math.random() * textClasses.length)]}`
               )}
               key={i}
@@ -39,11 +39,11 @@ const Hero = (): ReactElement => {
             </span>
           ))}
         </h1>
-        <h2 className="text-sm leading-7 tracking-wide text-white">
+        <h2 className="text-sm leading-7 tracking-wide">
           A 24 year old Full Stack Developer from the United Kingdom
         </h2>
       </div>
-      <div className="absolute inset-x-0 bottom-2 flex flex-col items-center gap-1 text-xs text-white hover:underline">
+      <div className="absolute inset-x-0 bottom-2 flex flex-col items-center gap-1 text-xs hover:underline">
         <p className="relative animate-bounce text-lg">Get to know me</p>
         <DownArrowIcon />
       </div>
