@@ -1,8 +1,10 @@
+import useTheme from 'hooks/useTheme';
 import React, { useState, ReactElement } from 'react';
 import classNames from 'utils/classNames';
 
 const NavBar = (): ReactElement => {
   const [navOpen, setNavOpen] = useState(false);
+  const { isDarkMode } = useTheme();
 
   const navbarTabs = [
     { id: 'home', title: 'Home' },
@@ -21,6 +23,11 @@ const NavBar = (): ReactElement => {
             </a>
           </li>
         ))}
+        {isDarkMode ? (
+          <MoonIcon className="cursor-pointer" onClick={toggleDarkMode} />
+        ) : (
+          <SunIcon className="cursor-pointer" onClick={toggleDarkMode} />
+        )}
       </ul>
       <div
         className="right-0 flex max-w-screen-xl flex-wrap items-center p-4 lg:hidden"
