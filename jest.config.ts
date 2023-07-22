@@ -20,12 +20,10 @@ export default (): Config => {
       },
     },
     preset: 'ts-jest',
-    setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
     testEnvironment: 'jsdom',
     transform: {
       '^.+\\.tsx?$': 'ts-jest',
     },
-    watchPathIgnorePatterns: ['<rootDir>/src/cypress/'],
     moduleDirectories: ['node_modules', 'src'],
   };
 };
