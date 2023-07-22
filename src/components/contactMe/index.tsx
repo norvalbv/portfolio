@@ -1,57 +1,48 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement, useState } from 'react';
 import CardWrapper from 'components/CardWrapper';
+import TextField from 'components/TextField';
 
 const ContactMe = (): ReactElement => {
+  const [query, setQuery] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const setQueryByKey = (key: keyof typeof query, value: string | boolean): void => {
+    setQuery({ ...query, [key]: value });
+  };
+
   return (
     <CardWrapper title="Come Say Hi!">
       <form
         action="https://formsubmit.co/benjinorval@gmail.com"
         method="POST"
-        className="w-1/3 sm:w-full"
+        className="w-3/5 rounded-lg bg-white/70 p-6 dark:bg-dark-dark/30"
       >
-        <h3 className="text-sm capitalize tracking-wide">Name</h3>
-        <div className="relative mb-4">
-          <input
-            type="text"
-            minLength={1}
-            maxLength={100}
-            pattern="[a-zA-Z]+"
-            required
-            className="mb-2 h-9 w-full border-none bg-transparent px-2 outline-none"
-            placeholder="Name"
-          />
-          <div className="absolute bottom-2 left-0 h-1 w-full bg-gradient-to-r" />
-        </div>
-        <h3 className="text-sm capitalize tracking-wide">Email</h3>
-        <div className="relative mb-4">
-          <input
-            type="text"
-            id="email"
-            required
-            className="mb-2 h-9 w-full border-none bg-transparent px-2 outline-none"
-            placeholder="Email"
-          />
-          <div className="absolute bottom-2 left-0 h-1 w-full bg-gradient-to-r" />
-        </div>
-        <h3 className="text-sm capitalize tracking-wide">Send me a message</h3>
-        <div className="relative mb-4">
-          <input
-            type="text"
-            name="_subject"
-            className="mb-2 h-9 w-full border-none bg-transparent px-2 outline-none"
-            placeholder="Subject"
-          />
-          <div className="absolute bottom-2 left-0 h-1 w-full bg-gradient-to-r" />
-        </div>
-        <div className="relative mb-4">
-          <textarea
-            required
-            className="h-40 w-full resize-y border-none bg-transparent px-2 outline-none"
-            placeholder="Send me a message!"
-          />
-          <div className="absolute bottom-2 left-0 h-1 w-full bg-gradient-to-r" />
-        </div>
-        <input type="submit" className="mb-1 h-8 w-20 cursor-pointer border-2 border-transparent" />
+        <TextField
+          label="Name"
+          value={query.name}
+          onChange={(val): void => setQueryByKey('name', val)}
+          required
+        />
+        <TextField
+          label="Email"
+          value={query.email}
+          onChange={(val): void => setQueryByKey('email', val)}
+          required
+          className="my-6"
+        />
+        <TextField
+          label="Message"
+          value={query.message}
+          onChange={(val): void => setQueryByKey('message', val)}
+          inputType="textarea"
+          required
+        />
+        <button type="submit" className="mt-6 hover:underline">
+          Submit
+        </button>
       </form>
     </CardWrapper>
   );

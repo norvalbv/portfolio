@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextField /> should render correctly with all props 1`] = `
+<fieldset
+  className="underline"
+>
+  <div
+    className="mb-2 flex justify-between"
+  >
+    <div
+      className="text-body leading-6 text-neutral-N400"
+    >
+      <label
+        className="block"
+        htmlFor="Test Id"
+      >
+        Test Label
+        <span>
+          *
+        </span>
+      </label>
+      <div
+        className="ml-4"
+      >
+        <div>
+          Label
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="bg-neutral-N100 text-sm"
+    onClick={[MockFunction]}
+  >
+    <textarea
+      autoComplete="on"
+      className="transform-all w-full resize-none appearance-none border px-6 py-4 leading-5 text-neutral-N400 outline-none transition-all ease-productive placeholder:text-neutral-N300 focus:outline-none focus:ring-transparent border-red-R500 h-[15rem] rounded-sm"
+      data-testid="Test DataAtt"
+      disabled={true}
+      id="Test Id"
+      name="Test name"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      placeholder="placeholder"
+      required={true}
+      value={30}
+    />
+  </div>
+  <div
+    className="mt-2"
+  >
+    <span
+      className="block max-w-full text-sm text-red-R500"
+      data-testid="Test DataAtt ERROR!!"
+    >
+      ERROR!!
+    </span>
+  </div>
+</fieldset>
+`;
+
+exports[`<TextField /> should render correctly with mandatory props 1`] = `
+<fieldset>
+  <div
+    className="text-sm"
+  >
+    <div
+      className="flex items-center"
+    >
+      <div
+        className="flex h-14 w-full items-center justify-between border bg-neutral-N00 px-6 py-4 border-neutral-N100 focus:border-neutral-N100 rounded-sm"
+      >
+        <input
+          autoComplete="on"
+          className="appearance-none border-none p-0 text-neutral-N400 shadow-[0_0_0rem_100rem_white_inset] placeholder:text-neutral-N300 focus:ring-transparent w-full"
+          name=""
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder=""
+          required={false}
+          style={
+            {
+              "fontSize": "inherit",
+            }
+          }
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</fieldset>
+`;
