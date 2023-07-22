@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import classNames from 'utils/classNames';
+import { classNames } from 'utils';
 
 export type SubtitleProps = {
   children?: string | JSX.Element;
@@ -15,7 +15,7 @@ const Subtitle = ({ children, className, testId }: SubtitleProps): ReactElement 
   if (typeof children === 'string') {
     return (
       <h4
-        className={classNames(className || 'truncate text-body text-neutral-N300')}
+        className={classNames(className || 'text-body text-neutral-N300 truncate')}
         data-testid={testId || `${children} Subtitle`}
       >
         {children}

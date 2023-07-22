@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import classNames from 'utils/classNames';
+import { classNames } from 'utils';
 import Title from 'components/Header/Title';
 import Subtitle from 'components/Header/SubTitle';
 import Description from './Description';

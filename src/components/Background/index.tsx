@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import classNames from 'utils/classNames';
+import { classNames } from 'utils';
 import { MY_SKILLS } from 'constants/index';
 
 const Background = (): ReactElement => {

@@ -1,6 +1,6 @@
 import React, { useState, ReactElement } from 'react';
 import useTheme from 'hooks/useTheme';
-import classNames from 'utils/classNames';
+import { classNames } from 'utils';
 import ThemeToggle from 'components/ThemeToggle';
 import Hamburger from './Hamburger';
 import BenjaminNorvalBlack from '../../../../public/BenjaminNorvalBlack.png';

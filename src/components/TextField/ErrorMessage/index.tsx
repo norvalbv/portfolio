@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import classNames from 'utils/classNames';
+import { classNames } from 'utils';
 
 interface ErrorMessageProps {
   message: string;
@@ -11,7 +11,7 @@ const ErrorMessage = ({ message, dataAtt, className }: ErrorMessageProps): React
   return (
     <div className={classNames(className)}>
       <span
-        className="block max-w-full text-sm text-red-R500"
+        className="text-red-R500 block max-w-full text-sm"
         data-testid={`${dataAtt ? `${dataAtt} ${message}` : message}`}
       >
         {message}

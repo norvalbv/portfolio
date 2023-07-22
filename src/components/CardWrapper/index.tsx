@@ -1,6 +1,6 @@
 import Header from 'components/Header';
 import React, { ReactElement } from 'react';
-import classNames from 'utils/classNames';
+import { classNames } from 'utils';
 
 type CardWrapperProps = {
   className?: string;

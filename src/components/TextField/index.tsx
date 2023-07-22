@@ -6,7 +6,7 @@ import React, {
   useEffect,
   useRef,
 } from 'react';
-import classNames from 'utils/classNames';
+import { classNames } from 'utils';
 import ErrorMessage from './ErrorMessage';
 
 interface RefObject<T> {

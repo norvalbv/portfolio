@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import Portfolio from 'pages/Portfolio';
 import './styles/index.css';
 import useTheme from 'hooks/useTheme';
-import classNames from 'utils/classNames';
+import { classNames } from 'utils';
 import useScrollToTop from 'hooks/useScrollToTop';
 
 const App = (): ReactElement => {
