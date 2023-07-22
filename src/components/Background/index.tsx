@@ -50,4 +50,4 @@ const Background = (): ReactElement => {
   );
 };
 
-export default Background;
+export default React.memo(Background);
