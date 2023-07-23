@@ -4,6 +4,8 @@ import Landing from 'pages/Landing';
 import AboutMe from 'pages/AboutMe';
 import ContactMe from 'pages/ContactMe';
 import MyWork from 'pages/MyWork';
+import MinimalLayout from 'layout/MinimalLayout';
+import NotFound from 'pages/NotFound';
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,9 +16,9 @@ export const router = createBrowserRouter(
         <Route path="my-work" element={<MyWork />} />
         <Route path="contact" element={<ContactMe />} />
       </Route>
-      {/* <Route element={<MinimalLayout />}>
+      <Route path="/" element={<MinimalLayout />}>
         <Route path="*" element={<NotFound />} />
-      </Route> */}
+      </Route>
     </Route>
   )
 );

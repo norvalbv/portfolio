@@ -9,12 +9,10 @@
  *   classNames({ foo: true }, { bar: true }); // => 'foo bar'
  *   classNames({ foo: true, bar: true }); // => 'foo bar'
  *
-     // lots of arguments of various types
-     
+ * // lots of arguments of various types
  *   classNames('foo', { bar: true, duck: false }, 'baz', { quux: true }); // => 'foo bar baz quux'
  *
-     // Arrays will be recursively flattened as per the rules above
-
+ * // Arrays will be recursively flattened as per the rules above
  *   classNames('a', ['b', { c: true, d: false }]); // => 'a b c'
  */
 
