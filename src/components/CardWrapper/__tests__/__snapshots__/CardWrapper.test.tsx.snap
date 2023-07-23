@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardWrapper /> should render correctly with all props 1`] = `
+<div
+  className="relative top-[-4rem] z-10 mx-auto min-h-screen bg-red-500"
+  id="testId"
+>
+  <div>
+    <header
+      className="flex items-center justify-between"
+    >
+      <section
+        className="flex w-full flex-col gap-1"
+      >
+        <h2
+          className="text-blue-500 mb-10 text-4xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl"
+        >
+          j
+          h
+          t
+          z
+          x
+          v
+          e
+          x
+          r
+          t
+        </h2>
+        <h4
+          className="text-body text-neutral-N300 truncate"
+          data-testid="Test subtitle Subtitle"
+        >
+          Test subtitle
+        </h4>
+        <p
+          className="text-body text-neutral-N00 truncate"
+          data-testid="Test description Description"
+        >
+          Test description
+        </p>
+      </section>
+    </header>
+    <div>
+      Child
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<CardWrapper /> should render correctly with mandatory props 1`] = `
+<div
+  className="relative top-[-4rem] z-10 mx-auto min-h-screen grid w-10/12 min-w-[20rem] place-items-center"
+>
+  <div>
+    <header
+      className="flex items-center justify-between"
+    >
+      <section
+        className="flex w-full flex-col gap-1"
+      >
+        <h2
+          className="mb-10 text-4xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl"
+        >
+          x
+          v
+          u
+          l
+          s
+          x
+          f
+          p
+          h
+          z
+        </h2>
+      </section>
+    </header>
+    <div>
+      Child
+    </div>
+  </div>
+</div>
+`;
