@@ -14,7 +14,11 @@ const NotFound = (): ReactElement => {
         <h2 className="mb-4 text-6xl font-semibold tracking-wide text-accent-main transition-colors">
           {heading}
         </h2>
-        <button type='button' className="z-20 mx-auto w-max rounded border bg-light-dark px-4 py-2 text-xl uppercase leading-7 tracking-wide shadow-lg dark:bg-dark-dark" onClick={(): void => history.back()}>
+        <button
+          type="button"
+          className="z-20 mx-auto w-max rounded border bg-light-dark px-4 py-2 text-xl uppercase leading-7 tracking-wide shadow-lg dark:bg-dark-dark"
+          onClick={(): void => window.history.back()}
+        >
           Back
         </button>
       </div>
