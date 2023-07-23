@@ -10,16 +10,18 @@ exports[`<Header /> should render correctly with all props 1`] = `
     <h2
       className="text-h2 mb-10 text-4xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl"
     >
-      t
-      u
+      H
+      e
+      l
+      l
+      o
+       
+      W
       o
       r
-      u
-      o
-      b
-      g
       l
-      x
+      d
+      !
     </h2>
     <h4
       className="text-sm"
@@ -46,7 +48,20 @@ exports[`<Header /> should render correctly with subtitle provided 1`] = `
   >
     <h2
       className="mb-10 text-4xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl"
-    />
+    >
+      H
+      e
+      l
+      l
+      o
+       
+      W
+      o
+      r
+      l
+      d
+      !
+    </h2>
     <h4
       className="text-body text-neutral-N300 truncate"
       data-testid="Test subtitle Subtitle"
@@ -67,16 +82,18 @@ exports[`<Header /> should render correctly with title provided 1`] = `
     <h2
       className="mb-10 text-4xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl"
     >
-      u
-      q
-      s
-      x
-      x
-      b
-      t
-      v
-      c
-      h
+      H
+      e
+      l
+      l
+      o
+       
+      W
+      o
+      r
+      l
+      d
+      !
     </h2>
   </section>
 </header>

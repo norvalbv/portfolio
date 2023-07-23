@@ -13,88 +13,48 @@ exports[`<Landing /> should render correctly 1`] = `
       <span
         className="mb-10 inline-block text-accent-main transition-colors duration-150"
       >
-        k
-        o
-        v
+        H
+        e
         l
-        z
+        l
+        o
+         
+        W
+        o
+        r
+        l
+        d
+        !
       </span>
       <br />
-      x
-      n
+      H
+      e
+      l
+      l
+      o
+       
+      W
+      o
       r
-      h
-      r
-      u
-      h
-      v
-      i
-      n
-      k
-      y
-      z
+      l
+      d
+      !
     </h1>
     <h2
       className="text-sm leading-7 tracking-wide"
     >
-      t
-      h
-      z
-      v
-      n
-      v
-      d
-      f
-      i
-      t
-      g
-      y
-      u
-      n
-      l
-      x
-      i
-      c
-      b
-      g
-      u
-      t
-      y
-      x
-      y
-      o
-      h
+      H
       e
-      u
-      h
-      o
-      w
-      p
       l
-      x
-      r
-      c
-      g
-      d
-      f
-      t
-      n
-      m
-      m
-      q
-      v
-      u
-      r
-      r
-      u
+      l
       o
-      c
-      h
-      n
-      c
-      c
-      p
-      n
+       
+      W
+      o
+      r
+      l
+      d
+      !
     </h2>
   </div>
 </div>

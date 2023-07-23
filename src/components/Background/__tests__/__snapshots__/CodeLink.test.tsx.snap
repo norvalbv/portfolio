@@ -8,12 +8,12 @@ exports[`<Background /> should render correctly 1`] = `
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "0.4699342311251761s",
-        "animationDuration": "33.08462946608739s",
-        "fontSize": "0.3457685266956304rem",
-        "left": "19%",
-        "opacity": 0.1728842633478152,
-        "top": "68.98106104085969%",
+        "animationDelay": "7.328467224067658s",
+        "animationDuration": "16.16134172379118s",
+        "fontSize": "1.191932913810441rem",
+        "left": "41%",
+        "opacity": 0.5959664569052205,
+        "top": "40.110761229377026%",
       }
     }
   >
@@ -23,12 +23,12 @@ exports[`<Background /> should render correctly 1`] = `
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "7.576081542589458s",
-        "animationDuration": "30.919115458675535s",
-        "fontSize": "0.45404422706622316rem",
-        "left": "21%",
-        "opacity": 0.22702211353311158,
-        "top": "55.554932155032354%",
+        "animationDelay": "1.6878031648163254s",
+        "animationDuration": "25.387044716659616s",
+        "fontSize": "0.7306477641670193rem",
+        "left": "0%",
+        "opacity": 0.36532388208350963,
+        "top": "184.46426897720414%",
       }
     }
   >
@@ -38,327 +38,12 @@ exports[`<Background /> should render correctly 1`] = `
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "11.511861691080416s",
-        "animationDuration": "17.505040743592318s",
-        "fontSize": "1.124747962820384rem",
-        "left": "97%",
-        "opacity": 0.562373981410192,
-        "top": "156.13904220444638%",
-      }
-    }
-  >
-     React
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "1.7340763638003462s",
-        "animationDuration": "23.09097101566571s",
-        "fontSize": "0.8454514492167147rem",
-        "left": "79%",
-        "opacity": 0.42272572460835733,
-        "top": "293.49889438316455%",
-      }
-    }
-  >
-     Redux
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "7.643661844944171s",
-        "animationDuration": "28.55832210593703s",
-        "fontSize": "0.5720838947031486rem",
-        "left": "18%",
-        "opacity": 0.2860419473515743,
-        "top": "23.61002587934495%",
-      }
-    }
-  >
-     Jest
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "2.570303787892923s",
-        "animationDuration": "16.983708549888135s",
-        "fontSize": "1.1508145725055932rem",
-        "left": "67%",
-        "opacity": 0.5754072862527966,
-        "top": "18.639601116499225%",
-      }
-    }
-  >
-     Cypress
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "11.969650961745419s",
-        "animationDuration": "21.896089313237475s",
-        "fontSize": "0.9051955343381262rem",
-        "left": "21%",
-        "opacity": 0.4525977671690631,
-        "top": "94.88291924336444%",
-      }
-    }
-  >
-     D3
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "4.531971757989162s",
-        "animationDuration": "32.07370072594282s",
-        "fontSize": "0.39631496370285896rem",
-        "left": "57%",
-        "opacity": 0.19815748185142948,
-        "top": "281.0415697999185%",
-      }
-    }
-  >
-     Visx
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.20337872134148827s",
-        "animationDuration": "18.793828533325318s",
-        "fontSize": "1.060308573333734rem",
+        "animationDelay": "8.886483635602458s",
+        "animationDuration": "18.396470609482538s",
+        "fontSize": "1.080176469525873rem",
         "left": "100%",
-        "opacity": 0.530154286666867,
-        "top": "31.61442321281133%",
-      }
-    }
-  >
-     HTML
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "1.1048566189962699s",
-        "animationDuration": "31.696532708497895s",
-        "fontSize": "0.4151733645751052rem",
-        "left": "48%",
-        "opacity": 0.2075866822875526,
-        "top": "82.32380380342555%",
-      }
-    }
-  >
-     CSS
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.3905170880652118s",
-        "animationDuration": "22.599966091631394s",
-        "fontSize": "0.8700016954184302rem",
-        "left": "87%",
-        "opacity": 0.4350008477092151,
-        "top": "77.14406613690757%",
-      }
-    }
-  >
-     TailwindCSS
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.035028926296117355s",
-        "animationDuration": "22.368703993929632s",
-        "fontSize": "0.8815648003035184rem",
-        "left": "51%",
-        "opacity": 0.4407824001517592,
-        "top": "49.04834323383497%",
-      }
-    }
-  >
-     Node
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.5115379446592624s",
-        "animationDuration": "33.17515095255279s",
-        "fontSize": "0.34124245237236045rem",
-        "left": "71%",
-        "opacity": 0.17062122618618022,
-        "top": "225.70942603621526%",
-      }
-    }
-  >
-     Express
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "2.078813557826986s",
-        "animationDuration": "27.020280183275997s",
-        "fontSize": "0.6489859908362001rem",
-        "left": "73%",
-        "opacity": 0.32449299541810006,
-        "top": "7.529486032607767%",
-      }
-    }
-  >
-     AWS Serverless
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "14.168533343844013s",
-        "animationDuration": "32.309129559989266s",
-        "fontSize": "0.3845435220005367rem",
-        "left": "1%",
-        "opacity": 0.19227176100026835,
-        "top": "164.1245795871933%",
-      }
-    }
-  >
-     CI/CD
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "15.34572262107245s",
-        "animationDuration": "15.672436382948778s",
-        "fontSize": "1.216378180852561rem",
-        "left": "99%",
-        "opacity": 0.6,
-        "top": "87.6390715727814%",
-      }
-    }
-  >
-     Git
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "3.4024401820190295s",
-        "animationDuration": "21.115176560355042s",
-        "fontSize": "0.9442411719822479rem",
-        "left": "59%",
-        "opacity": 0.47212058599112394,
-        "top": "130.0289146878738%",
-      }
-    }
-  >
-     Bash
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "5.96634730529911s",
-        "animationDuration": "30.121683520926908s",
-        "fontSize": "0.4939158239536544rem",
-        "left": "71%",
-        "opacity": 0.2469579119768272,
-        "top": "58.035024762135365%",
-      }
-    }
-  >
-     GitHub
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "4.296233118499828s",
-        "animationDuration": "24.635474219115565s",
-        "fontSize": "0.7682262890442217rem",
-        "left": "22%",
-        "opacity": 0.38411314452211087,
-        "top": "7.168948277912038%",
-      }
-    }
-  >
-     Azure DevOps
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "4.303163693629419s",
-        "animationDuration": "21.89022629049058s",
-        "fontSize": "0.9054886854754709rem",
-        "left": "46%",
-        "opacity": 0.45274434273773545,
-        "top": "57.29424118547951%",
-      }
-    }
-  >
-     Agile/Scrum/Kanban
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "14.001651711853853s",
-        "animationDuration": "24.202050196958716s",
-        "fontSize": "0.789897490152064rem",
-        "left": "0%",
-        "opacity": 0.394948745076032,
-        "top": "110.31566122982494%",
-      }
-    }
-  >
-     SEO
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "14.483204649992189s",
-        "animationDuration": "17.469799038904036s",
-        "fontSize": "1.1265100480547983rem",
-        "left": "20%",
-        "opacity": 0.5632550240273991,
-        "top": "71.68886521914212%",
-      }
-    }
-  >
-    JavaScript
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "7.181657234114349s",
-        "animationDuration": "32.56059527039504s",
-        "fontSize": "0.37197023648024796rem",
-        "left": "0%",
-        "opacity": 0.18598511824012398,
-        "top": "171.25929595318925%",
-      }
-    }
-  >
-     TypeScript
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "3.4731809506811224s",
-        "animationDuration": "18.497528082560688s",
-        "fontSize": "1.0751235958719656rem",
-        "left": "66%",
-        "opacity": 0.5375617979359828,
-        "top": "125.51735311608789%",
+        "opacity": 0.5400882347629365,
+        "top": "55.9352764477837%",
       }
     }
   >
@@ -368,657 +53,27 @@ exports[`<Background /> should render correctly 1`] = `
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "4.217984716708553s",
-        "animationDuration": "29.99769374848548s",
-        "fontSize": "0.500115312575726rem",
-        "left": "40%",
-        "opacity": 0.250057656287863,
-        "top": "23.19272161619918%",
-      }
-    }
-  >
-     Redux
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "4.4114184171671s",
-        "animationDuration": "27.755053701369636s",
-        "fontSize": "0.6122473149315182rem",
-        "left": "99%",
-        "opacity": 0.3061236574657591,
-        "top": "58.9948724289232%",
-      }
-    }
-  >
-     Jest
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "2.5211944854230506s",
-        "animationDuration": "32.058535475185764s",
-        "fontSize": "0.39707322624071184rem",
-        "left": "11%",
-        "opacity": 0.19853661312035592,
-        "top": "78.3251185398698%",
-      }
-    }
-  >
-     Cypress
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.5062784118186728s",
-        "animationDuration": "32.65490667539709s",
-        "fontSize": "0.36725466623014547rem",
-        "left": "0%",
-        "opacity": 0.18362733311507273,
-        "top": "44.45104967727635%",
-      }
-    }
-  >
-     D3
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "4.510814837051565s",
-        "animationDuration": "25.149159488110634s",
-        "fontSize": "0.7425420255944684rem",
-        "left": "94%",
-        "opacity": 0.3712710127972342,
-        "top": "59.40331066971066%",
-      }
-    }
-  >
-     Visx
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "3.751702514222975s",
-        "animationDuration": "20.43817181423115s",
-        "fontSize": "0.9780914092884425rem",
-        "left": "22%",
-        "opacity": 0.48904570464422126,
-        "top": "55.33416532604265%",
-      }
-    }
-  >
-     HTML
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "13.836684210748484s",
-        "animationDuration": "29.457799375714977s",
-        "fontSize": "0.5271100312142513rem",
-        "left": "26%",
-        "opacity": 0.26355501560712563,
-        "top": "65.00682377109008%",
-      }
-    }
-  >
-     CSS
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "2.989741119953235s",
-        "animationDuration": "30.028959155517043s",
-        "fontSize": "0.4985520422241478rem",
-        "left": "7%",
-        "opacity": 0.2492760211120739,
-        "top": "33.69493182489817%",
-      }
-    }
-  >
-     TailwindCSS
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.5075877162421651s",
-        "animationDuration": "18.335978300659683s",
-        "fontSize": "1.083201084967016rem",
-        "left": "92%",
-        "opacity": 0.541600542483508,
-        "top": "338.97775371462876%",
-      }
-    }
-  >
-     Node
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "12.434918109344022s",
-        "animationDuration": "30.24430477499842s",
-        "fontSize": "0.4877847612500791rem",
-        "left": "53%",
-        "opacity": 0.24389238062503954,
-        "top": "243.84152913964368%",
-      }
-    }
-  >
-     Express
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "6.659734453865189s",
-        "animationDuration": "19.512954225977943s",
-        "fontSize": "1.024352288701103rem",
-        "left": "92%",
-        "opacity": 0.5121761443505515,
-        "top": "98.04729918633957%",
-      }
-    }
-  >
-     AWS Serverless
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "3.3345229162881607s",
-        "animationDuration": "29.554771974402428s",
-        "fontSize": "0.5222614012798786rem",
-        "left": "40%",
-        "opacity": 0.2611307006399393,
-        "top": "73.95266217238057%",
-      }
-    }
-  >
-     CI/CD
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "13.341391621666698s",
-        "animationDuration": "19.062435143123302s",
-        "fontSize": "1.0468782428438348rem",
-        "left": "21%",
-        "opacity": 0.5234391214219174,
-        "top": "16.510832610410763%",
-      }
-    }
-  >
-     Git
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "7.166724216626537s",
-        "animationDuration": "22.757118713708717s",
-        "fontSize": "0.8621440643145641rem",
-        "left": "47%",
-        "opacity": 0.43107203215728207,
-        "top": "95.73697445626605%",
-      }
-    }
-  >
-     Bash
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "2.8536549717009505s",
-        "animationDuration": "27.193696812088195s",
-        "fontSize": "0.6403151593955901rem",
-        "left": "93%",
-        "opacity": 0.32015757969779507,
-        "top": "40.44236652091276%",
-      }
-    }
-  >
-     GitHub
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "6.631659541673309s",
-        "animationDuration": "15.11091750350209s",
-        "fontSize": "1.2444541248248955rem",
-        "left": "57%",
-        "opacity": 0.6,
-        "top": "59.573522788130795%",
-      }
-    }
-  >
-     Azure DevOps
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "5.507760701833359s",
-        "animationDuration": "23.895863446463295s",
-        "fontSize": "0.8052068276768352rem",
-        "left": "14%",
-        "opacity": 0.4026034138384176,
-        "top": "57.167630549348715%",
-      }
-    }
-  >
-     Agile/Scrum/Kanban
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "12.58150697635228s",
-        "animationDuration": "27.616408399859527s",
-        "fontSize": "0.6191795800070237rem",
-        "left": "37%",
-        "opacity": 0.30958979000351183,
-        "top": "194.14127091147344%",
-      }
-    }
-  >
-     SEO
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "8.788216379133969s",
-        "animationDuration": "20.149218703334s",
-        "fontSize": "0.9925390648332999rem",
-        "left": "83%",
-        "opacity": 0.49626953241664995,
-        "top": "34.96275433567747%",
-      }
-    }
-  >
-    JavaScript
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "3.4363333784472316s",
-        "animationDuration": "25.917882052390226s",
-        "fontSize": "0.7041058973804888rem",
-        "left": "10%",
-        "opacity": 0.3520529486902444,
-        "top": "122.21881522819598%",
-      }
-    }
-  >
-     TypeScript
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "1.6290218174638542s",
-        "animationDuration": "18.91962177310662s",
-        "fontSize": "1.054018911344669rem",
-        "left": "19%",
-        "opacity": 0.5270094556723345,
-        "top": "24.174134893495154%",
-      }
-    }
-  >
-     React
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.5795821431033503s",
-        "animationDuration": "30.765927989636772s",
-        "fontSize": "0.46170360051816145rem",
-        "left": "27%",
-        "opacity": 0.23085180025908072,
-        "top": "1.67240782277587%",
-      }
-    }
-  >
-     Redux
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.05806161640137378s",
-        "animationDuration": "16.83691471176417s",
-        "fontSize": "1.1581542644117915rem",
-        "left": "98%",
-        "opacity": 0.5790771322058957,
-        "top": "181.79324720727283%",
-      }
-    }
-  >
-     Jest
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.11945924045117032s",
-        "animationDuration": "33.88858813977245s",
-        "fontSize": "0.3055705930113774rem",
-        "left": "50%",
-        "opacity": 0.1527852965056887,
-        "top": "163.08829841748786%",
-      }
-    }
-  >
-     Cypress
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "2.6462124947433807s",
-        "animationDuration": "31.633995110721457s",
-        "fontSize": "0.4183002444639272rem",
-        "left": "38%",
-        "opacity": 0.2091501222319636,
-        "top": "47.596062989300194%",
-      }
-    }
-  >
-     D3
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "15.735713603759404s",
-        "animationDuration": "28.424249658195492s",
-        "fontSize": "0.5787875170902255rem",
-        "left": "96%",
-        "opacity": 0.28939375854511273,
-        "top": "25.909991264927278%",
-      }
-    }
-  >
-     Visx
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "2.4715892114275917s",
-        "animationDuration": "24.0357730728117s",
-        "fontSize": "0.7982113463594149rem",
-        "left": "76%",
-        "opacity": 0.39910567317970747,
-        "top": "71.07209072429144%",
-      }
-    }
-  >
-     HTML
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "3.08171207493058s",
-        "animationDuration": "16.50959687526141s",
-        "fontSize": "1.1745201562369296rem",
-        "left": "48%",
-        "opacity": 0.5872600781184648,
-        "top": "9.807711696751683%",
-      }
-    }
-  >
-     CSS
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "15.610231411504897s",
-        "animationDuration": "15.472644295268427s",
-        "fontSize": "1.2263677852365786rem",
-        "left": "81%",
-        "opacity": 0.6,
-        "top": "122.86477125141953%",
-      }
-    }
-  >
-     TailwindCSS
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "1.9487789802304243s",
-        "animationDuration": "25.792259397717917s",
-        "fontSize": "0.7103870301141042rem",
-        "left": "65%",
-        "opacity": 0.3551935150570521,
-        "top": "19.185060941876042%",
-      }
-    }
-  >
-     Node
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "16.704501465537778s",
-        "animationDuration": "17.069823844945336s",
-        "fontSize": "1.1465088077527332rem",
-        "left": "0%",
-        "opacity": 0.5732544038763666,
-        "top": "15.90250824067446%",
-      }
-    }
-  >
-     Express
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "2.808894461510324s",
-        "animationDuration": "16.9061400085402s",
-        "fontSize": "1.15469299957299rem",
+        "animationDelay": "0.6731679107736015s",
+        "animationDuration": "30.946869627069695s",
+        "fontSize": "0.45265651864651535rem",
         "left": "15%",
-        "opacity": 0.577346499786495,
-        "top": "163.81446461003029%",
+        "opacity": 0.22632825932325767,
+        "top": "153.16242529464267%",
       }
     }
   >
-     AWS Serverless
+     Redux
   </div>
   <div
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "0.14122743076232866s",
-        "animationDuration": "20.690321295815437s",
-        "fontSize": "0.9654839352092282rem",
-        "left": "40%",
-        "opacity": 0.4827419676046141,
-        "top": "74.74271392975047%",
-      }
-    }
-  >
-     CI/CD
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.07041863080551053s",
-        "animationDuration": "19.818119479108972s",
-        "fontSize": "1.0090940260445513rem",
-        "left": "43%",
-        "opacity": 0.5045470130222757,
-        "top": "55.211730462333854%",
-      }
-    }
-  >
-     Git
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "7.693453814103217s",
-        "animationDuration": "17.35168082441557s",
-        "fontSize": "1.1324159587792215rem",
-        "left": "92%",
-        "opacity": 0.5662079793896108,
-        "top": "15.363540461797728%",
-      }
-    }
-  >
-     Bash
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "4.968957664862395s",
-        "animationDuration": "20.521840700957135s",
-        "fontSize": "0.9739079649521432rem",
-        "left": "94%",
-        "opacity": 0.4869539824760716,
-        "top": "53.38429763468996%",
-      }
-    }
-  >
-     GitHub
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.8504324204437984s",
-        "animationDuration": "21.03109596762415s",
-        "fontSize": "0.9484452016187925rem",
-        "left": "44%",
-        "opacity": 0.47422260080939627,
-        "top": "14.322869327021776%",
-      }
-    }
-  >
-     Azure DevOps
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "11.584731000753175s",
-        "animationDuration": "32.32155415654312s",
-        "fontSize": "0.38392229217284396rem",
-        "left": "63%",
-        "opacity": 0.19196114608642198,
-        "top": "24.875705663783748%",
-      }
-    }
-  >
-     Agile/Scrum/Kanban
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "2.775464720885059s",
-        "animationDuration": "33.21986615518761s",
-        "fontSize": "0.3390066922406194rem",
-        "left": "61%",
-        "opacity": 0.1695033461203097,
-        "top": "223.55347282649134%",
-      }
-    }
-  >
-     SEO
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.7035941389409797s",
-        "animationDuration": "30.174694778408224s",
-        "fontSize": "0.4912652610795888rem",
-        "left": "91%",
-        "opacity": 0.2456326305397944,
-        "top": "21.091091219145845%",
-      }
-    }
-  >
-    JavaScript
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "2.728547844863973s",
-        "animationDuration": "18.049686332563933s",
-        "fontSize": "1.0975156833718034rem",
-        "left": "57%",
-        "opacity": 0.5487578416859017,
-        "top": "7.098116903877669%",
-      }
-    }
-  >
-     TypeScript
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "1.5870493901318903s",
-        "animationDuration": "30.608392670010236s",
-        "fontSize": "0.4695803664994882rem",
+        "animationDelay": "2.722215006387825s",
+        "animationDuration": "18.06054741378729s",
+        "fontSize": "1.0969726293106354rem",
         "left": "90%",
-        "opacity": 0.2347901832497441,
-        "top": "21.237883093198185%",
-      }
-    }
-  >
-     React
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "2.8765892737946013s",
-        "animationDuration": "30.060349946728365s",
-        "fontSize": "0.4969825026635817rem",
-        "left": "13%",
-        "opacity": 0.24849125133179084,
-        "top": "57.74240044906001%",
-      }
-    }
-  >
-     Redux
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "13.60202776380417s",
-        "animationDuration": "29.310442526074524s",
-        "fontSize": "0.5344778736962739rem",
-        "left": "73%",
-        "opacity": 0.26723893684813693,
-        "top": "187.9314586964044%",
+        "opacity": 0.5484863146553177,
+        "top": "56.48339163558046%",
       }
     }
   >
@@ -1028,27 +83,27 @@ exports[`<Background /> should render correctly 1`] = `
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "0.5526902844027071s",
-        "animationDuration": "17.08153097132367s",
-        "fontSize": "1.1459234514338166rem",
+        "animationDelay": "3.8725511350357076s",
+        "animationDuration": "18.24092225116218s",
+        "fontSize": "1.087953887441891rem",
+        "left": "76%",
+        "opacity": 0.5439769437209455,
+        "top": "41.586548871187524%",
+      }
+    }
+  >
+     Cypress
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "9.363687673663062s",
+        "animationDuration": "20.994414078654188s",
+        "fontSize": "0.9502792960672906rem",
         "left": "40%",
-        "opacity": 0.5729617257169083,
-        "top": "118.86858705483263%",
-      }
-    }
-  >
-     Cypress
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "6.8638074398465445s",
-        "animationDuration": "33.98116797879339s",
-        "fontSize": "0.30094160106033047rem",
-        "left": "70%",
-        "opacity": 0.15047080053016523,
-        "top": "63.66108608867626%",
+        "opacity": 0.4751396480336453,
+        "top": "83.91759027146792%",
       }
     }
   >
@@ -1058,957 +113,12 @@ exports[`<Background /> should render correctly 1`] = `
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "9.826844069566716s",
-        "animationDuration": "25.765368829269583s",
-        "fontSize": "0.7117315585365209rem",
-        "left": "83%",
-        "opacity": 0.35586577926826046,
-        "top": "45.447305841625464%",
-      }
-    }
-  >
-     Visx
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "8.251176526274456s",
-        "animationDuration": "21.217628356160407s",
-        "fontSize": "0.9391185821919796rem",
-        "left": "46%",
-        "opacity": 0.4695592910959898,
-        "top": "42.398734669216196%",
-      }
-    }
-  >
-     HTML
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "3.901727804460264s",
-        "animationDuration": "25.48235723345868s",
-        "fontSize": "0.7258821383270662rem",
-        "left": "14%",
-        "opacity": 0.3629410691635331,
-        "top": "44.20415631430669%",
-      }
-    }
-  >
-     CSS
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "5.899222970943313s",
-        "animationDuration": "22.917191881868106s",
-        "fontSize": "0.8541404059065947rem",
-        "left": "44%",
-        "opacity": 0.42707020295329734,
-        "top": "4.311859090311102%",
-      }
-    }
-  >
-     TailwindCSS
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "1.5234150990666266s",
-        "animationDuration": "20.798006116773593s",
-        "fontSize": "0.9600996941613205rem",
-        "left": "34%",
-        "opacity": 0.48004984708066023,
-        "top": "51.51232908997465%",
-      }
-    }
-  >
-     Node
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "16.751600650036664s",
-        "animationDuration": "19.28626045406368s",
-        "fontSize": "1.035686977296816rem",
-        "left": "90%",
-        "opacity": 0.517843488648408,
-        "top": "34.29886837714047%",
-      }
-    }
-  >
-     Express
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "5.093007822492341s",
-        "animationDuration": "19.9000914948617s",
-        "fontSize": "1.0049954252569149rem",
-        "left": "54%",
-        "opacity": 0.5024977126284574,
-        "top": "222.997128026951%",
-      }
-    }
-  >
-     AWS Serverless
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "16.999907584096604s",
-        "animationDuration": "27.625517340178778s",
-        "fontSize": "0.618724132991061rem",
-        "left": "79%",
-        "opacity": 0.3093620664955305,
-        "top": "33.224035872544995%",
-      }
-    }
-  >
-     CI/CD
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "4.409534215391033s",
-        "animationDuration": "20.42839506841061s",
-        "fontSize": "0.9785802465794695rem",
-        "left": "99%",
-        "opacity": 0.48929012328973476,
-        "top": "18.665135037733453%",
-      }
-    }
-  >
-     Git
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "7.738811205563158s",
-        "animationDuration": "19.89632375062117s",
-        "fontSize": "1.0051838124689414rem",
-        "left": "75%",
-        "opacity": 0.5025919062344707,
-        "top": "16.77039564546439%",
-      }
-    }
-  >
-     Bash
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "2.1563067151494635s",
-        "animationDuration": "18.36955625964316s",
-        "fontSize": "1.081522187017842rem",
-        "left": "36%",
-        "opacity": 0.540761093508921,
-        "top": "103.18985042878434%",
-      }
-    }
-  >
-     GitHub
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "4.564500203967046s",
-        "animationDuration": "32.35300411122655s",
-        "fontSize": "0.38234979443867256rem",
-        "left": "28%",
-        "opacity": 0.19117489721933628,
-        "top": "20.221367566976415%",
-      }
-    }
-  >
-     Azure DevOps
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "4.821465337720293s",
-        "animationDuration": "15.653860767731542s",
-        "fontSize": "1.2173069616134229rem",
-        "left": "83%",
-        "opacity": 0.6,
-        "top": "77.69507472082556%",
-      }
-    }
-  >
-     Agile/Scrum/Kanban
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "1.0795831436021512s",
-        "animationDuration": "15.922870019836752s",
-        "fontSize": "1.2038564990081624rem",
-        "left": "66%",
-        "opacity": 0.6,
-        "top": "180.771635700797%",
-      }
-    }
-  >
-     SEO
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "4.997214154095747s",
-        "animationDuration": "24.928850736128325s",
-        "fontSize": "0.7535574631935836rem",
-        "left": "44%",
-        "opacity": 0.3767787315967918,
-        "top": "1.686624335586837%",
-      }
-    }
-  >
-    JavaScript
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "3.5650155309895912s",
-        "animationDuration": "25.84779328869412s",
-        "fontSize": "0.707610335565294rem",
-        "left": "47%",
-        "opacity": 0.353805167782647,
-        "top": "285.0388043783952%",
-      }
-    }
-  >
-     TypeScript
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.8969894763562438s",
-        "animationDuration": "19.55800968462984s",
-        "fontSize": "1.022099515768508rem",
-        "left": "77%",
-        "opacity": 0.511049757884254,
-        "top": "185.90302857069167%",
-      }
-    }
-  >
-     React
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "1.8489996914259776s",
-        "animationDuration": "32.14965012436378s",
-        "fontSize": "0.392517493781811rem",
-        "left": "70%",
-        "opacity": 0.1962587468909055,
-        "top": "172.57629878376991%",
-      }
-    }
-  >
-     Redux
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "12.371672042504162s",
-        "animationDuration": "17.981544049849603s",
-        "fontSize": "1.1009227975075198rem",
-        "left": "1%",
-        "opacity": 0.5504613987537599,
-        "top": "47.45387033370947%",
-      }
-    }
-  >
-     Jest
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "1.5361003561232598s",
-        "animationDuration": "25.01987275287217s",
-        "fontSize": "0.7490063623563914rem",
-        "left": "84%",
-        "opacity": 0.3745031811781957,
-        "top": "91.7662828043887%",
-      }
-    }
-  >
-     Cypress
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.3549331153016322s",
-        "animationDuration": "18.26322589579339s",
-        "fontSize": "1.0868387052103305rem",
-        "left": "70%",
-        "opacity": 0.5434193526051653,
-        "top": "52.456833599433416%",
-      }
-    }
-  >
-     D3
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "6.237154673010113s",
-        "animationDuration": "20.589583649620028s",
-        "fontSize": "0.9705208175189985rem",
-        "left": "13%",
-        "opacity": 0.4852604087594993,
-        "top": "10.03268541803764%",
-      }
-    }
-  >
-     Visx
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.13388002777159871s",
-        "animationDuration": "18.92859394069099s",
-        "fontSize": "1.0535703029654504rem",
-        "left": "79%",
-        "opacity": 0.5267851514827252,
-        "top": "13.22950997633566%",
-      }
-    }
-  >
-     HTML
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "8.764687268507634s",
-        "animationDuration": "22.774560501175532s",
-        "fontSize": "0.8612719749412234rem",
-        "left": "26%",
-        "opacity": 0.4306359874706117,
-        "top": "58.62889579997159%",
-      }
-    }
-  >
-     CSS
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "9.210761044975078s",
-        "animationDuration": "32.23912135423818s",
-        "fontSize": "0.3880439322880911rem",
-        "left": "44%",
-        "opacity": 0.19402196614404554,
-        "top": "35.98522639201102%",
-      }
-    }
-  >
-     TailwindCSS
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.07189741103054262s",
-        "animationDuration": "28.90979695004132s",
-        "fontSize": "0.5545101524979341rem",
-        "left": "34%",
-        "opacity": 0.27725507624896706,
-        "top": "77.8604227175327%",
-      }
-    }
-  >
-     Node
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "15.179974553978177s",
-        "animationDuration": "30.049354637084118s",
-        "fontSize": "0.497532268145794rem",
-        "left": "28%",
-        "opacity": 0.248766134072897,
-        "top": "100.90735141165827%",
-      }
-    }
-  >
-     Express
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "10.657845385821636s",
-        "animationDuration": "15.413942274940226s",
-        "fontSize": "1.2293028862529887rem",
-        "left": "65%",
-        "opacity": 0.6,
-        "top": "0.22472833738382533%",
-      }
-    }
-  >
-     AWS Serverless
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "2.636115677710436s",
-        "animationDuration": "18.633259038215492s",
-        "fontSize": "1.0683370480892254rem",
-        "left": "9%",
-        "opacity": 0.5341685240446127,
-        "top": "185.5644395494037%",
-      }
-    }
-  >
-     CI/CD
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "2.001299499223947s",
-        "animationDuration": "25.290050541763343s",
-        "fontSize": "0.7354974729118329rem",
-        "left": "82%",
-        "opacity": 0.36774873645591644,
-        "top": "102.91082563329563%",
-      }
-    }
-  >
-     Git
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.29255250248013864s",
-        "animationDuration": "22.522442137485864s",
-        "fontSize": "0.8738778931257067rem",
-        "left": "86%",
-        "opacity": 0.43693894656285337,
-        "top": "77.80126035526075%",
-      }
-    }
-  >
-     Bash
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "1.9039239732058615s",
-        "animationDuration": "31.528213101006088s",
-        "fontSize": "0.4235893449496956rem",
-        "left": "60%",
-        "opacity": 0.2117946724748478,
-        "top": "20.092575736966932%",
-      }
-    }
-  >
-     GitHub
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "10.549385709544369s",
-        "animationDuration": "31.716745772671203s",
-        "fontSize": "0.4141627113664399rem",
-        "left": "49%",
-        "opacity": 0.20708135568321995,
-        "top": "78.71882186479667%",
-      }
-    }
-  >
-     Azure DevOps
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "8.760466189893746s",
-        "animationDuration": "31.937882927386703s",
-        "fontSize": "0.40310585363066487rem",
-        "left": "8%",
-        "opacity": 0.20155292681533243,
-        "top": "17.394886089309665%",
-      }
-    }
-  >
-     Agile/Scrum/Kanban
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "2.039530733943548s",
-        "animationDuration": "28.80184963737742s",
-        "fontSize": "0.559907518131129rem",
-        "left": "32%",
-        "opacity": 0.2799537590655645,
-        "top": "68.00843664297618%",
-      }
-    }
-  >
-     SEO
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "3.164922295201119s",
-        "animationDuration": "23.539336006990048s",
-        "fontSize": "0.8230331996504976rem",
-        "left": "45%",
-        "opacity": 0.4115165998252488,
-        "top": "22.0703236368468%",
-      }
-    }
-  >
-    JavaScript
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "3.439066244262897s",
-        "animationDuration": "25.62325985556868s",
-        "fontSize": "0.718837007221566rem",
-        "left": "75%",
-        "opacity": 0.359418503610783,
-        "top": "11.002255514253548%",
-      }
-    }
-  >
-     TypeScript
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.4577776421934336s",
-        "animationDuration": "32.521005758379076s",
-        "fontSize": "0.37394971208104616rem",
-        "left": "21%",
-        "opacity": 0.18697485604052308,
-        "top": "374.5546689753846%",
-      }
-    }
-  >
-     React
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "9.217773119849488s",
-        "animationDuration": "24.694583345138177s",
-        "fontSize": "0.765270832743091rem",
-        "left": "36%",
-        "opacity": 0.3826354163715455,
-        "top": "13.515182692778732%",
-      }
-    }
-  >
-     Redux
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "16.576005717259545s",
-        "animationDuration": "20.444776281291578s",
-        "fontSize": "0.9777611859354212rem",
-        "left": "79%",
-        "opacity": 0.4888805929677106,
-        "top": "11.844339745543286%",
-      }
-    }
-  >
-     Jest
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.36030844413378976s",
-        "animationDuration": "19.9276130912697s",
-        "fontSize": "1.003619345436515rem",
-        "left": "74%",
-        "opacity": 0.5018096727182575,
-        "top": "89.79841985103506%",
-      }
-    }
-  >
-     Cypress
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.77702169162554s",
-        "animationDuration": "31.579662952110752s",
-        "fontSize": "0.42101685239446235rem",
-        "left": "70%",
-        "opacity": 0.21050842619723117,
-        "top": "144.58512975522848%",
-      }
-    }
-  >
-     D3
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "8.154455473285942s",
-        "animationDuration": "18.06172163613667s",
-        "fontSize": "1.0969139181931664rem",
-        "left": "8%",
-        "opacity": 0.5484569590965832,
-        "top": "47.69043326734017%",
-      }
-    }
-  >
-     Visx
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "7.170550109172397s",
-        "animationDuration": "24.32009487763255s",
-        "fontSize": "0.7839952561183725rem",
-        "left": "55%",
-        "opacity": 0.39199762805918625,
-        "top": "2.101005774910284%",
-      }
-    }
-  >
-     HTML
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "7.720261799512009s",
-        "animationDuration": "33.49879663799421s",
-        "fontSize": "0.32506016810028954rem",
-        "left": "82%",
-        "opacity": 0.16253008405014477,
-        "top": "117.50206872889181%",
-      }
-    }
-  >
-     CSS
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "18.106103264558882s",
-        "animationDuration": "33.36617019943654s",
-        "fontSize": "0.3316914900281731rem",
-        "left": "87%",
-        "opacity": 0.16584574501408655,
-        "top": "145.9344302820594%",
-      }
-    }
-  >
-     TailwindCSS
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "9.974235548424867s",
-        "animationDuration": "21.218589055358446s",
-        "fontSize": "0.9390705472320777rem",
-        "left": "28%",
-        "opacity": 0.46953527361603886,
-        "top": "125.01395698912489%",
-      }
-    }
-  >
-     Node
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "1.1634436835677118s",
-        "animationDuration": "27.104417517889114s",
-        "fontSize": "0.6447791241055443rem",
-        "left": "57%",
-        "opacity": 0.32238956205277214,
-        "top": "97.49779769014174%",
-      }
-    }
-  >
-     Express
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "6.9000199974279965s",
-        "animationDuration": "29.023461632625466s",
-        "fontSize": "0.5488269183687267rem",
-        "left": "36%",
-        "opacity": 0.27441345918436333,
-        "top": "322.7855145031419%",
-      }
-    }
-  >
-     AWS Serverless
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "2.1107775583219452s",
-        "animationDuration": "20.025982268274085s",
-        "fontSize": "0.9987008865862959rem",
+        "animationDelay": "2.4354724613960537s",
+        "animationDuration": "33.3771707031032s",
+        "fontSize": "0.33114146484484036rem",
         "left": "39%",
-        "opacity": 0.4993504432931479,
-        "top": "214.4970361813538%",
-      }
-    }
-  >
-     CI/CD
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "3.489629403541281s",
-        "animationDuration": "18.041646128907335s",
-        "fontSize": "1.0979176935546333rem",
-        "left": "83%",
-        "opacity": 0.5489588467773167,
-        "top": "17.868627348156355%",
-      }
-    }
-  >
-     Git
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.3513005552545461s",
-        "animationDuration": "19.342812731602898s",
-        "fontSize": "1.032859363419855rem",
-        "left": "54%",
-        "opacity": 0.5164296817099275,
-        "top": "50.74272351209497%",
-      }
-    }
-  >
-     Bash
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "1.436298117676071s",
-        "animationDuration": "30.95972955549999s",
-        "fontSize": "0.4520135222250006rem",
-        "left": "84%",
-        "opacity": 0.2260067611125003,
-        "top": "157.60326145548407%",
-      }
-    }
-  >
-     GitHub
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "17.817894055071665s",
-        "animationDuration": "19.076490703720708s",
-        "fontSize": "1.0461754648139645rem",
-        "left": "40%",
-        "opacity": 0.5230877324069823,
-        "top": "48.202600579663645%",
-      }
-    }
-  >
-     Azure DevOps
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "8.564332650488243s",
-        "animationDuration": "23.597114221354538s",
-        "fontSize": "0.8201442889322732rem",
-        "left": "58%",
-        "opacity": 0.4100721444661366,
-        "top": "16.669030178767258%",
-      }
-    }
-  >
-     Agile/Scrum/Kanban
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "7.065510785376191s",
-        "animationDuration": "23.67439193308749s",
-        "fontSize": "0.8162804033456255rem",
-        "left": "0%",
-        "opacity": 0.40814020167281273,
-        "top": "28.667329684576558%",
-      }
-    }
-  >
-     SEO
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "0.418031277008879s",
-        "animationDuration": "15.916859463411704s",
-        "fontSize": "1.2041570268294148rem",
-        "left": "57%",
-        "opacity": 0.6,
-        "top": "5.726775410915936%",
-      }
-    }
-  >
-    JavaScript
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "3.6158710593784056s",
-        "animationDuration": "24.926069498840945s",
-        "fontSize": "0.7536965250579528rem",
-        "left": "31%",
-        "opacity": 0.3768482625289764,
-        "top": "18.113113891695534%",
-      }
-    }
-  >
-     TypeScript
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "4.397855454552237s",
-        "animationDuration": "23.49829905547288s",
-        "fontSize": "0.825085047226356rem",
-        "left": "18%",
-        "opacity": 0.412542523613178,
-        "top": "15.06071943715458%",
-      }
-    }
-  >
-     React
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "7.7032795925261395s",
-        "animationDuration": "15.361894146194972s",
-        "fontSize": "1.2319052926902514rem",
-        "left": "59%",
-        "opacity": 0.6,
-        "top": "287.71555739613893%",
-      }
-    }
-  >
-     Redux
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "8.129495663027711s",
-        "animationDuration": "25.016889704486328s",
-        "fontSize": "0.7491555147756837rem",
-        "left": "21%",
-        "opacity": 0.3745777573878418,
-        "top": "0.8191057154816054%",
-      }
-    }
-  >
-     Jest
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "1.9191717511676365s",
-        "animationDuration": "24.32777344594248s",
-        "fontSize": "0.7836113277028759rem",
-        "left": "64%",
-        "opacity": 0.39180566385143795,
-        "top": "132.3862784119944%",
-      }
-    }
-  >
-     Cypress
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "3.6610677296532343s",
-        "animationDuration": "20.287301447002164s",
-        "fontSize": "0.9856349276498917rem",
-        "left": "66%",
-        "opacity": 0.49281746382494585,
-        "top": "0.7065894620317761%",
-      }
-    }
-  >
-     D3
-  </div>
-  <div
-    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
-    style={
-      {
-        "animationDelay": "6.913391845132376s",
-        "animationDuration": "32.856921190333075s",
-        "fontSize": "0.3571539404833463rem",
-        "left": "54%",
-        "opacity": 0.17857697024167316,
-        "top": "40.24311799512429%",
+        "opacity": 0.16557073242242018,
+        "top": "211.72436713629892%",
       }
     }
   >
@@ -2018,12 +128,12 @@ exports[`<Background /> should render correctly 1`] = `
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "10.557506782299619s",
-        "animationDuration": "20.745270038971118s",
-        "fontSize": "0.9627364980514441rem",
-        "left": "17%",
-        "opacity": 0.48136824902572206,
-        "top": "67.29919792922925%",
+        "animationDelay": "16.347410802829103s",
+        "animationDuration": "31.65378058183552s",
+        "fontSize": "0.417310970908224rem",
+        "left": "96%",
+        "opacity": 0.208655485454112,
+        "top": "20.429643654777173%",
       }
     }
   >
@@ -2033,12 +143,12 @@ exports[`<Background /> should render correctly 1`] = `
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "9.983914861590131s",
-        "animationDuration": "28.99430362431097s",
-        "fontSize": "0.5502848187844516rem",
-        "left": "17%",
-        "opacity": 0.2751424093922258,
-        "top": "65.97519613070773%",
+        "animationDelay": "6.90073235210431s",
+        "animationDuration": "28.573965563842094s",
+        "fontSize": "0.5713017218078952rem",
+        "left": "19%",
+        "opacity": 0.2856508609039476,
+        "top": "93.48956508396309%",
       }
     }
   >
@@ -2048,12 +158,12 @@ exports[`<Background /> should render correctly 1`] = `
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "0.9679646646359956s",
-        "animationDuration": "19.18874524111871s",
-        "fontSize": "1.0405627379440645rem",
-        "left": "82%",
-        "opacity": 0.5202813689720323,
-        "top": "42.379875542380304%",
+        "animationDelay": "9.524551186754532s",
+        "animationDuration": "29.9030025998572s",
+        "fontSize": "0.50484987000714rem",
+        "left": "53%",
+        "opacity": 0.25242493500357,
+        "top": "459.288470696662%",
       }
     }
   >
@@ -2063,12 +173,12 @@ exports[`<Background /> should render correctly 1`] = `
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "12.543214224235042s",
-        "animationDuration": "19.806968008234648s",
-        "fontSize": "1.0096515995882676rem",
-        "left": "35%",
-        "opacity": 0.5048257997941338,
-        "top": "4.736023056752875%",
+        "animationDelay": "16.0163507109598s",
+        "animationDuration": "26.65618026335535s",
+        "fontSize": "0.6671909868322325rem",
+        "left": "23%",
+        "opacity": 0.3335954934161163,
+        "top": "145.96860334917923%",
       }
     }
   >
@@ -2078,12 +188,12 @@ exports[`<Background /> should render correctly 1`] = `
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "4.497569078992315s",
-        "animationDuration": "31.982936398213305s",
-        "fontSize": "0.4008531800893347rem",
-        "left": "38%",
-        "opacity": 0.20042659004466734,
-        "top": "152.25349162558626%",
+        "animationDelay": "5.621064948562127s",
+        "animationDuration": "20.906673376497018s",
+        "fontSize": "0.9546663311751491rem",
+        "left": "74%",
+        "opacity": 0.47733316558757455,
+        "top": "38.09163869124462%",
       }
     }
   >
@@ -2093,12 +203,12 @@ exports[`<Background /> should render correctly 1`] = `
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "4.397527466564939s",
-        "animationDuration": "28.847352075580623s",
-        "fontSize": "0.5576323962209688rem",
-        "left": "14%",
-        "opacity": 0.2788161981104844,
-        "top": "35.96297361123596%",
+        "animationDelay": "0.5803238300819422s",
+        "animationDuration": "15.785009494427413s",
+        "fontSize": "1.2107495252786293rem",
+        "left": "64%",
+        "opacity": 0.6,
+        "top": "38.4088323628631%",
       }
     }
   >
@@ -2108,12 +218,12 @@ exports[`<Background /> should render correctly 1`] = `
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "2.1507784745813416s",
-        "animationDuration": "17.487017797924107s",
-        "fontSize": "1.1256491101037946rem",
+        "animationDelay": "7.565961374368046s",
+        "animationDuration": "26.632487104199324s",
+        "fontSize": "0.6683756447900338rem",
         "left": "25%",
-        "opacity": 0.5628245550518973,
-        "top": "170.27481447099237%",
+        "opacity": 0.3341878223950169,
+        "top": "29.071801432040832%",
       }
     }
   >
@@ -2123,12 +233,12 @@ exports[`<Background /> should render correctly 1`] = `
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "16.836096213045597s",
-        "animationDuration": "16.534850173827675s",
-        "fontSize": "1.1732574913086162rem",
-        "left": "44%",
-        "opacity": 0.5866287456543081,
-        "top": "20.607487935832356%",
+        "animationDelay": "4.2056545335708675s",
+        "animationDuration": "21.314060902123263s",
+        "fontSize": "0.9342969548938369rem",
+        "left": "45%",
+        "opacity": 0.46714847744691845,
+        "top": "165.19638747578819%",
       }
     }
   >
@@ -2138,12 +248,12 @@ exports[`<Background /> should render correctly 1`] = `
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "4.692839086557337s",
-        "animationDuration": "22.68479763030722s",
-        "fontSize": "0.8657601184846391rem",
-        "left": "31%",
-        "opacity": 0.43288005924231954,
-        "top": "39.109853034151584%",
+        "animationDelay": "0.05271114635912816s",
+        "animationDuration": "23.904377875398424s",
+        "fontSize": "0.8047811062300787rem",
+        "left": "89%",
+        "opacity": 0.40239055311503935,
+        "top": "372.6589996511615%",
       }
     }
   >
@@ -2153,12 +263,12 @@ exports[`<Background /> should render correctly 1`] = `
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "13.084526589567215s",
-        "animationDuration": "17.983655595928468s",
-        "fontSize": "1.1008172202035766rem",
-        "left": "67%",
-        "opacity": 0.5504086101017883,
-        "top": "212.27615347668583%",
+        "animationDelay": "2.0745852016618223s",
+        "animationDuration": "16.038312622120788s",
+        "fontSize": "1.1980843688939606rem",
+        "left": "15%",
+        "opacity": 0.5990421844469803,
+        "top": "14.139958721218914%",
       }
     }
   >
@@ -2168,12 +278,12 @@ exports[`<Background /> should render correctly 1`] = `
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "4.7705054587463405s",
-        "animationDuration": "18.87258844149215s",
-        "fontSize": "1.0563705779253925rem",
-        "left": "81%",
-        "opacity": 0.5281852889626962,
-        "top": "13.427209081468332%",
+        "animationDelay": "1.3503199311995007s",
+        "animationDuration": "31.924016584374186s",
+        "fontSize": "0.4037991707812906rem",
+        "left": "17%",
+        "opacity": 0.2018995853906453,
+        "top": "23.360783079258752%",
       }
     }
   >
@@ -2183,12 +293,12 @@ exports[`<Background /> should render correctly 1`] = `
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "3.8980971289717665s",
-        "animationDuration": "31.12570537213628s",
-        "fontSize": "0.44371473139318607rem",
-        "left": "64%",
-        "opacity": 0.22185736569659303,
-        "top": "49.164312368210446%",
+        "animationDelay": "0.31159386159882363s",
+        "animationDuration": "16.974604525792415s",
+        "fontSize": "1.1512697737103792rem",
+        "left": "97%",
+        "opacity": 0.5756348868551896,
+        "top": "108.11489409169357%",
       }
     }
   >
@@ -2198,12 +308,1902 @@ exports[`<Background /> should render correctly 1`] = `
     className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
     style={
       {
-        "animationDelay": "11.850520672870966s",
-        "animationDuration": "23.723540360386977s",
-        "fontSize": "0.8138229819806511rem",
+        "animationDelay": "2.659350072312633s",
+        "animationDuration": "29.033878912504576s",
+        "fontSize": "0.548306054374771rem",
+        "left": "95%",
+        "opacity": 0.2741530271873855,
+        "top": "39.19278187177005%",
+      }
+    }
+  >
+     SEO
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "2.448459700962625s",
+        "animationDuration": "18.573765062688s",
+        "fontSize": "1.0713117468656rem",
+        "left": "7%",
+        "opacity": 0.5356558734328,
+        "top": "186.5939733446382%",
+      }
+    }
+  >
+    JavaScript
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "5.422942276019826s",
+        "animationDuration": "23.689360761101707s",
+        "fontSize": "0.8155319619449146rem",
+        "left": "39%",
+        "opacity": 0.4077659809724573,
+        "top": "18.75882913867976%",
+      }
+    }
+  >
+     TypeScript
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "12.443511469874437s",
+        "animationDuration": "31.808569628205625s",
+        "fontSize": "0.40957151858971885rem",
+        "left": "50%",
+        "opacity": 0.20478575929485943,
+        "top": "68.1254580093581%",
+      }
+    }
+  >
+     React
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "17.326938549456024s",
+        "animationDuration": "22.088453239390947s",
+        "fontSize": "0.8955773380304526rem",
+        "left": "51%",
+        "opacity": 0.4477886690152263,
+        "top": "108.7657206665305%",
+      }
+    }
+  >
+     Redux
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "3.2623874457666875s",
+        "animationDuration": "22.015295971829836s",
+        "fontSize": "0.8992352014085081rem",
+        "left": "84%",
+        "opacity": 0.44961760070425405,
+        "top": "41.02452116169331%",
+      }
+    }
+  >
+     Jest
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "2.728090181101403s",
+        "animationDuration": "28.711354721847016s",
+        "fontSize": "0.5644322639076491rem",
+        "left": "29%",
+        "opacity": 0.28221613195382456,
+        "top": "3.82084309944154%",
+      }
+    }
+  >
+     Cypress
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "2.1697549283257094s",
+        "animationDuration": "30.717339659951026s",
+        "fontSize": "0.46413301700244863rem",
+        "left": "97%",
+        "opacity": 0.23206650850122432,
+        "top": "16.301216407554943%",
+      }
+    }
+  >
+     D3
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "13.196077186993328s",
+        "animationDuration": "23.855267140512986s",
+        "fontSize": "0.8072366429743507rem",
+        "left": "38%",
+        "opacity": 0.40361832148717536,
+        "top": "161.33821497421314%",
+      }
+    }
+  >
+     Visx
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.6630186216506738s",
+        "animationDuration": "22.834121828427975s",
+        "fontSize": "0.8582939085786012rem",
+        "left": "98%",
+        "opacity": 0.4291469542893006,
+        "top": "61.12458887510307%",
+      }
+    }
+  >
+     HTML
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "1.650016977420335s",
+        "animationDuration": "18.103583586368863s",
+        "fontSize": "1.0948208206815568rem",
+        "left": "94%",
+        "opacity": 0.5474104103407784,
+        "top": "166.1823138667641%",
+      }
+    }
+  >
+     CSS
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "4.576227126954128s",
+        "animationDuration": "15.347823807664142s",
+        "fontSize": "1.2326088096167929rem",
+        "left": "87%",
+        "opacity": 0.6,
+        "top": "334.0793319039283%",
+      }
+    }
+  >
+     TailwindCSS
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "6.299129030853887s",
+        "animationDuration": "31.81002652104826s",
+        "fontSize": "0.40949867394758693rem",
+        "left": "9%",
+        "opacity": 0.20474933697379347,
+        "top": "301.2551724699059%",
+      }
+    }
+  >
+     Node
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "7.150124168396818s",
+        "animationDuration": "24.377032068008873s",
+        "fontSize": "0.7811483965995564rem",
+        "left": "87%",
+        "opacity": 0.3905741982997782,
+        "top": "155.66780437126778%",
+      }
+    }
+  >
+     Express
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "8.851861082690291s",
+        "animationDuration": "18.848709828597435s",
+        "fontSize": "1.0575645085701282rem",
+        "left": "37%",
+        "opacity": 0.5287822542850641,
+        "top": "13.437127852064403%",
+      }
+    }
+  >
+     AWS Serverless
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "5.276682824168431s",
+        "animationDuration": "33.307336402299896s",
+        "fontSize": "0.3346331798850052rem",
+        "left": "34%",
+        "opacity": 0.1673165899425026,
+        "top": "3.512935133747356%",
+      }
+    }
+  >
+     CI/CD
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "2.95836869024771s",
+        "animationDuration": "32.6975008007264s",
+        "fontSize": "0.36512495996368rem",
+        "left": "60%",
+        "opacity": 0.18256247998184,
+        "top": "47.16772308612164%",
+      }
+    }
+  >
+     Git
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "17.028355733408528s",
+        "animationDuration": "16.198471151870997s",
+        "fontSize": "1.19007644240645rem",
+        "left": "31%",
+        "opacity": 0.595038221203225,
+        "top": "260.6107244627831%",
+      }
+    }
+  >
+     Bash
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "2.9324067407141525s",
+        "animationDuration": "21.323455985616526s",
+        "fontSize": "0.9338272007191737rem",
+        "left": "27%",
+        "opacity": 0.46691360035958684,
+        "top": "3.2434643165880788%",
+      }
+    }
+  >
+     GitHub
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "1.6238575961851203s",
+        "animationDuration": "18.01102626933579s",
+        "fontSize": "1.0994486865332105rem",
+        "left": "74%",
+        "opacity": 0.5497243432666052,
+        "top": "83.65835574357475%",
+      }
+    }
+  >
+     Azure DevOps
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "3.081132957577862s",
+        "animationDuration": "28.165253421940683s",
+        "fontSize": "0.591737328902966rem",
+        "left": "14%",
+        "opacity": 0.295868664451483,
+        "top": "119.9231054187748%",
+      }
+    }
+  >
+     Agile/Scrum/Kanban
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "2.421562649675725s",
+        "animationDuration": "16.428002924431716s",
+        "fontSize": "1.1785998537784141rem",
+        "left": "19%",
+        "opacity": 0.5892999268892071,
+        "top": "0.7162504515497966%",
+      }
+    }
+  >
+     SEO
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "2.81953856671871s",
+        "animationDuration": "22.524123049165844s",
+        "fontSize": "0.8737938475417077rem",
+        "left": "90%",
+        "opacity": 0.4368969237708539,
+        "top": "1.937424462200454%",
+      }
+    }
+  >
+    JavaScript
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "2.6491579522607718s",
+        "animationDuration": "22.456497086282855s",
+        "fontSize": "0.8771751456858572rem",
+        "left": "2%",
+        "opacity": 0.4385875728429286,
+        "top": "52.630894240047276%",
+      }
+    }
+  >
+     TypeScript
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "3.9854099228268267s",
+        "animationDuration": "30.002247658036527s",
+        "fontSize": "0.49988761709817353rem",
+        "left": "28%",
+        "opacity": 0.24994380854908677,
+        "top": "101.11510670165462%",
+      }
+    }
+  >
+     React
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "8.219224006812942s",
+        "animationDuration": "31.84729123028594s",
+        "fontSize": "0.40763543848570305rem",
+        "left": "19%",
+        "opacity": 0.20381771924285152,
+        "top": "781.1337472414245%",
+      }
+    }
+  >
+     Redux
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.19104406768485307s",
+        "animationDuration": "21.48229212815145s",
+        "fontSize": "0.9258853935924276rem",
+        "left": "12%",
+        "opacity": 0.4629426967962138,
+        "top": "17.290695046208405%",
+      }
+    }
+  >
+     Jest
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "5.850811072435384s",
+        "animationDuration": "16.765812056514857s",
+        "fontSize": "1.1617093971742571rem",
+        "left": "84%",
+        "opacity": 0.5808546985871286,
+        "top": "238.43160576153974%",
+      }
+    }
+  >
+     Cypress
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.39638952491011126s",
+        "animationDuration": "28.085396627771395s",
+        "fontSize": "0.5957301686114301rem",
+        "left": "57%",
+        "opacity": 0.29786508430571507,
+        "top": "100.1839877570809%",
+      }
+    }
+  >
+     D3
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "5.995482725028593s",
+        "animationDuration": "25.82506573766821s",
+        "fontSize": "0.7087467131165894rem",
+        "left": "26%",
+        "opacity": 0.3543733565582947,
+        "top": "24.99528959597247%",
+      }
+    }
+  >
+     Visx
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "1.0505754189806038s",
+        "animationDuration": "29.399726473548377s",
+        "fontSize": "0.5300136763225811rem",
+        "left": "73%",
+        "opacity": 0.26500683816129056,
+        "top": "17.575267115963566%",
+      }
+    }
+  >
+     HTML
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "1.5612647019505037s",
+        "animationDuration": "25.49839500465808s",
+        "fontSize": "0.7250802497670962rem",
+        "left": "69%",
+        "opacity": 0.3625401248835481,
+        "top": "55.99122624322782%",
+      }
+    }
+  >
+     CSS
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "6.41718663675654s",
+        "animationDuration": "28.146209389537233s",
+        "fontSize": "0.5926895305231382rem",
+        "left": "38%",
+        "opacity": 0.2963447652615691,
+        "top": "82.5454105548996%",
+      }
+    }
+  >
+     TailwindCSS
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.5839133943860184s",
+        "animationDuration": "27.112069114429772s",
+        "fontSize": "0.6443965442785113rem",
         "left": "61%",
-        "opacity": 0.40691149099032553,
-        "top": "78.53327640554296%",
+        "opacity": 0.32219827213925567,
+        "top": "328.369601727715%",
+      }
+    }
+  >
+     Node
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.020982416924340334s",
+        "animationDuration": "19.65995288936235s",
+        "fontSize": "1.0170023555318823rem",
+        "left": "58%",
+        "opacity": 0.5085011777659412,
+        "top": "135.02524057216493%",
+      }
+    }
+  >
+     Express
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "3.163572121090558s",
+        "animationDuration": "25.846979330125208s",
+        "fontSize": "0.7076510334937396rem",
+        "left": "4%",
+        "opacity": 0.3538255167468698,
+        "top": "349.9798746160876%",
+      }
+    }
+  >
+     AWS Serverless
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "1.343239980608535s",
+        "animationDuration": "20.605221437269293s",
+        "fontSize": "0.9697389281365354rem",
+        "left": "18%",
+        "opacity": 0.4848694640682677,
+        "top": "58.51462645236176%",
+      }
+    }
+  >
+     CI/CD
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.315858576513535s",
+        "animationDuration": "19.907842259047293s",
+        "fontSize": "1.0046078870476354rem",
+        "left": "29%",
+        "opacity": 0.5023039435238177,
+        "top": "55.25497927869751%",
+      }
+    }
+  >
+     Git
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "1.4891160377656203s",
+        "animationDuration": "17.491128486449007s",
+        "fontSize": "1.1254435756775496rem",
+        "left": "48%",
+        "opacity": 0.5627217878387748,
+        "top": "44.66063948353873%",
+      }
+    }
+  >
+     Bash
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "12.309786660338418s",
+        "animationDuration": "24.4379106934681s",
+        "fontSize": "0.7781044653265949rem",
+        "left": "56%",
+        "opacity": 0.38905223266329747,
+        "top": "37.703245420195906%",
+      }
+    }
+  >
+     GitHub
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "3.751950470015508s",
+        "animationDuration": "18.868874262323956s",
+        "fontSize": "1.056556286883802rem",
+        "left": "64%",
+        "opacity": 0.528278143441901,
+        "top": "152.65272898432366%",
+      }
+    }
+  >
+     Azure DevOps
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.7802264051590309s",
+        "animationDuration": "18.775795084919974s",
+        "fontSize": "1.0612102457540014rem",
+        "left": "13%",
+        "opacity": 0.5306051228770007,
+        "top": "15.988256562824526%",
+      }
+    }
+  >
+     Agile/Scrum/Kanban
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "1.9803454885451255s",
+        "animationDuration": "19.33183330098908s",
+        "fontSize": "1.033408334950546rem",
+        "left": "64%",
+        "opacity": 0.516704167475273,
+        "top": "71.1763791302205%",
+      }
+    }
+  >
+     SEO
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "11.304670740781951s",
+        "animationDuration": "23.541605913440456s",
+        "fontSize": "0.8229197043279772rem",
+        "left": "61%",
+        "opacity": 0.4114598521639886,
+        "top": "29.34286143655669%",
+      }
+    }
+  >
+    JavaScript
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "10.238319841187609s",
+        "animationDuration": "27.3019732250685s",
+        "fontSize": "0.634901338746575rem",
+        "left": "76%",
+        "opacity": 0.3174506693732875,
+        "top": "272.3273653283394%",
+      }
+    }
+  >
+     TypeScript
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "18.551399714194414s",
+        "animationDuration": "24.2318760013844s",
+        "fontSize": "0.7884061999307801rem",
+        "left": "21%",
+        "opacity": 0.39420309996539005,
+        "top": "8.512006710477761%",
+      }
+    }
+  >
+     React
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "5.057076353246516s",
+        "animationDuration": "22.635801187186118s",
+        "fontSize": "0.868209940640694rem",
+        "left": "35%",
+        "opacity": 0.434104970320347,
+        "top": "2.851751365365057%",
+      }
+    }
+  >
+     Redux
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "15.141398169678975s",
+        "animationDuration": "17.651413072975075s",
+        "fontSize": "1.1174293463512464rem",
+        "left": "19%",
+        "opacity": 0.5587146731756232,
+        "top": "237.0932116493114%",
+      }
+    }
+  >
+     Jest
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "9.585240323949936s",
+        "animationDuration": "15.76510389359572s",
+        "fontSize": "1.211744805320214rem",
+        "left": "17%",
+        "opacity": 0.6,
+        "top": "236.4844391264953%",
+      }
+    }
+  >
+     Cypress
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.8830817813184944s",
+        "animationDuration": "31.569562929580112s",
+        "fontSize": "0.4215218535209943rem",
+        "left": "63%",
+        "opacity": 0.21076092676049715,
+        "top": "45.13995990785192%",
+      }
+    }
+  >
+     D3
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "6.455070718994749s",
+        "animationDuration": "29.335023806013556s",
+        "fontSize": "0.5332488096993222rem",
+        "left": "63%",
+        "opacity": 0.2666244048496611,
+        "top": "39.283548595829494%",
+      }
+    }
+  >
+     Visx
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.5200809127445848s",
+        "animationDuration": "23.349154819306705s",
+        "fontSize": "0.8325422590346647rem",
+        "left": "6%",
+        "opacity": 0.41627112951733236,
+        "top": "119.2404753998777%",
+      }
+    }
+  >
+     HTML
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "9.115091504241173s",
+        "animationDuration": "33.80676325537181s",
+        "fontSize": "0.3096618372314093rem",
+        "left": "46%",
+        "opacity": 0.15483091861570464,
+        "top": "7.966911206636536%",
+      }
+    }
+  >
+     CSS
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "2.098198081203505s",
+        "animationDuration": "18.705290844338197s",
+        "fontSize": "1.06473545778309rem",
+        "left": "0%",
+        "opacity": 0.532367728891545,
+        "top": "145.2853399722102%",
+      }
+    }
+  >
+     TailwindCSS
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "8.044149980030136s",
+        "animationDuration": "16.792555325244464s",
+        "fontSize": "1.1603722337377769rem",
+        "left": "23%",
+        "opacity": 0.5801861168688884,
+        "top": "103.67439267262806%",
+      }
+    }
+  >
+     Node
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "1.603135674609638s",
+        "animationDuration": "33.43887119646788s",
+        "fontSize": "0.32805644017660585rem",
+        "left": "18%",
+        "opacity": 0.16402822008830292,
+        "top": "3.12462972619167%",
+      }
+    }
+  >
+     Express
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "2.083040389596413s",
+        "animationDuration": "30.850291517704083s",
+        "fontSize": "0.4574854241147959rem",
+        "left": "25%",
+        "opacity": 0.22874271205739796,
+        "top": "328.6001337588564%",
+      }
+    }
+  >
+     AWS Serverless
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.9308028538897023s",
+        "animationDuration": "26.377076362197762s",
+        "fontSize": "0.6811461818901119rem",
+        "left": "69%",
+        "opacity": 0.34057309094505595,
+        "top": "201.09490997744004%",
+      }
+    }
+  >
+     CI/CD
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "16.73090189516038s",
+        "animationDuration": "25.493468778025555s",
+        "fontSize": "0.7253265610987223rem",
+        "left": "4%",
+        "opacity": 0.36266328054936114,
+        "top": "243.51379108428563%",
+      }
+    }
+  >
+     Git
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "15.490655893291233s",
+        "animationDuration": "30.229542276054772s",
+        "fontSize": "0.48852288619726136rem",
+        "left": "43%",
+        "opacity": 0.24426144309863068,
+        "top": "52.26337431634116%",
+      }
+    }
+  >
+     Bash
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.6118633381593316s",
+        "animationDuration": "31.036339768701097s",
+        "fontSize": "0.4481830115649451rem",
+        "left": "99%",
+        "opacity": 0.22409150578247256,
+        "top": "9.049618734867984%",
+      }
+    }
+  >
+     GitHub
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "2.4868086978405484s",
+        "animationDuration": "33.611348307272756s",
+        "fontSize": "0.3194325846363621rem",
+        "left": "66%",
+        "opacity": 0.15971629231818105,
+        "top": "19.84656795274482%",
+      }
+    }
+  >
+     Azure DevOps
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "5.546558593989994s",
+        "animationDuration": "20.559472422144452s",
+        "fontSize": "0.9720263788927774rem",
+        "left": "4%",
+        "opacity": 0.4860131894463887,
+        "top": "81.27906618543287%",
+      }
+    }
+  >
+     Agile/Scrum/Kanban
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "13.692132303769274s",
+        "animationDuration": "18.37432963344679s",
+        "fontSize": "1.0812835183276603rem",
+        "left": "17%",
+        "opacity": 0.5406417591638302,
+        "top": "33.40509534894051%",
+      }
+    }
+  >
+     SEO
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "2.350208944093717s",
+        "animationDuration": "29.59492314917319s",
+        "fontSize": "0.5202538425413407rem",
+        "left": "92%",
+        "opacity": 0.26012692127067033,
+        "top": "220.3609532085319%",
+      }
+    }
+  >
+    JavaScript
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "4.13149231646673s",
+        "animationDuration": "15.18461966855936s",
+        "fontSize": "1.240769016572032rem",
+        "left": "52%",
+        "opacity": 0.6,
+        "top": "19.99810126265606%",
+      }
+    }
+  >
+     TypeScript
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "10.699101956660229s",
+        "animationDuration": "19.145035571026412s",
+        "fontSize": "1.0427482214486794rem",
+        "left": "70%",
+        "opacity": 0.5213741107243397,
+        "top": "322.5739072902144%",
+      }
+    }
+  >
+     React
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "7.110155887473847s",
+        "animationDuration": "32.53467866879577s",
+        "fontSize": "0.3732660665602114rem",
+        "left": "40%",
+        "opacity": 0.1866330332801057,
+        "top": "114.7246944767958%",
+      }
+    }
+  >
+     Redux
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "3.8486637928873835s",
+        "animationDuration": "32.50701167055357s",
+        "fontSize": "0.37464941647232175rem",
+        "left": "80%",
+        "opacity": 0.18732470823616088,
+        "top": "139.63067319185492%",
+      }
+    }
+  >
+     Jest
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "8.015089657514917s",
+        "animationDuration": "31.569715057889965s",
+        "fontSize": "0.4215142471055018rem",
+        "left": "9%",
+        "opacity": 0.2107571235527509,
+        "top": "133.2799099680245%",
+      }
+    }
+  >
+     Cypress
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "4.709096200278769s",
+        "animationDuration": "21.994093322939293s",
+        "fontSize": "0.9002953338530353rem",
+        "left": "20%",
+        "opacity": 0.45014766692651764,
+        "top": "33.05639886354644%",
+      }
+    }
+  >
+     D3
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "17.42602301591789s",
+        "animationDuration": "28.505860149130406s",
+        "fontSize": "0.5747069925434798rem",
+        "left": "20%",
+        "opacity": 0.2873534962717399,
+        "top": "235.7928881055227%",
+      }
+    }
+  >
+     Visx
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "3.2130929360622216s",
+        "animationDuration": "16.65084922520043s",
+        "fontSize": "1.1674575387399784rem",
+        "left": "92%",
+        "opacity": 0.5837287693699892,
+        "top": "58.06137828045041%",
+      }
+    }
+  >
+     HTML
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.9154516216188929s",
+        "animationDuration": "25.733033080999096s",
+        "fontSize": "0.7133483459500451rem",
+        "left": "18%",
+        "opacity": 0.3566741729750226,
+        "top": "19.528212507270663%",
+      }
+    }
+  >
+     CSS
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "7.349068331938064s",
+        "animationDuration": "24.757508702472947s",
+        "fontSize": "0.7621245648763526rem",
+        "left": "1%",
+        "opacity": 0.3810622824381763,
+        "top": "6.673645299847247%",
+      }
+    }
+  >
+     TailwindCSS
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "11.658368131800373s",
+        "animationDuration": "31.27524105607438s",
+        "fontSize": "0.43623794719628106rem",
+        "left": "87%",
+        "opacity": 0.21811897359814053,
+        "top": "246.4217342724832%",
+      }
+    }
+  >
+     Node
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "2.572949726085862s",
+        "animationDuration": "21.124978073550462s",
+        "fontSize": "0.9437510963224769rem",
+        "left": "57%",
+        "opacity": 0.47187554816123845,
+        "top": "93.53085676143586%",
+      }
+    }
+  >
+     Express
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "10.113010219286803s",
+        "animationDuration": "26.205532589216773s",
+        "fontSize": "0.6897233705391616rem",
+        "left": "83%",
+        "opacity": 0.3448616852695808,
+        "top": "28.607463855159935%",
+      }
+    }
+  >
+     AWS Serverless
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "2.888320435101855s",
+        "animationDuration": "22.058184463112983s",
+        "fontSize": "0.8970907768443508rem",
+        "left": "78%",
+        "opacity": 0.4485453884221754,
+        "top": "36.34825240812377%",
+      }
+    }
+  >
+     CI/CD
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "3.0360852620074925s",
+        "animationDuration": "18.95742053915565s",
+        "fontSize": "1.0521289730422176rem",
+        "left": "56%",
+        "opacity": 0.5260644865211088,
+        "top": "135.37264124888293%",
+      }
+    }
+  >
+     Git
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "1.8847206228008049s",
+        "animationDuration": "32.78270704161513s",
+        "fontSize": "0.36086464791924344rem",
+        "left": "46%",
+        "opacity": 0.18043232395962172,
+        "top": "41.02729949680567%",
+      }
+    }
+  >
+     Bash
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "15.739783212867438s",
+        "animationDuration": "17.293842117887618s",
+        "fontSize": "1.1353078941056192rem",
+        "left": "76%",
+        "opacity": 0.5676539470528096,
+        "top": "4.0393839721507065%",
+      }
+    }
+  >
+     GitHub
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.49010408330237254s",
+        "animationDuration": "21.46969974122136s",
+        "fontSize": "0.9265150129389321rem",
+        "left": "34%",
+        "opacity": 0.46325750646946606,
+        "top": "67.30726398600083%",
+      }
+    }
+  >
+     Azure DevOps
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "1.2615630564913178s",
+        "animationDuration": "19.00508420092042s",
+        "fontSize": "1.0497457899539788rem",
+        "left": "28%",
+        "opacity": 0.5248728949769894,
+        "top": "128.0648085741006%",
+      }
+    }
+  >
+     Agile/Scrum/Kanban
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "1.0739395476230993s",
+        "animationDuration": "33.4764112200409s",
+        "fontSize": "0.32617943899795515rem",
+        "left": "2%",
+        "opacity": 0.16308971949897758,
+        "top": "399.0880497674958%",
+      }
+    }
+  >
+     SEO
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "3.4254079018524894s",
+        "animationDuration": "28.037702011531046s",
+        "fontSize": "0.5981148994234478rem",
+        "left": "96%",
+        "opacity": 0.2990574497117239,
+        "top": "110.95110442254597%",
+      }
+    }
+  >
+    JavaScript
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "8.313472986309256s",
+        "animationDuration": "28.82449281953332s",
+        "fontSize": "0.5587753590233339rem",
+        "left": "1%",
+        "opacity": 0.27938767951166693,
+        "top": "276.80716059047705%",
+      }
+    }
+  >
+     TypeScript
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "15.790966351976124s",
+        "animationDuration": "32.26080466113295s",
+        "fontSize": "0.3869597669433523rem",
+        "left": "63%",
+        "opacity": 0.19347988347167616,
+        "top": "1.9895783426279428%",
+      }
+    }
+  >
+     React
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "2.999611534615346s",
+        "animationDuration": "15.908346258818757s",
+        "fontSize": "1.2045826870590621rem",
+        "left": "35%",
+        "opacity": 0.6,
+        "top": "11.997354425327922%",
+      }
+    }
+  >
+     Redux
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "1.4560072263941202s",
+        "animationDuration": "30.85993355041079s",
+        "fontSize": "0.4570033224794605rem",
+        "left": "16%",
+        "opacity": 0.22850166123973026,
+        "top": "143.33783219787153%",
+      }
+    }
+  >
+     Jest
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "4.483029493051997s",
+        "animationDuration": "29.165961773748887s",
+        "fontSize": "0.5417019113125556rem",
+        "left": "79%",
+        "opacity": 0.2708509556562778,
+        "top": "17.679490134089907%",
+      }
+    }
+  >
+     Cypress
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "5.237571734762362s",
+        "animationDuration": "33.0690409060038s",
+        "fontSize": "0.3465479546998099rem",
+        "left": "69%",
+        "opacity": 0.17327397734990496,
+        "top": "214.20401692109627%",
+      }
+    }
+  >
+     D3
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "1.9168032432238766s",
+        "animationDuration": "16.666658444989764s",
+        "fontSize": "1.1666670777505117rem",
+        "left": "80%",
+        "opacity": 0.5833335388752559,
+        "top": "91.03974233609837%",
+      }
+    }
+  >
+     Visx
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.48798419998844694s",
+        "animationDuration": "24.544122766955866s",
+        "fontSize": "0.7727938616522068rem",
+        "left": "96%",
+        "opacity": 0.3863969308261034,
+        "top": "53.33788566610221%",
+      }
+    }
+  >
+     HTML
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "8.700088030162524s",
+        "animationDuration": "24.704236104313306s",
+        "fontSize": "0.7647881947843348rem",
+        "left": "29%",
+        "opacity": 0.3823940973921674,
+        "top": "24.212517119483348%",
+      }
+    }
+  >
+     CSS
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "2.7023821864393223s",
+        "animationDuration": "18.300600475954205s",
+        "fontSize": "1.0849699762022897rem",
+        "left": "68%",
+        "opacity": 0.5424849881011449,
+        "top": "49.929602287263286%",
+      }
+    }
+  >
+     TailwindCSS
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "9.184316579151577s",
+        "animationDuration": "18.525399312793706s",
+        "fontSize": "1.0737300343603147rem",
+        "left": "0%",
+        "opacity": 0.5368650171801573,
+        "top": "590.7365092488229%",
+      }
+    }
+  >
+     Node
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "16.45253176386274s",
+        "animationDuration": "15.107934611848686s",
+        "fontSize": "1.2446032694075657rem",
+        "left": "81%",
+        "opacity": 0.6,
+        "top": "62.487569774474714%",
+      }
+    }
+  >
+     Express
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.11396207081003924s",
+        "animationDuration": "28.447432306232045s",
+        "fontSize": "0.5776283846883978rem",
+        "left": "22%",
+        "opacity": 0.2888141923441989,
+        "top": "74.38692568736778%",
+      }
+    }
+  >
+     AWS Serverless
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "1.0308047306353698s",
+        "animationDuration": "28.33161219010786s",
+        "fontSize": "0.583419390494607rem",
+        "left": "33%",
+        "opacity": 0.2917096952473035,
+        "top": "5.66765780746348%",
+      }
+    }
+  >
+     CI/CD
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.610949159860028s",
+        "animationDuration": "20.40576329368488s",
+        "fontSize": "0.9797118353157559rem",
+        "left": "14%",
+        "opacity": 0.48985591765787795,
+        "top": "2.7463270127210313%",
+      }
+    }
+  >
+     Git
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.350049450462807s",
+        "animationDuration": "26.77169367855155s",
+        "fontSize": "0.6614153160724225rem",
+        "left": "42%",
+        "opacity": 0.33070765803621127,
+        "top": "66.2135161290342%",
+      }
+    }
+  >
+     Bash
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "3.450844602616008s",
+        "animationDuration": "20.62879993620853s",
+        "fontSize": "0.9685600031895736rem",
+        "left": "31%",
+        "opacity": 0.4842800015947868,
+        "top": "13.516705086403164%",
+      }
+    }
+  >
+     GitHub
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.05603820177301445s",
+        "animationDuration": "31.2276283339974s",
+        "fontSize": "0.43861858330013rem",
+        "left": "35%",
+        "opacity": 0.219309291650065,
+        "top": "529.0589760752589%",
+      }
+    }
+  >
+     Azure DevOps
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "3.3111327128555166s",
+        "animationDuration": "24.485681165770764s",
+        "fontSize": "0.7757159417114619rem",
+        "left": "2%",
+        "opacity": 0.3878579708557309,
+        "top": "95.0311409749851%",
+      }
+    }
+  >
+     Agile/Scrum/Kanban
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.7865794649808018s",
+        "animationDuration": "28.58459483369662s",
+        "fontSize": "0.570770258315169rem",
+        "left": "78%",
+        "opacity": 0.2853851291575845,
+        "top": "569.3702756741225%",
+      }
+    }
+  >
+     SEO
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "5.777470397765282s",
+        "animationDuration": "28.52803516829589s",
+        "fontSize": "0.5735982415852054rem",
+        "left": "87%",
+        "opacity": 0.2867991207926027,
+        "top": "5.036140079746517%",
+      }
+    }
+  >
+    JavaScript
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "1.4995943094176791s",
+        "animationDuration": "17.13855534934161s",
+        "fontSize": "1.1430722325329197rem",
+        "left": "89%",
+        "opacity": 0.5715361162664598,
+        "top": "0.8371396266704983%",
+      }
+    }
+  >
+     TypeScript
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "16.714583680539306s",
+        "animationDuration": "17.660006420970884s",
+        "fontSize": "1.1169996789514558rem",
+        "left": "83%",
+        "opacity": 0.5584998394757279,
+        "top": "96.40990587415389%",
+      }
+    }
+  >
+     React
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "6.0388659000891955s",
+        "animationDuration": "24.280523983299773s",
+        "fontSize": "0.7859738008350116rem",
+        "left": "95%",
+        "opacity": 0.3929869004175058,
+        "top": "175.20996046583937%",
+      }
+    }
+  >
+     Redux
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "1.3265939078119457s",
+        "animationDuration": "16.92690938713204s",
+        "fontSize": "1.153654530643398rem",
+        "left": "60%",
+        "opacity": 0.576827265321699,
+        "top": "224.98560530500512%",
+      }
+    }
+  >
+     Jest
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "6.664643897930347s",
+        "animationDuration": "15.358508838949557s",
+        "fontSize": "1.232074558052522rem",
+        "left": "97%",
+        "opacity": 0.6,
+        "top": "30.069874526638056%",
+      }
+    }
+  >
+     Cypress
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "3.0485649515605386s",
+        "animationDuration": "23.35643635759383s",
+        "fontSize": "0.8321781821203085rem",
+        "left": "29%",
+        "opacity": 0.41608909106015424,
+        "top": "40.4586000484111%",
+      }
+    }
+  >
+     D3
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "2.7253992309765427s",
+        "animationDuration": "29.562536913284955s",
+        "fontSize": "0.5218731543357522rem",
+        "left": "38%",
+        "opacity": 0.2609365771678761,
+        "top": "113.79755641953702%",
+      }
+    }
+  >
+     Visx
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "2.586011397911429s",
+        "animationDuration": "27.363049378444654s",
+        "fontSize": "0.6318475310777674rem",
+        "left": "61%",
+        "opacity": 0.3159237655388837,
+        "top": "55.6088185943284%",
+      }
+    }
+  >
+     HTML
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "5.4604178332232545s",
+        "animationDuration": "18.36661326619664s",
+        "fontSize": "1.081669336690168rem",
+        "left": "31%",
+        "opacity": 0.540834668345084,
+        "top": "81.10525326238648%",
+      }
+    }
+  >
+     CSS
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "6.101018593233493s",
+        "animationDuration": "23.163667712234698s",
+        "fontSize": "0.841816614388265rem",
+        "left": "3%",
+        "opacity": 0.4209083071941325,
+        "top": "43.072694577127606%",
+      }
+    }
+  >
+     TailwindCSS
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "10.48762679134802s",
+        "animationDuration": "27.787967276159442s",
+        "fontSize": "0.6106016361920279rem",
+        "left": "79%",
+        "opacity": 0.30530081809601395,
+        "top": "193.3834443149904%",
+      }
+    }
+  >
+     Node
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "1.8963271364218348s",
+        "animationDuration": "23.10704096364447s",
+        "fontSize": "0.8446479518177765rem",
+        "left": "54%",
+        "opacity": 0.42232397590888826,
+        "top": "22.822800347914747%",
+      }
+    }
+  >
+     Express
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "5.849336722482271s",
+        "animationDuration": "30.285965080003248s",
+        "fontSize": "0.48570174599983773rem",
+        "left": "12%",
+        "opacity": 0.24285087299991887,
+        "top": "77.56845418144137%",
+      }
+    }
+  >
+     AWS Serverless
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.061113094369168036s",
+        "animationDuration": "29.768095928530116s",
+        "fontSize": "0.5115952035734942rem",
+        "left": "40%",
+        "opacity": 0.2557976017867471,
+        "top": "88.08306347515952%",
+      }
+    }
+  >
+     CI/CD
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "0.09815883359895199s",
+        "animationDuration": "15.387282389963941s",
+        "fontSize": "1.230635880501803rem",
+        "left": "93%",
+        "opacity": 0.6,
+        "top": "62.77717543846949%",
+      }
+    }
+  >
+     Git
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "10.73643430550784s",
+        "animationDuration": "29.227477801406224s",
+        "fontSize": "0.5386261099296888rem",
+        "left": "30%",
+        "opacity": 0.2693130549648444,
+        "top": "9.495330653153246%",
+      }
+    }
+  >
+     Bash
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "14.671165270951374s",
+        "animationDuration": "20.977651314216036s",
+        "fontSize": "0.9511174342891981rem",
+        "left": "78%",
+        "opacity": 0.4755587171445991,
+        "top": "130.08920169499757%",
+      }
+    }
+  >
+     GitHub
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "2.308633598393499s",
+        "animationDuration": "15.664841477303257s",
+        "fontSize": "1.2167579261348371rem",
+        "left": "54%",
+        "opacity": 0.6,
+        "top": "40.89156334665491%",
+      }
+    }
+  >
+     Azure DevOps
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "1.5594048531232403s",
+        "animationDuration": "30.52592937544894s",
+        "fontSize": "0.47370353122755315rem",
+        "left": "21%",
+        "opacity": 0.23685176561377658,
+        "top": "38.83515272861755%",
+      }
+    }
+  >
+     Agile/Scrum/Kanban
+  </div>
+  <div
+    className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main"
+    style={
+      {
+        "animationDelay": "8.826013162012705s",
+        "animationDuration": "18.128293051797026s",
+        "fontSize": "1.0935853474101487rem",
+        "left": "79%",
+        "opacity": 0.5467926737050743,
+        "top": "221.33610382741958%",
       }
     }
   >
