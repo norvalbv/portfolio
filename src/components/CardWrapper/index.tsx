@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import Header from 'components/Header';
 import { classNames } from 'utils';
 
-type CardWrapperProps = {
+export type CardWrapperProps = {
   className?: string;
   children: JSX.Element | JSX.Element[];
   title: string;
