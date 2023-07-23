@@ -4,14 +4,20 @@ import { useRandomReveal } from 'hooks/useRandomReveal';
 const Landing = (): ReactElement => {
   const heading = useRandomReveal({
     isPlaying: true,
-    duration: 2,
+    duration: 1,
     characters: 'Hello',
   });
 
   const heading2 = useRandomReveal({
     isPlaying: true,
-    duration: 4,
+    duration: 3,
     characters: 'I am Benjamin',
+  });
+
+  const summary = useRandomReveal({
+    isPlaying: true,
+    duration: 5,
+    characters: 'A 24 year old Full Stack Developer from the United Kingdom',
   });
 
   return (
@@ -24,9 +30,7 @@ const Landing = (): ReactElement => {
           <br />
           {heading2}
         </h1>
-        <h2 className="text-sm leading-7 tracking-wide">
-          A 24 year old Full Stack Developer from the United Kingdom
-        </h2>
+        <h2 className="text-sm leading-7 tracking-wide">{summary}</h2>
       </div>
     </div>
   );

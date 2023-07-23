@@ -44,6 +44,7 @@ const ContactDetails = (): ReactElement => {
           {contact.key}:&nbsp;
           <a
             rel="noreferrer"
+            target="_blank"
             href={contact.hrefLink}
             className="my-4 underline transition duration-150 ease-linear hover:text-accent-secondary"
           >
