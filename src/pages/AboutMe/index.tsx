@@ -13,8 +13,8 @@ const AboutMe = (): ReactElement => {
         Experienced Full Stack software engineer with 3 years of experience in web development. I am
         part of the core team that developed the entire&nbsp;
         <StyledLink label="Elysia" link="https://elysia.co" />
-        &nbsp;&#40;a WAE subsidiary&#41; cloud platform. I would love for you to check out my
-        projects and even reach out!
+        &nbsp;(a WAE subsidiary) cloud platform. I would love for you to check out my projects and
+        even reach out!
       </p>
       <p className="my-10 text-accent-secondary">
         My skills? They&apos;re floating around on the background. Have a look around &#58;&#41;
