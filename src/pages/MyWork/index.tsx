@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import CardWrapper from 'components/CardWrapper';
 import CodeLink from 'components/CodeLink';
-import { PARISN_DESCRIPTION, PARISN_SKILLS, WEATHER_APP_SKILL } from 'constants';
+import { PARISN_DESCRIPTION, PARISN_SKILLS, WEATHER_APP_SKILL } from 'constants/index';
 import StyledLink from 'components/StyledLink';
 import WeatherApp from '../../../public/WeatherAppHomepage.png';
 import ParisnHomepage from '../../../public/ParisnHomepage.png';

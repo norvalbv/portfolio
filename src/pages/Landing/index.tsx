@@ -10,13 +10,13 @@ const Landing = (): ReactElement => {
 
   const heading2 = useRandomReveal({
     isPlaying: true,
-    duration: 3,
+    duration: 2,
     characters: 'I am Benjamin',
   });
 
   const summary = useRandomReveal({
     isPlaying: true,
-    duration: 5,
+    duration: 3,
     characters: 'A 24 year old Full Stack Developer from the United Kingdom',
   });
 

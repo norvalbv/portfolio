@@ -1,11 +1,17 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Accordion from '..';
+import CardWrapper from '..';
 
-describe('<Accordion />', () => {
-  test('should render correctly', () => {
-    const tree = renderer.create(<Accordion title="Test Title">Test Content</Accordion>).toJSON();
+describe('<CardWrapper />', () => {
+  test('should render correctly with mandatory props', () => {
+    const tree = renderer
+      .create(
+        <CardWrapper title="Test Title">
+          <div>Child</div>
+        </CardWrapper>
+      )
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

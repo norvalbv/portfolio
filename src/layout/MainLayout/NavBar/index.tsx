@@ -1,5 +1,5 @@
 import React, { useState, ReactElement } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import useTheme from 'hooks/useTheme';
 import { classNames } from 'utils';
 import ThemeToggle from 'components/ThemeToggle';
@@ -10,6 +10,7 @@ import BenjaminNorvalWhite from '../../../../public/BenjaminNorvalWhite.png';
 const NavBar = (): ReactElement => {
   const [navOpen, setNavOpen] = useState(false);
   const { isDarkMode } = useTheme();
+  const navigate = useNavigate();
 
   const navbarTabs = [
     { id: '/', title: 'Home' },
@@ -24,8 +25,9 @@ const NavBar = (): ReactElement => {
         <div className="hidden items-center justify-between lg:flex">
           <img
             src={isDarkMode ? BenjaminNorvalWhite : BenjaminNorvalBlack}
-            className="h-4 md:w-32 lg:w-40"
+            className="h-4 cursor-pointer md:w-32 lg:w-40"
             alt="Benjamin Norval logo"
+            onClick={(): void => navigate('/')}
           />
           <ul className="flex flex-1 cursor-pointer justify-center space-x-10 text-sm">
             {navbarTabs.map((tab) => (
@@ -47,8 +49,9 @@ const NavBar = (): ReactElement => {
         <div className="right-0 flex max-w-screen-xl flex-wrap items-center justify-between p-4 lg:hidden">
           <img
             src={isDarkMode ? BenjaminNorvalWhite : BenjaminNorvalBlack}
-            className="h-4 w-32"
+            className="h-4 w-32 cursor-pointer"
             alt="Benjamin Norval logo"
+            onClick={(): void => navigate('/')}
           />
           <div className="flex flex-row-reverse items-center">
             <Hamburger onclick={(): void => setNavOpen(!navOpen)} />
