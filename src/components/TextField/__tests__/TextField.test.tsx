@@ -16,8 +16,6 @@ describe('<TextField />', () => {
       <TextFieldWithAllProps
         autoComplete="on"
         autoFocus={false}
-        autoValidate
-        border
         className="underline"
         dataAtt="Test DataAtt"
         disabled
@@ -34,12 +32,8 @@ describe('<TextField />', () => {
         onClick={jest.fn()}
         placeholder="placeholder"
         required
-        rounded="sm"
-        size="base"
         type="text"
         value={30}
-        labelColour="text-neutral-N400"
-        textColour="text-neutral-N400"
       >
         <div>Child</div>
       </TextFieldWithAllProps>
