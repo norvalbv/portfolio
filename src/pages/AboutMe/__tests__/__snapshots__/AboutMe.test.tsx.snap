@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AboutMe /> should render correctly 1`] = `
+<div
+  className="relative top-[-4rem] z-10 mx-auto min-h-screen grid w-10/12 min-w-[20rem] place-items-center text-center"
+>
+  <div>
+    <header
+      className="flex items-center justify-between"
+    >
+      <section
+        className="flex w-full flex-col gap-1"
+      >
+        <h2
+          className="mb-10 text-4xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl"
+        >
+          l
+          c
+          h
+          q
+          v
+          q
+          i
+          n
+        </h2>
+      </section>
+    </header>
+    <p
+      className="text-lg"
+    >
+      Experienced Full Stack software engineer with 3 years of experience in web development. I am part of the core team that developed the entire 
+      <a
+        className="text-accent-secondary hover:underline"
+        href="https://elysia.co"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        Elysia
+      </a>
+       (a WAE subsidiary) cloud platform. I would love for you to check out my projects and even reach out!
+    </p>
+    <p
+      className="my-10 text-accent-secondary"
+    >
+      My skills? They're floating around on the background. Have a look around :)
+    </p>
+    <p
+      className="mx-auto w-6/12 min-w-[16rem] rounded border border-light-text bg-black/20 p-4 text-xs dark:border-dark-text dark:bg-white/20"
+    >
+      OR for ease, they are: 
+      JavaScript, TypeScript, React, Redux, Jest, Cypress, D3, Visx, HTML, CSS, TailwindCSS, Node, Express, AWS Serverless, CI/CD, Git, Bash, GitHub, Azure DevOps, Agile/Scrum/Kanban, SEO
+    </p>
+  </div>
+</div>
+`;

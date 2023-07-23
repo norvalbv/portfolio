@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CodeLink /> should render correctly with all props 1`] = `
+<div
+  className="group bg-red-500"
+>
+  <a
+    className="items-center justify-center gap-2 lg:flex"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <p
+      className="animate-fall text-xs text-white opacity-100 duration-300 lg:opacity-0 lg:group-hover:opacity-100"
+    >
+      View Code
+    </p>
+  </a>
+</div>
+`;
+
+exports[`<CodeLink /> should render correctly with mandatory props 1`] = `
+<div
+  className="group"
+>
+  <a
+    className="items-center justify-center gap-2 lg:flex"
+    href="/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <p
+      className="animate-fall text-xs text-white opacity-100 duration-300 lg:opacity-0 lg:group-hover:opacity-100"
+    >
+      View Code
+    </p>
+    <svg
+      className="hidden cursor-pointer lg:block"
+      fill="none"
+      height={20}
+      stroke="currentColor"
+      strokeWidth={1.5}
+      viewBox="0 0 24 24"
+      width={20}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </a>
+</div>
+`;

@@ -27,16 +27,12 @@ describe('<Header />', () => {
       .create(
         <BrowserRouter>
           <HeaderWithAllProps
-            link={{ to: '/', title: 'Test Title' }}
             className="grid grid-cols-1 gap-1"
             title="Test title"
-            titleTestId="Custom title test id"
             titleClassName="text-h2"
             subtitle="Test subtitle"
-            subtitleTestId="Custom subtitle test id"
             subtitleClassName="text-sm"
             description="Test Description"
-            descriptionTestId="Test Description Id"
             descriptionClassName="text-neutral-N00"
           />
         </BrowserRouter>

@@ -15,16 +15,16 @@ exports[`<CardWrapper /> should render correctly with all props 1`] = `
         <h2
           className="text-blue-500 mb-10 text-4xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl"
         >
-          j
-          h
-          t
-          z
-          x
           v
-          e
-          x
-          r
+          d
+          u
+          w
+          h
+          q
+          q
+          f
           t
+          q
         </h2>
         <h4
           className="text-body text-neutral-N300 truncate"
@@ -61,16 +61,16 @@ exports[`<CardWrapper /> should render correctly with mandatory props 1`] = `
         <h2
           className="mb-10 text-4xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl"
         >
-          x
           v
+          t
+          d
+          m
+          a
+          b
+          t
+          p
           u
           l
-          s
-          x
-          f
-          p
-          h
-          z
         </h2>
       </section>
     </header>

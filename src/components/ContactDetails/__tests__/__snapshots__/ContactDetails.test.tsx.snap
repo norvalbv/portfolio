@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContactDetails /> should render correctly  1`] = `
+<div
+  className="flex flex-col gap-2 rounded-lg bg-white/70 p-6 dark:bg-dark-dark/30 lg:w-2/5"
+>
+  <h2
+    className="mb-6 underline underline-offset-8"
+  >
+    Contact Details:
+  </h2>
+  <p
+    className="mb-6"
+  >
+    If you would like to contact me directly;
+  </p>
+  <span
+    className="my-2"
+  >
+    Email
+    : 
+    <a
+      className="my-4 underline transition duration-150 ease-linear hover:text-accent-secondary"
+      href="mailto:benjinorval@gmail.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      benjinorval@gmail.com
+    </a>
+  </span>
+  <span
+    className="my-2"
+  >
+    Phone
+    : 
+    <a
+      className="my-4 underline transition duration-150 ease-linear hover:text-accent-secondary"
+      href="tel:+447508719043"
+      rel="noreferrer"
+      target="_blank"
+    >
+      (+44) 7508719043
+    </a>
+  </span>
+  <span
+    className="my-2"
+  >
+    Linked In
+    : 
+    <a
+      className="my-4 underline transition duration-150 ease-linear hover:text-accent-secondary"
+      href="https://www.linkedin.com/in/benjamin-norval/"
+      rel="noreferrer"
+      target="_blank"
+    >
+      Benjamin Norval
+    </a>
+  </span>
+  <span
+    className="my-2"
+  >
+    GitHub
+    : 
+    <a
+      className="my-4 underline transition duration-150 ease-linear hover:text-accent-secondary"
+      href="https://github.com/norvalbv/"
+      rel="noreferrer"
+      target="_blank"
+    >
+      norvalbv
+    </a>
+  </span>
+  <p
+    className="mt-6 italic"
+  >
+    I look forward to hearing from you!
+  </p>
+</div>
+`;

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StyledLink /> should render correctly with mandatory props 1`] = `
+<a
+  className="text-accent-secondary hover:underline"
+  href="/"
+  rel="noreferrer noopener"
+  target="_blank"
+>
+  Test Label
+</a>
+`;

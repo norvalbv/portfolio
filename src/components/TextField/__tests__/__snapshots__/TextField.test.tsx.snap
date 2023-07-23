@@ -8,14 +8,16 @@ exports[`<TextField /> should render correctly with all props 1`] = `
     className="mb-2 flex justify-between"
   >
     <div
-      className="text-body leading-6 text-neutral-N400"
+      className="text-light-text dark:text-dark-text"
     >
       <label
-        className="block"
+        className="flex"
         htmlFor="Test Id"
       >
         Test Label
-        <span>
+        <span
+          className="ml-1 text-xs text-accent-secondary"
+        >
           *
         </span>
       </label>
@@ -29,12 +31,11 @@ exports[`<TextField /> should render correctly with all props 1`] = `
     </div>
   </div>
   <div
-    className="bg-neutral-N100 text-sm"
     onClick={[MockFunction]}
   >
     <textarea
       autoComplete="on"
-      className="transform-all w-full resize-none appearance-none border px-6 py-4 leading-5 text-neutral-N400 outline-none transition-all ease-productive placeholder:text-neutral-N300 focus:outline-none focus:ring-transparent border-red-R500 h-[15rem] rounded-sm"
+      className="appearance-none rounded focus:text-accent-secondary focus:outline focus:outline-light-text focus:ring-transparent dark:focus:outline-dark-text borber-b w-full bg-dark-dark/20 p-4 transition-[height] duration-300 dark:bg-white/20 h-52"
       data-testid="Test DataAtt"
       disabled={true}
       id="Test Id"
@@ -51,7 +52,7 @@ exports[`<TextField /> should render correctly with all props 1`] = `
     className="mt-2"
   >
     <span
-      className="block max-w-full text-sm text-red-R500"
+      className="text-red-R500 block max-w-full text-sm"
       data-testid="Test DataAtt ERROR!!"
     >
       ERROR!!
@@ -62,32 +63,25 @@ exports[`<TextField /> should render correctly with all props 1`] = `
 
 exports[`<TextField /> should render correctly with mandatory props 1`] = `
 <fieldset>
-  <div
-    className="text-sm"
-  >
+  <div>
     <div
       className="flex items-center"
     >
-      <div
-        className="flex h-14 w-full items-center justify-between border bg-neutral-N00 px-6 py-4 border-neutral-N100 focus:border-neutral-N100 rounded-sm"
-      >
-        <input
-          autoComplete="on"
-          className="appearance-none border-none p-0 text-neutral-N400 shadow-[0_0_0rem_100rem_white_inset] placeholder:text-neutral-N300 focus:ring-transparent w-full"
-          name=""
-          onBlur={[Function]}
-          onChange={[Function]}
-          placeholder=""
-          required={false}
-          style={
-            {
-              "fontSize": "inherit",
-            }
+      <input
+        autoComplete="on"
+        className="appearance-none rounded focus:text-accent-secondary focus:outline focus:outline-light-text focus:ring-transparent dark:focus:outline-dark-text borber-b h-12 w-full bg-dark-dark/20 p-4 transition-[height] duration-300 dark:bg-white/20"
+        name=""
+        onChange={[Function]}
+        placeholder=""
+        required={false}
+        style={
+          {
+            "fontSize": "inherit",
           }
-          type="text"
-          value=""
-        />
-      </div>
+        }
+        type="text"
+        value=""
+      />
     </div>
   </div>
 </fieldset>

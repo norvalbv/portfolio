@@ -14,7 +14,7 @@ describe('<Title />', () => {
   test('should render correctly with all props', () => {
     const tree = renderer
       .create(
-        <TitleWithAllProps testId="Custom title test id" className="text-h2" level={1}>
+        <TitleWithAllProps className="text-h2" level={1}>
           Test title
         </TitleWithAllProps>
       )

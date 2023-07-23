@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Landing /> should render correctly 1`] = `
+<div
+  className="relative top-[-4rem] grid h-screen place-items-center text-center uppercase"
+>
+  <div
+    className="flex flex-col gap-8"
+  >
+    <h1
+      className="mb-4 text-6xl font-semibold tracking-wide transition-colors md:text-8xl"
+    >
+      <span
+        className="mb-10 inline-block text-accent-main transition-colors duration-150"
+      >
+        k
+        o
+        v
+        l
+        z
+      </span>
+      <br />
+      x
+      n
+      r
+      h
+      r
+      u
+      h
+      v
+      i
+      n
+      k
+      y
+      z
+    </h1>
+    <h2
+      className="text-sm leading-7 tracking-wide"
+    >
+      t
+      h
+      z
+      v
+      n
+      v
+      d
+      f
+      i
+      t
+      g
+      y
+      u
+      n
+      l
+      x
+      i
+      c
+      b
+      g
+      u
+      t
+      y
+      x
+      y
+      o
+      h
+      e
+      u
+      h
+      o
+      w
+      p
+      l
+      x
+      r
+      c
+      g
+      d
+      f
+      t
+      n
+      m
+      m
+      q
+      v
+      u
+      r
+      r
+      u
+      o
+      c
+      h
+      n
+      c
+      c
+      p
+      n
+    </h2>
+  </div>
+</div>
+`;
