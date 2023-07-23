@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import CardWrapper from 'components/CardWrapper';
 import StyledLink from 'components/StyledLink';
-import { MY_SKILLS } from 'constants';
+import { MY_SKILLS } from 'constants/index';
 
 const AboutMe = (): ReactElement => {
   return (
