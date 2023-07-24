@@ -27,6 +27,8 @@ const Background = (): ReactElement => {
 
         return (
           <div
+            // Static array so index is fine.
+            // eslint-disable-next-line react/no-array-index-key
             key={i}
             className={classNames(
               'absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main'

@@ -33,8 +33,9 @@ const Header = ({
 }: HeaderProps): ReactElement | null => {
   const processedTitle = useRandomReveal({
     isPlaying: true,
-    duration: 2,
+    duration: 1,
     characters: title || '',
+    revealDuration: 0.7,
   });
 
   if (!title && !subtitle) {

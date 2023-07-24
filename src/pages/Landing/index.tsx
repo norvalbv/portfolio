@@ -6,6 +6,7 @@ const Landing = (): ReactElement => {
     isPlaying: true,
     duration: 1,
     characters: 'Hello',
+    revealDuration: 0.8,
   });
 
   const heading2 = useRandomReveal({
