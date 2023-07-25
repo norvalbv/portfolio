@@ -10,7 +10,7 @@ const MainLayout = (): ReactElement => {
       <ScrollRestoration />
       <Background />
       <NavBar />
-      <div className="mx-auto max-w-screen-xl">
+      <div className="mx-auto max-w-screen-2xl">
         <Outlet />
       </div>
       <Footer />
