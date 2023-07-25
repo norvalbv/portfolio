@@ -11,6 +11,14 @@ export default defineConfig({
       minify: true,
     }),
   ],
+  optimizeDeps: {
+    esbuildOptions: {
+      // Node.js global to browser globalThis
+      define: {
+        global: 'globalThis', // <-- AWS SDK
+      },
+    },
+  },
   server: {
     port: 7777,
   },
