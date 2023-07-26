@@ -12,10 +12,9 @@ const footerLinks = [
 
 const Footer = (): ReactElement => {
   return (
-    <footer className="relative z-10 mx-4 mt-20 rounded-lg text-center text-sm text-gray-500 dark:text-gray-400">
+    <footer className="relative text-center text-sm text-gray-500 dark:text-gray-400">
       <div className="mx-auto w-full max-w-screen-xl p-4 md:py-8">
-        <div className="flex flex-col items-center sm:flex-row-reverse sm:justify-between">
-          <p>© 2023 Designed and Created By Benjamin Norval.</p>
+        <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
           <ul className="flex items-center justify-center gap-6">
             {footerLinks.map((link) => (
               <li
@@ -28,6 +27,7 @@ const Footer = (): ReactElement => {
               </li>
             ))}
           </ul>
+          <p className="text-[10px] lg:text-sm">© 2023 Designed and Created By Benjamin Norval.</p>
         </div>
       </div>
     </footer>

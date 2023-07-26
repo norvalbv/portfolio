@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react';
 import { useRandomReveal } from 'hooks/useRandomReveal';
+import { classNames } from 'utils';
 
 const Landing = (): ReactElement => {
   const heading = useRandomReveal({
@@ -15,23 +16,29 @@ const Landing = (): ReactElement => {
     characters: 'I am Benjamin',
   });
 
+  const summaryText = 'A 24 year old Full Stack Developer from the United Kingdom';
   const summary = useRandomReveal({
     isPlaying: true,
     duration: 3,
-    characters: 'A 24 year old Full Stack Developer from the United Kingdom',
+    characters: summaryText,
   });
 
   return (
     <div className="relative top-[-4rem] grid h-screen place-items-center text-center uppercase">
-      <div className="flex flex-col gap-8">
-        <h1 className="mb-4 text-6xl font-semibold tracking-wide transition-colors md:text-8xl">
-          <span className="mb-10 inline-block text-accent-main transition-colors duration-150">
-            {heading}
-          </span>
+      <div className="flex flex-col gap-2 lg:gap-8">
+        <h1 className="mb-4 text-4xl font-semibold tracking-wide md:text-8xl lg:font-normal">
+          <span className="mb-2 inline-block text-accent-main lg:mb-6">{heading}</span>
           <br />
           {heading2}
         </h1>
-        <h2 className="text-sm leading-7 tracking-wide">{summary}</h2>
+        <h2
+          className={classNames(
+            'mx-auto w-[19.125rem] text-sm leading-7 tracking-wide md:w-10/12 lg:text-base',
+            { 'break-all': summary.join('') !== summaryText }
+          )}
+        >
+          {summary}
+        </h2>
       </div>
     </div>
   );

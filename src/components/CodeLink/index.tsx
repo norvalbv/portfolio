@@ -17,7 +17,7 @@ const CodeLink = ({ className, link, requireIcon = true }: CodeLinkProps): React
         rel="noopener noreferrer"
         className="items-center justify-center gap-2 lg:flex"
       >
-        <p className="animate-fall text-xs text-white opacity-100 duration-300 lg:opacity-0 lg:group-hover:opacity-100">
+        <p className="text-xs opacity-100 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100">
           View Code
         </p>
         {requireIcon && <CodeIcon className="hidden cursor-pointer lg:block" />}

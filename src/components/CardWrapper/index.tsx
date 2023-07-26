@@ -10,6 +10,7 @@ export type CardWrapperProps = {
   subTitle?: string;
   description?: string;
   id?: string;
+  margin?: boolean;
 };
 
 const CardWrapper = ({
@@ -20,6 +21,7 @@ const CardWrapper = ({
   children,
   title,
   id,
+  margin,
 }: CardWrapperProps): ReactElement => {
   return (
     <div
@@ -29,7 +31,7 @@ const CardWrapper = ({
       )}
       id={id}
     >
-      <div>
+      <div className={classNames({ 'mt-16 lg:mt-32': margin })}>
         <Header
           title={title}
           titleClassName={titleClassName}

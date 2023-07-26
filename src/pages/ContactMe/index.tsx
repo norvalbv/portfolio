@@ -1,5 +1,6 @@
 import React, { ReactElement, SyntheticEvent, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-hot-toast';
 import CardWrapper from 'components/CardWrapper';
 import TextField from 'components/TextField';
 import ContactDetails from 'components/ContactDetails';
@@ -15,25 +16,26 @@ const ContactMe = (): ReactElement => {
     setQuery({ ...query, [key]: value });
   };
 
+  const ref = useRef<HTMLFormElement | null>(null);
+
   const submitEmail = (e: SyntheticEvent): void => {
     e.preventDefault();
 
-    //   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY').then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+    emailjs
+      .sendForm('service_1v3ohyl', 'template_0l8ykbw', ref.current || '', 'kZwVa8pG15nw8Ivs2')
+      .then(() => {
+        setQuery({
+          name: '',
+          email: '',
+          message: '',
+        });
+        toast.success('Successfully sent!');
+      })
+      .catch(() => toast.error('Message was not able to be sent'));
   };
 
-  const ref = useRef<null | HTMLFormElement>(null);
-
-  console.log(ref?.current);
-
   return (
-    <CardWrapper title="Come Say Hi!" className="top-[2rem] w-10/12 min-w-[20rem] lg:top-[4rem]">
+    <CardWrapper title="Come Say Hi!" className="w-10/12 min-w-[20rem]" margin>
       <div className="flex flex-col gap-6 lg:flex-row">
         <form
           className="rounded-lg bg-white/70 p-6 dark:bg-dark-dark/30 lg:w-3/5"
@@ -53,6 +55,7 @@ const ContactMe = (): ReactElement => {
             onChange={(val): void => setQueryByKey('email', val)}
             required
             className="my-6"
+            type="email"
           />
           <TextField
             label="Message"

@@ -1,9 +1,14 @@
 import React, { ReactElement } from 'react';
 import { classNames } from 'utils';
 import { MY_SKILLS } from 'constants/index';
+import useWindowSize from 'hooks/useWindowSize';
 
 const Background = (): ReactElement => {
-  const skillsRepeated = Array(7).fill(MY_SKILLS.split(',')).flat();
+  const windowData = useWindowSize();
+
+  const skillsRepeated = Array(windowData.isMobile ? 3 : 7)
+    .fill(MY_SKILLS.split(','))
+    .flat();
 
   const exponentialDistribution = (num: number): number => {
     return -Math.log(1.0 - Math.random()) / num;
@@ -18,7 +23,7 @@ const Background = (): ReactElement => {
         const fontSize = Math.random() * (1.25 - 0.3) + 0.3; // Random font sie between 0.3rem and 1.25rem
 
         // const opacity = (1.05 - fontSize / 1.5).toFixed(2); // The bigger the font, the smaller the opacity (max 1)
-        const opacity = fontSize / 2; // The bigger the font, the higher the opacity (max 1)
+        const opacity = fontSize / (windowData ? 3.25 : 2.5); // The bigger the font, the higher the opacity (max 1)
         const duration = (2 - fontSize) * 20; // The smaller the font, the longer the duration of the animation
 
         // Start point of text before the animation starts.

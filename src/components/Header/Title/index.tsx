@@ -6,7 +6,7 @@ export type TitleProps = {
   children?: string | JSX.Element | Characters;
   className?: string;
   /**
-   * Default 3.
+   * Default 2.
    */
   level?: 1 | 2 | 3;
 };
@@ -36,7 +36,7 @@ const Title = ({ children, className, level = 2 }: TitleProps): ReactElement | n
       <h2
         className={classNames(
           className,
-          'mb-10 text-4xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl'
+          'mb-10 text-3xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl'
         )}
       >
         {children}
