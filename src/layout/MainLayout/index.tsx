@@ -6,7 +6,7 @@ import Footer from './Footer';
 
 const MainLayout = (): ReactElement => {
   return (
-    <div className="relative min-h-screen bg-light-neutral text-light-text dark:bg-dark-neutral dark:text-dark-text">
+    <div className="relative min-h-screen bg-gradient-to-br from-light-neutral to-[#d9cced] text-light-text dark:from-dark-neutral dark:to-[#180c3a] dark:text-dark-text">
       <ScrollRestoration />
       <Background />
       <NavBar />

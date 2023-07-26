@@ -1,4 +1,5 @@
-import React, { ReactElement, useState } from 'react';
+import React, { ReactElement, SyntheticEvent, useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import CardWrapper from 'components/CardWrapper';
 import TextField from 'components/TextField';
 import ContactDetails from 'components/ContactDetails';
@@ -14,13 +15,30 @@ const ContactMe = (): ReactElement => {
     setQuery({ ...query, [key]: value });
   };
 
+  const submitEmail = (e: SyntheticEvent): void => {
+    e.preventDefault();
+
+    //   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY').then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
+  };
+
+  const ref = useRef<null | HTMLFormElement>(null);
+
+  console.log(ref?.current);
+
   return (
     <CardWrapper title="Come Say Hi!" className="top-[2rem] w-10/12 min-w-[20rem] lg:top-[4rem]">
       <div className="flex flex-col gap-6 lg:flex-row">
         <form
-          action="https://formsubmit.co/benjinorval@gmail.com"
-          method="POST"
           className="rounded-lg bg-white/70 p-6 dark:bg-dark-dark/30 lg:w-3/5"
+          onSubmit={submitEmail}
+          ref={ref}
         >
           <h2 className="mb-6 underline underline-offset-8">Contact Form:</h2>
           <TextField
