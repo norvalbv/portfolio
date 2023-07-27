@@ -1,14 +1,15 @@
 import { v4 as uuidv4 } from 'uuid';
 
 const useGenerateUUID = (): string => {
-  let userUUID = localStorage.getItem('userUUID');
+  let userId = localStorage.getItem('userId');
 
-  if (!userUUID) {
-    userUUID = uuidv4();
-    localStorage.setItem('userUUID', userUUID);
+  if (!userId) {
+    // Only save the first 8 chars of the uuid. Won't exactly have many users so this is fine.
+    userId = uuidv4().slice(0, 7);
+    localStorage.setItem('userId', userId);
   }
 
-  return userUUID;
+  return userId;
 };
 
 export default useGenerateUUID;

@@ -1,21 +1,14 @@
-import React, { ReactElement, useEffect } from 'react';
+import React, { ReactElement } from 'react';
 import useTheme from 'hooks/useTheme';
 import { classNames } from 'utils';
-import { Outlet, useLocation } from 'react-router-dom';
-import { AsPageLoadProps, AsTrack } from 'services/AnalyticsService';
+import { Outlet } from 'react-router-dom';
 import './styles/index.css';
+import useTrackUser from 'hooks/useTrackUser';
 
 const App = (): ReactElement => {
   const { isDarkMode } = useTheme();
-  const location = useLocation();
 
-  // useEffect(() => {
-  //   const pageName = location.pathname;
-  //   const props: AsPageLoadProps = {
-  //     Path: location.pathname,
-  //   };
-  //   AsTrack(pageName, props);
-  // }, [location]);
+  useTrackUser();
 
   return (
     <div className={classNames('relative scroll-smooth', isDarkMode ? 'dark' : '')}>

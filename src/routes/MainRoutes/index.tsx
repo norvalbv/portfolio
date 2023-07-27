@@ -5,6 +5,7 @@ import Landing from 'pages/Landing';
 import AboutMe from 'pages/AboutMe';
 import MyWork from 'pages/MyWork';
 import ContactMe from 'pages/ContactMe';
+import NotFound from 'pages/NotFound';
 
 export const routes = {
   path: '/',
@@ -29,6 +30,11 @@ export const routes = {
       path: '/contact',
       element: <ContactMe />,
       name: AnalyticsEvent.Contact,
+    },
+    {
+      path: '*',
+      element: <NotFound />,
+      name: AnalyticsEvent.UnknownPage,
     },
   ],
 };

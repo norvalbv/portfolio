@@ -7,7 +7,6 @@ const NotFound = (): ReactElement => {
     duration: 2,
     characters: 'Page Not Found',
   });
-  console.log(heading);
 
   return (
     <div className="relative top-[-4rem] grid h-screen place-items-center text-center uppercase">
