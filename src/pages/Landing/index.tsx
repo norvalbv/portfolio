@@ -24,7 +24,7 @@ const Landing = (): ReactElement => {
   });
 
   return (
-    <div className="relative top-[-4rem] grid h-screen place-items-center text-center uppercase">
+    <div className="relative grid h-screen place-items-center text-center uppercase">
       <div className="flex flex-col gap-2 lg:gap-8">
         <h1 className="mb-4 text-4xl font-semibold tracking-wide md:text-8xl lg:font-normal">
           <span className="mb-2 inline-block text-accent-main lg:mb-6">{heading}</span>

@@ -2,13 +2,21 @@ import React, { ReactElement } from 'react';
 import { MoonIcon, SunIcon } from 'components/SVG';
 import useTheme from 'hooks/useTheme';
 
-const ThemeToggle = (): ReactElement => {
+type ThemeToggleProps = {
+  size?: number;
+};
+
+const ThemeToggle = ({ size = 24 }: ThemeToggleProps): ReactElement => {
   const { isDarkMode, toggleDarkMode } = useTheme();
 
   return isDarkMode ? (
-    <MoonIcon onClick={toggleDarkMode} className="cursor-pointer hover:fill-light-dark" />
+    <MoonIcon
+      onClick={toggleDarkMode}
+      className="cursor-pointer hover:fill-light-dark"
+      size={size}
+    />
   ) : (
-    <SunIcon onClick={toggleDarkMode} className="cursor-pointer hover:fill-dark-dark" />
+    <SunIcon onClick={toggleDarkMode} className="cursor-pointer hover:fill-dark-dark" size={size} />
   );
 };
 

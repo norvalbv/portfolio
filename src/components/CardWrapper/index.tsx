@@ -26,15 +26,15 @@ const CardWrapper = ({
   return (
     <div
       className={classNames(
-        'relative top-[-4rem] z-10 mx-auto min-h-screen',
+        'relative z-10 mx-auto min-h-screen',
         className || 'grid w-10/12 min-w-[20rem] place-items-center'
       )}
       id={id}
     >
-      <div className={classNames({ 'mt-16 lg:mt-32': margin })}>
+      <div>
         <Header
           title={title}
-          titleClassName={titleClassName}
+          titleClassName={classNames(titleClassName, { 'mt-20 md:mt-32': margin })}
           subtitle={subTitle}
           description={description}
         />

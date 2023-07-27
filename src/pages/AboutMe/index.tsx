@@ -2,15 +2,12 @@ import React, { ReactElement } from 'react';
 import CardWrapper from 'components/CardWrapper';
 import StyledLink from 'components/StyledLink';
 import { MY_SKILLS } from 'constants/index';
-import useWindowSize from 'hooks/useWindowSize';
 
 const AboutMe = (): ReactElement => {
-  const { isMobile } = useWindowSize();
   return (
     <CardWrapper
       title="About Me"
-      className="grid w-8/12 min-w-[20rem] text-center lg:place-items-center"
-      margin={isMobile}
+      className="grid w-8/12 min-w-[20rem] place-items-center text-center"
     >
       <p>
         Experienced Full Stack software engineer with 3 years of experience in web development. I am
