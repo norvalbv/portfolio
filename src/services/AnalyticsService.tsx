@@ -9,6 +9,8 @@ type AsInitializeProps = {
   apiHost?: string;
 };
 
+const mixpanelToken = process.env.MIXPANEL_TOKEN;
+
 /**
  * Initialises the connection to Mixpanel with the environment token from the
  */
@@ -17,7 +19,6 @@ export const AsInitialize = ({
   debug = true,
   apiHost = 'https://api-eu.mixpanel.com',
 }: AsInitializeProps): void => {
-  const mixpanelToken = process.env.MIXPANEL_TOKEN;
   if (!mixpanelToken) throw new Error('Invalid/missing MixpanelToken');
   mixpanel.init(mixpanelToken, {
     debug,

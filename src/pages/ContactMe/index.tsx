@@ -5,12 +5,9 @@ import CardWrapper from 'components/CardWrapper';
 import TextField from 'components/TextField';
 import ContactDetails from 'components/ContactDetails';
 
+const { EMAILJS_API_KEY, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID } = process.env;
+
 const ContactMe = (): ReactElement => {
-  const { EMAILJS_API_KEY, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID } = process.env;
-
-  if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_API_KEY)
-    throw new Error('keys not found');
-
   const [query, setQuery] = useState({
     name: '',
     email: '',
@@ -25,7 +22,7 @@ const ContactMe = (): ReactElement => {
     e.preventDefault();
 
     emailjs
-      .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, query, EMAILJS_API_KEY)
+      .send(EMAILJS_SERVICE_ID || '', EMAILJS_TEMPLATE_ID || '', query, EMAILJS_API_KEY)
       .then(() => {
         setQuery({
           name: '',
