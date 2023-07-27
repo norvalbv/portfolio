@@ -1,0 +1,46 @@
+import mixpanel from 'mixpanel-browser';
+import * as Analytics from 'types/analytics';
+
+// These functions are prefixed with As to namespace the AnalyticsService calls
+
+type AsInitializeProps = {
+  userId: string;
+  debug?: boolean;
+  apiHost?: string;
+};
+
+/**
+ * Initialises the connection to Mixpanel with the environment token from the
+ */
+export const AsInitialize = ({
+  userId,
+  debug = true,
+  apiHost = 'https://api-eu.mixpanel.com',
+}: AsInitializeProps): void => {
+  const mixpanelToken = 'a62092aacd11d306b3c49a47d1e062b6';
+  if (!mixpanelToken) throw new Error('Invalid/missing MixpanelToken');
+  mixpanel.init(mixpanelToken, {
+    debug,
+    api_host: apiHost,
+    track_pageview: true,
+    persistence: 'localStorage',
+  });
+
+  mixpanel.identify(userId);
+};
+
+export type AsPageLoadProps = {
+  Path: string;
+};
+
+type AsGeneralProps = {
+  Message?: string;
+  Succeeded: boolean;
+};
+
+export const AsTrack = (
+  event: Analytics.AnalyticsEvent | string,
+  props?: AsGeneralProps | AsPageLoadProps
+): void => {
+  mixpanel.track(event, props);
+};
