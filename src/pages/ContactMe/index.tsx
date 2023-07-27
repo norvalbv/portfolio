@@ -1,4 +1,4 @@
-import React, { ReactElement, SyntheticEvent, useRef, useState } from 'react';
+import React, { ReactElement, SyntheticEvent, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-hot-toast';
 import CardWrapper from 'components/CardWrapper';
@@ -6,6 +6,11 @@ import TextField from 'components/TextField';
 import ContactDetails from 'components/ContactDetails';
 
 const ContactMe = (): ReactElement => {
+  const { EMAILJS_API_KEY, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID } = process.env;
+
+  if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_API_KEY)
+    throw new Error('keys not found');
+
   const [query, setQuery] = useState({
     name: '',
     email: '',
@@ -16,13 +21,11 @@ const ContactMe = (): ReactElement => {
     setQuery({ ...query, [key]: value });
   };
 
-  const ref = useRef<HTMLFormElement | null>(null);
-
   const submitEmail = (e: SyntheticEvent): void => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_1v3ohyl', 'template_0l8ykbw', ref.current || '', 'kZwVa8pG15nw8Ivs2')
+      .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, query, EMAILJS_API_KEY)
       .then(() => {
         setQuery({
           name: '',
@@ -40,7 +43,6 @@ const ContactMe = (): ReactElement => {
         <form
           className="rounded-lg bg-white/70 p-6 dark:bg-dark-dark/30 lg:w-3/5"
           onSubmit={submitEmail}
-          ref={ref}
         >
           <h2 className="mb-6 underline underline-offset-8">Contact Form:</h2>
           <TextField
