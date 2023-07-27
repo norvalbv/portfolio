@@ -1,11 +1,23 @@
-import React, { ReactElement, createContext, useEffect, useMemo, useState } from 'react';
+import React, {
+  ReactElement,
+  createContext,
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+} from 'react';
 
 export type ThemeContextValue = {
   isDarkMode: boolean;
   toggleDarkMode: () => void;
 };
 
-const ThemeContext = createContext<ThemeContextValue | null>(null);
+const defaultThemeContext: ThemeContextValue = {
+  isDarkMode: true, // This can be whatever you want your default value to be
+  toggleDarkMode: () => {},
+};
+
+const ThemeContext = createContext<ThemeContextValue>(defaultThemeContext);
 
 type ThemeProviderProps = {
   children: JSX.Element | JSX.Element[];
@@ -18,15 +30,15 @@ export const ThemeContextProvider = ({ children }: ThemeProviderProps): ReactEle
     theme ? (JSON.parse(theme) as boolean) : true
   );
 
-  const toggleDarkMode = (): void => setIsDarkMode(!isDarkMode);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const toggleDarkMode = useCallback((): void => setIsDarkMode(!isDarkMode), []);
 
   const value = useMemo(
     () => ({
       isDarkMode,
       toggleDarkMode,
     }),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [isDarkMode]
+    [isDarkMode, toggleDarkMode]
   );
 
   useEffect(() => {
