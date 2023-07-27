@@ -1708,6 +1708,7 @@ __metadata:
     jest: ^29.6.1
     jest-environment-jsdom: ^29.6.1
     lint-staged: ^13.2.3
+    mixpanel-browser: ^2.47.0
     postcss: ^8.4.27
     prettier: ^3.0.0
     prettier-plugin-tailwindcss: ^0.4.1
@@ -5628,6 +5629,13 @@ __metadata:
     minipass: ^3.0.0
     yallist: ^4.0.0
   checksum: f1fdeac0b07cf8f30fcf12f4b586795b97be856edea22b5e9072707be51fc95d41487faec3f265b42973a304fe3a64acd91a44a3826a963e37b37bafde0212c3
+  languageName: node
+  linkType: hard
+
+"mixpanel-browser@npm:^2.47.0":
+  version: 2.47.0
+  resolution: "mixpanel-browser@npm:2.47.0"
+  checksum: f44e0e0ac70b3772ed1be7c826d3cb0ffbf2dda35e6b927a3f7167795283745ae16573ae6ba303238bf776e3a5ed72c98c3c3f97e2a3c72bcbada15b956e9e9d
   languageName: node
   linkType: hard
 
