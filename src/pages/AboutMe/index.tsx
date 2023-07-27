@@ -8,6 +8,7 @@ const AboutMe = (): ReactElement => {
     <CardWrapper
       title="About Me"
       className="grid w-8/12 min-w-[20rem] place-items-center text-center"
+      titleClassName="md:mt-20"
     >
       <p>
         Experienced Full Stack software engineer with 3 years of experience in web development. I am

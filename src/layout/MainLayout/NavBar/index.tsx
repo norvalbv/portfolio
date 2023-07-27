@@ -27,7 +27,7 @@ const NavBar = (): ReactElement => {
       role="navigation"
       aria-label="Main"
     >
-      <div className="z-50 flex flex-row-reverse items-center gap-2 lg:gap-6" role="menubar">
+      <div className="z-50 flex flex-row-reverse items-center gap-2 md:gap-6" role="menubar">
         <Hamburger
           toggled={navOpen}
           toggle={(): void => setNavOpen(!navOpen)}
@@ -45,7 +45,7 @@ const NavBar = (): ReactElement => {
         tabIndex={0}
         type="button"
         onClick={(): void => navigate('/')}
-        className="z-50 hidden h-8 md:block md:h-12"
+        className="z-50 mb-2.5 h-8 md:mb-1 md:h-12"
       >
         <img
           src={isDarkMode ? BenjaminNorvalWhite : BenjaminNorvalBlack}
