@@ -15,3 +15,8 @@ jest.mock('./services/AnalyticsService', () => {
     AsTrack: jest.fn(),
   };
 });
+
+/**
+ * Mock Math.random()
+ */
+global.Math.random = (): number => 0.314159265358979;
