@@ -5,8 +5,8 @@ import useWindowSize from 'hooks/useWindowSize';
 import { classNames } from 'utils';
 import ThemeToggle from 'components/ThemeToggle';
 import Hamburger from 'hamburger-react';
-import BenjaminNorvalBlack from 'assets/BNBlack.png';
-import BenjaminNorvalWhite from 'assets/BNWhite.png';
+import BenjaminNorvalBlack from 'assets/BNBlack.webp';
+import BenjaminNorvalWhite from 'assets/BNWhite.webp';
 
 const NavBar = (): ReactElement => {
   const [navOpen, setNavOpen] = useState(false);
