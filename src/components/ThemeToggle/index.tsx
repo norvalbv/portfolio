@@ -14,9 +14,15 @@ const ThemeToggle = ({ size = 24 }: ThemeToggleProps): ReactElement => {
       onClick={toggleDarkMode}
       className="cursor-pointer hover:fill-light-dark"
       size={size}
+      role="button"
     />
   ) : (
-    <SunIcon onClick={toggleDarkMode} className="cursor-pointer hover:fill-dark-dark" size={size} />
+    <SunIcon
+      onClick={toggleDarkMode}
+      className="cursor-pointer hover:fill-dark-dark"
+      size={size}
+      role="button"
+    />
   );
 };
 

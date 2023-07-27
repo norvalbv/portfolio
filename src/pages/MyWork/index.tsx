@@ -3,8 +3,8 @@ import CardWrapper from 'components/CardWrapper';
 import CodeLink from 'components/CodeLink';
 import { PARISN_DESCRIPTION, PARISN_SKILLS, WEATHER_APP_SKILL } from 'constants/index';
 import StyledLink from 'components/StyledLink';
-import WeatherApp from '../../../public/WeatherAppHomepage.png';
-import ParisnHomepage from '../../../public/ParisnHomepage.png';
+import WeatherApp from 'assets/WeatherAppHomepage.png';
+import ParisnHomepage from 'assets/ParisnHomepage.png';
 
 type MyWorkCardProps = {
   title: string;
