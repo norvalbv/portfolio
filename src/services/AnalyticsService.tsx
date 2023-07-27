@@ -17,7 +17,7 @@ export const AsInitialize = ({
   debug = true,
   apiHost = 'https://api-eu.mixpanel.com',
 }: AsInitializeProps): void => {
-  const mixpanelToken = 'a62092aacd11d306b3c49a47d1e062b6';
+  const mixpanelToken = process.env.MIXPANEL_TOKEN;
   if (!mixpanelToken) throw new Error('Invalid/missing MixpanelToken');
   mixpanel.init(mixpanelToken, {
     debug,
