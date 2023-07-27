@@ -8,7 +8,7 @@ exports[`<Header /> should render correctly with all props 1`] = `
     className="flex w-full flex-col gap-1"
   >
     <h2
-      className="text-h2 mb-10 text-4xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl"
+      className="text-h2 mb-10 text-3xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl"
     >
       H
       e
@@ -47,7 +47,7 @@ exports[`<Header /> should render correctly with subtitle provided 1`] = `
     className="flex w-full flex-col gap-1"
   >
     <h2
-      className="mb-10 text-4xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl"
+      className="mb-10 text-3xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl"
     >
       H
       e
@@ -80,7 +80,7 @@ exports[`<Header /> should render correctly with title provided 1`] = `
     className="flex w-full flex-col gap-1"
   >
     <h2
-      className="mb-10 text-4xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl"
+      className="mb-10 text-3xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl"
     >
       H
       e

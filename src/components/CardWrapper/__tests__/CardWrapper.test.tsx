@@ -27,6 +27,7 @@ describe('<CardWrapper />', () => {
           subTitle="Test subtitle"
           description="Test description"
           id="testId"
+          margin
         >
           <div>Child</div>
         </CardWrapperWithAllProps>
