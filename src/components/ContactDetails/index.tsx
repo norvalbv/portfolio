@@ -6,6 +6,7 @@ import {
   PHONE_NUMBER,
   PHONE_NUMBER_COUNTRY_CODE,
 } from 'constants/index';
+import CV from 'assets/Benjamin Norval CV.pdf';
 
 const contactDetails = [
   {
@@ -32,6 +33,12 @@ const contactDetails = [
     hrefLink: GITHUB,
     label: 'norvalbv',
   },
+  {
+    id: 'cv',
+    key: 'CV',
+    hrefLink: CV,
+    label: 'CV',
+  },
 ];
 
 const ContactDetails = (): ReactElement => {
@@ -47,6 +54,7 @@ const ContactDetails = (): ReactElement => {
             target="_blank"
             href={contact.hrefLink}
             className="my-4 underline transition duration-150 ease-linear hover:text-accent-secondary"
+            download={contact.id === 'cv'}
           >
             {contact.label}
           </a>

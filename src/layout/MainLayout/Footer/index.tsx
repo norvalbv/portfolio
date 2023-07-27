@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react';
 import { GITHUB, LINKED_IN } from 'constants/index';
+import CV from 'assets/Benjamin Norval CV.pdf';
 
 const footerLinks = [
   {
@@ -8,6 +9,7 @@ const footerLinks = [
     link: GITHUB,
   },
   { id: 'linkedin', label: 'Linked In', link: LINKED_IN },
+  { id: 'cv', label: 'CV', link: CV },
 ];
 
 const Footer = (): ReactElement => {
@@ -21,7 +23,12 @@ const Footer = (): ReactElement => {
                 key={link.id}
                 className="cursor-pointer uppercase hover:text-accent-secondary hover:underline"
               >
-                <a href={link.link} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={link.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download={link.id === 'cv'}
+                >
                   {link.label}
                 </a>
               </li>
