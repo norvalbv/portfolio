@@ -10,12 +10,12 @@ exports[`<ContactDetails /> should render correctly  1`] = `
     Contact Details:
   </h2>
   <p
-    className="mb-6"
+    className="mb-4"
   >
     If you would like to contact me directly;
   </p>
   <span
-    className="my-2"
+    className="my-1 text-sm md:text-base"
   >
     Email
     : 
@@ -30,7 +30,7 @@ exports[`<ContactDetails /> should render correctly  1`] = `
     </a>
   </span>
   <span
-    className="my-2"
+    className="my-1 text-sm md:text-base"
   >
     Phone
     : 
@@ -45,7 +45,7 @@ exports[`<ContactDetails /> should render correctly  1`] = `
     </a>
   </span>
   <span
-    className="my-2"
+    className="my-1 text-sm md:text-base"
   >
     Linked In
     : 
@@ -60,7 +60,7 @@ exports[`<ContactDetails /> should render correctly  1`] = `
     </a>
   </span>
   <span
-    className="my-2"
+    className="my-1 text-sm md:text-base"
   >
     GitHub
     : 
@@ -75,22 +75,22 @@ exports[`<ContactDetails /> should render correctly  1`] = `
     </a>
   </span>
   <span
-    className="my-2"
+    className="my-1 text-sm md:text-base"
   >
-    CV
+    My CV
     : 
     <a
       className="my-4 underline transition duration-150 ease-linear hover:text-accent-secondary"
-      download={true}
+      download={false}
       href="test-file-stub"
       rel="noreferrer"
       target="_blank"
     >
-      CV
+      Download Here
     </a>
   </span>
   <p
-    className="mt-6 italic"
+    className="mt-6 text-sm"
   >
     I look forward to hearing from you!
   </p>
