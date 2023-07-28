@@ -49,7 +49,7 @@ const NavBar = (): ReactElement => {
       >
         <img
           src={isDarkMode ? BenjaminNorvalWhite : BenjaminNorvalBlack}
-          className="h-full w-full"
+          className="h-full"
           alt="Benjamin Norval logo"
         />
       </button>
