@@ -18,7 +18,7 @@ export default defineConfig({
       // Node.js global to browser globalThis
       define: {
         global: 'globalThis', // <-- AWS SDK
-        process: 'process.env',
+        process: 'process',
       },
     },
   },
