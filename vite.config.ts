@@ -18,15 +18,13 @@ export default defineConfig({
       // Node.js global to browser globalThis
       define: {
         global: 'globalThis', // <-- AWS SDK
+        process: 'process.env',
       },
     },
   },
   resolve: {
     alias: {
-      './runtimeConfig': './runtimeConfig.browser',
+      './runtimeConfig': './runtimeConfig.browser', // <-- Fix from above
     },
-  },
-  server: {
-    port: 7777,
   },
 });
