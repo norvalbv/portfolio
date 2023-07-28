@@ -21,7 +21,6 @@ export const AsInitialize = ({
   debug = true,
   apiHost = 'https://api-eu.mixpanel.com',
 }: AsInitializeProps): void => {
-  console.log(mixpanelToken, 'mix');
   mixpanel.init(mixpanelToken, {
     debug,
     api_host: apiHost,

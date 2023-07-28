@@ -5,7 +5,9 @@ import CardWrapper from 'components/CardWrapper';
 import TextField from 'components/TextField';
 import ContactDetails from 'components/ContactDetails';
 
-const { EMAILJS_API_KEY, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID } = process.env;
+const API_KEY = process.env.EMAILJS_API_KEY;
+const SERVICE_ID = process.env.EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID;
 
 const ContactMe = (): ReactElement => {
   const [query, setQuery] = useState({
@@ -22,7 +24,7 @@ const ContactMe = (): ReactElement => {
     e.preventDefault();
 
     emailjs
-      .send(EMAILJS_SERVICE_ID || '', EMAILJS_TEMPLATE_ID || '', query, EMAILJS_API_KEY)
+      .send(SERVICE_ID || '', TEMPLATE_ID || '', query, API_KEY)
       .then(() => {
         setQuery({
           name: '',
