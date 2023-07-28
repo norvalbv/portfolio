@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should render correctly 1`] = `
+<footer
+  className="relative text-center text-sm text-gray-500 dark:text-gray-400"
+>
+  <div
+    className="mx-auto w-full max-w-screen-xl p-4 md:py-8"
+  >
+    <div
+      className="flex flex-col items-center gap-6 sm:flex-row sm:justify-between"
+    >
+      <ul
+        className="flex items-center justify-center gap-6"
+      >
+        <li
+          className="cursor-pointer uppercase hover:text-accent-secondary hover:underline"
+        >
+          <a
+            download={false}
+            href="https://github.com/norvalbv/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            GitHub
+          </a>
+        </li>
+        <li
+          className="cursor-pointer uppercase hover:text-accent-secondary hover:underline"
+        >
+          <a
+            download={false}
+            href="https://www.linkedin.com/in/benjamin-norval/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Linked In
+          </a>
+        </li>
+        <li
+          className="cursor-pointer uppercase hover:text-accent-secondary hover:underline"
+        >
+          <a
+            download={true}
+            href="test-file-stub"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            CV
+          </a>
+        </li>
+      </ul>
+      <p
+        className="text-[10px] lg:text-sm"
+      >
+        © 2023 Designed and Created By Benjamin Norval.
+      </p>
+    </div>
+  </div>
+</footer>
+`;

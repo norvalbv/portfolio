@@ -21,6 +21,7 @@ exports[`<ContactDetails /> should render correctly  1`] = `
     : 
     <a
       className="my-4 underline transition duration-150 ease-linear hover:text-accent-secondary"
+      download={false}
       href="mailto:benjinorval@gmail.com"
       rel="noreferrer"
       target="_blank"
@@ -35,6 +36,7 @@ exports[`<ContactDetails /> should render correctly  1`] = `
     : 
     <a
       className="my-4 underline transition duration-150 ease-linear hover:text-accent-secondary"
+      download={false}
       href="tel:+447508719043"
       rel="noreferrer"
       target="_blank"
@@ -49,6 +51,7 @@ exports[`<ContactDetails /> should render correctly  1`] = `
     : 
     <a
       className="my-4 underline transition duration-150 ease-linear hover:text-accent-secondary"
+      download={false}
       href="https://www.linkedin.com/in/benjamin-norval/"
       rel="noreferrer"
       target="_blank"
@@ -63,11 +66,27 @@ exports[`<ContactDetails /> should render correctly  1`] = `
     : 
     <a
       className="my-4 underline transition duration-150 ease-linear hover:text-accent-secondary"
+      download={false}
       href="https://github.com/norvalbv/"
       rel="noreferrer"
       target="_blank"
     >
       norvalbv
+    </a>
+  </span>
+  <span
+    className="my-2"
+  >
+    CV
+    : 
+    <a
+      className="my-4 underline transition duration-150 ease-linear hover:text-accent-secondary"
+      download={true}
+      href="test-file-stub"
+      rel="noreferrer"
+      target="_blank"
+    >
+      CV
     </a>
   </span>
   <p

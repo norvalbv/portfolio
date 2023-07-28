@@ -13,7 +13,7 @@ export type ThemeContextValue = {
 };
 
 const defaultThemeContext: ThemeContextValue = {
-  isDarkMode: true, // This can be whatever you want your default value to be
+  isDarkMode: true,
   toggleDarkMode: () => {},
 };
 
@@ -30,15 +30,14 @@ export const ThemeContextProvider = ({ children }: ThemeProviderProps): ReactEle
     theme ? (JSON.parse(theme) as boolean) : true
   );
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const toggleDarkMode = useCallback((): void => setIsDarkMode(!isDarkMode), []);
+  const toggleDarkMode = (): void => setIsDarkMode(!isDarkMode);
 
   const value = useMemo(
     () => ({
       isDarkMode,
       toggleDarkMode,
     }),
-    [isDarkMode, toggleDarkMode]
+    [isDarkMode]
   );
 
   useEffect(() => {

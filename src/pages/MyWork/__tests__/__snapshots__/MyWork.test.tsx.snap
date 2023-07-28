@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MyWork /> should render correctly 1`] = `
+<div
+  className="relative z-10 mx-auto min-h-screen min-w-[20rem] md:w-10/12"
+>
+  <div>
+    <header
+      className="flex items-center justify-between"
+    >
+      <section
+        className="flex w-full flex-col gap-1"
+      >
+        <h2
+          className="md:ml-0 ml-6 mt-20 md:mt-32 mb-10 text-3xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl"
+        >
+          H
+          e
+          l
+          l
+          o
+           
+          W
+          o
+          r
+          l
+          d
+          !
+        </h2>
+      </section>
+    </header>
+    <div
+      className="relative mb-10 rounded-t-xl border-light-text bg-black/20 py-6 text-center before:absolute before:bottom-[-0.25rem] before:left-0 before:h-1 before:w-full before:bg-gradient-to-r before:from-blue-500 before:to-green-500 dark:border-dark-text dark:bg-dark-dark/30 md:px-6"
+    >
+      <h3
+        className="px-6 text-lg uppercase underline md:p-0 lg:text-xl"
+      >
+        PARISN
+      </h3>
+      <h2
+        className="mb-6 mt-2 text-sm uppercase underline lg:text-lg"
+      >
+        An e-commerce application with a twist
+      </h2>
+      <div
+        className="group my-6 lg:absolute lg:right-12 lg:top-1"
+      >
+        <a
+          className="items-center justify-center gap-2 lg:flex"
+          href="https://github.com/norvalbv/parisn"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <p
+            className="text-xs opacity-100 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100"
+          >
+            View Code
+          </p>
+          <svg
+            className="hidden cursor-pointer lg:block"
+            fill="none"
+            height={20}
+            stroke="currentColor"
+            strokeWidth={1.5}
+            viewBox="0 0 24 24"
+            width={20}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+      <p
+        className="px-6 text-sm md:p-0 lg:text-base"
+      >
+        A work-in-progress e-commerce full stack webapp with unique add-ons including real-time data and chat using web sockets and automatic pricing that decreases over time using mathematical algorithms giving a better user experience.
+      </p>
+      <a
+        href="https://github.com/norvalbv/parisn"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Parisn App Homepage - An ecommerce site."
+          className="mx-auto my-6 max-h-[40rem] min-h-[14em]"
+          src="test-file-stub"
+        />
+      </a>
+      <p
+        className="px-6 text-sm md:p-0 lg:text-base"
+      >
+        Built with: 
+        React, SWR, JavaScript, TypeScript, TailWindCSS, Vite, Jest, Cypress, Node, AWS Serverless, Azure Devops, CI/CD, Stripe, WebSockets, Microservices.
+      </p>
+    </div>
+    <div
+      className="relative mb-10 rounded-t-xl border-light-text bg-black/20 py-6 text-center before:absolute before:bottom-[-0.25rem] before:left-0 before:h-1 before:w-full before:bg-gradient-to-r before:from-blue-500 before:to-green-500 dark:border-dark-text dark:bg-dark-dark/30 md:px-6"
+    >
+      <h3
+        className="px-6 text-lg uppercase underline md:p-0 lg:text-xl"
+      >
+        Weather App
+      </h3>
+      <div
+        className="group my-6 lg:absolute lg:right-12 lg:top-1"
+      >
+        <a
+          className="items-center justify-center gap-2 lg:flex"
+          href="https://github.com/norvalbv/cool-weather-app"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <p
+            className="text-xs opacity-100 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100"
+          >
+            View Code
+          </p>
+          <svg
+            className="hidden cursor-pointer lg:block"
+            fill="none"
+            height={20}
+            stroke="currentColor"
+            strokeWidth={1.5}
+            viewBox="0 0 24 24"
+            width={20}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+      <p
+        className="px-6 text-sm md:p-0 lg:text-base"
+      >
+        A front end weather application built with the 
+        <a
+          className="text-accent-secondary hover:underline"
+          href="https://openweathermap.org/api"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          Open Weather Api
+        </a>
+         that uses live data and the ability to search for weather worldwide.
+      </p>
+      <a
+        href="https://github.com/norvalbv/cool-weather-app"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Weather App Homepage."
+          className="mx-auto my-6 max-h-[40rem] min-h-[14em]"
+          src="test-file-stub"
+        />
+      </a>
+      <p
+        className="px-6 text-sm md:p-0 lg:text-base"
+      >
+        Built with: 
+        React, SWR, JavaScript, TypeScript, TailWindCSS, Vite, Jest
+      </p>
+    </div>
+  </div>
+</div>
+`;
