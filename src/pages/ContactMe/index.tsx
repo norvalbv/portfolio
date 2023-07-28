@@ -6,7 +6,6 @@ import TextField from 'components/TextField';
 import ContactDetails from 'components/ContactDetails';
 
 const { EMAILJS_API_KEY, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID } = process.env;
-console.log(EMAILJS_API_KEY, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, process.env);
 
 const ContactMe = (): ReactElement => {
   const [query, setQuery] = useState({
@@ -21,6 +20,7 @@ const ContactMe = (): ReactElement => {
 
   const submitEmail = (e: SyntheticEvent): void => {
     e.preventDefault();
+    console.log(EMAILJS_API_KEY, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, process.env);
 
     emailjs
       .send(EMAILJS_SERVICE_ID || '', EMAILJS_TEMPLATE_ID || '', query, EMAILJS_API_KEY)
