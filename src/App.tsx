@@ -6,11 +6,10 @@ import './styles/index.css';
 import useTrackUser from 'hooks/useTrackUser';
 import { Toaster } from 'react-hot-toast';
 
-console.log(process.env);
-
 const App = (): ReactElement => {
   const { isDarkMode } = useTheme();
 
+  console.log(process.env);
   useTrackUser();
 
   return (
