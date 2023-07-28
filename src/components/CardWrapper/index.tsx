@@ -34,7 +34,7 @@ const CardWrapper = ({
       <div>
         <Header
           title={title}
-          titleClassName={classNames(titleClassName, { 'mt-20 md:mt-32': margin })}
+          titleClassName={classNames(titleClassName, { 'mt-28 md:mt-32': margin })}
           subtitle={subTitle}
           description={description}
         />
