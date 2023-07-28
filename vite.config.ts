@@ -21,8 +21,10 @@ export default defineConfig({
       },
     },
   },
-  define: {
-    'process.env': {},
+  resolve: {
+    alias: {
+      './runtimeConfig': './runtimeConfig.browser',
+    },
   },
   server: {
     port: 7777,
