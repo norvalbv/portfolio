@@ -9,7 +9,6 @@ import { Toaster } from 'react-hot-toast';
 const App = (): ReactElement => {
   const { isDarkMode } = useTheme();
 
-  console.log(process.env);
   useTrackUser();
 
   return (
