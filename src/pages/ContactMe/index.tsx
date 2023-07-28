@@ -29,9 +29,9 @@ const ContactMe = (): ReactElement => {
           email: '',
           message: '',
         });
-        toast.success('Successfully sent!');
+        toast.success('Message Sent!');
       })
-      .catch(() => toast.error('Message was not able to be sent'));
+      .catch(() => toast.error('Message Was Not Able To Be Sent!'));
   };
 
   return (
