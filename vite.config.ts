@@ -13,18 +13,20 @@ export default defineConfig({
       minify: true,
     }),
   ],
-  optimizeDeps: {
-    esbuildOptions: {
-      // Node.js global to browser globalThis
-      define: {
-        global: 'globalThis', // <-- AWS SDK
-        process: 'process',
-      },
-    },
-  },
+  ...(process.env.NODE_ENV === 'development'
+    ? {
+        define: {
+          global: {},
+        },
+      }
+    : {}),
   resolve: {
     alias: {
-      './runtimeConfig': './runtimeConfig.browser', // <-- Fix from above
+      ...(process.env.NODE_ENV !== 'development'
+        ? {
+            './runtimeConfig': './runtimeConfig.browser',
+          }
+        : {}),
     },
   },
 });
