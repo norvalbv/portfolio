@@ -7,5 +7,6 @@ export enum AnalyticsEvent {
   Contact = 'Contact Me Page',
   About = 'About Me Page',
   MyWork = 'My Work Page',
+  Blog = 'Blog Page',
   UnknownPage = 'Unknown Page',
 }

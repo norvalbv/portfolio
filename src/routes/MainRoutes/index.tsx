@@ -6,6 +6,7 @@ import AboutMe from 'pages/AboutMe';
 import MyWork from 'pages/MyWork';
 import ContactMe from 'pages/ContactMe';
 import NotFound from 'pages/NotFound';
+import Blog from 'pages/Blog';
 
 export const routes = {
   path: '/',
@@ -30,6 +31,11 @@ export const routes = {
       path: '/contact',
       element: <ContactMe />,
       name: AnalyticsEvent.Contact,
+    },
+    {
+      path: '/blog',
+      element: <Blog />,
+      name: AnalyticsEvent.Blog,
     },
     {
       path: '*',
