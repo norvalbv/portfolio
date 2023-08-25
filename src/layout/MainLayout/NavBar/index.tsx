@@ -24,21 +24,21 @@ const NavBar = (): ReactElement => {
 
   return (
     <nav
-      className="fixed z-50 flex h-16 w-full flex-row-reverse items-end justify-between px-4 pt-20 lg:px-10"
+      className="sticky top-0 z-50 flex h-16 w-full flex-row-reverse items-end justify-between px-4 pt-20 lg:px-10"
       role="navigation"
       aria-label="Main"
     >
-      <div className="z-50 flex flex-row-reverse items-center gap-2 md:gap-6" role="menubar">
+      <div className="z-50 flex flex-row-reverse items-center gap-2 md:gap-4" role="menubar">
         <Hamburger
           toggled={navOpen}
           toggle={(): void => setNavOpen(!navOpen)}
-          size={isMobile ? 24 : 32}
+          size={isMobile ? 24 : 28}
           rounded
           aria-expanded={navOpen}
           aria-label="Menu button"
         />
         <div className="flex items-center justify-end md:h-3 md:w-32 lg:h-4 lg:w-40">
-          <ThemeToggle size={isMobile ? 24 : 32} aria-label="Theme toggle" />
+          <ThemeToggle size={isMobile ? 24 : 28} aria-label="Theme toggle" />
         </div>
       </div>
       <button
@@ -46,7 +46,7 @@ const NavBar = (): ReactElement => {
         tabIndex={0}
         type="button"
         onClick={(): void => navigate('/')}
-        className="z-50 mb-2.5 h-8 md:mb-1 md:h-12"
+        className="z-50 mb-2.5 h-8 md:mb-1.5 md:h-10"
       >
         <img
           src={isDarkMode ? BenjaminNorvalWhite : BenjaminNorvalBlack}
@@ -62,7 +62,7 @@ const NavBar = (): ReactElement => {
           // colours
           'divide-y divide-light-text bg-gradient-to-br from-white to-[#e0dce6] dark:divide-dark-text dark:from-dark-neutral dark:to-[#130926]',
           // sizing
-          'h-screen w-screen rounded-lg'
+          'h-screen w-screen'
         )}
         role="menu"
         aria-hidden={!navOpen}

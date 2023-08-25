@@ -8,10 +8,12 @@ import Description from './Description';
 export type HeaderProps = {
   // Own props
   className?: string;
+  animation?: boolean;
 
   // Title props
   title?: string;
   titleClassName?: string;
+  level?: 1 | 2 | 3;
 
   // Subtitle props
   subtitle?: string | JSX.Element;
@@ -30,6 +32,8 @@ const Header = ({
   subtitleClassName,
   title,
   titleClassName,
+  animation = true,
+  level = 1,
 }: HeaderProps): ReactElement | null => {
   const processedTitle = useRandomReveal({
     isPlaying: true,
@@ -45,7 +49,9 @@ const Header = ({
   return (
     <header className={classNames(className || 'flex items-center justify-between')}>
       <section className="flex w-full flex-col gap-1">
-        <Title className={titleClassName}>{processedTitle}</Title>
+        <Title className={titleClassName} level={level}>
+          {animation ? processedTitle : title}
+        </Title>
         <Subtitle className={subtitleClassName}>{subtitle}</Subtitle>
         <Description className={descriptionClassName}>{description}</Description>
       </section>

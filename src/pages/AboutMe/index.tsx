@@ -7,7 +7,7 @@ const AboutMe = (): ReactElement => {
   return (
     <CardWrapper
       title="About Me"
-      className="grid w-8/12 min-w-[20rem] place-items-center text-center"
+      className="grid w-8/12 min-w-[20rem] place-items-center bg-red-500 text-center"
       titleClassName="md:mt-20"
     >
       <p>

@@ -26,7 +26,7 @@ const CardWrapper = ({
   return (
     <div
       className={classNames(
-        'relative z-10 mx-auto min-h-screen',
+        'relative z-10 mx-auto',
         className || 'grid w-10/12 min-w-[20rem] place-items-center'
       )}
       id={id}

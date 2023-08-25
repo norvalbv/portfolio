@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react';
 import { useRandomReveal } from 'hooks/useRandomReveal';
 import { classNames } from 'utils';
+import CardWrapper from 'components/CardWrapper';
 
 const Landing = (): ReactElement => {
   const heading = useRandomReveal({
@@ -24,7 +25,7 @@ const Landing = (): ReactElement => {
   });
 
   return (
-    <div className="relative grid h-screen place-items-center text-center uppercase">
+    <CardWrapper className="grid h-full w-8/12 place-items-center bg-red-500 text-center uppercase">
       <div className="flex flex-col gap-2 lg:gap-8">
         <h1 className="mb-4 text-4xl font-semibold tracking-wide md:text-6xl lg:text-8xl lg:font-normal">
           <span className="mb-2 inline-block text-accent-main lg:mb-6">{heading}</span>
@@ -40,7 +41,7 @@ const Landing = (): ReactElement => {
           {summary}
         </h2>
       </div>
-    </div>
+    </CardWrapper>
   );
 };
 
