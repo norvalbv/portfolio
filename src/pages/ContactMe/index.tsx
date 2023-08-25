@@ -37,7 +37,7 @@ const ContactMe = (): ReactElement => {
   };
 
   return (
-    <CardWrapper title="Come Say Hi!" className="w-10/12 min-w-[20rem]" margin>
+    <CardWrapper title="Come Say Hi!">
       <div className="flex flex-col gap-6 lg:flex-row">
         <form
           className="rounded-lg bg-white/70 p-6 dark:bg-dark-dark/30 lg:w-3/5"

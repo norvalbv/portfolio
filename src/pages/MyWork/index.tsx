@@ -43,12 +43,7 @@ const MyWorkCard = ({
 
 const MyWork = (): ReactElement => {
   return (
-    <CardWrapper
-      title="My Work"
-      className="min-w-[20rem] md:w-10/12"
-      titleClassName="md:ml-0 ml-6"
-      margin
-    >
+    <CardWrapper title="My Work" titleClassName="md:ml-0 ml-6">
       <MyWorkCard
         title="PARISN"
         subTitle="An e-commerce application with a twist"

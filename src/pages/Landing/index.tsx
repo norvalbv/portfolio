@@ -25,7 +25,7 @@ const Landing = (): ReactElement => {
   });
 
   return (
-    <CardWrapper className="grid h-full w-8/12 place-items-center bg-red-500 text-center uppercase">
+    <CardWrapper centered className="uppercase" titleClassName="mx-auto">
       <div className="flex flex-col gap-2 lg:gap-8">
         <h1 className="mb-4 text-4xl font-semibold tracking-wide md:text-6xl lg:text-8xl lg:font-normal">
           <span className="mb-2 inline-block text-accent-main lg:mb-6">{heading}</span>

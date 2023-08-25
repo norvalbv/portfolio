@@ -22,7 +22,7 @@ const Title = ({ children, className, level = 2 }: TitleProps): ReactElement | n
       <h1
         className={classNames(
           className,
-          'mb-20 text-5xl font-semibold underline underline-offset-8 md:text-8xl'
+          'mb-[4.5rem] w-max border-b pb-2 text-5xl font-semibold md:text-6xl'
         )}
       >
         {children}
@@ -36,7 +36,7 @@ const Title = ({ children, className, level = 2 }: TitleProps): ReactElement | n
       <h2
         className={classNames(
           className,
-          'mb-10 text-3xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl'
+          'mb-8 border-b pb-2 text-3xl font-semibold md:mb-[4.5rem] md:text-6xl'
         )}
       >
         {children}

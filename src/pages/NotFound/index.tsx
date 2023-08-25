@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react';
 import { useRandomReveal } from 'hooks/useRandomReveal';
+import CardWrapper from 'components/CardWrapper';
 
 const NotFound = (): ReactElement => {
   const heading = useRandomReveal({
@@ -9,7 +10,7 @@ const NotFound = (): ReactElement => {
   });
 
   return (
-    <div className="relative top-[-4rem] grid h-screen place-items-center text-center uppercase">
+    <CardWrapper centered>
       <div className="flex flex-col gap-8">
         <h2 className="mb-4 text-6xl font-semibold tracking-wide text-accent-main transition-colors">
           {heading}
@@ -22,7 +23,7 @@ const NotFound = (): ReactElement => {
           Back
         </button>
       </div>
-    </div>
+    </CardWrapper>
   );
 };
 
