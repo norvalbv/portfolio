@@ -15,9 +15,9 @@ const MainLayout = (): ReactElement => {
       <ScrollRestoration />
       {!pageIsBlog && <Background />}
       <NavBar />
-      <div className="mx-auto flex h-full min-h-[calc(100vh-10.25rem)] max-w-screen-2xl flex-col leading-6">
+      <main className="mx-auto flex h-full min-h-[calc(100vh-10.25rem)] max-w-screen-2xl flex-col leading-6">
         <Outlet />
-      </div>
+      </main>
       <Footer />
     </div>
   );

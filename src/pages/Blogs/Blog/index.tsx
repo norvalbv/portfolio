@@ -5,6 +5,17 @@ import { useLocation } from 'react-router-dom';
 import Loader from 'components/Loader';
 import { blogs } from '..';
 
+const UnorderedListComponent = ({
+  children,
+  ...props
+}: {
+  children: JSX.Element;
+}): ReactElement => <ul {...props}>{children}</ul>;
+
+const ListComponent = ({ children, ...props }: { children: JSX.Element }): ReactElement => (
+  <ul {...props}>&bull; {children}</ul>
+);
+
 const Blog = (): ReactElement => {
   const [blog, setBlog] = useState<string | null>(null);
   const { pathname } = useLocation();
@@ -28,17 +39,22 @@ const Blog = (): ReactElement => {
   if (!blog) return <Loader />;
 
   return (
-    <CardWrapper className="w-8/12">
+    <CardWrapper className="w-7/12">
       <article>
-        <h1 className="text-2xl text-accent-main underline">{title}</h1>
+        <h1 className="text-2xl capitalize text-accent-main underline">{title}</h1>
         <Markdown
           options={{
+            wrapper: React.Fragment,
             overrides: {
               h1: { props: { className: 'my-10 text-2xl text-accent-main' } },
-              h2: { props: { className: 'my-6 text-xl underline' } },
-              h3: { props: { className: 'my-4 text-lg underline' } },
-              p: { props: { className: 'mb-4' } },
-              a: { props: { className: 'text-accent-secondary' } },
+              h2: { props: { className: 'my-6 text-2xl underline text-accent-main/90' } },
+              h3: { props: { className: 'my-4 text-lg text-accent-main/75' } },
+              p: { props: { className: 'my-3 text-sm leading-6' } },
+              a: { props: { className: 'text-accent-secondary underline' } },
+              strong: { props: { className: 'text-accent-tertiary font-semibold text-base' } },
+              em: { props: { className: 'text-accent-tertiary/75' } },
+              ul: { component: UnorderedListComponent, props: { className: 'ml-4 my-4' } },
+              li: { component: ListComponent, props: { className: 'my-2' } },
             },
           }}
         >

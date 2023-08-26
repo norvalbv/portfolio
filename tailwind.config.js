@@ -7,17 +7,18 @@ module.exports = {
         // Numbers represent the darkness / lightness compared to the main colour.
         dark: {
           dark: '#000000',
-          neutral: '#1A181E',
+          neutral: '#232323',
           text: '#E9EBE6',
         },
         light: {
-          dark: '#E9EBE6',
+          dark: '#e9ecef',
           neutral: '#F3F4F6',
           text: '#1A181E',
         },
         accent: {
-          main: '#16A34A',
-          secondary: '#0284C7',
+          main: '#0A5C36',
+          secondary: '#006466',
+          tertiary: '#7B2CBF',
         },
       },
       fontFamily: { sans: ['Victor Mono', 'monospace'] },
