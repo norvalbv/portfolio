@@ -45,7 +45,10 @@ const NavBar = (): ReactElement => {
         role="button"
         tabIndex={0}
         type="button"
-        onClick={(): void => navigate('/')}
+        onClick={(): void => {
+          navigate('/');
+          setNavOpen(false);
+        }}
         className="z-50 mb-2.5 h-8 md:mb-1.5 md:h-10"
       >
         <img
