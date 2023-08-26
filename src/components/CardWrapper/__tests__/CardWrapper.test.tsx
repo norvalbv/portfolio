@@ -24,10 +24,9 @@ describe('<CardWrapper />', () => {
           title="Test Title"
           className="bg-red-500"
           titleClassName="text-blue-500"
-          subTitle="Test subtitle"
-          description="Test description"
+          subtitle="Test subtitle"
           id="testId"
-          margin
+          centered
         >
           <div>Child</div>
         </CardWrapperWithAllProps>

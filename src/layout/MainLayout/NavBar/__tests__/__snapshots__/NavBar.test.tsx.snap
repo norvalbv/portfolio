@@ -3,11 +3,11 @@
 exports[`<NavBar /> should render correctly 1`] = `
 <nav
   aria-label="Main"
-  className="fixed z-50 flex h-16 w-full flex-row-reverse items-end justify-between px-4 pt-20 lg:px-10"
+  className="sticky top-0 z-50 flex h-16 w-full flex-row-reverse items-end justify-between px-4 pt-20 lg:px-10"
   role="navigation"
 >
   <div
-    className="z-50 flex flex-row-reverse items-center gap-2 md:gap-6"
+    className="z-50 flex flex-row-reverse items-center gap-2 md:gap-4"
     role="menubar"
   >
     <div
@@ -35,13 +35,13 @@ exports[`<NavBar /> should render correctly 1`] = `
           {
             "background": "currentColor",
             "borderRadius": "9em",
-            "height": "3px",
-            "left": "8px",
+            "height": "2px",
+            "left": "10px",
             "position": "absolute",
-            "top": "13px",
+            "top": "15px",
             "transform": "none",
             "transition": "0.4s cubic-bezier(0, 0, 0, 1)",
-            "width": "32px",
+            "width": "28px",
           }
         }
       />
@@ -50,13 +50,13 @@ exports[`<NavBar /> should render correctly 1`] = `
           {
             "background": "currentColor",
             "borderRadius": "9em",
-            "height": "3px",
-            "left": "8px",
+            "height": "2px",
+            "left": "10px",
             "position": "absolute",
             "top": "23px",
             "transform": "none",
             "transition": "0.4s cubic-bezier(0, 0, 0, 1)",
-            "width": "32px",
+            "width": "28px",
           }
         }
       />
@@ -65,13 +65,13 @@ exports[`<NavBar /> should render correctly 1`] = `
           {
             "background": "currentColor",
             "borderRadius": "9em",
-            "height": "3px",
-            "left": "8px",
+            "height": "2px",
+            "left": "10px",
             "position": "absolute",
-            "top": "33px",
+            "top": "31px",
             "transform": "none",
             "transition": "0.4s cubic-bezier(0, 0, 0, 1)",
-            "width": "32px",
+            "width": "28px",
           }
         }
       />
@@ -82,13 +82,13 @@ exports[`<NavBar /> should render correctly 1`] = `
       <svg
         className="cursor-pointer hover:fill-light-dark"
         fill="none"
-        height={32}
+        height={28}
         onClick={[Function]}
         role="button"
         stroke="currentColor"
         strokeWidth={1.5}
         viewBox="0 0 24 24"
-        width={32}
+        width={28}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -100,7 +100,7 @@ exports[`<NavBar /> should render correctly 1`] = `
     </div>
   </div>
   <button
-    className="z-50 mb-2.5 h-8 md:mb-1 md:h-12"
+    className="z-50 mb-2.5 h-8 md:mb-1.5 md:h-10"
     onClick={[Function]}
     role="button"
     tabIndex={0}
@@ -108,13 +108,13 @@ exports[`<NavBar /> should render correctly 1`] = `
   >
     <img
       alt="Benjamin Norval logo"
-      className="h-full w-full"
+      className="h-full"
       src="test-file-stub"
     />
   </button>
   <ul
     aria-hidden={true}
-    className="hidden absolute inset-0 flex flex-col items-center justify-center text-center divide-y divide-light-text bg-gradient-to-br from-white to-[#e0dce6] dark:divide-dark-text dark:from-dark-neutral dark:to-[#130926] h-screen w-screen rounded-lg"
+    className="hidden absolute inset-0 flex flex-col items-center justify-center text-center divide-y divide-light-text bg-gradient-to-br from-white to-[#e0dce6] dark:divide-dark-text dark:from-dark-neutral dark:to-[#130926] h-screen w-screen"
     role="menu"
   >
     <li
@@ -175,6 +175,21 @@ exports[`<NavBar /> should render correctly 1`] = `
         tabIndex={-1}
       >
         Contact Me
+      </a>
+    </li>
+    <li
+      className="relative w-[7rem] py-3"
+      onClick={[Function]}
+      role="none"
+    >
+      <a
+        className="hover:text-accent-secondary"
+        href="/blog"
+        onClick={[Function]}
+        role="menuitem"
+        tabIndex={-1}
+      >
+        My Blog
       </a>
     </li>
   </ul>

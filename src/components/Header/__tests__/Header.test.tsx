@@ -34,6 +34,8 @@ describe('<Header />', () => {
             subtitleClassName="text-sm"
             description="Test Description"
             descriptionClassName="text-neutral-N00"
+            animation={false}
+            level={2}
           />
         </BrowserRouter>
       )

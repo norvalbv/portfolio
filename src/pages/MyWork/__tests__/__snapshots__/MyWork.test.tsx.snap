@@ -2,7 +2,7 @@
 
 exports[`<MyWork /> should render correctly 1`] = `
 <div
-  className="relative z-10 mx-auto min-h-screen min-w-[20rem] md:w-10/12"
+  className="relative mx-auto flex-1 mt-6 w-10/12 min-w-[20rem] md:mt-10"
 >
   <div>
     <header
@@ -11,8 +11,8 @@ exports[`<MyWork /> should render correctly 1`] = `
       <section
         className="flex w-full flex-col gap-1"
       >
-        <h2
-          className="md:ml-0 ml-6 mt-20 md:mt-32 mb-10 text-3xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl"
+        <h1
+          className="md:ml-0 ml-6 mb-[4.5rem] w-max border-b pb-2 text-5xl font-semibold md:text-6xl"
         >
           H
           e
@@ -26,7 +26,7 @@ exports[`<MyWork /> should render correctly 1`] = `
           l
           d
           !
-        </h2>
+        </h1>
       </section>
     </header>
     <div

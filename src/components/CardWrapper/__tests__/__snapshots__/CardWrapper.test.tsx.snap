@@ -2,7 +2,7 @@
 
 exports[`<CardWrapper /> should render correctly with all props 1`] = `
 <div
-  className="relative z-10 mx-auto min-h-screen bg-red-500"
+  className="relative mx-auto flex-1 grid w-8/12 place-items-center text-center bg-red-500"
   id="testId"
 >
   <div>
@@ -12,8 +12,8 @@ exports[`<CardWrapper /> should render correctly with all props 1`] = `
       <section
         className="flex w-full flex-col gap-1"
       >
-        <h2
-          className="text-blue-500 mt-20 md:mt-32 mb-10 text-3xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl"
+        <h1
+          className="text-blue-500"
         >
           H
           e
@@ -27,19 +27,12 @@ exports[`<CardWrapper /> should render correctly with all props 1`] = `
           l
           d
           !
-        </h2>
+        </h1>
         <h4
-          className="text-body text-neutral-N300 truncate"
           data-testid="Test subtitle Subtitle"
         >
           Test subtitle
         </h4>
-        <p
-          className="text-body text-neutral-N00 truncate"
-          data-testid="Test description Description"
-        >
-          Test description
-        </p>
       </section>
     </header>
     <div>
@@ -51,7 +44,7 @@ exports[`<CardWrapper /> should render correctly with all props 1`] = `
 
 exports[`<CardWrapper /> should render correctly with mandatory props 1`] = `
 <div
-  className="relative z-10 mx-auto min-h-screen grid w-10/12 min-w-[20rem] place-items-center"
+  className="relative mx-auto flex-1 mt-6 w-10/12 min-w-[20rem] md:mt-10"
 >
   <div>
     <header
@@ -60,8 +53,8 @@ exports[`<CardWrapper /> should render correctly with mandatory props 1`] = `
       <section
         className="flex w-full flex-col gap-1"
       >
-        <h2
-          className="mb-10 text-3xl font-semibold underline underline-offset-8 md:mb-20 md:text-6xl"
+        <h1
+          className="mb-[4.5rem] w-max border-b pb-2 text-5xl font-semibold md:text-6xl"
         >
           H
           e
@@ -75,7 +68,7 @@ exports[`<CardWrapper /> should render correctly with mandatory props 1`] = `
           l
           d
           !
-        </h2>
+        </h1>
       </section>
     </header>
     <div>
