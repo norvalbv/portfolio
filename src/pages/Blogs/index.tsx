@@ -5,20 +5,31 @@ import CardWrapper from 'components/CardWrapper';
 import { BLOG_DESCRIPTION } from 'constants/index';
 import { convertToDate } from 'utils/date';
 
-const blogs = [
+export type BlogsType = {
+  title: string;
+  subtitle: string;
+  url: string;
+  file: string;
+  datePosted: number;
+  readTime: number;
+}[];
+
+export const blogs: BlogsType = [
   {
-    title: 'How memory (RAM) works',
-    subtitle: 'A deep insight to what RAM is and how it interacts with the computer.',
-    blog: 'how-memory-works',
-    datePosted: 1690349021232,
-    readTime: 6,
+    title: 'How (RAM) works',
+    subtitle: 'A deep to what RAM is and how it interacts with the computer.',
+    url: 'how-works',
+    file: 'Memory )',
+    datePosted: 1690049021232,
+    readTime: 10,
   },
   {
     title: 'How memory (RAM) works',
-    subtitle: 'Honestly, how the F%&# does ram work?!',
-    blog: 'how-memory-works',
-    datePosted: 1690049021232,
-    readTime: 4,
+    subtitle: 'A deep insight to what RAM is and how it interacts with the computer.',
+    url: 'how-memory-works',
+    file: 'memory',
+    datePosted: 1690349021232,
+    readTime: 6,
   },
 ];
 
@@ -44,7 +55,7 @@ const Blogs = (): ReactElement => {
       />
       <div className="flex flex-col gap-6 divide-y">
         {blogs.map((blog) => (
-          <Link to={`/blog/${blog.blog}`} key={blog.title} className="pt-6">
+          <Link to={`/blog/${blog.url}`} key={blog.title} className="pt-6">
             <Header
               className="mb-2 w-8/12"
               titleClassName="text-accent-secondary font-semibold underline text-2xl"
@@ -54,7 +65,7 @@ const Blogs = (): ReactElement => {
               level={2}
               animation={false}
             />
-            <p className="text-xs italic text-slate-400">
+            <p className="text-xs italic text-slate-500 dark:text-slate-400">
               {convertToDate({
                 timestamp: blog.datePosted,
                 format: {

@@ -1941,6 +1941,7 @@ __metadata:
     jest: ^29.6.4
     jest-environment-jsdom: ^29.6.4
     lint-staged: ^14.0.1
+    markdown-to-jsx: ^7.3.2
     mixpanel-browser: ^2.47.0
     postcss: ^8.4.28
     prettier: ^3.0.2
@@ -6053,6 +6054,15 @@ __metadata:
   dependencies:
     tmpl: 1.0.5
   checksum: b38a025a12c8146d6eeea5a7f2bf27d51d8ad6064da8ca9405fcf7bf9b54acd43e3b30ddd7abb9b1bfa4ddb266019133313482570ddb207de568f71ecfcf6060
+  languageName: node
+  linkType: hard
+
+"markdown-to-jsx@npm:^7.3.2":
+  version: 7.3.2
+  resolution: "markdown-to-jsx@npm:7.3.2"
+  peerDependencies:
+    react: ">= 0.14.0"
+  checksum: 8885c6343b71570b0a7ec16cd85a49b853a830234790ee7430e2517ea5d8d361ff138bd52147f650790f3e7b3a28a15c755fc16f8856dd01ddf09a6161782e06
   languageName: node
   linkType: hard
 

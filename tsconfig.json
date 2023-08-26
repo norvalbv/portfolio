@@ -23,5 +23,5 @@
       "module": "CommonJS"
     }
   },
-  "include": ["src", "tailwind.config.js", "jest.config.ts", "vite.config.ts"]
+  "include": ["src", "tailwind.config.js", "jest.config.ts", "vite.config.ts", "globals.d.ts"]
 }

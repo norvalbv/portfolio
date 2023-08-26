@@ -13,6 +13,7 @@ export default defineConfig({
       minify: true,
     }),
   ],
+  assetsInclude: ['**/*.md'],
   ...(process.env.NODE_ENV === 'development'
     ? {
         define: {
