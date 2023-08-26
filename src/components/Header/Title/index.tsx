@@ -21,8 +21,7 @@ const Title = ({ children, className, level = 2 }: TitleProps): ReactElement | n
     return (
       <h1
         className={classNames(
-          className,
-          'mb-[4.5rem] w-max border-b pb-2 text-5xl font-semibold md:text-6xl'
+          className || 'mb-[4.5rem] w-max border-b pb-2 text-5xl font-semibold md:text-6xl'
         )}
       >
         {children}
@@ -35,8 +34,7 @@ const Title = ({ children, className, level = 2 }: TitleProps): ReactElement | n
     return (
       <h2
         className={classNames(
-          className,
-          'mb-8 border-b pb-2 text-3xl font-semibold md:mb-[4.5rem] md:text-6xl'
+          className || 'mb-8 border-b pb-2 text-3xl font-semibold md:mb-[4.5rem] md:text-6xl'
         )}
       >
         {children}
@@ -46,7 +44,7 @@ const Title = ({ children, className, level = 2 }: TitleProps): ReactElement | n
 
   // Level 3
   return (
-    <h3 className={classNames(className, 'mb-10 text-2xl font-semibold md:text-4xl')}>
+    <h3 className={classNames(className || 'mb-10 text-2xl font-semibold md:text-4xl')}>
       {children}
     </h3>
   );

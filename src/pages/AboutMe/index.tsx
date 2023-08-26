@@ -5,7 +5,11 @@ import { MY_SKILLS } from 'constants/index';
 
 const AboutMe = (): ReactElement => {
   return (
-    <CardWrapper title="About Me" centered titleClassName="mx-auto">
+    <CardWrapper
+      title="About Me"
+      centered
+      titleClassName="mx-auto mb-[4.5rem] w-max border-b pb-2 text-5xl font-semibold md:text-6xl"
+    >
       <p>
         Experienced Full Stack software engineer with 3 years of experience in web development. I am
         part of the core team that developed the entire&nbsp;

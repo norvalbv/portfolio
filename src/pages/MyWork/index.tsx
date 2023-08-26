@@ -43,7 +43,10 @@ const MyWorkCard = ({
 
 const MyWork = (): ReactElement => {
   return (
-    <CardWrapper title="My Work" titleClassName="md:ml-0 ml-6">
+    <CardWrapper
+      title="My Work"
+      titleClassName="md:ml-0 ml-6 mb-[4.5rem] w-max border-b pb-2 text-5xl font-semibold md:text-6xl"
+    >
       <MyWorkCard
         title="PARISN"
         subTitle="An e-commerce application with a twist"
