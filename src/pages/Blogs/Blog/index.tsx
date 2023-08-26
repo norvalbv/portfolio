@@ -3,7 +3,13 @@ import CardWrapper from 'components/CardWrapper';
 import Markdown from 'markdown-to-jsx';
 import { useLocation } from 'react-router-dom';
 import Loader from 'components/Loader';
+import hljs from 'highlight.js';
+import javascript from 'highlight.js/lib/languages/javascript';
+import 'highlight.js/styles/default.css';
+import Highlight from 'components/Highlighter';
 import { blogs } from '..';
+
+hljs.registerLanguage('javascript', javascript);
 
 const UnorderedListComponent = ({
   children,
@@ -14,6 +20,10 @@ const UnorderedListComponent = ({
 
 const ListComponent = ({ children, ...props }: { children: JSX.Element }): ReactElement => (
   <ul {...props}>&bull; {children}</ul>
+);
+
+const CodeComponent = ({ children, ...props }: { children: JSX.Element }): ReactElement => (
+  <Highlight {...props}>{children}</Highlight>
 );
 
 const Blog = (): ReactElement => {
@@ -55,6 +65,7 @@ const Blog = (): ReactElement => {
               em: { props: { className: 'text-accent-tertiary/75' } },
               ul: { component: UnorderedListComponent, props: { className: 'ml-4 my-4' } },
               li: { component: ListComponent, props: { className: 'my-2' } },
+              code: { component: CodeComponent },
             },
           }}
         >

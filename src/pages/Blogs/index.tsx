@@ -5,6 +5,8 @@ import CardWrapper from 'components/CardWrapper';
 import { BLOG_DESCRIPTION } from 'constants/index';
 import { convertToDate } from 'utils/date';
 
+type LevelCriteria = 'Beginner Friendly' | 'Intermediate' | 'Expert' | undefined;
+
 export type BlogsType = {
   title: string;
   subtitle: string;
@@ -12,6 +14,7 @@ export type BlogsType = {
   file: string;
   datePosted: number;
   readTime: number;
+  level: LevelCriteria;
 }[];
 
 export const blogs: BlogsType = [
@@ -22,6 +25,7 @@ export const blogs: BlogsType = [
     file: 'Memory )',
     datePosted: 1690049021232,
     readTime: 10,
+    level: 'Beginner Friendly',
   },
   {
     title: 'How memory (RAM) works',
@@ -30,6 +34,7 @@ export const blogs: BlogsType = [
     file: 'memory',
     datePosted: 1690349021232,
     readTime: 6,
+    level: 'Beginner Friendly',
   },
 ];
 
@@ -61,7 +66,7 @@ const Blogs = (): ReactElement => {
               titleClassName="text-accent-secondary font-semibold underline text-2xl"
               title={`- ${blog.title}`}
               description={blog.subtitle}
-              descriptionClassName="text-sm"
+              descriptionClassName="text-sm mt-1"
               level={2}
               animation={false}
             />
@@ -73,7 +78,7 @@ const Blogs = (): ReactElement => {
                   customValues: { day: 'numeric', month: 'long', year: 'numeric' },
                 },
               })}{' '}
-              • {blog.readTime} mintutes read
+              • {blog.readTime} mintutes&nbsp;read {blog.level && `• ${blog.level}`}
             </p>
             {/* <p>Honestly, What the F{hashedOutText} is RAM?!</p> */}
           </Link>
