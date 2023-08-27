@@ -34,44 +34,37 @@
 
 const regexWithBrackets = /\[\[(.*?)\]\]/g;
 const regexForLinkName = /\|(.*?)\]\]/;
-const regexForAnchor = /#(.*?)(?=\||\]\])/;
+const regexForLinkAnchor = /#(.*?)(?=\||\]\])/;
+const regexForlinkKey = /\[\[(.*?)(?=\||#|\]\])/;
 
 const pBlogs = ['CPU'];
 
 const processLink = (blog: string): string => {
-  const processedLinks = blog.replaceAll(regexWithBrackets, (val) => {
-    const linkWithoutBrackets = val.replace(regexWithBrackets, (_, g): string => g as string);
+  const processedLinks = blog.replaceAll(regexWithBrackets, (val, group) => {
+    const linkWithoutBrackets = group as string;
 
     const name = val.match(regexForLinkName);
     const linkName = name ? name[1] : null;
-    // Use link name else full value without brackets.
-    const linkKey = linkName || linkWithoutBrackets;
 
-    const hash = val.match(regexForAnchor);
+    // Use link name else full value without brackets.
+    const key = val.match(regexForlinkKey);
+    const lKey = key ? key[1] : null;
+    const linkKey = lKey || linkWithoutBrackets;
+
+    const hash = val.match(regexForLinkAnchor);
     const linkAnchor = hash ? hash[1] : null;
 
     // If KEY is not in blogs, remove brackets.
     if (!pBlogs.includes(linkKey)) {
       // Use NAME if there is one, else use key.
-      if (linkName) {
-        return linkName;
-      }
-      return linkKey;
+      return linkName || linkKey;
     }
 
     if (linkAnchor) {
-      if (linkName) {
-        return `[${linkName}](/blog/${linkKey}#${linkAnchor})`;
-      }
-
-      return `[${linkKey}](/blog/${linkKey}#${linkAnchor})`;
+      return `[${linkName || linkKey}](/blog/${linkKey}#${linkAnchor})`;
     }
 
-    if (linkName) {
-      return `[${linkName}](/blog/${linkKey}`;
-    }
-
-    return `[${linkKey}](/blog/${linkKey})`;
+    return `[${linkName || linkKey}](/blog/${linkKey})`;
   });
 
   return processedLinks;
