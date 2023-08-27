@@ -20,7 +20,7 @@ module.exports = {
         accent: {
           main: '#0A5C36',
           secondary: '#006466',
-          tertiary: '#7B2CBF',
+          tertiary: '#9F3FBF',
         },
       },
       fontFamily: { sans: ['Victor Mono', 'monospace'] },
