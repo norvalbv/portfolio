@@ -3,13 +3,10 @@ import CardWrapper from 'components/CardWrapper';
 import Markdown from 'markdown-to-jsx';
 import { useLocation } from 'react-router-dom';
 import Loader from 'components/Loader';
-import hljs from 'highlight.js';
-import javascript from 'highlight.js/lib/languages/javascript';
-import 'highlight.js/styles/default.css';
-import Highlight from 'components/Highlighter';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { arta } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import useTheme from 'hooks/useTheme';
 import { blogs } from '..';
-
-hljs.registerLanguage('javascript', javascript);
 
 const UnorderedListComponent = ({
   children,
@@ -22,9 +19,29 @@ const ListComponent = ({ children, ...props }: { children: JSX.Element }): React
   <ul {...props}>&bull; {children}</ul>
 );
 
-const CodeComponent = ({ children, ...props }: { children: JSX.Element }): ReactElement => (
-  <Highlight {...props}>{children}</Highlight>
-);
+const CodeComponent = ({ children, ...props }: { children: string }): ReactElement => {
+  const { isDarkMode } = useTheme();
+  const isMultiline = /\n/.test(children);
+
+  return isMultiline ? (
+    <SyntaxHighlighter
+      style={arta}
+      customStyle={{
+        borderRadius: '8px',
+        boxShadow: '5px 6px 3px #00646630',
+        backgroundColor: isDarkMode ? '#222222' : '#D0D0DD',
+      }}
+      showLineNumbers
+      {...props}
+    >
+      {children}
+    </SyntaxHighlighter>
+  ) : (
+    <pre className="bg-light-code dark:bg-dark-code inline-block w-max rounded-lg px-2">
+      <code>{children}</code>
+    </pre>
+  );
+};
 
 const Blog = (): ReactElement => {
   const [blog, setBlog] = useState<string | null>(null);
@@ -61,7 +78,7 @@ const Blog = (): ReactElement => {
               h3: { props: { className: 'my-4 text-lg text-accent-main/75' } },
               p: { props: { className: 'my-3 text-sm leading-6' } },
               a: { props: { className: 'text-accent-secondary underline' } },
-              strong: { props: { className: 'text-accent-tertiary font-semibold text-base' } },
+              strong: { props: { className: 'text-accent-tertiary font-semibold' } },
               em: { props: { className: 'text-accent-tertiary/75' } },
               ul: { component: UnorderedListComponent, props: { className: 'ml-4 my-4' } },
               li: { component: ListComponent, props: { className: 'my-2' } },

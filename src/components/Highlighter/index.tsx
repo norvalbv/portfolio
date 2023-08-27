@@ -11,7 +11,7 @@ const Highlight = ({ children, className }: HighlightProps): ReactElement => {
 
   useEffect(() => {
     if (el.current) {
-      hljs.highlightBlock(el.current);
+      hljs.highlightElement(el.current);
     }
   }, [children]);
 

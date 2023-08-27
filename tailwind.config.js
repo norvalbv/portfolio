@@ -9,11 +9,13 @@ module.exports = {
           dark: '#000000',
           neutral: '#232323',
           text: '#E9EBE6',
+          code: '#222222',
         },
         light: {
-          dark: '#e9ecef',
+          dark: '#E9ECEf',
           neutral: '#F3F4F6',
           text: '#1A181E',
+          code: '#D0D0DD',
         },
         accent: {
           main: '#0A5C36',
