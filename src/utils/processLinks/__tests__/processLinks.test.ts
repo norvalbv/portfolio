@@ -1,5 +1,23 @@
 import processLink from '..';
 
+/**
+ * TEST EXAMPLES
+ * -------------
+ *
+ * Blogs: ['CPU', 'RAM']
+ *
+ * Inputs / Outputs:
+ *
+ * [[CPU]] -> [CPU](/blogs/CPU)
+ * [[CPU#CPU1]] -> [CPU](/blogs/CPU#CPU1)
+ * [[CPU|CPU2]] -> [CPU2](/blogs/CPU)
+ * [[CPU#CPU1|CPU2]] -> [CPU2](/blogs/CPU#CPU1)
+ * [[memory]] -> memory
+ * [[memory#memory1]] -> memory
+ * [[memory|memory2]] -> memory2
+ * [[memory#memory1|memory2]] -> memory
+ */
+
 describe('processLink', () => {
   test('should handle simple blog link', () => {
     expect(processLink('[[CPU]]')).toBe('[CPU](/blog/CPU)');
