@@ -1,7 +1,13 @@
 import React, { ReactElement } from 'react';
+import { LoaderIcon } from 'components/SVG';
+import CardWrapper from 'components/CardWrapper';
 
 const Loader = (): ReactElement => {
-  return <div>index</div>;
+  return (
+    <CardWrapper centered>
+      <LoaderIcon />
+    </CardWrapper>
+  );
 };
 
 export default Loader;
