@@ -1,7 +1,7 @@
 import React, { ReactElement, useEffect, useState } from 'react';
 import CardWrapper from 'components/CardWrapper';
 import Markdown from 'markdown-to-jsx';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Loader from 'components/Loader';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { arta } from 'react-syntax-highlighter/dist/esm/styles/hljs';
@@ -135,7 +135,9 @@ const Blog = (): ReactElement => {
 
             const processedLinks = processLink(res);
 
-            setBlog(processedLinks.slice(frontMatterLength));
+            const lastIndexOfDivide = processedLinks.lastIndexOf('---');
+
+            setBlog(processedLinks.slice(frontMatterLength, lastIndexOfDivide));
           })
       )
       .catch((e) => {
@@ -195,6 +197,12 @@ const Blog = (): ReactElement => {
           {blog}
         </Markdown>
       </article>
+      <section className="mt-10 flex items-center gap-4 border-t pt-4 text-sm">
+        <p>Any comments about this blog?</p>
+        <Link to="/contact" className="text-accent-secondary underline">
+          Contact Me
+        </Link>
+      </section>
     </CardWrapper>
   );
 };
