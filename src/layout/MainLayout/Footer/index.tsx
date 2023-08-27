@@ -15,7 +15,7 @@ const footerLinks = [
 const Footer = (): ReactElement => {
   return (
     <footer className="relative text-center text-sm text-gray-500 dark:text-gray-400">
-      <div className="mx-auto w-full max-w-screen-xl p-4 md:py-8">
+      <div className="mx-auto w-full max-w-screen-2xl p-4 md:py-8 lg:px-10">
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
           <ul className="flex items-center justify-center gap-6">
             {footerLinks.map((link) => (

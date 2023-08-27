@@ -91,7 +91,7 @@ const CodeComponent = ({ children, ...props }: { children: string }): ReactEleme
       {children}
     </SyntaxHighlighter>
   ) : (
-    <pre className="bg-light-code dark:bg-dark-code inline-block w-max rounded-lg px-2">
+    <pre className="inline-block w-max rounded-lg bg-light-code px-2 dark:bg-dark-code">
       <code>{children}</code>
     </pre>
   );
@@ -114,20 +114,19 @@ const Blog = (): ReactElement => {
         fetch(res.default)
           .then((res) => res.text())
           .then((res) => {
-            const extractFrontMatter = (markdownString: string): void => {
-              const lines = markdownString.split('\n');
+            const lines = res.split('\n');
 
-              // Due to the syntax of the markdown, there will always be three dashed lines in front matter.
-              const frontMatterIndexes = lines.flatMap((line, i) => (line === '---' ? i : []));
+            // Due to the syntax, there will always be three dashed lines in front matter.
+            const frontMatterIndexes = lines.flatMap((line, i) => (line === '---' ? i : []));
+            const frontMatter = lines.slice(0, frontMatterIndexes[2] + 1);
+            /*
+             * It's easier to obtain the length of the front matter instead of joining the array back together,
+             * By slicing the response in res, you keep the formatting of the markdown.
+             */
+            const frontMatterLength = frontMatter.join().length;
 
-              const frontMatter = lines.slice(0, frontMatterIndexes[2] + 1);
-
-              const blog = lines.slice(frontMatterIndexes[2] + 1).join(' ');
-
-              setFrontMatter(parseFrontMatterToArray(frontMatter));
-            };
-            extractFrontMatter(res);
-            setBlog(res.slice(288));
+            setFrontMatter(parseFrontMatterToArray(frontMatter));
+            setBlog(res.slice(frontMatterLength));
           })
       )
       .catch(() => {});
