@@ -3,6 +3,7 @@ Created at: 22-12-2022
 Modified at: Thursday 4th December 22 22:09
 tags: 
 - Coding
+- Finance
 Aliases: []
 title: Memory (RAM)
 date created: Thursday, December 22nd 2022, 10:09:55 pm
