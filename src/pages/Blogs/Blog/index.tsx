@@ -7,6 +7,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { arta } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import useTheme from 'hooks/useTheme';
 import Badge from 'components/Badge';
+import processLink from 'utils/processLinks';
 import { blogs } from '..';
 
 type FrontMatter = {
@@ -18,7 +19,7 @@ type FrontMatter = {
   title: string | null;
 };
 
-const handleFrontMatter = (lines: string[]): FrontMatter => {
+const processFrontMatter = (lines: string[]): FrontMatter => {
   const obj: FrontMatter = {
     Aliases: [],
     'date created': null,
@@ -124,16 +125,20 @@ const Blog = (): ReactElement => {
              */
             const frontMatterLength = frontMatter.join().length;
 
-            setFrontMatter(handleFrontMatter(frontMatter));
-            setBlog(res.slice(frontMatterLength));
+            setFrontMatter(processFrontMatter(frontMatter));
+
+            const processedLinks = processLink(res);
+
+            setBlog(processedLinks.slice(frontMatterLength));
           })
       )
-      .catch(() => {});
+      .catch((e) => {
+        // eslint-disable-next-line no-console
+        console.error(e);
+      });
   }, [currentBlogIndex, file]);
 
   if (!blog) return <Loader />;
-
-  // TODO filter out all [[]] link tags before putting it into blog, add to a state and update them to create anchor tags instead.
 
   return (
     <CardWrapper className="w-7/12">
