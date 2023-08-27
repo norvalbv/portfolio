@@ -69,8 +69,11 @@ const UnorderedListComponent = ({
   children: JSX.Element;
 }): ReactElement => <ul {...props}>{children}</ul>;
 
-const ListComponent = ({ children, ...props }: { children: JSX.Element }): ReactElement => (
-  <ul {...props}>&bull; {children}</ul>
+const ListComponent = ({ children, ...props }: { children: JSX.Element[] }): ReactElement => (
+  <li {...props} style={{ display: 'flex', alignItems: 'start', gap: '8px' }}>
+    <span className={children[0].type === 'p' ? 'mt-3' : ''}>&bull;</span>
+    <div>{children}</div>
+  </li>
 );
 
 const CodeComponent = ({ children, ...props }: { children: string }): ReactElement => {
