@@ -1,7 +1,7 @@
 import React, { ReactElement, useEffect, useState } from 'react';
 import CardWrapper from 'components/CardWrapper';
 import Markdown from 'markdown-to-jsx';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Loader from 'components/Loader';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { arta } from 'react-syntax-highlighter/dist/esm/styles/hljs';
@@ -104,11 +104,17 @@ const Blog = (): ReactElement => {
 
   const currentBlogIndex = blogs.findIndex((b) => pathname.includes(b.url));
 
-  const { file, title } = blogs[currentBlogIndex];
+  const navigate = useNavigate();
+
+  const currentBlog = blogs[currentBlogIndex] ? blogs[currentBlogIndex] : null;
   /**
    * Dynamically import blogs based on the current blog URL.
    */
   useEffect(() => {
+    if (!currentBlog) {
+      return navigate('not-found');
+    }
+    const { file } = currentBlog;
     import(`../../../assets/blogs/${file}.md`)
       .then((res: { default: RequestInfo }) =>
         fetch(res.default)
@@ -136,14 +142,15 @@ const Blog = (): ReactElement => {
         // eslint-disable-next-line no-console
         console.error(e);
       });
-  }, [currentBlogIndex, file]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentBlogIndex, currentBlog]);
 
   if (!blog) return <Loader />;
 
   return (
     <CardWrapper className="w-7/12">
       <article>
-        <h1 className="text-2xl capitalize text-accent-main underline">{title}</h1>
+        <h1 className="text-2xl capitalize text-accent-main underline">{currentBlog?.title}</h1>
         <section className="my-6 flex flex-col gap-2 text-xs">
           {frontMatter?.tags?.length ? (
             <div className="flex items-center gap-2">
