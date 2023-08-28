@@ -20,34 +20,38 @@ import processLink from '..';
 
 describe('processLink', () => {
   test('should handle simple blog link', () => {
-    expect(processLink('[[CPU]]')).toBe('[CPU](/blog/CPU)');
+    expect(processLink('[[Memory (RAM)]]')).toBe('[Memory (RAM)](/blog/how-memory-works)');
   });
 
   test('should handle blog link with anchor', () => {
-    expect(processLink('[[CPU#CPU1]]')).toBe('[CPU](/blog/CPU#CPU1)');
+    expect(processLink('[[Memory (RAM)#memory]]')).toBe(
+      '[Memory (RAM)](/blog/how-memory-works#memory)'
+    );
   });
 
   test('should handle blog link with name override', () => {
-    expect(processLink('[[CPU|CPU2]]')).toBe('[CPU2](/blog/CPU)');
+    expect(processLink('[[Memory (RAM)|CPU2]]')).toBe('[CPU2](/blog/how-memory-works)');
   });
 
   test('should handle blog link with both anchor and name override', () => {
-    expect(processLink('[[CPU#CPU1|CPU2]]')).toBe('[CPU2](/blog/CPU#CPU1)');
+    expect(
+      processLink('[[Memory (RAM)#Hierarchical Nature of Storage|CPU cache (L1, L2, L3 cache)]]')
+    ).toBe('[CPU cache (L1, L2, L3 cache)](/blog/how-memory-works#Hierarchical Nature of Storage)');
   });
 
   test('should handle non-blog link', () => {
-    expect(processLink('[[memory]]')).toBe('memory');
+    expect(processLink('[[CPU]]')).toBe('CPU');
   });
 
   test('should handle non-blog link with anchor', () => {
-    expect(processLink('[[memory#memory1]]')).toBe('memory');
+    expect(processLink('[[CPU#CPU1]]')).toBe('CPU');
   });
 
   test('should handle non-blog link with name override', () => {
-    expect(processLink('[[memory|memory2]]')).toBe('memory2');
+    expect(processLink('[[CPU|CPU2]]')).toBe('CPU2');
   });
 
   test('should handle non-blog link with both anchor and name override', () => {
-    expect(processLink('[[memory#memory1|memory2]]')).toBe('memory2');
+    expect(processLink('[[CPU#CPU1|CPU2]]')).toBe('CPU2');
   });
 });

@@ -29,9 +29,7 @@ exports[`<Header /> should render correctly with all props 1`] = `
 `;
 
 exports[`<Header /> should render correctly with subtitle provided 1`] = `
-<header
-  className="flex items-center justify-between"
->
+<header>
   <section
     className="flex w-full flex-col gap-1"
   >
@@ -61,9 +59,7 @@ exports[`<Header /> should render correctly with subtitle provided 1`] = `
 `;
 
 exports[`<Header /> should render correctly with title provided 1`] = `
-<header
-  className="flex items-center justify-between"
->
+<header>
   <section
     className="flex w-full flex-col gap-1"
   >

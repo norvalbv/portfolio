@@ -5,9 +5,7 @@ exports[`<ContactMe /> should render correctly 1`] = `
   className="relative mx-auto flex-1 mt-6 w-10/12 min-w-[20rem] md:mt-10"
 >
   <div>
-    <header
-      className="flex items-center justify-between"
-    >
+    <header>
       <section
         className="flex w-full flex-col gap-1"
       >

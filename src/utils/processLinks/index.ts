@@ -54,19 +54,20 @@ const processLink = (blog: string): string => {
     const hash = val.match(regexForLinkAnchor);
     const linkAnchor = hash ? hash[1] : null;
 
+    const url = blogs.find((b) => b.id === linkKey)?.url;
+    const currentUrl = window.location.href;
+
     // If KEY is not in blogs, remove brackets.
-    if (!blogs.map((b) => b.id).includes(linkKey)) {
+    if (!blogs.map((b) => b.id).includes(linkKey) || currentUrl.includes(url || '')) {
       // Use NAME if there is one, else use key.
       return linkName || linkKey;
     }
 
-    const url = blogs.find((b) => b.id === linkKey);
-
     if (linkAnchor) {
-      return `[${linkName || linkKey}](/blog/${url?.url}#${linkAnchor})`;
+      return `[${linkName || linkKey}](/blog/${url}#${linkAnchor})`;
     }
 
-    return `[${linkName || linkKey}](/blog/${url?.url})`;
+    return `[${linkName || linkKey}](/blog/${url})`;
   });
 
   return processedLinks;
