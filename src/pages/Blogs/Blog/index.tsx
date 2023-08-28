@@ -217,7 +217,7 @@ const Blog = (): ReactElement => {
           {blog}
         </Markdown>
       </article>
-      <section className="mt-10 flex items-center gap-4 border-t pt-4 text-sm">
+      <section className="mt-10 flex items-center gap-4 border-t border-dark-dark pt-4 text-sm dark:border-light-dark">
         <p>Any comments about this blog?</p>
         <Link to="/contact" className="text-accent-secondary underline">
           Contact Me
