@@ -1,3 +1,5 @@
+import blogs from 'constants/blogs';
+
 /*
  * Using regex find the obsidian links, e.g., [[CPU]]
  * Obtain the full link including the brackets.]
@@ -37,8 +39,6 @@ const regexForLinkName = /\|(.*?)\]\]/;
 const regexForLinkAnchor = /#(.*?)(?=\||\]\])/;
 const regexForlinkKey = /\[\[(.*?)(?=\||#|\]\])/;
 
-const pBlogs = ['CPU'];
-
 const processLink = (blog: string): string => {
   const processedLinks = blog.replaceAll(regexWithBrackets, (val, group) => {
     const linkWithoutBrackets = group as string;
@@ -55,16 +55,18 @@ const processLink = (blog: string): string => {
     const linkAnchor = hash ? hash[1] : null;
 
     // If KEY is not in blogs, remove brackets.
-    if (!pBlogs.includes(linkKey)) {
+    if (!blogs.map((b) => b.id).includes(linkKey)) {
       // Use NAME if there is one, else use key.
       return linkName || linkKey;
     }
 
+    const url = blogs.find((b) => b.id === linkKey);
+
     if (linkAnchor) {
-      return `[${linkName || linkKey}](/blog/${linkKey}#${linkAnchor})`;
+      return `[${linkName || linkKey}](/blog/${url?.url}#${linkAnchor})`;
     }
 
-    return `[${linkName || linkKey}](/blog/${linkKey})`;
+    return `[${linkName || linkKey}](/blog/${url?.url})`;
   });
 
   return processedLinks;

@@ -8,7 +8,7 @@ import { arta } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import useTheme from 'hooks/useTheme';
 import Badge from 'components/Badge';
 import processLink from 'utils/processLinks';
-import { blogs } from '..';
+import blogs from 'constants/blogs';
 
 type FrontMatter = {
   Aliases: string[] | null;
@@ -87,6 +87,7 @@ const CodeComponent = ({ children, ...props }: { children: string }): ReactEleme
         borderRadius: '8px',
         boxShadow: '5px 6px 3px #00646630',
         backgroundColor: isDarkMode ? '#222222' : '#D0D0DD',
+        margin: '8px 0 8px 0',
       }}
       showLineNumbers
       {...props}
@@ -165,7 +166,13 @@ const Blog = (): ReactElement => {
           ) : null}
           {frontMatter?.['date modified'] && (
             <p>
-              Last Modified: <span className="italic">{frontMatter['date modified']}</span>
+              Last Modified:{' '}
+              <span className="italic">
+                {frontMatter['date modified'].slice(
+                  0,
+                  frontMatter['date modified'].lastIndexOf(',')
+                )}
+              </span>
             </p>
           )}
           {frontMatter?.Aliases?.length ? (

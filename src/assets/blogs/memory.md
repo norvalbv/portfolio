@@ -1,17 +1,14 @@
 ---
-Created at: 22-12-2022
-Modified at: Thursday 4th December 22 22:09
 tags: 
 - Coding
 Aliases: []
 title: Memory (RAM)
 date created: Thursday, December 22nd 2022, 10:09:55 pm
-date modified: Sunday, August 20th 2023, 9:33:38 pm
+date modified: Monday, August 28th 2023, 9:23:08 pm
 review-frequency: high
 ---
 - [x] Memory (RAM) #Complete
 ---
-
 ## Overview
 
 There are two kinds of internal memory: ROM and RAM. **ROM** stands for read-only memory. It is non-volatile, which means it can retain data even without power. It is used mainly to start or boot up a computer. Once the operating system is loaded, the computer uses **RAM**. RAM (Random Access Memory) in essence is your computer's short term memory. It exists as *a high speed temporary storage for your [[CPU]]* - a form of volatile memory. It typically holds the data of your current running [[Process|processes]]. Active memory is filled with data your computer is actively working with, which usually comes from apps that are currently running or files you’re currently looking at. The more data your computer is using at once, the more RAM it will utilise.
@@ -92,17 +89,18 @@ There are other factors to improving speed and efficiency on your computer, such
 
 So what would make a smoother experience, upgrading RAM or CPU?
 
-### Powerful Apps Like Photoshop:
+**Powerful Apps Like Photoshop**:
 
 1. **RAM**: Photoshop, especially when dealing with large files or multiple open images, can quickly eat up RAM. If RAM is insufficient, Photoshop might have to frequently swap data between the RAM and the disk, which can significantly slow down its operations. Thus, having ample RAM is essential for smooth performance.
 2. **CPU**: Photoshop also relies on the CPU for various tasks, such as applying filters, running scripts, and other processing-related actions. A faster CPU will speed up these operations.
-### Gaming:
+
+**Gaming**:
 
 1. **RAM**: Modern games load a lot of assets, like textures, character models, and environment details, into RAM. If RAM is insufficient, games might experience stuttering or longer loading times when trying to fetch these assets.
 2. **CPU**: The CPU handles game logic, physics simulations, AI behaviours, and more. A more powerful CPU can process these elements more efficiently, leading to smoother gameplay, especially in CPU-intensive scenes or scenarios.
 3. **Note on GPU**: For gaming, the Graphics Processing Unit (GPU) is also paramount. The GPU is responsible for rendering graphics, and a good GPU is essential for high FPS rates and detailed visuals.
 
-### For a smoother experience:
+For a smoother experience:
 
 - In **Photoshop**: More RAM is generally the first priority, especially if working with high-resolution images or multiple layers. However, a faster CPU can significantly boost performance when applying complex effects or operations.
 - In **Gaming**: Both RAM and CPU are important, but they need to be balanced with a good GPU. Depending on the game, one might prioritise the CPU (for games with lots of AI and physics calculations) or RAM (for games with vast open worlds and lots of assets). Still, in many cases, the GPU will be the most critical factor for FPS and visual quality.
@@ -124,7 +122,7 @@ While RAM can come in a lot of different forms, you’ll often get a clue that y
 
 There are multiple different [form factors of RAM](https://www.overclockers.co.uk/blog/ram-form-factors-explained-everything-you-need-to-know/), including: 
 
-- **DIMM**: The most common form factor. Primarily used in desktop PCs.
+- **DIMM** – The most common form factor. Primarily used in desktop PCs.
 
 DIMMs (Dual In-line Memory Modules) are commonly used in larger computers and allows for swapping and upgrading system RAM. These are modular, meaning they can be inserted into or removed from dedicated slots on the mother board.
 
@@ -132,9 +130,9 @@ DIMMs themselves come in various types/form factors, including:
  - UDIMM (Unbuffered DIMM): The most common type of memory module for desktop PCs.
  - SODIMM (Small Outline DIMM): A smaller variant of DIMM, typically used in laptops.
 
-- **SIMM**: Single In-Line Memory Module - were used in the late 1980s to 1990s, are now obsolete.
+- **SIMM** - Single In-Line Memory Module - were used in the late 1980s to 1990s, are now obsolete.
 
-- **Soldered RAM**: Typically used in laptops, small PCs, or home theatre set-ups. The main advantages include space savings and potentially better power efficiency.
+- **Soldered RAM** – Typically used in laptops, small PCs, or home theatre set-ups. The main advantages include space savings and potentially better power efficiency.
 
 ### Unified and System RAM and VRAM
 

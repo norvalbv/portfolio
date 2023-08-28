@@ -1,5 +1,4 @@
 import React, { ReactElement } from 'react';
-import { classNames } from 'utils';
 import Title from 'components/Header/Title';
 import Subtitle from 'components/Header/SubTitle';
 import { useRandomReveal } from 'hooks/useRandomReveal';
@@ -47,7 +46,7 @@ const Header = ({
   }
 
   return (
-    <header className={classNames(className || 'flex items-center justify-between')}>
+    <header className={className}>
       <section className="flex w-full flex-col gap-1">
         <Title className={titleClassName} level={level}>
           {animation ? processedTitle : title}
