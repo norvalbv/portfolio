@@ -17,6 +17,7 @@ type FrontMatter = {
   'review-frequency': string | null;
   tags: string[] | null;
   title: string | null;
+  'read time': string | null;
 };
 
 const processFrontMatter = (lines: string[]): FrontMatter => {
@@ -27,6 +28,7 @@ const processFrontMatter = (lines: string[]): FrontMatter => {
     'review-frequency': null,
     tags: [],
     title: null,
+    'read time': null,
   };
 
   let currentKey: keyof FrontMatter;
@@ -156,10 +158,10 @@ const Blog = (): ReactElement => {
   return (
     <CardWrapper className="w-7/12">
       <article>
-        <h1 className="text-2xl capitalize text-accent-main underline">{currentBlog?.title}</h1>
-        <section className="my-6 flex flex-col gap-2 text-xs">
+        <h1 className="text-4xl capitalize text-accent-main underline">{currentBlog?.title}</h1>
+        <section className="my-6 flex flex-col gap-4 text-xs">
           {frontMatter?.tags?.length ? (
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-4">
               Tags:
               {frontMatter?.tags.map((tag) => <Badge tag={tag} key={tag} />)}
             </div>
@@ -186,6 +188,12 @@ const Blog = (): ReactElement => {
               ))}
             </div>
           ) : null}
+          {frontMatter?.['read time'] ? (
+            <div className="capitalize">
+              Read Time:&nbsp;
+              {frontMatter?.['read time']}
+            </div>
+          ) : null}
         </section>
         <Markdown
           options={{
@@ -193,14 +201,16 @@ const Blog = (): ReactElement => {
             overrides: {
               h1: { props: { className: 'text-2xl text-accent-main' } },
               h2: { props: { className: 'my-6 text-2xl underline text-accent-main/90' } },
-              h3: { props: { className: 'my-4 text-lg text-accent-main/75' } },
+              h3: { props: { className: 'my-4 text-xl text-accent-main/75' } },
+              h4: { props: { className: 'my-4 text-lg text-accent-secondary/60' } },
               p: { props: { className: 'my-3 text-sm leading-6' } },
               a: { props: { className: 'text-accent-secondary underline' } },
               strong: { props: { className: 'text-accent-tertiary font-semibold' } },
               em: { props: { className: 'text-accent-tertiary/75' } },
-              ul: { component: UnorderedListComponent, props: { className: 'ml-4 my-4' } },
+              ul: { component: UnorderedListComponent, props: { className: 'my-4' } },
               li: { component: ListComponent, props: { className: 'my-2' } },
               code: { component: CodeComponent },
+              blockquote: { props: { className: 'ml-4 border-l pl-4 italic' } },
             },
           }}
         >

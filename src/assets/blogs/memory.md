@@ -1,37 +1,50 @@
 ---
 tags: 
 - Coding
-Aliases: []
+- How Computer Work
+- Memory 
+Aliases: 
+- Memory
+- RAM
 title: Memory (RAM)
 date created: Thursday, December 22nd 2022, 10:09:55 pm
-date modified: Monday, August 28th 2023, 9:23:08 pm
+date modified: Monday, August 28th 2023, 11:33:58 pm
 review-frequency: high
+blogged: true
+blogged modified: Monday, August 28th 2023
+read time: 20 mins
 ---
 - [x] Memory (RAM) #Complete
 ---
 ## Overview
 
-There are two kinds of internal memory: ROM and RAM. **ROM** stands for read-only memory. It is non-volatile, which means it can retain data even without power. It is used mainly to start or boot up a computer. Once the operating system is loaded, the computer uses **RAM**. RAM (Random Access Memory) in essence is your computer's short term memory. It exists as *a high speed temporary storage for your [[CPU]]* - a form of volatile memory. It typically holds the data of your current running [[Process|processes]]. Active memory is filled with data your computer is actively working with, which usually comes from apps that are currently running or files you’re currently looking at. The more data your computer is using at once, the more RAM it will utilise.
+There are two kinds of internal memory: ROM and RAM. **ROM**, standing for read-only memory, is non-volatile meaning it can retain data even without power and is used mainly to start or boot up a computer.  Once the [[Kernel#Kernel Vs Operating System|operating system]] is loaded, the computer uses **RAM**. RAM (Random Access Memory) is your computer's short-term memory and exists as *a high-speed temporary storage for your [[CPU]]* - a form of volatile memory. Typically holding the data of your current running [[Process|processes]], active memory is filled with data your computer is actively working with, which usually comes from apps that are currently running or files you’re currently looking at. The more data your computer is using at once, the more RAM it will utilise.
 
-The [[CPU]] does not directly talk to [[Storage Drive|storage drive]], but instead the RAM acts intermediary between CPU and disk. The reason for this is that storage drives are **slow**, and they have always been slow. Even with the advanced in hard drive (HDD) technology; IDE, PATA, SATA, SAS, 4200rpm, 5400rpm, 7200rpm, 10,000rpm, 15,000rpm and so on, advances in CPU speed have outpaced this and therefore require a quicker access to data that any storage drive cannot support. The same occurs with SSD, the CPU speed is quicker than any SSD can currently handle. For a CPU to interact directly with the storage drive, the processor would spend most of its time sitting idle waiting for the read and write heads from the disk. To get around this issue, the required file is copied to RAM, although this is still way slower than what goes on inside the CPU but way faster than storage. The file is manipulated in RAM and sent back to the storage drive once saved.
+The RAM and ROM are not the only data storage points within a computer, there are others such as storage drives (HDD and SDD), CPU cache and more. Data is only stored in RAM while your PC is turned on and once it is turned off, all the data is lost and as RAM only holds the data you need for the processes that are currently active, closing or shutting down the app will clear the data out of memory. Therefore, data will be lost if not saved correctly.
 
-Data is only stored in RAM while your PC is turned on and once it is turned off, all the data is lost. As RAM only holds the data you need for the processes that are currently active, closing or shutting down the app will clear the data out of memory and therefore, data will be lost if not saved correctly.
-
-A computer's RAM needs to be quick, the speed of it determines how quickly data flows in and out of your CPU. Generally, the faster the RAM, the faster the processing speed. With faster RAM, you increase the speed at which memory transfers information to other components. Meaning, your fast processor now has an equally fast way of talking to the other components, making your computer much more efficient.
+A computer's RAM needs to be quick, the speed of it determines how quickly data flows in and out of your CPU. Generally, the faster the RAM, the faster the processing speed. With a faster RAM, you increase the speed at which memory transfers information to other components meaning, that your fast CPU now has an equally fast way of talking to the other components, making your computer much more efficient.
 
 ## How RAM Works
 
-Ultimately, data needs to get onto your CPU, to get processed. Data is stored at different levels, such as the [[Storage Drive|storage drive]], RAM, [[Memory (RAM)#Hierarchical Nature of Storage|CPU cache (L1, L2, L3 cache)]], etc. Storage is where everything resides at all times, saved for the long term and remaining there even when your device is powered down. This would be your [hard drives](https://www.ign.com/articles/best-external-hard-drive) ([[Storage Drive|HDD]]) and [solid state drives](https://www.ign.com/articles/best-ssd) ([[Storage Drive|SSD]]). Files, programs, apps, and games are all saved in storage.
+Ultimately, data needs to get onto your CPU, to get processed. Data is stored at different levels, such as the [[Storage Drive|storage drive]], RAM, [[Memory (RAM)#Hierarchical Nature of Storage|CPU cache (L1, L2, L3 cache)]], etc. A [[Storage Drive|storage drive]] is where everything resides at all times, saved for the long term and remaining there even when your device is powered down, this would be your [hard drives](https://www.ign.com/articles/best-external-hard-drive) ([[Storage Drive|HDD]]) and [solid state drives](https://www.ign.com/articles/best-ssd) ([[Storage Drive|SSD]]). Files, programs, apps, and games are all saved in storage.
+
+Whilst the RAM and storage drives are both forms of data storage, the CPU does not, and cannot directly talk to the storage drive, but instead the RAM acts as an intermediary between the CPU and the disk. The reason for this is that storage drives are **slow**, and they have always been slow. Even with the advances in hard drive (HDD) technology; IDE, PATA, SATA, SAS, 4200rpm, 5400rpm, 7200rpm, 10,000rpm, 15,000rpm and so on, advances in CPU speed have outpaced this and therefore, require quicker access to data that any storage drive cannot support. The same occurs with the more recent advances in SSD, the CPU speed is quicker than any SSD can currently handle. If a CPU were to interact directly with the storage drive, the CPU would spend most of its time sitting idle waiting for the read and write heads from the disk. To get around this issue, the required file is copied to RAM, although this is still way slower than what goes on inside the CPU but way faster than storage. The file is manipulated in RAM and sent back to the storage drive once saved.
 
 Any time you perform a task on your computer, such as playing a film or a game, your computer will load the data that the CPU needs for those applications into the RAM. Memory is much faster than storage, so having data accessible here helps keep the system running quickly. RAMs are way faster than storage drives, and CPU caches are much faster again, meaning the storage drives are usually slower among all memories used for computing.
 
-When the storage drive receives the file request, the file is copied from the platter sectors (platter sectors are only in HHD and not SSD) to the drive’s cache and, from there, to the system RAM. The CPU manipulates the file in tiny pieces by copying bits of it to the CPU cache and then sending the new version of the data back to system RAM. When you’re done with the file, it gets sent back to the storage that copies it immediately to the storage drive cache and tells you the file is saved. When the drive is idle, the cached version of the file is written back to the sectors on the drive.
+When the storage drive receives the file request, the file is copied from the platter sectors (platter sectors are only in HHD and not SSD) to the drive’s cache and, from there, to the system RAM. The CPU manipulates the file in tiny pieces by copying bits of it to the CPU cache and then sends the new version of the data back to system RAM. When you are done with the file, it gets sent back to the storage that copies it immediately to the storage drive cache and tells you the file is saved. When the drive is idle, the cached version of the file is written back to the sectors on the drive.
 
 All of this caching and copying might make a straightforward process seem complicated, but there’s a very good reason for it - to *reduce the amount of time any single process was waiting for data from another part.*
+### Understanding RAM in Simple Terms
 
+RAM can be confusing. To put it simply, think of it all like maths homework. The storage drive is your textbook, it has all the maths problems, formulas, and information you might need stored inside.
+
+When you’ve got a homework assignment, you write down all the questions and maybe note some of the relevant formulas you’ll use on a blank sheet of paper, that sheet of paper is your RAM. At any given moment, you're not thinking about every single problem you’ve written on that paper, but you’ve got near-immediate access to them as needed – no need to flip around in your textbook to find what you need.
+
+When you work on solving one of the problems, you’re thinking about that data right inside your brain, that’s your CPU and cache at work.
 ### Dealing with Large Datasets or Files
 
-If you ask your computer to perform a task, such as opening a photo to edit, and you don’t have enough available RAM, your computer has to begin shuffling data around in order to open the file - it has to move data between the slower hard drive and the RAM and the processor, which causes everything to slow down.
+If you ask your computer to perform a task, such as opening a photo to edit, and you don’t have enough available RAM, your computer has to begin shuffling data around to open the file - it has to move data between the slower storage drive, RAM, and the CPU, which causes everything to slow down.
 
 Different tasks or applications have different requirements. For example:
 
@@ -39,9 +52,7 @@ Different tasks or applications have different requirements. For example:
 - **Gaming**: While it does need a fair amount of RAM, it's more reliant on a combination of CPU and GPU (Graphics Processing Unit) power.
 - **General Office Work**: Browsing, word processing, and light multitasking may not require a high-end CPU or vast amounts of RAM.
 
-When you open a file, **it doesn't always mean the entire file is loaded into RAM.** For instance, if you opened a hypothetical image with an inflated file size of 10 GB, photo editing software might not load the entire photo into RAM at once. It might load only the parts you're currently viewing or editing. Software can be designed to load data into RAM in chunks or as-needed. *It is up to the software which is opening the file to put the data into RAM* and therefore, efficiently designed tools may not put the entire file into RAM at one time. As the RAM is volatile, it will have different parts of data in it at different times.
-
-There are various pieces of hardware and software that play critical parts in effective memory management.
+When you open a file, **it doesn't always mean the entire file is loaded into RAM.** For instance, if you opened a hypothetical image with an inflated file size of 10 GB, photo editing software might not load the entire photo into RAM at once. It might load only the parts you're currently viewing or editing. Software can be designed to load data into RAM in chunks or as needed and *It is up to the software that is opening the file to put the data into RAM*. Therefore, efficiently designed tools may not put the entire file into RAM at one time, as the RAM is volatile, it will have different parts of data in it at different times. All pieces of hardware and software play critical and different parts in effective memory management, for example:
 
 *Buffers and caches* - Many applications use buffers and caches. A buffer temporarily holds data, while a cache retains frequently or recently accessed data. When editing an image, the changes might first be made in a buffer. When you save, the changes are committed from the buffer to the file on disk. Meanwhile, caches can store parts of the image that you're frequently accessing, ensuring quick access without reloading from the disk.
 
@@ -49,39 +60,20 @@ There are various pieces of hardware and software that play critical parts in ef
 
 It is up to efficient software design and memory management to ensure that the RAM is effectively used without maxing it out. Tools like buffers, caches, and other techniques allow applications to work with larger files and datasets.
 
-### Understanding RAM in Simple Terms
-
-RAM can be confusing. To put it simply, think of it all like maths homework. Storage is your textbook. It has all the maths problems, formulas, and information you might need stored inside.
-
-When you’ve got a homework assignment, you write down all the questions and maybe note some of the relevant formulas you’ll use on a blank sheet of paper. That sheet of paper is your RAM.
-At any given moment, you’re not thinking about every single problem you’ve written on that paper, but you’ve got near-immediate access to them as needed – no need to flip around in your textbook to find what you need.
-
-When you work on solving one of the problems, now you’re thinking about that data right inside your brain, that’s your processor and cache at work.
-
 ## Hierarchical Nature of Storage
 
 Storage can be visualised in a hierarchy based on speed and cost:
 
-- CPU Registers: Extremely fast, very small storage.
+- CPU Registers: Extremely fast with very small storage.
 - Cache (L1, L2, L3): Faster than RAM but smaller in size. Closer to the CPU.
 - RAM: Large enough to hold active processes and data, but more expensive per gigabyte than storage drives.
 - SSD/HDD: Much larger capacity but slower.
 
-Data moves between these storage types depending on how often it's accessed and needed. *The more immediate and frequently accessed data is, the closer it should be to the CPU*, in other words, it will be placed inside the CPU registers.
-
-**RAM is more expensive per gigabyte than storage like HDDs and SSDs and hence, the RAM is not also used as long-term storage devices.**
+Data moves between these storage types depending on how often it's accessed and needed. *The more immediate and frequently accessed data is, the closer it should be to the CPU*, in other words, it will be placed inside the CPU registers. As RAM is more expensive per gigabyte than storage like HDDs and SSDs and hence, the RAM is not used as long-term storage devices.
 
 ## CPU Vs RAM
 
-The CPU is the brains of the computer whilst the RAM is the short-term memory of the CPU. 
-
-- **More RAM**: Allows more data/applications to be *ready* for processing.
-- **Bigger (or faster) CPU**: Allows more instructions (or data) to be processed *simultaneously*.
-
-A quick CPU with insufficient RAM can lead to the CPU waiting on data, causing a bottleneck. Conversely, a system with massive amounts of RAM but a slow CPU won't process data quickly, even though it's readily available, so it's important to upgrade the correct hardware accordingly. Based on what you plan to do with your computer, you might prioritise one upgrade over the other. For example:
-
-- If you're experiencing system slowdowns and notice your RAM is consistently maxed out (using tools like Task Manager or Activity Monitor), an increase in RAM might be a beneficial upgrade.
-- Conversely, if you find that your CPU is consistently running at high percentages even though you still have available RAM, then a CPU upgrade might be in order.
+Simply put, the CPU is the brains of the computer, whilst the RAM is the short-term memory of the CPU. Having more RAM allows more data/applications to be *ready* for processing whilst the bigger (or faster) CPU allows more instructions (or data) to be processed *simultaneously*. A quick CPU with insufficient RAM can lead to the CPU waiting on data, causing a bottleneck. Conversely, a system with massive amounts of RAM but a slow CPU won't process data quickly, even though it's readily available, so it's important to upgrade the correct hardware accordingly. Based on what you plan to do with your computer, you might prioritise one upgrade over the other. For example, if you're experiencing system slowdowns and notice your RAM is consistently maxed out (using tools like Task Manager or Activity Monitor), an increase in RAM might be a beneficial upgrade.Conversely, if you find that your CPU is consistently running at high percentages even though you still have available RAM, then a CPU upgrade might be in order.
 
 There are other factors to improving speed and efficiency on your computer, such as:
 - **Storage Speed**: The speed of your storage (SSD vs. HDD) can significantly impact system performance, especially when RAM is full and the system starts swapping.
@@ -102,7 +94,7 @@ So what would make a smoother experience, upgrading RAM or CPU?
 
 For a smoother experience:
 
-- In **Photoshop**: More RAM is generally the first priority, especially if working with high-resolution images or multiple layers. However, a faster CPU can significantly boost performance when applying complex effects or operations.
+- In **Photoshop**: More RAM is generally the priority, especially if working with high-resolution images or multiple layers. However, a faster CPU can significantly boost performance when applying complex effects or operations.
 - In **Gaming**: Both RAM and CPU are important, but they need to be balanced with a good GPU. Depending on the game, one might prioritise the CPU (for games with lots of AI and physics calculations) or RAM (for games with vast open worlds and lots of assets). Still, in many cases, the GPU will be the most critical factor for FPS and visual quality.
 
 In both cases, if you had to choose between adding more RAM or upgrading to a better CPU, you'd first identify the bottleneck in your system. If tasks are slowed because they're waiting on data (RAM is consistently full), then adding more RAM would help. If tasks are slow even when there's available RAM (CPU usage is high), then a better CPU might be the solution.
@@ -124,7 +116,7 @@ There are multiple different [form factors of RAM](https://www.overclockers.co.
 
 - **DIMM** – The most common form factor. Primarily used in desktop PCs.
 
-DIMMs (Dual In-line Memory Modules) are commonly used in larger computers and allows for swapping and upgrading system RAM. These are modular, meaning they can be inserted into or removed from dedicated slots on the mother board.
+DIMMs (Dual In-line Memory Modules) are commonly used in larger computers and allows for swapping and upgrading system RAM. These are modular, meaning they can be inserted into or removed from dedicated slots on the motherboard.
 
 DIMMs themselves come in various types/form factors, including:
  - UDIMM (Unbuffered DIMM): The most common type of memory module for desktop PCs.
@@ -150,7 +142,7 @@ Unified RAM, also known as Unified Memory Architecture (UMA), refers to a type o
 
 #### System RAM
 
-System RAM, typically just referred to as RAM (Random Access Memory), is the primary memory used by the CPU:
+System RAM, typically just referred to as RAM, is the primary memory used by the CPU.
 
 #### VRAM (Video RAM)
 
@@ -180,18 +172,16 @@ RAM can have different sections or areas that are used for specific purposes. Wh
 - Registers are part of the CPU's architecture. The number, type, and size of registers are defined by the CPU's design and are not determined by the OS. The operating system and compilers, however, utilise these registers when scheduling and executing tasks.
 
 **Cache**:
-- This is a smaller, faster type of volatile computer memory that provides high-speed data access to the processor and stores frequently used computer programs, applications, and data.
-- Cache memory provides faster data storage and access by storing instances of programs and data routinely accessed by the processor.
+- This is a smaller, faster type of volatile computer memory that provides high-speed data access to the CPU and stores frequently used computer programs, applications, and data.
+- Cache memory provides faster data storage and access by storing instances of programs and data routinely accessed by the CPU.
 - It's further divided into levels (L1, L2, L3) based on proximity to the CPU, with L1 being the closest and fastest but smallest, and L3 being the furthest but larger and a bit slower.
-- *Caches (L1, L2, L3) are physically present on the CPU die and are hardware-managed*.
+- *Caches (L1, L2, L3) are physically present on the CPU and are hardware-managed*.
 
 **Main Memory (Primary RAM)**:
 - This is the main RAM where applications, files, and data in current use are stored, so they can be quickly accessed by the CPU.
 
 **Buffer**:
 - This is a temporary memory location where data is stored while it is being transferred between two locations, like between a device and RAM or between RAM and the CPU.
-
-[[Memory Management with Heaps and Stacks]] is also a critical part of the RAM. Both the [[Call Stack]] and [[Memory Heap]] **do not have a physical representation on the RAM**, but instead it is a memory abstraction - constructs used in memory management created by the [[Kernel#Kernel Vs Operating System|operating system]]. There is no physical difference between them, they are simply in RAM. Those abstraction help us to develop some good software and not to think about where each variable and functions is going in RAM and keep tracking it there. 
 
 **Stack**:
  - The stack is a contiguous memory region that grows and shrinks automatically. When a program starts, a default stack size is assigned. It grows automatically (within limits) if more space is needed.
@@ -201,11 +191,13 @@ RAM can have different sections or areas that are used for specific purposes. Wh
  - The heap is more scattered. Memory is allocated and deallocated in any order, not just the top, like the stack.
  - The OS and the language runtime (e.g., C runtime) manage the heap. They keep track of which parts of the heap are in use and which are free. When you allocate memory dynamically (using `malloc`, `new`, etc.), the OS/runtime gives you a piece of the heap.
 
+[[Memory Management with Heaps and Stacks]] is also a critical part of the RAM. Both the [[Call Stack]] and [[Memory Heap]] **do not have a physical representation on the RAM**, but instead it is a memory abstraction - constructs used in memory management created by the operating system. There is no physical difference between them, they are simply in RAM. Those abstractions help us to develop some good software and not to think about where each variable and function is going in RAM and keep tracking it there. 
+
 **Virtual Memory**:
 - Not a section of RAM, but worth mentioning. When RAM is full, the operating system shifts data to an area of the hard drive, which is set up to emulate RAM, called the "swap space" or "page file."
 - Accessing data in virtual memory is slower than accessing data in RAM because hard drives are slower than RAM.
 
-In actual operation, the operating system and hardware work in tandem to manage these different memory sections, ensuring that data is in the right place at the right time for the CPU to process it efficiently.
+The operating system and hardware work in tandem to manage these different memory sections, ensuring that data is in the right place at the right time for the CPU to process it efficiently.
 
 ### Role of OS/Kernel
 
@@ -223,7 +215,7 @@ Whilst there may be multiple different form factors, configurations, and built-i
 - **Circuit Board** - Where the main components of RAM are soldered, all of which are connected via the integrated circuit. This ensures they can effectively communicate with each other and your CPU. 
 - **Mode Register** - A dedicated chip built into the circuit, responsible for basic device operation. This includes the CAS latency as well as burst length and type.  
 - **Memory Banks** - Where the actual onboard memory modules are stored. In most modern-day RAM modules, there are typically two or more memory banks. This means one is always accessible, whilst the other is being pre-charged, which effectively reduces any latency to improve data transfer rates.  
-- **SPD Chip** - The SPD chip or serial presence detects, holds all the information about the memory type, size, speed, and access time.   
+- **SPD Chip** - The SPD chip or serial presence detects, and holds all the information about the memory type, size, speed, and access time.   
 - **Contact Pins** - Each RAM module will have a series of contact pins along one side of the stick. These pins connect to the DIMM slot(s) on your motherboard to allow the RAM module to communicate with your hardware.   
 - **Heat Spreader** - A fundamental part of any RAM module is the exterior heat spreader. This effectively draws and spreads any excess heat to help keep temperatures down to a minimum to avoid overheating and performance loss.
 
@@ -236,4 +228,4 @@ Whilst there may be multiple different form factors, configurations, and built-i
 
 ---
 
-> Path: /Users/beam/Documents/Obsidian Vault/Coding/General/How computers work/Memory (RAM).md
+> Path: /Users/beam/Documents/Obsidian Vault/Coding/General/How Computers Work/Memory (RAM).md
