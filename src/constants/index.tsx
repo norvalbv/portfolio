@@ -11,4 +11,4 @@ export const PHONE_NUMBER = '7508719043';
 export const LINKED_IN = 'https://www.linkedin.com/in/benjamin-norval/';
 export const GITHUB = 'https://github.com/norvalbv/';
 export const BLOG_DESCRIPTION =
-  "The way I learn and explore is weird. I either have to build from the ground up, and if I can't do that, I have towrite from the ground up otherwise what I have learnt won't stick in my mind. I have therefore, over time have written numerous blogs and detailed notes since I've started programming. I hope you find them useful.";
+  "The way I learn and explore is weird. I either have to build from the ground up, and if I can't do that, I have to write from the ground up otherwise what I have learnt won't stick in my mind. I have therefore, over time have written numerous blogs and detailed notes since I've started programming and these are my edited notes that are more blog-ready. I hope you find them useful.";
