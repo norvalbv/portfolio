@@ -156,7 +156,7 @@ const Blog = (): ReactElement => {
   if (!blog) return <Loader />;
 
   return (
-    <CardWrapper className="w-7/12">
+    <CardWrapper className="lg:w-7/12">
       <article>
         <h1 className="text-2xl capitalize text-accent-main underline md:text-4xl">
           {currentBlog?.title}

@@ -42,7 +42,7 @@ exports[`<CardWrapper /> should render correctly with all props 1`] = `
 
 exports[`<CardWrapper /> should render correctly with mandatory props 1`] = `
 <div
-  className="relative mx-auto flex-1 mt-6 w-10/12 min-w-[20rem] md:mt-10"
+  className="relative mx-auto flex-1 mt-6 w-11/12 min-w-[20rem] md:mt-10"
 >
   <div>
     <header>
