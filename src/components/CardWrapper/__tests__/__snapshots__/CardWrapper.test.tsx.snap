@@ -2,7 +2,7 @@
 
 exports[`<CardWrapper /> should render correctly with all props 1`] = `
 <div
-  className="relative mx-auto min-w-[20rem] max-w-[70rem] flex-1 grid place-items-center text-center bg-red-500"
+  className="relative mx-auto min-w-[20rem] max-w-[70rem] flex-1 -mt-14 grid place-items-center text-center md:mt-0 bg-red-500"
   id="testId"
 >
   <div>

@@ -2,7 +2,7 @@
 
 exports[`<Landing /> should render correctly 1`] = `
 <div
-  className="relative mx-auto min-w-[20rem] max-w-[70rem] flex-1 grid place-items-center text-center uppercase"
+  className="relative mx-auto min-w-[20rem] max-w-[70rem] flex-1 -mt-14 grid place-items-center text-center md:mt-0 uppercase"
 >
   <div>
     <div

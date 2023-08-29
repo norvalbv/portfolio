@@ -24,7 +24,7 @@ const CardWrapper = ({
     <div
       className={classNames(
         'relative mx-auto min-w-[20rem] max-w-[70rem] flex-1',
-        centered ? 'grid place-items-center text-center' : 'mt-6 w-11/12 md:mt-10',
+        centered ? '-mt-14 grid place-items-center text-center md:mt-0' : 'mt-6 w-11/12 md:mt-10',
         className
       )}
       id={id}
