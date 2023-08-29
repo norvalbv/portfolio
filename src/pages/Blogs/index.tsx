@@ -29,12 +29,12 @@ const Blogs = (): ReactElement => {
   // });
 
   return (
-    <CardWrapper className="mx-auto w-8/12">
+    <CardWrapper className="mx-auto w-10/12 md:w-8/12">
       <Header
         title="Benji's Development Domain: A Journey Through my Mind"
-        titleClassName="border-b pb-3 text-4xl font-semibold text-accent-main"
+        titleClassName="border-b pb-3 text-xl md:text-3xl font-semibold text-accent-main"
         subtitle="An insight to my mind; a bunch of technical blogs and notes that I have curated over time."
-        subtitleClassName="text-xl mb-6 mt-3 italic"
+        subtitleClassName="text-md md:text-xl mb-6 mt-3 italic"
         description={BLOG_DESCRIPTION}
         descriptionClassName="text-sm"
         animation={false}
@@ -43,8 +43,8 @@ const Blogs = (): ReactElement => {
         {allBlogs.map((blog) => (
           <Link to={`/blog/${blog.url}`} key={blog.title} className="pt-6">
             <Header
-              className="mb-2 w-8/12"
-              titleClassName="text-accent-secondary font-semibold underline text-2xl"
+              className="mb-2 md:w-8/12"
+              titleClassName="text-accent-secondary font-semibold underline text-xl md:text-2xl"
               title={`- ${blog.title}`}
               description={blog.subtitle}
               descriptionClassName="text-sm mt-1"

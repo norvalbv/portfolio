@@ -2,7 +2,7 @@
 tags: 
 - Coding
 - How Computer Work
-- Memory 
+- Memory
 Aliases: 
 - Memory
 - RAM
