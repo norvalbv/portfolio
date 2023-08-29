@@ -2,7 +2,7 @@
 
 exports[`<Badge /> should render correctly 1`] = `
 <div
-  className="text-x rounded-lg bg-accent-secondary px-4 py-0.5 text-dark-text"
+  className="rounded-lg bg-accent-secondary px-4 py-0.5 text-xs text-dark-text"
 >
   Test Tag
 </div>
