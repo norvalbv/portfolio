@@ -51,7 +51,7 @@ const Blogs = (): ReactElement => {
               level={2}
               animation={false}
             />
-            <p className="text-xs italic text-slate-500 dark:text-slate-400">
+            <p className="text-xs capitalize italic text-slate-500 dark:text-slate-400">
               {typeof blog.datePosted === 'string'
                 ? blog.datePosted
                 : convertToDate({
