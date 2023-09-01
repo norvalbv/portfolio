@@ -1,6 +1,6 @@
 ---
 tags: 
-- Coding
+- Programming
 - How Computer Work
 - Memory
 Aliases: 
@@ -9,7 +9,6 @@ Aliases:
 title: Memory (RAM)
 date created: Thursday, December 22nd 2022, 10:09:55 pm
 date modified: Monday, August 31th 2023, 11:33:58 pm
-review-frequency: high
 blogged: true
 blogged modified: Monday, August 28th 2023
 read time: 20 mins

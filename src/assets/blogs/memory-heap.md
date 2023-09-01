@@ -1,23 +1,26 @@
 ---
 tags: 
-- How computers work
-Aliases: []
+- How Computers Work
+- Memory Management
+- Programming
+Aliases:
+- Heap
 title: Memory Heap
-reviewed: 
-next review date: 10-12-23
 date created: Thursday, August 10th 2023, 2:58:01 pm
 date modified: Tuesday, August 22nd 2023, 7:49:20 pm
+blogged modified: Thursday, August 31th 2023
+read time: 6 mins
 ---
 - [ ] Memory Heap #Complete
 ---
 ## Overview
 
-From a memory allocation point of view, the heap is a large unstructured area of memory available for use - it is where *dynamically allocated* memory resides. Similarly to the [[Call Stack|stack]], the heap *does not have a physical location on the RAM*, but it rather an abstracted construct used in memory management by the [[Kernel#Kernel Vs Operating System|operating system]]. Memory allocated from the heap will remain until one of the following occurs:
+Memory management is the art of storing data in an efficient and effective way on a computer. When code from a program is being executed, the data that is being used has to reside somewhere. The [[Memory (RAM)|RAM]] on your computer is where active data used by these [[Process|processes]] are stored - acting as a short-term and volatile memory for your [[CPU]]. Whilst your RAM (memory) is a physical thing, the [[Kernel#Kernel Vs Operating System|operating system]] manages non-physical locations, which are the **Heap** and **Stack**. Heap memory, also known as “*dynamic*” memory is an alternative to local stack memory. From a memory allocation point of view, the heap is a large unstructured area of memory available for use - it is where dynamically allocated memory resides. Similarly to the [[Call Stack|stack]], it *does not have a physical location on the RAM*, but rather an abstracted construct used in memory management by the [[Kernel#Kernel Vs Operating System|operating system]]. Memory allocated from the heap will remain until one of the following occurs:
 
-1) The memory is `free`'d (done in languages like C and C++)
-2) The program terminates
+1) The memory is `free`'d (used in low-level languages such as C and C++).
+2) The program terminates.
 
-*A memory heap's size can dynamically adjust based on demand, but there are still upper limits based on system and runtime constraints*. If all references to allocated memory are lost (e.g. you don't store a pointer to it anymore), you have what is called a *[[Memory leaks|memory leak]]*. This is where the [[Memory (RAM)|memory]] has still been allocated, but you have no easy way of accessing it any more. Leaked memory cannot be reclaimed for future memory allocations, but when the program ends, the memory will be free'd up by the operating system. Memory leaks can cause significant problems, even to the point of taking up all [[CPU]] resources within the computer.
+A memory heap's size can *dynamically adjust based on demand*, however, there are still upper limits based on system and runtime constraints. References to the data stored on the heap is stored on the stack and if all references to allocated memory are lost (e.g. you don't store a pointer/reference to it any more), you have what is called a *[[Memory leaks|memory leak]]*. This is where the memory has still been allocated, but you have no easy way of accessing it any more. Leaked memory cannot be reclaimed for future memory allocations, but when the program ends, the memory will be free'd up by the operating system. Memory leaks can cause significant problems, even to the point of taking up all CPU resources within the computer.
 
 In contrast, *[[Call Stack|stack]]* memory is where local variables (those defined within a function) live. Memory allocated on the stack generally only lives until the function returns (there are some exceptions to this, e.g. static local variables). The stack memory is where the event loop in JavaScript comes into play.
 

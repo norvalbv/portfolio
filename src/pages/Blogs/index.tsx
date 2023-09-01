@@ -40,32 +40,44 @@ const Blogs = (): ReactElement => {
         animation={false}
       />
       <div className="flex flex-col gap-6 divide-y">
-        {allBlogs.map((blog) => (
-          <Link to={`/blog/${blog.url}`} key={blog.title} className="pt-6">
-            <Header
-              className="mb-2 md:w-8/12"
-              titleClassName="text-accent-secondary font-semibold underline text-xl md:text-2xl"
-              title={`- ${blog.title}`}
-              description={blog.subtitle}
-              descriptionClassName="text-sm mt-1"
-              level={2}
-              animation={false}
-            />
-            <p className="text-xs capitalize italic text-slate-500 dark:text-slate-400">
-              {typeof blog.datePosted === 'string'
-                ? blog.datePosted
-                : convertToDate({
-                    timestamp: blog.datePosted,
-                    format: {
-                      type: 'custom',
-                      customValues: { day: 'numeric', month: 'long', year: 'numeric' },
-                    },
-                  })}{' '}
-              • {blog.readTime} mintutes&nbsp;read {blog.level && `• ${blog.level}`}
-            </p>
-            {/* <p>Honestly, What the F{hashedOutText} is RAM?!</p> */}
-          </Link>
-        ))}
+        {allBlogs
+          .sort((a, b) => {
+            const dateA =
+              typeof a.datePosted === 'string'
+                ? new Date(a.datePosted.replace(/\w+,\s(\d+)\w+\s/, '$1 '))
+                : new Date();
+            const dateB =
+              typeof b.datePosted === 'string'
+                ? new Date(b.datePosted.replace(/\w+,\s(\d+)\w+\s/, '$1 '))
+                : new Date();
+            return dateB.getTime() - dateA.getTime();
+          })
+          .map((blog) => (
+            <Link to={`/blog/${blog.url}`} key={blog.title} className="pt-6">
+              <Header
+                className="mb-2 md:w-8/12"
+                titleClassName="text-accent-secondary font-semibold underline text-xl md:text-2xl"
+                title={`- ${blog.title}`}
+                description={blog.subtitle}
+                descriptionClassName="text-sm mt-1"
+                level={2}
+                animation={false}
+              />
+              <p className="text-xs capitalize italic text-slate-500 dark:text-slate-400">
+                {typeof blog.datePosted === 'string'
+                  ? blog.datePosted
+                  : convertToDate({
+                      timestamp: blog.datePosted,
+                      format: {
+                        type: 'custom',
+                        customValues: { day: 'numeric', month: 'long', year: 'numeric' },
+                      },
+                    })}{' '}
+                • {blog.readTime} mintutes&nbsp;read {blog.level && `• ${blog.level}`}
+              </p>
+              {/* <p>Honestly, What the F{hashedOutText} is RAM?!</p> */}
+            </Link>
+          ))}
       </div>
     </CardWrapper>
   );
