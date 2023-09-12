@@ -87,8 +87,8 @@ const CodeComponent = ({ children, ...props }: { children: string }): ReactEleme
       style={arta}
       customStyle={{
         borderRadius: '8px',
-        boxShadow: '5px 6px 3px #00646630',
-        backgroundColor: isDarkMode ? '#222222' : '#D0D0DD',
+        boxShadow: '2px 6px 3px #00646630',
+        backgroundColor: isDarkMode ? '#111' : '#D0D0DD',
         margin: '8px 0 8px 0',
       }}
       showLineNumbers
@@ -156,7 +156,7 @@ const Blog = (): ReactElement => {
   if (!blog) return <Loader />;
 
   return (
-    <CardWrapper className="lg:w-7/12">
+    <CardWrapper className="font-sans lg:w-7/12">
       <article>
         <h1 className="text-2xl capitalize text-accent-main underline md:text-4xl">
           {currentBlog?.title}
