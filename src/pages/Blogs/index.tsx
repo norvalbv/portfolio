@@ -1,86 +1,40 @@
 import React, { ReactElement } from 'react';
-import Header from 'components/Header';
-import { Link } from 'react-router-dom';
-import CardWrapper from 'components/CardWrapper';
-import { BLOG_DESCRIPTION } from 'constants/index';
-import { convertToDate } from 'utils/date';
-import allBlogs from 'constants/blogs';
-
-type LevelCriteria = 'Beginner Friendly' | 'Intermediate' | 'Expert' | undefined;
-
-export type BlogsType = {
-  id: string;
-  title: string;
-  subtitle: string;
-  url: string;
-  file: string;
-  datePosted: number | string;
-  readTime: number;
-  level: LevelCriteria;
-}[];
+import Blog from 'react-blogs';
+import { DefBlogs } from 'react-blogs/types';
 
 const Blogs = (): ReactElement => {
-  // const hashedOutText = useRandomReveal({
-  //   isPlaying: true,
-  //   duration: 1000,
-  //   characters: '#@%',
-  //   updateInterval: 0.1,
-  //   characterSet: ['!', '@', '$', '%', '&', '#'],
-  // });
+  const allBlogs: DefBlogs[] = [
+    {
+      id: 'how-memory-works',
+      file: '../../assets/blogs/memory.md',
+      title: 'How Memory (RAM) Works',
+      subtitle: 'A deep insight to what RAM is and how it interacts with the computer.',
+      url: 'how-memory-works',
+      containsFrontMatter: true,
+      frontMatterPosition: 'top',
+      metadata: {
+        'read time': 20,
+        level: 'Beginner Friendly',
+        'date posted': 'Monday, 30th August 2023',
+      },
+    },
+    {
+      id: 'memory',
+      file: '../../assets/blogs/memory-heap.md',
+      title: 'How Memory (RAM) Wo22rks',
+      subtitle: 'A deep insight to what RAM is and how it interacts with the computer.',
+      url: 'how-memory-works',
+      metadata: {
+        'read time': 20,
+        level: 'Beginner Friendly',
+        'date posted': 'Monday, 29th August 2023',
+      },
+    },
+  ];
 
-  return (
-    <CardWrapper className="mx-auto w-10/12 md:w-8/12">
-      <Header
-        title="Benji's Development Domain: A Journey Through my Mind"
-        titleClassName="border-b pb-3 text-xl md:text-3xl font-semibold text-accent-main"
-        subtitle="An insight to my mind; a bunch of technical blogs and notes that I have curated over time."
-        subtitleClassName="text-md md:text-xl mb-6 mt-3 italic"
-        description={BLOG_DESCRIPTION}
-        descriptionClassName="text-sm"
-        animation={false}
-      />
-      <div className="flex flex-col gap-6 divide-y">
-        {allBlogs
-          .sort((a, b) => {
-            const dateA =
-              typeof a.datePosted === 'string'
-                ? new Date(a.datePosted.replace(/\w+,\s(\d+)\w+\s/, '$1 '))
-                : new Date();
-            const dateB =
-              typeof b.datePosted === 'string'
-                ? new Date(b.datePosted.replace(/\w+,\s(\d+)\w+\s/, '$1 '))
-                : new Date();
-            return dateB.getTime() - dateA.getTime();
-          })
-          .map((blog) => (
-            <Link to={`/blog/${blog.url}`} key={blog.title} className="pt-6">
-              <Header
-                className="mb-2 md:w-8/12"
-                titleClassName="text-accent-secondary font-semibold underline text-xl md:text-2xl"
-                title={`- ${blog.title}`}
-                description={blog.subtitle}
-                descriptionClassName="text-sm mt-1"
-                level={2}
-                animation={false}
-              />
-              <p className="text-xs capitalize italic text-slate-500 dark:text-slate-400">
-                {typeof blog.datePosted === 'string'
-                  ? blog.datePosted
-                  : convertToDate({
-                      timestamp: blog.datePosted,
-                      format: {
-                        type: 'custom',
-                        customValues: { day: 'numeric', month: 'long', year: 'numeric' },
-                      },
-                    })}{' '}
-                • {blog.readTime} mintutes&nbsp;read {blog.level && `• ${blog.level}`}
-              </p>
-              {/* <p>Honestly, What the F{hashedOutText} is RAM?!</p> */}
-            </Link>
-          ))}
-      </div>
-    </CardWrapper>
-  );
+  const headers = { title: '' };
+
+  return <Blog allBlogs={allBlogs} />;
 };
 
 export default Blogs;
