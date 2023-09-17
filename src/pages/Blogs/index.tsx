@@ -34,7 +34,7 @@ const Blogs = (): ReactElement => {
 
   const headers = { title: '' };
 
-  return <Blog allBlogs={allBlogs} />;
+  return <Blog allBlogs={allBlogs} paramKey="hi" />;
 };
 
 export default Blogs;

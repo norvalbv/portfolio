@@ -1765,7 +1765,7 @@ __metadata:
     prettier: ^3.0.3
     prettier-plugin-tailwindcss: ^0.5.4
     react: ^18.2.0
-    react-blogs: "file:../react-blogs"
+    react-blogs: "portal:../react-blogs"
     react-dom: ^18.2.0
     react-hot-toast: ^2.4.1
     react-markdown: ^8.0.7
@@ -7189,14 +7189,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-blogs@file:../react-blogs::locator=application%40workspace%3A.":
-  version: 0.0.0
-  resolution: "react-blogs@file:../react-blogs#../react-blogs::hash=bb2dc5&locator=application%40workspace%3A."
+"react-blogs@portal:../react-blogs::locator=application%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "react-blogs@portal:../react-blogs::locator=application%40workspace%3A."
   dependencies:
     markdown-to-jsx: ^7.3.2
-  checksum: cf77aa18dd3d20e12c69c96dd1ac2cebeb43ef25aa457a562248cebde4b8290baab32d0976ab273e1b4aaf4d8e5822be157174e044fdbd007717dcc276a771ff
   languageName: node
-  linkType: hard
+  linkType: soft
 
 "react-dom@npm:^18.2.0":
   version: 18.2.0
