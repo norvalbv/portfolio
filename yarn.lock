@@ -7194,6 +7194,8 @@ __metadata:
   resolution: "react-blogs@portal:../react-blogs::locator=application%40workspace%3A."
   dependencies:
     markdown-to-jsx: ^7.3.2
+  peerDependencies:
+    react: ^18.2.0
   languageName: node
   linkType: soft
 

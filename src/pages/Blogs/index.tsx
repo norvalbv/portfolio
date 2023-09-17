@@ -1,6 +1,5 @@
 import React, { ReactElement } from 'react';
-import Blog from 'react-blogs';
-import { DefBlogs } from 'react-blogs/types';
+import Blog, { DefBlogs } from 'react-blogs';
 
 const Blogs = (): ReactElement => {
   const allBlogs: DefBlogs[] = [
