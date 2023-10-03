@@ -33,7 +33,7 @@ export const routes = {
       name: AnalyticsEvent.Contact,
     },
     {
-      path: '/blog',
+      path: '/blogs',
       element: <Blogs />,
       name: AnalyticsEvent.Blog,
     },
