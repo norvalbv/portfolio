@@ -184,7 +184,7 @@ exports[`<NavBar /> should render correctly 1`] = `
     >
       <a
         className="hover:text-accent-secondary"
-        href="/blog"
+        href="/blogs"
         onClick={[Function]}
         role="menuitem"
         tabIndex={-1}

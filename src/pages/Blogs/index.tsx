@@ -19,7 +19,7 @@ const Blogs = (): ReactElement => {
         metadata: {
           'read time': '20 minutes',
           level: 'Beginner Friendly',
-          'date posted': 'Monday, 30th August 2023',
+          'date posted': 'Monday, 28th August 2023',
         },
       },
       {
@@ -37,10 +37,16 @@ const Blogs = (): ReactElement => {
     ],
   };
 
+  const sortedBlogs = [...allBlogs.blogs].sort((a, b) => {
+    const dateA = new Date(a.metadata?.['date posted'] ?? 0);
+    const dateB = new Date(b.metadata?.['date posted'] ?? 0);
+    return dateB.getTime() - dateA.getTime();
+  });
+
   return (
     <div className="mx-auto w-8/12 font-mono text-2xl">
       {!searchParams.get('blog') && <Header title="Benji's Blogs" />}
-      <Blog allBlogs={allBlogs} paramKey="blog" theme="DARK_THEME" />
+      <Blog allBlogs={{ ...allBlogs, blogs: sortedBlogs }} paramKey="blog" theme="DARK_THEME" />
     </div>
   );
 };
