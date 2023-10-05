@@ -37,9 +37,15 @@ const Blogs = (): ReactElement => {
     ],
   };
 
-  const sortedBlogs = [...allBlogs.blogs].sort((a, b) => {
-    const dateA = new Date(a.metadata?.['date posted'] ?? 0);
-    const dateB = new Date(b.metadata?.['date posted'] ?? 0);
+  const sortedBlogs = allBlogs.blogs.sort((a, b) => {
+    const regex = /(?<=\d)(?:st|nd|rd|th)\b/i;
+
+    const metaA = a.metadata?.['date posted'].replace(regex, '');
+    const dateA = new Date(metaA);
+
+    const metaB = b.metadata?.['date posted'].replace(regex, '');
+    const dateB = new Date(metaB);
+
     return dateB.getTime() - dateA.getTime();
   });
 
