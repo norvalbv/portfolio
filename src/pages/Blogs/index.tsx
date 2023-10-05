@@ -37,7 +37,7 @@ const Blogs = (): ReactElement => {
     ],
   };
 
-  const sortedBlogs = allBlogs.blogs.sort((a, b) => {
+  allBlogs.blogs.sort((a, b) => {
     const regex = /(?<=\d)(?:st|nd|rd|th)\b/i;
 
     const metaA = a.metadata?.['date posted'].replace(regex, '');
@@ -52,7 +52,7 @@ const Blogs = (): ReactElement => {
   return (
     <div className="mx-auto w-8/12 font-mono text-2xl">
       {!searchParams.get('blog') && <Header title="Benji's Blogs" />}
-      <Blog allBlogs={{ ...allBlogs, blogs: sortedBlogs }} paramKey="blog" theme="DARK_THEME" />
+      <Blog allBlogs={allBlogs} paramKey="blog" theme="DARK_THEME" />
     </div>
   );
 };
