@@ -11,8 +11,6 @@ date modified: Tuesday, August 22nd 2023, 7:49:20 pm
 blogged modified: Thursday, August 31th 2023
 read time: 6 mins
 ---
-- [ ] Memory Heap #Complete
----
 ## Overview
 
 Memory management is the art of storing data in an efficient and effective way on a computer. When code from a program is being executed, the data that is being used has to reside somewhere. The [[Memory (RAM)|RAM]] on your computer is where active data used by these [[Process|processes]] are stored - acting as a short-term and volatile memory for your [[CPU]]. Whilst your RAM (memory) is a physical thing, the [[Kernel#Kernel Vs Operating System|operating system]] manages non-physical locations, which are the **Heap** and **Stack**. Heap memory, also known as “*dynamic*” memory is an alternative to local stack memory. From a memory allocation point of view, the heap is a large unstructured area of memory available for use - it is where dynamically allocated memory resides. Similarly to the [[Call Stack|stack]], it *does not have a physical location on the RAM*, but rather an abstracted construct used in memory management by the [[Kernel#Kernel Vs Operating System|operating system]]. Memory allocated from the heap will remain until one of the following occurs:
