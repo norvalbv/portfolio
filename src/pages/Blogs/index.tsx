@@ -1,10 +1,13 @@
 import Header from 'components/Header';
+import useTheme from 'hooks/useTheme';
 import React, { ReactElement } from 'react';
 import Blog, { DefBlogs } from 'react-blogs';
 import { useSearchParams } from 'react-router-dom';
 
 const Blogs = (): ReactElement => {
   const [searchParams] = useSearchParams();
+
+  const { isDarkMode } = useTheme();
 
   const allBlogs: DefBlogs = [
     {
@@ -38,10 +41,10 @@ const Blogs = (): ReactElement => {
     const regex = /(?<=\d)(?:st|nd|rd|th)\b/i;
 
     const metaA = a.metadata?.['date posted'].replace(regex, '');
-    const dateA = new Date(metaA);
+    const dateA = new Date(metaA as string);
 
     const metaB = b.metadata?.['date posted'].replace(regex, '');
-    const dateB = new Date(metaB);
+    const dateB = new Date(metaB as string);
 
     return dateB.getTime() - dateA.getTime();
   });
@@ -49,7 +52,7 @@ const Blogs = (): ReactElement => {
   return (
     <div className="mx-auto w-8/12 font-mono text-2xl">
       {!searchParams.get('blog') && <Header title="Benji's Blogs" />}
-      <Blog allBlogs={allBlogs} style="github" />
+      <Blog allBlogs={allBlogs} theme={isDarkMode ? 'DARK_THEME' : 'LIGHT_THEME'} />
     </div>
   );
 };
