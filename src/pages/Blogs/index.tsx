@@ -1,10 +1,11 @@
 import Header from 'components/Header';
 import useTheme from 'hooks/useTheme';
 import React, { ReactElement } from 'react';
-import Blog, { DefBlogs } from 'react-blogs';
+import Blog, { DefBlogs, DefTheme } from 'react-blogs';
 import { useSearchParams } from 'react-router-dom';
 
 const Blogs = (): ReactElement => {
+  // console.log(styles);
   const [searchParams] = useSearchParams();
 
   const { isDarkMode } = useTheme();
@@ -37,6 +38,16 @@ const Blogs = (): ReactElement => {
     },
   ];
 
+  const theme: DefTheme = {
+    theme: isDarkMode ? 'DARK_THEME' : 'LIGHT_THEME',
+    overrides: {
+      h1: { props: { css: { color: 'pink' } } },
+      // h2: {
+      //   props: { className: 'bg-red-500' },
+      // },
+    },
+  };
+
   allBlogs.sort((a, b) => {
     const regex = /(?<=\d)(?:st|nd|rd|th)\b/i;
 
@@ -50,9 +61,9 @@ const Blogs = (): ReactElement => {
   });
 
   return (
-    <div className="mx-auto w-8/12 font-mono text-2xl">
+    <div className="mx-auto w-8/12 font-mono">
       {!searchParams.get('blog') && <Header title="Benji's Blogs" />}
-      <Blog allBlogs={allBlogs} theme={isDarkMode ? 'DARK_THEME' : 'LIGHT_THEME'} />
+      <Blog allBlogs={allBlogs} theme={theme} />
     </div>
   );
 };

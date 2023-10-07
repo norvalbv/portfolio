@@ -1,14 +1,12 @@
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
-import viteTsconfigPaths from 'vite-tsconfig-paths';
 import EnvironmentPlugin from 'vite-plugin-environment';
 import { createHtmlPlugin } from 'vite-plugin-html';
-import { plugin as mdPlugin, Mode } from 'vite-plugin-markdown';
+import viteTsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   plugins: [
     react({ include: /\.(ts|tsx)$/ }),
-    mdPlugin({ mode: [Mode.HTML, Mode.REACT] }),
     viteTsconfigPaths(),
     EnvironmentPlugin('all'),
     createHtmlPlugin({
