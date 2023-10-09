@@ -20,7 +20,7 @@ const Blogs = (): ReactElement => {
       showFrontMatter: true,
       metadata: {
         'read time': '20 minutes',
-        level: 'Beginner Friendly',
+        level: '🧠',
         'date posted': 'Monday, 28th August 2023',
       },
     },
@@ -32,19 +32,19 @@ const Blogs = (): ReactElement => {
       showFrontMatter: true,
       metadata: {
         'read time': '6 minutes',
-        level: 'Intermediate',
+        level: '🧠🧠',
         'date posted': 'Monday, 29th August 2023',
       },
     },
   ];
 
   const theme: DefTheme = {
-    theme: isDarkMode ? 'DARK_THEME' : 'LIGHT_THEME',
+    theme: 'SHADES_OF_GREEN',
+    code: isDarkMode ? 'dracula' : 'oneLight',
     overrides: {
-      h1: { props: { css: { color: 'pink' } } },
-      // h2: {
-      //   props: { className: 'bg-red-500' },
-      // },
+      p: {
+        props: { className: 'text-[14px] my-4 tracking-wider' },
+      },
     },
   };
 
@@ -62,7 +62,12 @@ const Blogs = (): ReactElement => {
 
   return (
     <div className="mx-auto w-8/12 font-mono">
-      {!searchParams.get('blog') && <Header title="Benji's Blogs" />}
+      {!searchParams.get('blog') && (
+        <Header
+          title="Benji's Blogs"
+          titleClassName="w-max border-b pb-2 text-5xl font-semibold md:text-6xl mb-6"
+        />
+      )}
       <Blog allBlogs={allBlogs} theme={theme} />
     </div>
   );
