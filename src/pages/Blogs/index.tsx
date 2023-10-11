@@ -14,10 +14,10 @@ const Blogs = (): ReactElement => {
     {
       id: 'how-memory-works',
       file: '/src/assets/blogs/memory.md',
-      title: { text: 'How Memory (RAM) Works' },
-      subtitle: { text: 'A deep insight to what RAM is and how it interacts with the computer.' },
+      title: { label: 'How Memory (RAM) Works' },
+      subtitle: { label: 'A deep insight to what RAM is and how it interacts with the computer.' },
       url: 'how-memory-works',
-      showFrontMatter: true,
+      frontMatter: { showFrontMatter: true },
       metadata: {
         'read time': '20 minutes',
         level: '🧠',
@@ -27,9 +27,9 @@ const Blogs = (): ReactElement => {
     {
       id: 'Memory Heap',
       file: '/src/assets/blogs/memory-heap.md',
-      title: { text: 'What is memory heap?' },
+      title: { label: 'What is memory heap?' },
       url: 'memory-heap',
-      showFrontMatter: true,
+      frontMatter: { showFrontMatter: true },
       metadata: {
         'read time': '6 minutes',
         level: '🧠🧠',
