@@ -5,7 +5,6 @@ import Blog, { DefBlogs, DefTheme } from 'react-blogs';
 import { useSearchParams } from 'react-router-dom';
 
 const Blogs = (): ReactElement => {
-  // console.log(styles);
   const [searchParams] = useSearchParams();
 
   const { isDarkMode } = useTheme();
@@ -48,17 +47,19 @@ const Blogs = (): ReactElement => {
     },
   };
 
-  allBlogs.sort((a, b) => {
-    const regex = /(?<=\d)(?:st|nd|rd|th)\b/i;
+  allBlogs.sort(
+    (a: { metadata: Record<string, string> }, b: { metadata: Record<string, string> }) => {
+      const regex = /(?<=\d)(?:st|nd|rd|th)\b/i;
 
-    const metaA = a.metadata?.['date posted'].replace(regex, '');
-    const dateA = new Date(metaA as string);
+      const metaA = a.metadata?.['date posted'].replace(regex, '');
+      const dateA = new Date(metaA);
 
-    const metaB = b.metadata?.['date posted'].replace(regex, '');
-    const dateB = new Date(metaB as string);
+      const metaB = b.metadata?.['date posted'].replace(regex, '');
+      const dateB = new Date(metaB);
 
-    return dateB.getTime() - dateA.getTime();
-  });
+      return dateB.getTime() - dateA.getTime();
+    }
+  );
 
   return (
     <div className="mx-auto w-8/12 font-mono">
