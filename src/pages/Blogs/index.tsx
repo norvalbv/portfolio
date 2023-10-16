@@ -1,3 +1,4 @@
+import ContactMe from 'components/ContactMe';
 import Header from 'components/Header';
 import useTheme from 'hooks/useTheme';
 import React, { ReactElement } from 'react';
@@ -47,19 +48,17 @@ const Blogs = (): ReactElement => {
     },
   };
 
-  allBlogs.sort(
-    (a: { metadata: Record<string, string> }, b: { metadata: Record<string, string> }) => {
-      const regex = /(?<=\d)(?:st|nd|rd|th)\b/i;
+  allBlogs.sort((a, b) => {
+    const regex = /(?<=\d)(?:st|nd|rd|th)\b/i;
 
-      const metaA = a.metadata?.['date posted'].replace(regex, '');
-      const dateA = new Date(metaA);
+    const metaA = a.metadata?.['date posted'].replace(regex, '');
+    const dateA = new Date(metaA as string);
 
-      const metaB = b.metadata?.['date posted'].replace(regex, '');
-      const dateB = new Date(metaB);
+    const metaB = b.metadata?.['date posted'].replace(regex, '');
+    const dateB = new Date(metaB as string);
 
-      return dateB.getTime() - dateA.getTime();
-    }
-  );
+    return dateB.getTime() - dateA.getTime();
+  });
 
   return (
     <div className="mx-auto w-8/12 font-mono">
@@ -70,6 +69,13 @@ const Blogs = (): ReactElement => {
         />
       )}
       <Blog allBlogs={allBlogs} theme={theme} />
+
+      {searchParams.get('blog') && (
+        <>
+          <hr className="h-0.5 bg-fuchsia-50" />
+          <ContactMe />
+        </>
+      )}
     </div>
   );
 };

@@ -224,7 +224,3 @@ Whilst there may be multiple different form factors, configurations, and built-i
 - [Selecting your perfect RAM configuration.](https://www.overclockers.co.uk/blog/how-to-select-your-perfect-ram-configuration/)
 - [What and Where are Stack and Heap?](https://www.linkedin.com/pulse/what-where-stack-heap-maxim-malisciuc/)
 - [Understanding RAM and DRAM Computer Memory Types.](https://www.atpinc.com/blog/computer-memory-types-dram-ram-module)
-
----
-
-> Path: /Users/beam/Documents/Obsidian Vault/Coding/General/How Computers Work/Memory (RAM).md

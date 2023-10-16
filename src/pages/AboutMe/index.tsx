@@ -17,7 +17,7 @@ const AboutMe = (): ReactElement => {
         &nbsp;(a WAE subsidiary) cloud platform. I would love for you to check out my projects and
         even reach out!
       </p>
-      <p className="my-10 text-accent-main">
+      <p className="text-accent-primary my-10">
         My skills? They&apos;re floating around on the background. Have a look around :)
       </p>
       <p className="mx-auto w-6/12 min-w-[16rem] rounded border border-light-text bg-black/20 p-4 text-xs dark:border-dark-text dark:bg-white/20">
