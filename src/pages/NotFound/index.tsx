@@ -12,7 +12,7 @@ const NotFound = (): ReactElement => {
   return (
     <CardWrapper centered>
       <div className="flex flex-col gap-8">
-        <h2 className="mb-4 text-6xl font-semibold tracking-wide text-accent-main transition-colors">
+        <h2 className="text-accent-primary mb-4 text-6xl font-semibold tracking-wide transition-colors">
           {heading}
         </h2>
         <button

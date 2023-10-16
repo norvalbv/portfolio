@@ -18,7 +18,7 @@ module.exports = {
           code: '#D0D0DD',
         },
         accent: {
-          main: '#0A5C36',
+          primary: '#0A5C36',
           secondary: '#006466',
           tertiary: '#9F3FBF',
         },

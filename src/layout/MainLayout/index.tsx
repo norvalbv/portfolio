@@ -7,7 +7,7 @@ import Footer from './Footer';
 const MainLayout = (): ReactElement => {
   const { pathname } = useLocation();
 
-  const regex = /^\/blog(\/.*)?$/;
+  const regex = /^\/blogs(\/.*)?$/;
   const pageIsBlog = regex.test(pathname);
 
   return (

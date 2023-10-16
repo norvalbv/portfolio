@@ -1,11 +1,4 @@
-import React, {
-  ReactElement,
-  createContext,
-  useCallback,
-  useEffect,
-  useMemo,
-  useState,
-} from 'react';
+import React, { ReactElement, createContext, useEffect, useMemo, useState } from 'react';
 
 export type ThemeContextValue = {
   isDarkMode: boolean;
@@ -37,6 +30,7 @@ export const ThemeContextProvider = ({ children }: ThemeProviderProps): ReactEle
       isDarkMode,
       toggleDarkMode,
     }),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [isDarkMode]
   );
 

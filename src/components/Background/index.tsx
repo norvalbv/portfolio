@@ -36,7 +36,7 @@ const Background = (): ReactElement => {
             // eslint-disable-next-line react/no-array-index-key
             key={i}
             className={classNames(
-              'absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-main'
+              'text-accent-primary absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider'
             )}
             style={{
               left: `${Math.round(Math.random() * 100)}%`,

@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite';
-import viteTsconfigPaths from 'vite-tsconfig-paths';
 import react from '@vitejs/plugin-react';
-import { createHtmlPlugin } from 'vite-plugin-html';
+import { defineConfig } from 'vite';
 import EnvironmentPlugin from 'vite-plugin-environment';
+import { createHtmlPlugin } from 'vite-plugin-html';
+import viteTsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   plugins: [
@@ -13,7 +13,7 @@ export default defineConfig({
       minify: true,
     }),
   ],
-  assetsInclude: ['**/*.md'],
+  assetsInclude: [/\.md$/, '**/*.md'],
   ...(process.env.NODE_ENV === 'development'
     ? {
         define: {
