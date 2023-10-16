@@ -2,7 +2,6 @@ import React, { ReactElement } from 'react';
 import Header from 'components/Header';
 import { Link } from 'react-router-dom';
 import CardWrapper from 'components/CardWrapper';
-import { BLOG_DESCRIPTION } from 'constants/index';
 import { convertToDate } from 'utils/date';
 import allBlogs from 'constants/blogs';
 
@@ -35,8 +34,6 @@ const Blogs = (): ReactElement => {
         titleClassName="border-b pb-3 text-xl md:text-3xl font-semibold text-accent-main"
         subtitle="An insight to my mind; a bunch of technical blogs and notes that I have curated over time."
         subtitleClassName="text-md md:text-xl mb-6 mt-3 italic"
-        description={BLOG_DESCRIPTION}
-        descriptionClassName="text-sm"
         animation={false}
       />
       <div className="flex flex-col gap-6 divide-y">
