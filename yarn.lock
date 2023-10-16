@@ -492,11 +492,11 @@ __metadata:
   linkType: hard
 
 "@babel/runtime@npm:^7.12.5":
-  version: 7.23.1
-  resolution: "@babel/runtime@npm:7.23.1"
+  version: 7.23.2
+  resolution: "@babel/runtime@npm:7.23.2"
   dependencies:
     regenerator-runtime: ^0.14.0
-  checksum: 0cd0d43e6e7dc7f9152fda8c8312b08321cda2f56ef53d6c22ebdd773abdc6f5d0a69008de90aa41908d00e2c1facb24715ff121274e689305c858355ff02c70
+  checksum: 6c4df4839ec75ca10175f636d6362f91df8a3137f86b38f6cd3a4c90668a0fe8e9281d320958f4fbd43b394988958585a17c3aab2a4ea6bf7316b22916a371fb
   languageName: node
   linkType: hard
 
@@ -1986,7 +1986,7 @@ __metadata:
     prettier: ^3.0.3
     prettier-plugin-tailwindcss: ^0.5.5
     react: ^18.2.0
-    react-blogs: "portal:../react-blogs::locator=application%40workspace%3A."
+    react-blogs: ^0.0.5
     react-dom: ^18.2.0
     react-hot-toast: ^2.4.1
     react-markdown: ^9.0.0
@@ -7459,17 +7459,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-blogs@portal:../react-blogs::locator=application%40workspace%3A.":
-  version: 0.0.0-use.local
-  resolution: "react-blogs@portal:../react-blogs::locator=application%40workspace%3A."
+"react-blogs@npm:^0.0.5":
+  version: 0.0.5
+  resolution: "react-blogs@npm:0.0.5"
   dependencies:
     "@vanilla-extract/css": ^1.13.0
     markdown-to-jsx: ^7.3.2
     prism-react-renderer: ^2.1.0
   peerDependencies:
     react: ^18.2.0
+  checksum: 0692dce7add05d2ab7f94cfb723c7258275895d46080c923dcd3e246c105879d3cd0b7fd90df3d1592fd90220e85c82ce1d8ba55f791fb34daa4888d0c2da9bf
   languageName: node
-  linkType: soft
+  linkType: hard
 
 "react-dom@npm:^18.2.0":
   version: 18.2.0
