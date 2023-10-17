@@ -24,18 +24,18 @@ const Blogs = (): ReactElement => {
         'date posted': 'Monday, 28th August 2023',
       },
     },
-    {
-      id: 'Memory Heap',
-      file: '/src/assets/blogs/memory-heap.md',
-      title: { label: 'What is memory heap?' },
-      url: 'memory-heap',
-      frontMatter: { showFrontMatter: true },
-      metadata: {
-        'read time': '6 minutes',
-        level: '🧠🧠',
-        'date posted': 'Monday, 29th August 2023',
-      },
-    },
+    // {
+    //   id: 'Memory Heap',
+    //   file: '/src/assets/blogs/memory-heap.md',
+    //   title: { label: 'What is memory heap?' },
+    //   url: 'memory-heap',
+    //   frontMatter: { showFrontMatter: true },
+    //   metadata: {
+    //     'read time': '6 minutes',
+    //     level: '🧠🧠',
+    //     'date posted': 'Monday, 29th August 2023',
+    //   },
+    // },
   ];
 
   const theme: DefTheme = {
