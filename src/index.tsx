@@ -11,3 +11,5 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     </ThemeContextProvider>
   </React.StrictMode>
 );
+
+export * from './assets/blogs';
