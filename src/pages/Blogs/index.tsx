@@ -13,7 +13,7 @@ const Blogs = (): ReactElement => {
   const allBlogs: DefBlogs = [
     {
       id: 'how-memory-works',
-      file: '/src/assets/blogs/memory.md',
+      file: '/blogs/memory.md',
       title: { label: 'How Memory (RAM) Works' },
       subtitle: { label: 'A deep insight to what RAM is and how it interacts with the computer.' },
       url: 'how-memory-works',
