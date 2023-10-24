@@ -43,7 +43,7 @@ const Blogs = (): ReactElement => {
     code: isDarkMode ? 'dracula' : 'oneLight',
     overrides: {
       p: {
-        props: { className: 'text-[14px] my-4 tracking-wider' },
+        props: { className: 'text-sm my-4 tracking-wider' },
       },
     },
   };
