@@ -49,7 +49,7 @@ const Blogs = (): ReactElement => {
         props: { className: 'text-xs md:text-sm flex gap-2' },
       },
       p: {
-        props: { className: 'text-xs my-4 tracking-wider md:text-sm' },
+        props: { className: 'my-4 tracking-wider text-sm' },
       },
     },
   };
