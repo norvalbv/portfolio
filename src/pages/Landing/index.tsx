@@ -17,7 +17,7 @@ const Landing = (): ReactElement => {
     characters: 'I am Benjamin',
   });
 
-  const summaryText = 'A 24 year old Full Stack Developer from the United Kingdom';
+  const summaryText = 'A 24-year-old Full Stack Developer from the United Kingdom';
   const summary = useRandomReveal({
     isPlaying: true,
     duration: 3,
