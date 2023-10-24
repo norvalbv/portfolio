@@ -1,5 +1,4 @@
 import React, { ReactElement } from 'react';
-import { classNames } from 'utils';
 import { MY_SKILLS } from 'constants/index';
 import useWindowSize from 'hooks/useWindowSize';
 import GranularIcon from 'components/SVG/Granular';
