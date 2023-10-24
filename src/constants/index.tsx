@@ -4,6 +4,10 @@ export const PARISN_DESCRIPTION =
   'A work-in-progress e-commerce full stack webapp with unique add-ons including real-time data and chat using web sockets and automatic pricing that decreases over time using mathematical algorithms giving a better user experience.';
 export const PARISN_SKILLS =
   'React, SWR, JavaScript, TypeScript, TailWindCSS, Vite, Jest, Cypress, Node, AWS Serverless, Azure Devops, CI/CD, Stripe, WebSockets, Microservices.';
+export const REACT_BLOGS_DESCRIPTION =
+  'A streamlined front-end package for rapid blog development in React, alleviating common setup hassles for developers.';
+export const REACT_BLOGS_SKILLS =
+  'React, TypeScript, JavaScript, Vite, Yarn, Vanilla Extract CSS, Jest, and more.';
 export const WEATHER_APP_SKILL = 'React, SWR, JavaScript, TypeScript, TailWindCSS, Vite, Jest';
 export const CONTACT_EMAIL = 'benjinorval@gmail.com';
 export const PHONE_NUMBER_COUNTRY_CODE = '+44';
