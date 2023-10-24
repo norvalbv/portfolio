@@ -31,6 +31,70 @@ exports[`<MyWork /> should render correctly 1`] = `
       className="relative mb-10 rounded-t-xl border-light-text bg-black/20 py-6 text-center before:absolute before:bottom-[-0.25rem] before:left-0 before:h-1 before:w-full before:bg-gradient-to-r before:from-blue-500 before:to-green-500 dark:border-dark-text dark:bg-dark-dark/30 md:px-6"
     >
       <h3
+        className="px-6 text-lg uppercase underline md:p-0 lg:text-xl mb-4"
+      >
+        React Blogs
+      </h3>
+      <div
+        className="group my-6 lg:absolute lg:right-12 lg:top-1"
+      >
+        <a
+          className="items-center justify-center gap-2 lg:flex"
+          href="https://github.com/norvalbv/react-blogs"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <p
+            className="text-xs opacity-100 transition-opacity duration-300 lg:opacity-0 lg:group-hover:opacity-100"
+          >
+            View Code
+          </p>
+          <svg
+            className="hidden cursor-pointer lg:block"
+            fill="none"
+            height={20}
+            stroke="currentColor"
+            strokeWidth={1.5}
+            viewBox="0 0 24 24"
+            width={20}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+      <p
+        className="px-6 text-sm md:p-0 lg:text-base"
+      >
+        A streamlined front-end package for rapid blog development in React, alleviating common setup hassles for developers.
+      </p>
+      <a
+        href="https://github.com/norvalbv/react-blogs"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <button
+          className="shadow-accent-primary my-4 rounded-lg bg-accent-secondary px-4 py-2 shadow"
+          type="button"
+        >
+          View the Documentation
+        </button>
+      </a>
+      <p
+        className="px-6 text-sm md:p-0 lg:text-base"
+      >
+        Built with: 
+        React, TypeScript, JavaScript, Vite, Yarn, Vanilla Extract CSS, Jest, and more.
+      </p>
+    </div>
+    <div
+      className="relative mb-10 rounded-t-xl border-light-text bg-black/20 py-6 text-center before:absolute before:bottom-[-0.25rem] before:left-0 before:h-1 before:w-full before:bg-gradient-to-r before:from-blue-500 before:to-green-500 dark:border-dark-text dark:bg-dark-dark/30 md:px-6"
+    >
+      <h3
         className="px-6 text-lg uppercase underline md:p-0 lg:text-xl"
       >
         PARISN
@@ -99,7 +163,7 @@ exports[`<MyWork /> should render correctly 1`] = `
       className="relative mb-10 rounded-t-xl border-light-text bg-black/20 py-6 text-center before:absolute before:bottom-[-0.25rem] before:left-0 before:h-1 before:w-full before:bg-gradient-to-r before:from-blue-500 before:to-green-500 dark:border-dark-text dark:bg-dark-dark/30 md:px-6"
     >
       <h3
-        className="px-6 text-lg uppercase underline md:p-0 lg:text-xl"
+        className="px-6 text-lg uppercase underline md:p-0 lg:text-xl mb-4"
       >
         Weather App
       </h3>
