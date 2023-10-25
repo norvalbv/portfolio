@@ -3,7 +3,7 @@ import SVGIcon, { SVGIconProps } from '../SVGIcon';
 
 const GranularIcon = (props: SVGIconProps): ReactElement => {
   return (
-    <SVGIcon size={2000} {...props} opacity={0.15}>
+    <SVGIcon size="100%" {...props} opacity={0.15}>
       <filter id="noiseFilter">
         <feTurbulence type="fractalNoise" baseFrequency="2" numOctaves="1" stitchTiles="stitch" />
       </filter>

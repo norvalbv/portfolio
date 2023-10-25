@@ -54,7 +54,7 @@ const MyWorkCard = ({
         <a href={link.to} rel="noopener noreferrer" target="_blank">
           <button
             type="button"
-            className="shadow-accent-primary my-4 rounded-lg bg-accent-secondary px-4 py-2 shadow"
+            className="shadow-accent-primary hover:bg-accent-primary my-4 rounded-lg bg-accent-secondary px-4 py-2 shadow"
           >
             {link.label}
           </button>

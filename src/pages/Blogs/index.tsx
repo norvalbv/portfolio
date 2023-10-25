@@ -28,6 +28,14 @@ const Blogs = (): ReactElement => {
       },
     },
     // {
+    //   id: 'CPU',
+    //   file: '/blogs/CPU.md',
+    //   // ! Classnames not working.
+    //   title: { label: 'CPU' },
+    //   url: 'cpu',
+    //   frontMatter: { showFrontMatter: true },
+    // },
+    // {
     //   id: 'Memory Heap',
     //   file: '/src/assets/blogs/memory-heap.md',
     //   title: { label: 'What is memory heap?' },

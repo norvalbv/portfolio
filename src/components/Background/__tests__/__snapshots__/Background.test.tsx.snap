@@ -5,9 +5,9 @@ exports[`<Background /> should render correctly 1`] = `
   className="absolute top-0 h-full w-screen overflow-hidden"
 >
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -42,9 +42,9 @@ exports[`<Background /> should render correctly 1`] = `
     JavaScript
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -79,9 +79,9 @@ exports[`<Background /> should render correctly 1`] = `
      TypeScript
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -116,9 +116,9 @@ exports[`<Background /> should render correctly 1`] = `
      React
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -153,9 +153,9 @@ exports[`<Background /> should render correctly 1`] = `
      Redux
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -190,9 +190,9 @@ exports[`<Background /> should render correctly 1`] = `
      Jest
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -227,9 +227,9 @@ exports[`<Background /> should render correctly 1`] = `
      Cypress
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -264,9 +264,9 @@ exports[`<Background /> should render correctly 1`] = `
      D3
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -301,9 +301,9 @@ exports[`<Background /> should render correctly 1`] = `
      Visx
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -338,9 +338,9 @@ exports[`<Background /> should render correctly 1`] = `
      HTML
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -375,9 +375,9 @@ exports[`<Background /> should render correctly 1`] = `
      CSS
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -412,9 +412,9 @@ exports[`<Background /> should render correctly 1`] = `
      TailwindCSS
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -449,9 +449,9 @@ exports[`<Background /> should render correctly 1`] = `
      Node
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -486,9 +486,9 @@ exports[`<Background /> should render correctly 1`] = `
      Express
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -523,9 +523,9 @@ exports[`<Background /> should render correctly 1`] = `
      AWS Serverless
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -560,9 +560,9 @@ exports[`<Background /> should render correctly 1`] = `
      CI/CD
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -597,9 +597,9 @@ exports[`<Background /> should render correctly 1`] = `
      Git
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -634,9 +634,9 @@ exports[`<Background /> should render correctly 1`] = `
      Bash
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -671,9 +671,9 @@ exports[`<Background /> should render correctly 1`] = `
      GitHub
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -708,9 +708,9 @@ exports[`<Background /> should render correctly 1`] = `
      Azure DevOps
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -745,9 +745,9 @@ exports[`<Background /> should render correctly 1`] = `
      Agile/Scrum/Kanban
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -782,9 +782,9 @@ exports[`<Background /> should render correctly 1`] = `
      SEO
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -819,9 +819,9 @@ exports[`<Background /> should render correctly 1`] = `
     JavaScript
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -856,9 +856,9 @@ exports[`<Background /> should render correctly 1`] = `
      TypeScript
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -893,9 +893,9 @@ exports[`<Background /> should render correctly 1`] = `
      React
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -930,9 +930,9 @@ exports[`<Background /> should render correctly 1`] = `
      Redux
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -967,9 +967,9 @@ exports[`<Background /> should render correctly 1`] = `
      Jest
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1004,9 +1004,9 @@ exports[`<Background /> should render correctly 1`] = `
      Cypress
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1041,9 +1041,9 @@ exports[`<Background /> should render correctly 1`] = `
      D3
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1078,9 +1078,9 @@ exports[`<Background /> should render correctly 1`] = `
      Visx
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1115,9 +1115,9 @@ exports[`<Background /> should render correctly 1`] = `
      HTML
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1152,9 +1152,9 @@ exports[`<Background /> should render correctly 1`] = `
      CSS
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1189,9 +1189,9 @@ exports[`<Background /> should render correctly 1`] = `
      TailwindCSS
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1226,9 +1226,9 @@ exports[`<Background /> should render correctly 1`] = `
      Node
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1263,9 +1263,9 @@ exports[`<Background /> should render correctly 1`] = `
      Express
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1300,9 +1300,9 @@ exports[`<Background /> should render correctly 1`] = `
      AWS Serverless
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1337,9 +1337,9 @@ exports[`<Background /> should render correctly 1`] = `
      CI/CD
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1374,9 +1374,9 @@ exports[`<Background /> should render correctly 1`] = `
      Git
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1411,9 +1411,9 @@ exports[`<Background /> should render correctly 1`] = `
      Bash
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1448,9 +1448,9 @@ exports[`<Background /> should render correctly 1`] = `
      GitHub
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1485,9 +1485,9 @@ exports[`<Background /> should render correctly 1`] = `
      Azure DevOps
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1522,9 +1522,9 @@ exports[`<Background /> should render correctly 1`] = `
      Agile/Scrum/Kanban
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1559,9 +1559,9 @@ exports[`<Background /> should render correctly 1`] = `
      SEO
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1596,9 +1596,9 @@ exports[`<Background /> should render correctly 1`] = `
     JavaScript
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1633,9 +1633,9 @@ exports[`<Background /> should render correctly 1`] = `
      TypeScript
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1670,9 +1670,9 @@ exports[`<Background /> should render correctly 1`] = `
      React
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1707,9 +1707,9 @@ exports[`<Background /> should render correctly 1`] = `
      Redux
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1744,9 +1744,9 @@ exports[`<Background /> should render correctly 1`] = `
      Jest
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1781,9 +1781,9 @@ exports[`<Background /> should render correctly 1`] = `
      Cypress
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1818,9 +1818,9 @@ exports[`<Background /> should render correctly 1`] = `
      D3
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1855,9 +1855,9 @@ exports[`<Background /> should render correctly 1`] = `
      Visx
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1892,9 +1892,9 @@ exports[`<Background /> should render correctly 1`] = `
      HTML
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1929,9 +1929,9 @@ exports[`<Background /> should render correctly 1`] = `
      CSS
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -1966,9 +1966,9 @@ exports[`<Background /> should render correctly 1`] = `
      TailwindCSS
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2003,9 +2003,9 @@ exports[`<Background /> should render correctly 1`] = `
      Node
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2040,9 +2040,9 @@ exports[`<Background /> should render correctly 1`] = `
      Express
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2077,9 +2077,9 @@ exports[`<Background /> should render correctly 1`] = `
      AWS Serverless
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2114,9 +2114,9 @@ exports[`<Background /> should render correctly 1`] = `
      CI/CD
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2151,9 +2151,9 @@ exports[`<Background /> should render correctly 1`] = `
      Git
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2188,9 +2188,9 @@ exports[`<Background /> should render correctly 1`] = `
      Bash
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2225,9 +2225,9 @@ exports[`<Background /> should render correctly 1`] = `
      GitHub
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2262,9 +2262,9 @@ exports[`<Background /> should render correctly 1`] = `
      Azure DevOps
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2299,9 +2299,9 @@ exports[`<Background /> should render correctly 1`] = `
      Agile/Scrum/Kanban
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2336,9 +2336,9 @@ exports[`<Background /> should render correctly 1`] = `
      SEO
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2373,9 +2373,9 @@ exports[`<Background /> should render correctly 1`] = `
     JavaScript
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2410,9 +2410,9 @@ exports[`<Background /> should render correctly 1`] = `
      TypeScript
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2447,9 +2447,9 @@ exports[`<Background /> should render correctly 1`] = `
      React
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2484,9 +2484,9 @@ exports[`<Background /> should render correctly 1`] = `
      Redux
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2521,9 +2521,9 @@ exports[`<Background /> should render correctly 1`] = `
      Jest
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2558,9 +2558,9 @@ exports[`<Background /> should render correctly 1`] = `
      Cypress
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2595,9 +2595,9 @@ exports[`<Background /> should render correctly 1`] = `
      D3
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2632,9 +2632,9 @@ exports[`<Background /> should render correctly 1`] = `
      Visx
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2669,9 +2669,9 @@ exports[`<Background /> should render correctly 1`] = `
      HTML
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2706,9 +2706,9 @@ exports[`<Background /> should render correctly 1`] = `
      CSS
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2743,9 +2743,9 @@ exports[`<Background /> should render correctly 1`] = `
      TailwindCSS
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2780,9 +2780,9 @@ exports[`<Background /> should render correctly 1`] = `
      Node
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2817,9 +2817,9 @@ exports[`<Background /> should render correctly 1`] = `
      Express
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2854,9 +2854,9 @@ exports[`<Background /> should render correctly 1`] = `
      AWS Serverless
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2891,9 +2891,9 @@ exports[`<Background /> should render correctly 1`] = `
      CI/CD
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2928,9 +2928,9 @@ exports[`<Background /> should render correctly 1`] = `
      Git
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -2965,9 +2965,9 @@ exports[`<Background /> should render correctly 1`] = `
      Bash
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3002,9 +3002,9 @@ exports[`<Background /> should render correctly 1`] = `
      GitHub
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3039,9 +3039,9 @@ exports[`<Background /> should render correctly 1`] = `
      Azure DevOps
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3076,9 +3076,9 @@ exports[`<Background /> should render correctly 1`] = `
      Agile/Scrum/Kanban
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3113,9 +3113,9 @@ exports[`<Background /> should render correctly 1`] = `
      SEO
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3150,9 +3150,9 @@ exports[`<Background /> should render correctly 1`] = `
     JavaScript
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3187,9 +3187,9 @@ exports[`<Background /> should render correctly 1`] = `
      TypeScript
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3224,9 +3224,9 @@ exports[`<Background /> should render correctly 1`] = `
      React
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3261,9 +3261,9 @@ exports[`<Background /> should render correctly 1`] = `
      Redux
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3298,9 +3298,9 @@ exports[`<Background /> should render correctly 1`] = `
      Jest
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3335,9 +3335,9 @@ exports[`<Background /> should render correctly 1`] = `
      Cypress
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3372,9 +3372,9 @@ exports[`<Background /> should render correctly 1`] = `
      D3
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3409,9 +3409,9 @@ exports[`<Background /> should render correctly 1`] = `
      Visx
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3446,9 +3446,9 @@ exports[`<Background /> should render correctly 1`] = `
      HTML
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3483,9 +3483,9 @@ exports[`<Background /> should render correctly 1`] = `
      CSS
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3520,9 +3520,9 @@ exports[`<Background /> should render correctly 1`] = `
      TailwindCSS
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3557,9 +3557,9 @@ exports[`<Background /> should render correctly 1`] = `
      Node
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3594,9 +3594,9 @@ exports[`<Background /> should render correctly 1`] = `
      Express
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3631,9 +3631,9 @@ exports[`<Background /> should render correctly 1`] = `
      AWS Serverless
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3668,9 +3668,9 @@ exports[`<Background /> should render correctly 1`] = `
      CI/CD
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3705,9 +3705,9 @@ exports[`<Background /> should render correctly 1`] = `
      Git
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3742,9 +3742,9 @@ exports[`<Background /> should render correctly 1`] = `
      Bash
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3779,9 +3779,9 @@ exports[`<Background /> should render correctly 1`] = `
      GitHub
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3816,9 +3816,9 @@ exports[`<Background /> should render correctly 1`] = `
      Azure DevOps
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3853,9 +3853,9 @@ exports[`<Background /> should render correctly 1`] = `
      Agile/Scrum/Kanban
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3890,9 +3890,9 @@ exports[`<Background /> should render correctly 1`] = `
      SEO
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3927,9 +3927,9 @@ exports[`<Background /> should render correctly 1`] = `
     JavaScript
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -3964,9 +3964,9 @@ exports[`<Background /> should render correctly 1`] = `
      TypeScript
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4001,9 +4001,9 @@ exports[`<Background /> should render correctly 1`] = `
      React
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4038,9 +4038,9 @@ exports[`<Background /> should render correctly 1`] = `
      Redux
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4075,9 +4075,9 @@ exports[`<Background /> should render correctly 1`] = `
      Jest
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4112,9 +4112,9 @@ exports[`<Background /> should render correctly 1`] = `
      Cypress
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4149,9 +4149,9 @@ exports[`<Background /> should render correctly 1`] = `
      D3
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4186,9 +4186,9 @@ exports[`<Background /> should render correctly 1`] = `
      Visx
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4223,9 +4223,9 @@ exports[`<Background /> should render correctly 1`] = `
      HTML
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4260,9 +4260,9 @@ exports[`<Background /> should render correctly 1`] = `
      CSS
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4297,9 +4297,9 @@ exports[`<Background /> should render correctly 1`] = `
      TailwindCSS
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4334,9 +4334,9 @@ exports[`<Background /> should render correctly 1`] = `
      Node
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4371,9 +4371,9 @@ exports[`<Background /> should render correctly 1`] = `
      Express
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4408,9 +4408,9 @@ exports[`<Background /> should render correctly 1`] = `
      AWS Serverless
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4445,9 +4445,9 @@ exports[`<Background /> should render correctly 1`] = `
      CI/CD
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4482,9 +4482,9 @@ exports[`<Background /> should render correctly 1`] = `
      Git
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4519,9 +4519,9 @@ exports[`<Background /> should render correctly 1`] = `
      Bash
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4556,9 +4556,9 @@ exports[`<Background /> should render correctly 1`] = `
      GitHub
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4593,9 +4593,9 @@ exports[`<Background /> should render correctly 1`] = `
      Azure DevOps
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4630,9 +4630,9 @@ exports[`<Background /> should render correctly 1`] = `
      Agile/Scrum/Kanban
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4667,9 +4667,9 @@ exports[`<Background /> should render correctly 1`] = `
      SEO
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4704,9 +4704,9 @@ exports[`<Background /> should render correctly 1`] = `
     JavaScript
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4741,9 +4741,9 @@ exports[`<Background /> should render correctly 1`] = `
      TypeScript
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4778,9 +4778,9 @@ exports[`<Background /> should render correctly 1`] = `
      React
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4815,9 +4815,9 @@ exports[`<Background /> should render correctly 1`] = `
      Redux
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4852,9 +4852,9 @@ exports[`<Background /> should render correctly 1`] = `
      Jest
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4889,9 +4889,9 @@ exports[`<Background /> should render correctly 1`] = `
      Cypress
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4926,9 +4926,9 @@ exports[`<Background /> should render correctly 1`] = `
      D3
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -4963,9 +4963,9 @@ exports[`<Background /> should render correctly 1`] = `
      Visx
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -5000,9 +5000,9 @@ exports[`<Background /> should render correctly 1`] = `
      HTML
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -5037,9 +5037,9 @@ exports[`<Background /> should render correctly 1`] = `
      CSS
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -5074,9 +5074,9 @@ exports[`<Background /> should render correctly 1`] = `
      TailwindCSS
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -5111,9 +5111,9 @@ exports[`<Background /> should render correctly 1`] = `
      Node
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -5148,9 +5148,9 @@ exports[`<Background /> should render correctly 1`] = `
      Express
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -5185,9 +5185,9 @@ exports[`<Background /> should render correctly 1`] = `
      AWS Serverless
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -5222,9 +5222,9 @@ exports[`<Background /> should render correctly 1`] = `
      CI/CD
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -5259,9 +5259,9 @@ exports[`<Background /> should render correctly 1`] = `
      Git
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -5296,9 +5296,9 @@ exports[`<Background /> should render correctly 1`] = `
      Bash
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -5333,9 +5333,9 @@ exports[`<Background /> should render correctly 1`] = `
      GitHub
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -5370,9 +5370,9 @@ exports[`<Background /> should render correctly 1`] = `
      Azure DevOps
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
@@ -5407,9 +5407,9 @@ exports[`<Background /> should render correctly 1`] = `
      Agile/Scrum/Kanban
   </div>
   <svg
-    height={2000}
+    height="100%"
     opacity={0.15}
-    width={2000}
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
   >
     <filter
