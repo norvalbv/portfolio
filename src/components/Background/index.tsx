@@ -1,7 +1,7 @@
-import React, { ReactElement } from 'react';
+import GranularIcon from 'components/SVG/Granular';
 import { MY_SKILLS } from 'constants/index';
 import useWindowSize from 'hooks/useWindowSize';
-import GranularIcon from 'components/SVG/Granular';
+import React, { Fragment, ReactElement } from 'react';
 
 const Background = (): ReactElement => {
   const windowData = useWindowSize();
@@ -31,12 +31,13 @@ const Background = (): ReactElement => {
         const animationDelay = exponentialDistribution(0.15);
 
         return (
-          <>
+          <Fragment
+            // Static array so index is fine.
+            // eslint-disable-next-line react/no-array-index-key
+            key={i}
+          >
             <GranularIcon />
             <div
-              // Static array so index is fine.
-              // eslint-disable-next-line react/no-array-index-key
-              key={i}
               className="text-accent-primary absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider"
               style={{
                 left: `${Math.round(Math.random() * 100)}%`,
@@ -51,7 +52,7 @@ const Background = (): ReactElement => {
             >
               {item}
             </div>
-          </>
+          </Fragment>
         );
       })}
     </div>
