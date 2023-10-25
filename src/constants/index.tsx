@@ -5,10 +5,10 @@ export const PARISN_DESCRIPTION =
 export const PARISN_SKILLS =
   'React, SWR, JavaScript, TypeScript, TailWindCSS, Vite, Jest, Cypress, Node, AWS Serverless, Azure Devops, CI/CD, Stripe, WebSockets, Microservices.';
 export const REACT_BLOGS_DESCRIPTION =
-  'A streamlined front-end package for rapid blog development in React, alleviating common setup hassles for developers.';
+  'A front-end package for rapid blog set up in React, alleviating common setup hassles for developers such as routing, link parsing, front matter parsing, and styling.';
 export const REACT_BLOGS_SKILLS =
   'React, TypeScript, JavaScript, Vite, Yarn, Vanilla Extract CSS, Jest, and more.';
-export const WEATHER_APP_SKILL = 'React, SWR, JavaScript, TypeScript, TailWindCSS, Vite, Jest';
+export const WEATHER_APP_SKILL = 'React, SWR, JavaScript, TypeScript, TailWindCSS, Vite, Jest.';
 export const CONTACT_EMAIL = 'benjinorval@gmail.com';
 export const PHONE_NUMBER_COUNTRY_CODE = '+44';
 export const PHONE_NUMBER = '7508719043';
