@@ -1,11 +1,5 @@
 import React, { ReactElement } from 'react';
-import {
-  CONTACT_EMAIL,
-  GITHUB,
-  LINKED_IN,
-  PHONE_NUMBER,
-  PHONE_NUMBER_COUNTRY_CODE,
-} from 'constants/index';
+import { CONTACT_EMAIL, GITHUB, LINKED_IN } from 'constants/index';
 import CV from 'assets/Benjamin Norval CV.pdf';
 
 const contactDetails = [
@@ -14,12 +8,6 @@ const contactDetails = [
     key: 'Email',
     hrefLink: `mailto:${CONTACT_EMAIL}`,
     label: CONTACT_EMAIL,
-  },
-  {
-    id: 'phone',
-    key: 'Phone',
-    hrefLink: `tel:${PHONE_NUMBER_COUNTRY_CODE}${PHONE_NUMBER}`,
-    label: `(${PHONE_NUMBER_COUNTRY_CODE}) ${PHONE_NUMBER}`,
   },
   {
     id: 'linkedin',

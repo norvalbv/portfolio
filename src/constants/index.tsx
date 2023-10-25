@@ -10,8 +10,6 @@ export const REACT_BLOGS_SKILLS =
   'React, TypeScript, JavaScript, Vite, Yarn, Vanilla Extract CSS, Jest, and more.';
 export const WEATHER_APP_SKILL = 'React, SWR, JavaScript, TypeScript, TailWindCSS, Vite, Jest.';
 export const CONTACT_EMAIL = 'benjinorval@gmail.com';
-export const PHONE_NUMBER_COUNTRY_CODE = '+44';
-export const PHONE_NUMBER = '7508719043';
 export const LINKED_IN = 'https://www.linkedin.com/in/benjamin-norval/';
 export const GITHUB = 'https://github.com/norvalbv/';
 export const BLOG_DESCRIPTION =
