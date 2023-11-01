@@ -4,10 +4,10 @@
 
 @layer components {
   .linear-border-before {
-    @apply before:to-accent-primary before:absolute before:top-[-0.25rem] before:h-1 before:w-full before:bg-gradient-to-r before:from-accent-secondary;
+    @apply before:absolute before:top-[-0.25rem] before:h-1 before:w-full before:bg-gradient-to-r before:from-accent-secondary before:to-accent-primary;
   }
 
   .linear-border-after {
-    @apply after:to-accent-primary after:absolute after:top-[-0.25rem] after:h-1 after:w-full after:bg-gradient-to-r after:from-accent-secondary;
+    @apply after:absolute after:top-[-0.25rem] after:h-1 after:w-full after:bg-gradient-to-r after:from-accent-secondary after:to-accent-primary;
   }
 }

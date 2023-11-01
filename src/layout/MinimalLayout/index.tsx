@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import Background from 'components/Background';
 import { Outlet } from 'react-router-dom';
 

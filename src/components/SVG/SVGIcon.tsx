@@ -1,4 +1,4 @@
-import React, { ReactElement, SVGProps } from 'react';
+import { ReactElement, SVGProps } from 'react';
 
 export interface SVGIconProps extends SVGProps<SVGSVGElement> {
   size?: number | string;

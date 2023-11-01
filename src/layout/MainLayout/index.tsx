@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import { Outlet, ScrollRestoration, useLocation } from 'react-router-dom';
 import Background from 'components/Background';
 import NavBar from './NavBar';

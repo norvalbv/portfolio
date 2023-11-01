@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import SVGIcon, { SVGIconProps } from '../SVGIcon';
 
 const DownArrowIcon = (props: SVGIconProps): ReactElement => {

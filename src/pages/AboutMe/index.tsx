@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import CardWrapper from 'components/CardWrapper';
 import StyledLink from 'components/StyledLink';
 import { MY_SKILLS } from 'constants/index';

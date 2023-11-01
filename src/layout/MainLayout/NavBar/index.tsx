@@ -1,4 +1,4 @@
-import React, { useState, ReactElement } from 'react';
+import { useState, ReactElement } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import useTheme from 'hooks/useTheme';
 import useWindowSize from 'hooks/useWindowSize';

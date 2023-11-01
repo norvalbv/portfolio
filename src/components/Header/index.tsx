@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import Title from 'components/Header/Title';
 import Subtitle from 'components/Header/SubTitle';
 import { useRandomReveal } from 'hooks/useRandomReveal';

@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import { CONTACT_EMAIL, GITHUB, LINKED_IN } from 'constants/index';
 import CV from 'assets/Benjamin Norval CV.pdf';
 

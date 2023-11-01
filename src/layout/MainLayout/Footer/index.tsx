@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import { GITHUB, LINKED_IN } from 'constants/index';
 import CV from 'assets/Benjamin_Norval_CV.pdf';
 

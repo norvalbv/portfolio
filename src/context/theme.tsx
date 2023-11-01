@@ -1,4 +1,4 @@
-import React, { ReactElement, createContext, useEffect, useMemo, useState } from 'react';
+import { ReactElement, createContext, useEffect, useMemo, useState } from 'react';
 
 export type ThemeContextValue = {
   isDarkMode: boolean;

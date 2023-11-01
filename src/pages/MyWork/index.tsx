@@ -10,7 +10,7 @@ import {
   REACT_BLOGS_SKILLS,
   WEATHER_APP_SKILL,
 } from 'constants/index';
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import { classNames } from 'utils';
 
 type MyWorkCardProps = {
@@ -54,7 +54,7 @@ const MyWorkCard = ({
         <a href={link.to} rel="noopener noreferrer" target="_blank">
           <button
             type="button"
-            className="shadow-accent-primary hover:bg-accent-primary my-4 rounded-lg bg-accent-secondary px-4 py-2 shadow"
+            className="my-4 rounded-lg bg-accent-secondary px-4 py-2 shadow shadow-accent-primary hover:bg-accent-primary"
           >
             {link.label}
           </button>

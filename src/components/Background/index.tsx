@@ -1,7 +1,7 @@
 import GranularIcon from 'components/SVG/Granular';
 import { MY_SKILLS } from 'constants/index';
 import useWindowSize from 'hooks/useWindowSize';
-import React, { Fragment, ReactElement } from 'react';
+import { Fragment, ReactElement } from 'react';
 
 const Background = (): ReactElement => {
   const windowData = useWindowSize();
@@ -38,7 +38,7 @@ const Background = (): ReactElement => {
           >
             <GranularIcon />
             <div
-              className="text-accent-primary absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider"
+              className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-primary"
               style={{
                 left: `${Math.round(Math.random() * 100)}%`,
                 animationDuration: `${duration}s`,

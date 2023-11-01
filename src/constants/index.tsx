@@ -1,14 +1,14 @@
 export const MY_SKILLS =
-  'JavaScript, TypeScript, React, Redux, Jest, Cypress, D3, Visx, HTML, CSS, TailwindCSS, Node, Express, AWS Serverless, CI/CD, Git, Bash, GitHub, Azure DevOps, Agile/Scrum/Kanban, SEO';
+  'JavaScript, TypeScript, Redux, Jest, Cypress, D3, Visx, HTML, CSS, TailwindCSS, Node, Express, AWS Serverless, CI/CD, Git, Bash, GitHub, Azure DevOps, Agile/Scrum/Kanban, SEO';
 export const PARISN_DESCRIPTION =
   'A work-in-progress e-commerce full stack webapp with unique add-ons including real-time data and chat using web sockets and automatic pricing that decreases over time using mathematical algorithms giving a better user experience.';
 export const PARISN_SKILLS =
-  'React, SWR, JavaScript, TypeScript, TailWindCSS, Vite, Jest, Cypress, Node, AWS Serverless, Azure Devops, CI/CD, Stripe, WebSockets, Microservices.';
+  'SWR, JavaScript, TypeScript, TailWindCSS, Vite, Jest, Cypress, Node, AWS Serverless, Azure Devops, CI/CD, Stripe, WebSockets, Microservices.';
 export const REACT_BLOGS_DESCRIPTION =
-  'A front-end package for rapid blog set up in React, alleviating common setup hassles for developers such as routing, link parsing, front matter parsing, and styling.';
+  'A front-end package for rapid blog set up in alleviating common setup hassles for developers such as routing, link parsing, front matter parsing, and styling.';
 export const REACT_BLOGS_SKILLS =
-  'React, TypeScript, JavaScript, Vite, Yarn, Vanilla Extract CSS, Jest, and more.';
-export const WEATHER_APP_SKILL = 'React, SWR, JavaScript, TypeScript, TailWindCSS, Vite, Jest.';
+  'TypeScript, JavaScript, Vite, Yarn, Vanilla Extract CSS, Jest, and more.';
+export const WEATHER_APP_SKILL = 'SWR, JavaScript, TypeScript, TailWindCSS, Vite, Jest.';
 export const CONTACT_EMAIL = 'benjinorval@gmail.com';
 export const LINKED_IN = 'https://www.linkedin.com/in/benjamin-norval/';
 export const GITHUB = 'https://github.com/norvalbv/';

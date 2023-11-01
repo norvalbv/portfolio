@@ -1,7 +1,7 @@
 import ContactMe from 'components/ContactMe';
 import Header from 'components/Header';
 import useTheme from 'hooks/useTheme';
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import Blog, { DefBlogs, DefTheme } from 'react-blogs';
 import { useSearchParams } from 'react-router-dom';
 

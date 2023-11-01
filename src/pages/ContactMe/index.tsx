@@ -1,4 +1,4 @@
-import React, { ReactElement, SyntheticEvent, useState } from 'react';
+import { ReactElement, SyntheticEvent, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-hot-toast';
 import CardWrapper from 'components/CardWrapper';

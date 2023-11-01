@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import useTheme from 'hooks/useTheme';
 import { classNames } from 'utils';
 import { Outlet } from 'react-router-dom';
