@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import { GITHUB, LINKED_IN } from 'constants/index';
-import CV from 'assets/Benjamin Norval CV.pdf';
+import CV from 'assets/Benjamin_Norval_CV.pdf';
 
 const footerLinks = [
   {
