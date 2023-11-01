@@ -70,7 +70,7 @@ exports[`<MyWork /> should render correctly 1`] = `
       <p
         className="px-6 text-sm md:p-0 lg:text-base"
       >
-        A streamlined front-end package for rapid blog development in React, alleviating common setup hassles for developers.
+        A front-end package for rapid blog set up in React, alleviating common setup hassles for developers such as routing, link parsing, front matter parsing, and styling.
       </p>
       <a
         href="https://github.com/norvalbv/react-blogs"
@@ -228,7 +228,7 @@ exports[`<MyWork /> should render correctly 1`] = `
         className="px-6 text-sm md:p-0 lg:text-base"
       >
         Built with: 
-        React, SWR, JavaScript, TypeScript, TailWindCSS, Vite, Jest
+        React, SWR, JavaScript, TypeScript, TailWindCSS, Vite, Jest.
       </p>
     </div>
   </div>

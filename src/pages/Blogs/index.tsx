@@ -19,6 +19,7 @@ const Blogs = (): ReactElement => {
       subtitle: {
         label: 'A deep insight to what RAM is and how it interacts with the computer.',
       },
+      // imagesPath: 'blogs/memory',
       url: 'how-memory-works',
       frontMatter: { showFrontMatter: true },
       metadata: {
@@ -83,7 +84,6 @@ const Blogs = (): ReactElement => {
         />
       )}
       <Blog allBlogs={allBlogs} theme={theme} />
-
       {searchParams.get('blog') && (
         <>
           <hr className="h-0.5 bg-fuchsia-50" />

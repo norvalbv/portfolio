@@ -14,7 +14,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -51,7 +51,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -88,7 +88,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -125,7 +125,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -162,7 +162,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -199,7 +199,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -236,7 +236,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -273,7 +273,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -310,7 +310,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -347,7 +347,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -384,7 +384,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -421,7 +421,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -458,7 +458,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -495,7 +495,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -532,7 +532,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -569,7 +569,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -606,7 +606,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -643,7 +643,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -680,7 +680,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -717,7 +717,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -754,7 +754,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -791,7 +791,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -828,7 +828,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -865,7 +865,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -902,7 +902,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -939,7 +939,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -976,7 +976,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1013,7 +1013,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1050,7 +1050,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1087,7 +1087,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1124,7 +1124,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1161,7 +1161,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1198,7 +1198,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1235,7 +1235,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1272,7 +1272,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1309,7 +1309,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1346,7 +1346,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1383,7 +1383,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1420,7 +1420,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1457,7 +1457,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1494,7 +1494,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1531,7 +1531,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1568,7 +1568,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1605,7 +1605,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1642,7 +1642,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1679,7 +1679,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1716,7 +1716,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1753,7 +1753,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1790,7 +1790,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1827,7 +1827,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1864,7 +1864,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1901,7 +1901,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1938,7 +1938,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -1975,7 +1975,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2012,7 +2012,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2049,7 +2049,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2086,7 +2086,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2123,7 +2123,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2160,7 +2160,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2197,7 +2197,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2234,7 +2234,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2271,7 +2271,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2308,7 +2308,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2345,7 +2345,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2382,7 +2382,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2419,7 +2419,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2456,7 +2456,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2493,7 +2493,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2530,7 +2530,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2567,7 +2567,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2604,7 +2604,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2641,7 +2641,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2678,7 +2678,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2715,7 +2715,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2752,7 +2752,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2789,7 +2789,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2826,7 +2826,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2863,7 +2863,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2900,7 +2900,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2937,7 +2937,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -2974,7 +2974,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3011,7 +3011,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3048,7 +3048,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3085,7 +3085,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3122,7 +3122,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3159,7 +3159,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3196,7 +3196,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3233,7 +3233,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3270,7 +3270,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3307,7 +3307,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3344,7 +3344,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3381,7 +3381,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3418,7 +3418,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3455,7 +3455,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3492,7 +3492,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3529,7 +3529,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3566,7 +3566,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3603,7 +3603,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3640,7 +3640,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3677,7 +3677,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3714,7 +3714,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3751,7 +3751,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3788,7 +3788,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3825,7 +3825,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3862,7 +3862,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3899,7 +3899,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3936,7 +3936,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -3973,7 +3973,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4010,7 +4010,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4047,7 +4047,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4084,7 +4084,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4121,7 +4121,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4158,7 +4158,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4195,7 +4195,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4232,7 +4232,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4269,7 +4269,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4306,7 +4306,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4343,7 +4343,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4380,7 +4380,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4417,7 +4417,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4454,7 +4454,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4491,7 +4491,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4528,7 +4528,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4565,7 +4565,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4602,7 +4602,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4639,7 +4639,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4676,7 +4676,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4713,7 +4713,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4750,7 +4750,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4787,7 +4787,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4824,7 +4824,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4861,7 +4861,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4898,7 +4898,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4935,7 +4935,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -4972,7 +4972,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -5009,7 +5009,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -5046,7 +5046,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -5083,7 +5083,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -5120,7 +5120,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -5157,7 +5157,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -5194,7 +5194,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -5231,7 +5231,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -5268,7 +5268,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -5305,7 +5305,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -5342,7 +5342,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -5379,7 +5379,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"
@@ -5416,7 +5416,7 @@ exports[`<Background /> should render correctly 1`] = `
       id="noiseFilter"
     >
       <feTurbulence
-        baseFrequency="2"
+        baseFrequency="0.8"
         numOctaves="1"
         stitchTiles="stitch"
         type="fractalNoise"

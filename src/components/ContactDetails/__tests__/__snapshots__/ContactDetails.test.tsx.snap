@@ -32,21 +32,6 @@ exports[`<ContactDetails /> should render correctly  1`] = `
   <span
     className="my-1 text-sm md:text-base"
   >
-    Phone
-    : 
-    <a
-      className="my-4 underline transition duration-150 ease-linear hover:text-accent-secondary"
-      download={false}
-      href="tel:+447508719043"
-      rel="noreferrer"
-      target="_blank"
-    >
-      (+44) 7508719043
-    </a>
-  </span>
-  <span
-    className="my-1 text-sm md:text-base"
-  >
     Linked In
     : 
     <a

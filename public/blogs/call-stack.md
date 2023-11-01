@@ -66,8 +66,9 @@ The idea of a stack overflow exception occurs when a process has used up all the
 When a stack overflow occurs, *the process will typically crash or be terminated by the operating system*. In JavaScript, the host environment will usually catch this and terminate the script, displaying an error. In lower-level languages, this can result in a segmentation fault or similar error, causing the process to terminate.
 
 You may be familiar with the JavaScript error of:
+
 ```Bash
-"RangeError: Maximum call stack size exceeded"`
+"RangeError: Maximum call stack size exceeded"
 ```
 
 This happens when a stack overflow exception gets raised. Here's a simple example of how a recursive function would cause a stack overflow error - a function that has no return value.
