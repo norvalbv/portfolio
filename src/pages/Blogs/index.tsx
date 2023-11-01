@@ -12,7 +12,7 @@ const Blogs = (): ReactElement => {
 
   const allBlogs: DefBlogs = [
     {
-      id: 'how-memory-works',
+      id: 'Memory (RAM)',
       file: '/blogs/memory.md',
       // ! Classnames not working.
       title: { label: 'How Memory (RAM) Works' },
@@ -24,29 +24,26 @@ const Blogs = (): ReactElement => {
       metadata: {
         'read time': '20 minutes',
         level: '🧠',
-        'date posted': 'Monday, 28th August 2023',
+        'date posted': 'Friday, 22nd September 2023',
       },
     },
-    // {
-    //   id: 'CPU',
-    //   file: '/blogs/CPU.md',
-    //   // ! Classnames not working.
-    //   title: { label: 'CPU' },
-    //   url: 'cpu',
-    //   frontMatter: { showFrontMatter: true },
-    // },
-    // {
-    //   id: 'Memory Heap',
-    //   file: '/src/assets/blogs/memory-heap.md',
-    //   title: { label: 'What is memory heap?' },
-    //   url: 'memory-heap',
-    //   frontMatter: { showFrontMatter: true },
-    //   metadata: {
-    //     'read time': '6 minutes',
-    //     level: '🧠🧠',
-    //     'date posted': 'Monday, 29th August 2023',
-    //   },
-    // },
+    {
+      id: 'Call Stack',
+      file: '/blogs/call-stack.md',
+      // ! Classnames not working.
+      title: { label: 'Call Stack' },
+      subtitle: { label: 'A quick overview of what the call stack is.' },
+      description: {
+        label:
+          "For a more in depth overview of the differentiations between call stack and memory heap check out the my blog about 'The Event Loop in JavaScript'. (coming soon)",
+      },
+      metadata: {
+        'read time': '4 minutes',
+        level: '🧠',
+        'date posted': 'Tuesday, 31th October 2023',
+      },
+      url: 'call-stack',
+    },
   ];
 
   const theme: DefTheme = {
@@ -58,6 +55,9 @@ const Blogs = (): ReactElement => {
       },
       p: {
         props: { className: 'my-4 tracking-wider text-sm' },
+      },
+      blockquote: {
+        props: { className: 'italic border-l ml-4 pl-4' },
       },
     },
   };
