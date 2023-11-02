@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 import { CONTACT_EMAIL, GITHUB, LINKED_IN } from 'constants/index';
-import CV from 'assets/Benjamin Norval CV.pdf';
+import CV from 'assets/Benjamin_Norval_CV.pdf';
 
 const contactDetails = [
   {

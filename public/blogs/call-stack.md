@@ -4,6 +4,8 @@ The *call stack*, or commonly called just *stack*, is a logical (not physical) r
 
 As per above, the call stack operates on a LIFO basis. It is handy to visualise this with the famous Tower of Hanoi game:
 
+![[Tower of Hanoi Memory - Stack example.png]]
+
 So from the example above, if you want to remove item '2' you would have to remove item '1' prior to the removal, therefore, you will always have older items nearer the base of the stack. 
 
 If that doesn't help, as an example: when you use a mobile app or browser and press the back button, it will take you to the previous page. As you navigate from page to page, those pages are placed on a stack with the current page always on the top and the first page you looked at on the base. When you click on the back button you will remove your current page (on the top) from the stack and the previous will become current. Whilst the page details itself will not all be part of the call stack, it helps visualise how it works.
@@ -58,6 +60,8 @@ Aside, when using languages like JavaScript that allow for `pop()` and `push()` 
 Every time you call a function: the stack pointer increments to the next physical memory address, creating a new **block**/reserves space for its variables etc. and copies it to that address. The new block will have all local variables, function parameters, object references and return values. 
 
 When you return from the function the block is removed from the top of the stack, memory is released, the objects, and variables used by this function are not accessible anymore and stack pointer decrements to the previous available item. The names of those procedures are "**Push**" (storing something on the stack) and "**Pop**" (retrieving/deleting something from the stack).
+
+![[Call Stack Usage Example.png]]
 
 ## Stack Overflow Exception
 

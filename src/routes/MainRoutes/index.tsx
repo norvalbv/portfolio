@@ -6,7 +6,8 @@ import AboutMe from 'pages/AboutMe';
 import MyWork from 'pages/MyWork';
 import ContactMe from 'pages/ContactMe';
 import NotFound from 'pages/NotFound';
-import Blogs from 'pages/Blogs';
+import Blogs from 'pages/BlogsOverview';
+import BlogPage from 'pages/BlogPage';
 
 export const routes = {
   path: '/',
@@ -35,6 +36,11 @@ export const routes = {
     {
       path: '/blogs',
       element: <Blogs />,
+      name: AnalyticsEvent.Blog,
+    },
+    {
+      path: '/blogs/:blog',
+      element: <BlogPage />,
       name: AnalyticsEvent.Blog,
     },
     {

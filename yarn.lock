@@ -1986,7 +1986,7 @@ __metadata:
     prettier: ^3.0.3
     prettier-plugin-tailwindcss: ^0.5.5
     react: ^18.2.0
-    react-blogs: ^0.0.6
+    react-blogs: "portal:../react-blogs"
     react-dom: ^18.2.0
     react-hot-toast: ^2.4.1
     react-markdown: ^9.0.0
@@ -7459,19 +7459,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-blogs@npm:^0.0.6":
-  version: 0.0.6
-  resolution: "react-blogs@npm:0.0.6"
+"react-blogs@portal:../react-blogs::locator=application%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "react-blogs@portal:../react-blogs::locator=application%40workspace%3A."
   dependencies:
     "@vanilla-extract/css": ^1.13.0
     js-yaml: ^4.1.0
     markdown-to-jsx: ^7.3.2
     prism-react-renderer: ^2.1.0
+    zustand: ^4.4.5
   peerDependencies:
-    react: ^18.2.0
-  checksum: 832f2c190612a41ff3ea2ddae344dc2e5583150df7f2f076b216a3ff7e87dd0685ee6f469480c50b8e33c21ae1f2104a72e1e2b9eeefaa8080293edb9aa8326b
+    react: ^17.0.0
+    react-dom: ^17.0.0
   languageName: node
-  linkType: hard
+  linkType: soft
 
 "react-dom@npm:^18.2.0":
   version: 18.2.0
@@ -8960,6 +8961,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"use-sync-external-store@npm:1.2.0":
+  version: 1.2.0
+  resolution: "use-sync-external-store@npm:1.2.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 5c639e0f8da3521d605f59ce5be9e094ca772bd44a4ce7322b055a6f58eeed8dda3c94cabd90c7a41fb6fa852210092008afe48f7038792fd47501f33299116a
+  languageName: node
+  linkType: hard
+
 "util-deprecate@npm:^1.0.1, util-deprecate@npm:^1.0.2":
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
@@ -9374,5 +9384,25 @@ __metadata:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: f77b3d8d00310def622123df93d4ee654fc6a0096182af8bd60679ddcdfb3474c56c6c7190817c84a2785648cdee9d721c0154eb45698c62176c322fb46fc700
+  languageName: node
+  linkType: hard
+
+"zustand@npm:^4.4.5":
+  version: 4.4.5
+  resolution: "zustand@npm:4.4.5"
+  dependencies:
+    use-sync-external-store: 1.2.0
+  peerDependencies:
+    "@types/react": ">=16.8"
+    immer: ">=9.0"
+    react: ">=16.8"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    immer:
+      optional: true
+    react:
+      optional: true
+  checksum: 2519dac2586f33aa12a2e2ed966d8d57820714e0568b80d192dbd3abd3c9854ba4f45843c89642218dca92ee2df345f28fb48eed20bffa4a61f6df7cc9dea176
   languageName: node
   linkType: hard
