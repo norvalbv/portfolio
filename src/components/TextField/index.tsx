@@ -1,4 +1,12 @@
-import { ReactElement, MouseEventHandler, useState, ChangeEvent, useEffect, useRef } from 'react';
+import {
+  ChangeEvent,
+  MouseEventHandler,
+  ReactElement,
+  memo,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 import { classNames } from 'utils';
 import ErrorMessage from './ErrorMessage';
 
@@ -215,4 +223,4 @@ const TextField = ({
   );
 };
 
-export default React.memo(TextField);
+export default memo(TextField);

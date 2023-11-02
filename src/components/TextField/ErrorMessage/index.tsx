@@ -11,7 +11,7 @@ const ErrorMessage = ({ message, dataAtt, className }: ErrorMessageProps): React
   return (
     <div className={classNames(className)}>
       <span
-        className="text-red-R500 block max-w-full text-sm"
+        className="block max-w-full text-sm text-red-500"
         data-testid={`${dataAtt ? `${dataAtt} ${message}` : message}`}
       >
         {message}

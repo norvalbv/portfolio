@@ -1,7 +1,7 @@
 import GranularIcon from 'components/SVG/Granular';
 import { MY_SKILLS } from 'constants/index';
 import useWindowSize from 'hooks/useWindowSize';
-import { Fragment, ReactElement } from 'react';
+import React, { Fragment, ReactElement } from 'react';
 
 const Background = (): ReactElement => {
   const windowData = useWindowSize();

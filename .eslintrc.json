@@ -17,8 +17,7 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:prettier/recommended",
-    "plugin:tailwindcss/recommended",
-    "plugin:jsx-runtime"
+    "plugin:tailwindcss/recommended"
   ],
   "ignorePatterns": ["postcss.config.cjs"],
   "settings": {
@@ -27,6 +26,8 @@
     }
   },
   "rules": {
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
     "import/no-extraneous-dependencies": [
       "error",
       {
