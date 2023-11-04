@@ -1,4 +1,3 @@
-import GranularIcon from 'components/SVG/Granular';
 import { MY_SKILLS } from 'constants/index';
 import useWindowSize from 'hooks/useWindowSize';
 import React, { Fragment, ReactElement } from 'react';
@@ -36,7 +35,6 @@ const Background = (): ReactElement => {
             // eslint-disable-next-line react/no-array-index-key
             key={i}
           >
-            <GranularIcon />
             <div
               className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-primary"
               style={{

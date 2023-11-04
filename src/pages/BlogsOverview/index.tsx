@@ -16,10 +16,15 @@ import { Link, useSearchParams } from 'react-router-dom';
 const Blogs = (): ReactElement => {
   const { isDarkMode } = useTheme();
 
-  const theme: DefTheme = {
+  const theme = {
     theme: isDarkMode ? 'SHADES_OF_PURPLE' : 'SHADES_OF_GREEN',
-    code: isDarkMode ? 'dracula' : 'oneLight',
     overrides: {
+      code: { theme: isDarkMode ? 'dracula' : 'oneLight' },
+      clipboard: {
+        show: true,
+        callback: () => console.log('yup'),
+        // props: { className: 'h-40' },
+      },
       metadata: { props: { className: 'text-xs md:text-sm flex gap-4 flex-wrap' } },
       p: { props: { className: 'my-4 tracking-wider text-sm' } },
       blockquote: { props: { className: 'italic border-l ml-4 pl-4' } },
@@ -45,7 +50,7 @@ const Blogs = (): ReactElement => {
 
   const id = allBlogs.find((blog) => blog.url === searchParams.get('blog'))?.id;
   return (
-    <div className="mx-auto w-10/12 font-mono md:w-8/12">
+    <div className="z-10 mx-auto w-10/12 font-mono md:w-8/12">
       {searchParams.get('blog') ? (
         <Blog allBlogs={allBlogs} currentBlogId={id} paramKey="blog" />
       ) : (

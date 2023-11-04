@@ -12,9 +12,14 @@ const BlogPage = (): ReactElement | null => {
 
   const theme = {
     theme: isDarkMode ? 'SHADES_OF_PURPLE' : 'SHADES_OF_GREEN',
-    code: isDarkMode ? 'dracula' : 'oneLight',
     overrides: {
-      metadata: { props: { className: 'text-xs md:text-sm flex gap-2 flex-wrap' } },
+      code: { theme: isDarkMode ? 'dracula' : 'oneLight' },
+      clipboard: {
+        show: true,
+        callback: () => console.log('yup'),
+        // props: { className: 'h-40' },
+      },
+      metadata: { props: { className: 'text-xs md:text-sm flex gap-4 flex-wrap' } },
       p: { props: { className: 'my-4 tracking-wider text-sm' } },
       blockquote: { props: { className: 'italic border-l ml-4 pl-4' } },
       img: { props: { className: 'rounded-lg w-96 border border-2' } },
@@ -28,7 +33,7 @@ const BlogPage = (): ReactElement | null => {
   if (!id) return null;
 
   return (
-    <div className="mx-auto w-10/12 font-mono md:w-8/12">
+    <div className="z-10 mx-auto w-10/12 font-mono md:w-8/12">
       <Blog allBlogs={allBlogs} currentBlogId={id} />
       <hr className="h-0.5 bg-fuchsia-50" />
       <ContactMe />

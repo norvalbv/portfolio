@@ -1,8 +1,9 @@
+import Background from 'components/Background';
+import GranularIcon from 'components/SVG/Granular';
 import { ReactElement } from 'react';
 import { Outlet, ScrollRestoration, useLocation } from 'react-router-dom';
-import Background from 'components/Background';
-import NavBar from './NavBar';
 import Footer from './Footer';
+import NavBar from './NavBar';
 
 const MainLayout = (): ReactElement => {
   const { pathname } = useLocation();
@@ -15,7 +16,10 @@ const MainLayout = (): ReactElement => {
       <ScrollRestoration />
       {!pageIsBlog && <Background />}
       <NavBar />
-      <main className="mx-auto flex h-full min-h-[calc(100vh-10.25rem)] max-w-screen-2xl flex-col leading-6">
+      <div className="absolute top-0 z-0 h-full w-screen overflow-hidden">
+        <GranularIcon />
+      </div>
+      <main className="z-10 mx-auto flex h-full min-h-[calc(100vh-10.25rem)] max-w-screen-2xl flex-col leading-6">
         <Outlet />
       </main>
       <Footer />
