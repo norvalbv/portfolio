@@ -52,7 +52,7 @@ exports[`<TextField /> should render correctly with all props 1`] = `
     className="mt-2"
   >
     <span
-      className="text-red-R500 block max-w-full text-sm"
+      className="block max-w-full text-sm text-red-500"
       data-testid="Test DataAtt ERROR!!"
     >
       ERROR!!

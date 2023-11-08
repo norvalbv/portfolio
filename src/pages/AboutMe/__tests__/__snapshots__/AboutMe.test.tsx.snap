@@ -48,7 +48,7 @@ exports[`<AboutMe /> should render correctly 1`] = `
       className="mx-auto w-6/12 min-w-[16rem] rounded border border-light-text bg-black/20 p-4 text-xs dark:border-dark-text dark:bg-white/20"
     >
       OR, they are: 
-      JavaScript, TypeScript, React, Redux, Jest, Cypress, D3, Visx, HTML, CSS, TailwindCSS, Node, Express, AWS Serverless, CI/CD, Git, Bash, GitHub, Azure DevOps, Agile/Scrum/Kanban, SEO
+      JavaScript, TypeScript, Redux, Jest, Cypress, D3, Visx, HTML, CSS, TailwindCSS, Node, Express, AWS Serverless, CI/CD, Git, Bash, GitHub, Azure DevOps, Agile/Scrum/Kanban, SEO
     </p>
   </div>
 </div>

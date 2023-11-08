@@ -70,7 +70,7 @@ exports[`<MyWork /> should render correctly 1`] = `
       <p
         className="px-6 text-sm md:p-0 lg:text-base"
       >
-        A front-end package for rapid blog set up in React, alleviating common setup hassles for developers such as routing, link parsing, front matter parsing, and styling.
+        A front-end package for rapid blog set up in alleviating common setup hassles for developers such as routing, link parsing, front matter parsing, and styling.
       </p>
       <a
         href="https://github.com/norvalbv/react-blogs"
@@ -78,7 +78,7 @@ exports[`<MyWork /> should render correctly 1`] = `
         target="_blank"
       >
         <button
-          className="shadow-accent-primary hover:bg-accent-primary my-4 rounded-lg bg-accent-secondary px-4 py-2 shadow"
+          className="my-4 rounded-lg bg-accent-secondary px-4 py-2 shadow shadow-accent-primary hover:bg-accent-primary"
           type="button"
         >
           View the Documentation
@@ -88,7 +88,7 @@ exports[`<MyWork /> should render correctly 1`] = `
         className="px-6 text-sm md:p-0 lg:text-base"
       >
         Built with: 
-        React, TypeScript, JavaScript, Vite, Yarn, Vanilla Extract CSS, Jest, and more.
+        TypeScript, JavaScript, Vite, Yarn, Vanilla Extract CSS, Jest, and more.
       </p>
     </div>
     <div
@@ -156,7 +156,7 @@ exports[`<MyWork /> should render correctly 1`] = `
         className="px-6 text-sm md:p-0 lg:text-base"
       >
         Built with: 
-        React, SWR, JavaScript, TypeScript, TailWindCSS, Vite, Jest, Cypress, Node, AWS Serverless, Azure Devops, CI/CD, Stripe, WebSockets, Microservices.
+        SWR, JavaScript, TypeScript, TailWindCSS, Vite, Jest, Cypress, Node, AWS Serverless, Azure Devops, CI/CD, Stripe, WebSockets, Microservices.
       </p>
     </div>
     <div
@@ -228,7 +228,7 @@ exports[`<MyWork /> should render correctly 1`] = `
         className="px-6 text-sm md:p-0 lg:text-base"
       >
         Built with: 
-        React, SWR, JavaScript, TypeScript, TailWindCSS, Vite, Jest.
+        SWR, JavaScript, TypeScript, TailWindCSS, Vite, Jest.
       </p>
     </div>
   </div>
