@@ -16,19 +16,15 @@ import { Link, useSearchParams } from 'react-router-dom';
 const Blogs = (): ReactElement => {
   const { isDarkMode } = useTheme();
 
-  const theme = {
-    theme: isDarkMode ? 'SHADES_OF_PURPLE' : 'SHADES_OF_GREEN',
+  const theme: DefTheme = {
+    theme: isDarkMode ? 'FUNKY_TOWN' : 'GENTLE_GRAPE',
     overrides: {
       code: { theme: isDarkMode ? 'dracula' : 'oneLight' },
-      clipboard: {
-        show: true,
-        callback: () => console.log('yup'),
-        // props: { className: 'h-40' },
-      },
       metadata: { props: { className: 'text-xs md:text-sm flex gap-4 flex-wrap' } },
       p: { props: { className: 'my-4 tracking-wider text-sm' } },
       blockquote: { props: { className: 'italic border-l ml-4 pl-4' } },
       img: { props: { className: 'rounded-lg w-96 border border-2' } },
+      ul: { props: { className: 'my-4 tracking-wider text-sm' } },
     },
   };
 
