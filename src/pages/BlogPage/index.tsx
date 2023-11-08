@@ -12,7 +12,7 @@ const BlogPage = (): ReactElement | null => {
   const { pathname } = useLocation();
 
   const theme: DefTheme = {
-    theme: isDarkMode ? 'FUNKY_TOWN' : 'GENTLE_GRAPE',
+    theme: isDarkMode ? 'SHADES_OF_GREEN' : 'GENTLE_GRAPE',
     overrides: {
       code: { theme: isDarkMode ? 'dracula' : 'oneLight' },
       clipboard: {

@@ -17,7 +17,7 @@ const Blogs = (): ReactElement => {
   const { isDarkMode } = useTheme();
 
   const theme: DefTheme = {
-    theme: isDarkMode ? 'FUNKY_TOWN' : 'GENTLE_GRAPE',
+    theme: isDarkMode ? 'SHADES_OF_GREEN' : 'GENTLE_GRAPE',
     overrides: {
       code: { theme: isDarkMode ? 'dracula' : 'oneLight' },
       metadata: { props: { className: 'text-xs md:text-sm flex gap-4 flex-wrap' } },
