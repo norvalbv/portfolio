@@ -23,6 +23,8 @@ const BlogPage = (): ReactElement | null => {
       blockquote: { props: { className: 'italic border-l ml-4 pl-4' } },
       img: { props: { className: 'rounded-lg w-96 border border-2' } },
       ul: { props: { className: 'my-4 tracking-wider text-sm' } },
+      li: { props: { className: 'my-4 tracking-wider text-sm' } },
+      ol: { props: { className: 'my-4 tracking-wider text-sm' } },
       strong: {
         props: { className: !isDarkMode ? 'text-[#af79c8] text-sm' : 'text-[#547f7c] text-sm' },
       },
