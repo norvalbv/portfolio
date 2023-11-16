@@ -50,4 +50,18 @@ export const allBlogs: DefBlogs = [
     },
     url: 'call-stack',
   },
+  {
+    id: 'Legal ramifications with web accessibility',
+    file: '/blogs/legal-ramifications-with-web-accessibility.md',
+    // ! Classnames not working.
+    title: 'Legal ramifications with web accessibility',
+    subtitle: 'A quick analysis of why you need to have an accessible website.',
+    description: 'This blog mainly covers UK law',
+    metadata: {
+      'read time': '7 minutes',
+      level: '🧠',
+      'date posted': 'Thursday, 16th November 2023',
+    },
+    url: 'web-accessibility',
+  },
 ];
