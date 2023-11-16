@@ -1,5 +1,7 @@
 ## Overview
 
+Yipee, a blog about web accessibility law. It is a challenging topic so I've tried my best to summarise everything.
+
 The [legal impact](https://f.hubspotusercontent30.net/hubfs/3280432/Remediated-2021-Year-End-Report-FINAL.pdf) surrounding accessibility is somewhat of a concern. Public sector entities in the United States, such as government-funded programs/schools, airlines, and non-profits, must follow certain digital accessibility rules, while many private sector companies do not. In countries such as Canada, the United Kingdom, Japan, Australia, and the European Union, stricter [digital accessibility laws](https://www.w3.org/WAI/policies/) exist for both public and private companies.
 
 ## In the United Kingdom
@@ -17,12 +19,6 @@ But the EQA demands more of organisations than non-discrimination. It also requi
 
 To comply with the law, UK website owners must therefore make **‘reasonable adjustments'** so that their web content is accessible to people with disabilities – not wait for disabled people to tell them their site in inaccessible. **The EQA itself does not outline the technical accessibility standards it requires of websites. So, in practice, the safest bet for organisations is to ensure their web content adheres to WCAG 2.1 Level AA standards.**
 
-#### Taking Legal Action
-
-So far, the legal action taken against companies is minor. A few companies have faced legal action brought by The Royal National Institute for the Blind (RNIB). As an example, In March 2023 [BBC News](https://www.bbc.co.uk/news/uk-northern-ireland-65100390) reported on the £3,000 settlement awarded to a blind man over inaccessible content. Stephen Campbell was unable to access the Health and Social Care Northern Ireland (HSCNI) website to apply for promotion. As a screen reader user, he was unable to activate the online process using his screen reader software. He was also unable to find any information for reasonable adjustments to be made for him to apply.  **However, given that the Government has adopted the WCAG 2.1 level AA as a suitable standard for public sector sites (see below) and it is more broadly recognised as a ‘good’ approach, any site which met these guidelines would have a very strong defence against any legal action.**
-
-It's important to note that country-specific accessibility guidelines applies to where the product is shipped. If you're distributing an international product that meets the requirements in country A but not in country B, you could still be fined. The above fine is also UK-specific, and other countries have different legality and penalties involved. I posted [this thread to Reddit](https://www.reddit.com/r/webdev/comments/15fclvx/should_i_be_concerned_about_the_legality_of_web/) about the legality impact, it seems the gold standard is AA so if that's covered, you should be fine internationally. People are also mentioning that their companies have been fined *six digits* for inaccessible websites, so the penalties can be subjective per region.
-
 ### [Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations (2018)](https://www.legislation.gov.uk/ukpga/1995/50/contents)
 
 While the EQA set a baseline for web accessibility legislation in the UK, digital accessibility protection was beefed up for the public sector in September 2018 with the introduction of the Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations.
@@ -33,7 +29,7 @@ All public sector bodies should have become compliant with this law by September
 
 [Read more about this here.](https://www.siteimprove.com/glossary/uk-accessibility-laws/)
 
-### Distributing Internationally
+## Distributing Internationally
 
 When you're building a website that is intended for international use, it's generally advisable to make your website compliant with the laws and regulations of all the major markets where you expect it to be used, especially if you have a substantial audience in those markets or if you're actively targeting users there.
 
@@ -42,10 +38,12 @@ If your business is based in a certain country, you should certainly comply with
 
 ## Technical implications
 
-ARIA or WAI-ARIA may not be fully supported in your users environment. As there are an exhaustive amount of ARIA features, it is up to the browser that the user is using to provide an up-to-date API that covers the entire spec, as well as the screen reader that they're using being up to date. There are numerous cominbations of operating systems, browsers, and screen readers to consider. Therefore, the question arises, if you implement a standard you are happy with for example AA and the user's browser doesn't support your ARIA labels, are you liable, should you of planned this in advanced and implemented various polyfills? 
+ARIA or WAI-ARIA may not be fully supported in your users environment. As there are an exhaustive amount of ARIA features, it is up to the browser that the user is using to provide an up-to-date API that covers the entire specification, as well as the screen reader that they're using being up to date. There are numerous cominbations of operating systems, browsers, and screen readers to consider. Therefore, the question arises, if you implement a standard you are happy with for example AA and the user's browser doesn't support your ARIA labels, are you liable, should you of planned this in advanced and implemented various polyfills? 
 
 The answer, it's tricky. Like anything that's law-related, there is no clear and straight-forward answer. As there are numerous legal ramfications around the world you cannot give one answer. As mentioned previously, if you comply with the typical WCAG AA standard, you should be fine. You, as a developer / business cannot control what the users use so if a breaking change comes in that only affect a very small minority, or the user is using a new unstable browser, you *should* have a fighting chance if they try and sue you. Again, it's difficult to answer so as long as you're staying up to date with the regulations on accessibility and how to apply them, that's all you can do.
 
----
+## Taking Legal Action
 
-> Path: /Users/beam/Documents/Obsidian Vault/Coding/Accessibility/Legal ramifications with web accessibility.md
+So far, the legal action taken against companies is minor. A few companies have faced legal action brought by The Royal National Institute for the Blind (RNIB). As an example, In March 2023 [BBC News](https://www.bbc.co.uk/news/uk-northern-ireland-65100390) reported on the £3,000 settlement awarded to a blind man over inaccessible content. Stephen Campbell was unable to access the Health and Social Care Northern Ireland (HSCNI) website to apply for promotion. As a screen reader user, he was unable to activate the online process using his screen reader software. He was also unable to find any information for reasonable adjustments to be made for him to apply.  However, given that the Government has adopted the WCAG 2.1 level AA as a suitable standard for public sector sites (see below) and it is more broadly recognised as a ‘good’ approach, any site which met these guidelines would have a very strong defence against any legal action.
+
+It's important to note that country-specific accessibility guidelines applies to where the product is shipped. If you're distributing an international product that meets the requirements in country A but not in country B, you could still be fined. The above fine is also UK specific, and other countries have different legality and penalties involved. It seems the gold standard is AA so if that's covered, you should be fine internationally. People have also mentioned that their companies have been fined *six digits* for inaccessible websites in certain countries such as America, so the penalties can be subjective per region.
