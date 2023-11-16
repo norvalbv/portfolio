@@ -1,5 +1,3 @@
-- [x] Legal ramifications with web accessibility #Complete
----
 ## Overview
 
 The [legal impact](https://f.hubspotusercontent30.net/hubfs/3280432/Remediated-2021-Year-End-Report-FINAL.pdf) surrounding accessibility is somewhat of a concern. Public sector entities in the United States, such as government-funded programs/schools, airlines, and non-profits, must follow certain digital accessibility rules, while many private sector companies do not. In countries such as Canada, the United Kingdom, Japan, Australia, and the European Union, stricter [digital accessibility laws](https://www.w3.org/WAI/policies/) exist for both public and private companies.
