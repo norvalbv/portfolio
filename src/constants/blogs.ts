@@ -31,7 +31,7 @@ export const allBlogs: DefBlogs = [
     metadata: {
       'read time': '20 minutes',
       level: '🧠',
-      'date posted': 'Friday, 22nd September 2023',
+      'Date Posted': 'Friday, 22nd September 2023',
     },
   },
   {
@@ -46,7 +46,7 @@ export const allBlogs: DefBlogs = [
     metadata: {
       'read time': '4 minutes',
       level: '🧠',
-      'date posted': 'Tuesday, 31th October 2023',
+      'Date Posted': 'Tuesday, 31th October 2023',
     },
     url: 'call-stack',
   },
@@ -60,8 +60,20 @@ export const allBlogs: DefBlogs = [
     metadata: {
       'read time': '7 minutes',
       level: '🧠',
-      'date posted': 'Thursday, 16th November 2023',
+      'Date Posted': 'Thursday, 16th November 2023',
     },
     url: 'web-accessibility',
   },
+  // {
+  //   id: 'Asynchronous JavaScript',
+  //   file: '/blogs/asynchronous-javascript.md',
+  //   // ! Classnames not working.
+  //   title: 'Asynchronous JavaScript',
+  //   metadata: {
+  //     'read time': '20 minutes',
+  //     level: '🧠🧠',
+  //     'Date Posted': 'Saturday, 16th December 2023',
+  //   },
+  //   url: 'asynchronous-javascript',
+  // },
 ];

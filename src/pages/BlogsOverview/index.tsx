@@ -33,10 +33,10 @@ const Blogs = (): ReactElement => {
   allBlogs.sort((a, b) => {
     const regex = /(?<=\d)(?:st|nd|rd|th)\b/i;
 
-    const metaA = a.metadata?.['date posted'].replace(regex, '');
+    const metaA = a.metadata?.['Date Posted'].replace(regex, '');
     const dateA = new Date(metaA as string);
 
-    const metaB = b.metadata?.['date posted'].replace(regex, '');
+    const metaB = b.metadata?.['Date Posted'].replace(regex, '');
     const dateB = new Date(metaB as string);
 
     return dateB.getTime() - dateA.getTime();
@@ -46,7 +46,7 @@ const Blogs = (): ReactElement => {
 
   const id = allBlogs.find((blog) => blog.url === searchParams.get('blog'))?.id;
   return (
-    <div className="z-10 mx-auto w-10/12 font-mono md:w-8/12">
+    <div className="z-10 mx-auto h-96 w-10/12 font-mono md:w-8/12">
       {searchParams.get('blog') ? (
         <Blog allBlogs={allBlogs} currentBlogId={id} paramKey="blog" />
       ) : (
