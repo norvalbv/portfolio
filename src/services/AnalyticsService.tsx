@@ -9,7 +9,7 @@ type AsInitializeProps = {
   apiHost?: string;
 };
 
-const mixpanelToken = process.env.MIXPANEL_TOKEN;
+const mixpanelToken = process.env.NEXT_PUBLIC_MIXPANEL_TOKEN;
 
 if (!mixpanelToken) throw new Error('Invalid/missing MixpanelToken');
 

@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es6",
+    "plugins": [{ "name": "next" }],
     "lib": ["dom", "dom.iterable", "esnext"],
     "types": ["vite/client", "node", "jest"],
     "allowJs": true,
@@ -15,8 +16,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "baseUrl": "src"
+    "jsx": "preserve",
+    "baseUrl": "src",
+    "incremental": true
   },
   "ts-node": {
     "compilerOptions": {
@@ -29,6 +31,9 @@
     "jest.config.ts",
     "vite.config.ts",
     "globals.d.ts",
-    "public/blogs"
-  ]
+    "public/blogs",
+    "./dist/types/**/*.ts",
+    "./next-env.d.ts"
+  ],
+  "exclude": ["./node_modules"]
 }

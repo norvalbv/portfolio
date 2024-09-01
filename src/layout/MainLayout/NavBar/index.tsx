@@ -1,18 +1,21 @@
-import { useState, ReactElement } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import useTheme from 'hooks/useTheme';
-import useWindowSize from 'hooks/useWindowSize';
-import { classNames } from 'utils';
+'use client';
+
 import ThemeToggle from 'components/ThemeToggle';
 import Hamburger from 'hamburger-react';
-import BenjaminNorvalBlack from 'assets/images/BNBlack.webp';
-import BenjaminNorvalWhite from 'assets/images/BNWhite.webp';
+import useTheme from 'hooks/useTheme';
+// import useWindowSize from 'hooks/useWindowSize';
+import Link from 'next/link';
+import { ReactElement, useState } from 'react';
+import { classNames } from 'utils';
+import BenjaminNorvalBlack from '../../../assets/images/BNBlack.webp';
+import BenjaminNorvalWhite from '../../../assets/images/BNWhite.webp';
 
 const NavBar = (): ReactElement => {
   const [navOpen, setNavOpen] = useState(false);
-  const navigate = useNavigate();
   const { isDarkMode } = useTheme();
-  const { isMobile } = useWindowSize();
+  // const { isMobile } = useWindowSize();
+
+  const isMobile = false;
 
   const navbarTabs = [
     { id: '/', title: 'Home' },
@@ -41,22 +44,22 @@ const NavBar = (): ReactElement => {
           <ThemeToggle size={isMobile ? 24 : 28} aria-label="Theme toggle" />
         </div>
       </div>
-      <button
+      <Link
         role="button"
+        href="/"
         tabIndex={0}
         type="button"
         onClick={(): void => {
-          navigate('/');
           setNavOpen(false);
         }}
         className="z-50 mb-2.5 h-8 md:mb-1.5 md:h-10"
       >
         <img
-          src={isDarkMode ? BenjaminNorvalWhite : BenjaminNorvalBlack}
+          src={isDarkMode ? BenjaminNorvalWhite.src : BenjaminNorvalBlack.src}
           className="h-full"
           alt="Benjamin Norval logo"
         />
-      </button>
+      </Link>
       <ul
         className={classNames(
           { hidden: !navOpen },
@@ -78,7 +81,7 @@ const NavBar = (): ReactElement => {
             role="none"
           >
             <Link
-              to={tab.id}
+              href={tab.id}
               className="hover:text-accent-secondary"
               role="menuitem"
               tabIndex={navOpen ? 0 : -1} // Makes it focusable when the menu is open

@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import MyWork from '..';
+import MyWork from '../page';
 
 describe('<MyWork />', () => {
   test('should render correctly', () => {

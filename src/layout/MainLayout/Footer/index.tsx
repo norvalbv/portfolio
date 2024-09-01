@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 import { GITHUB, LINKED_IN } from 'constants/index';
-import CV from 'assets/Benjamin_Norval_CV.pdf';
+// import CV from '../../../assets/Benjamin_Norval_CV.pdf';
 
 const footerLinks = [
   {
@@ -9,7 +9,7 @@ const footerLinks = [
     link: GITHUB,
   },
   { id: 'linkedin', label: 'Linked In', link: LINKED_IN },
-  { id: 'cv', label: 'CV', link: CV },
+  // { id: 'cv', label: 'CV', link: CV },
 ];
 
 const Footer = (): ReactElement => {
@@ -34,7 +34,7 @@ const Footer = (): ReactElement => {
               </li>
             ))}
           </ul>
-          <p className="text-[10px] lg:text-sm">© 2023 Designed and Created By Benjamin Norval.</p>
+          <p className="text-[10px] lg:text-sm">© 2024 Designed and Created By Benjamin Norval.</p>
         </div>
       </div>
     </footer>

@@ -1,5 +1,3 @@
-import ParisnHomepage from 'assets/images/ParisnHomepage.webp';
-import WeatherApp from 'assets/images/WeatherAppHomepage.webp';
 import CardWrapper from 'components/CardWrapper';
 import CodeLink from 'components/CodeLink';
 import StyledLink from 'components/StyledLink';
@@ -12,6 +10,8 @@ import {
 } from 'constants/index';
 import { ReactElement } from 'react';
 import { classNames } from 'utils';
+import ParisnHomepage from '../../../assets/images/ParisnHomepage.webp';
+import WeatherApp from '../../../assets/images/WeatherAppHomepage.webp';
 
 type MyWorkCardProps = {
   title: string;
@@ -82,7 +82,7 @@ const MyWork = (): ReactElement => {
         subTitle="An e-commerce application with a twist"
         link={{ to: 'https://github.com/norvalbv/parisn' }}
         description={PARISN_DESCRIPTION}
-        image={{ image: ParisnHomepage, alt: 'Parisn App Homepage - An ecommerce site.' }}
+        image={{ image: ParisnHomepage.src, alt: 'Parisn App Homepage - An ecommerce site.' }}
         skills={PARISN_SKILLS}
       />
       <MyWorkCard
@@ -95,7 +95,7 @@ const MyWork = (): ReactElement => {
             &nbsp;that uses live data and the ability to search for weather worldwide.
           </>
         }
-        image={{ image: WeatherApp, alt: 'Weather App Homepage.' }}
+        image={{ image: WeatherApp.src, alt: 'Weather App Homepage.' }}
         skills={WEATHER_APP_SKILL}
       />
     </CardWrapper>

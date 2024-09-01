@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import AboutMe from '..';
+import AboutMe from '../page';
 
 describe('<AboutMe />', () => {
   test('should render correctly', () => {

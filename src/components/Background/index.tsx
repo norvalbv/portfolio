@@ -1,11 +1,12 @@
 import { MY_SKILLS } from 'constants/index';
-import useWindowSize from 'hooks/useWindowSize';
+// import useWindowSize from 'hooks/useWindowSize';
 import React, { Fragment, ReactElement } from 'react';
 
 const Background = (): ReactElement => {
-  const windowData = useWindowSize();
+  // const windowData = useWindowSize();
 
-  const skillsRepeated = Array(windowData.isMobile ? 3 : 7)
+  // eslint-disable-next-line no-constant-condition
+  const skillsRepeated = Array(false ? 3 : 7)
     .fill(MY_SKILLS.split(','))
     .flat();
 

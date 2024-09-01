@@ -1,9 +1,17 @@
-import { ReactElement } from 'react';
+'use client';
+
+import { ReactElement, useEffect, useState } from 'react';
 import { useRandomReveal } from 'hooks/useRandomReveal';
 import { classNames } from 'utils';
 import CardWrapper from 'components/CardWrapper';
 
 const Landing = (): ReactElement => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const heading = useRandomReveal({
     isPlaying: true,
     duration: 1,
@@ -17,7 +25,7 @@ const Landing = (): ReactElement => {
     characters: 'I am Benjamin',
   });
 
-  const summaryText = 'A 24-year-old Full Stack Developer from the United Kingdom';
+  const summaryText = 'A 25-year-old Full Stack Developer from the United Kingdom';
   const summary = useRandomReveal({
     isPlaying: true,
     duration: 3,
@@ -28,9 +36,11 @@ const Landing = (): ReactElement => {
     <CardWrapper centered className="uppercase">
       <div className="flex flex-col gap-2 lg:gap-8">
         <h1 className="mb-4 text-4xl font-semibold tracking-wide md:text-6xl lg:text-8xl lg:font-normal">
-          <span className="mb-2 inline-block text-accent-primary lg:mb-6">{heading}</span>
+          <span className="mb-2 inline-block text-accent-primary lg:mb-6">
+            {isMounted ? heading : 'Hello'}
+          </span>
           <br />
-          {heading2}
+          {isMounted ? heading2 : 'I am Benjamin'}
         </h1>
         <h2
           className={classNames(
@@ -38,7 +48,7 @@ const Landing = (): ReactElement => {
             { 'break-all': summary.join('') !== summaryText }
           )}
         >
-          {summary}
+          {isMounted ? summary : summaryText}
         </h2>
       </div>
     </CardWrapper>

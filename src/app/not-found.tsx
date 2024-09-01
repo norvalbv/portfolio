@@ -1,19 +1,28 @@
-import { ReactElement } from 'react';
+'use client';
+
+import { ReactElement, useEffect, useState } from 'react';
 import { useRandomReveal } from 'hooks/useRandomReveal';
 import CardWrapper from 'components/CardWrapper';
 
 const NotFound = (): ReactElement => {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const summary = 'Page Not Found';
+
   const heading = useRandomReveal({
     isPlaying: true,
     duration: 2,
-    characters: 'Page Not Found',
+    characters: summary,
   });
 
   return (
     <CardWrapper centered>
       <div className="flex flex-col gap-8">
         <h2 className="mb-4 text-6xl font-semibold tracking-wide text-accent-primary transition-colors">
-          {heading}
+          {mounted ? heading : summary}
         </h2>
         <button
           type="button"
