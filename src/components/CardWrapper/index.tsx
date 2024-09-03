@@ -23,13 +23,13 @@ const CardWrapper = ({
   return (
     <div
       className={classNames(
-        'relative mx-auto min-w-[20rem] max-w-[70rem] flex-1',
+        'relative mx-auto min-w-[20rem] max-w-4xl flex-1',
         centered ? '-mt-14 grid place-items-center text-center md:mt-0' : 'mt-6 w-11/12 md:mt-10',
         className
       )}
       id={id}
     >
-      <div>
+      <div className="rounded-3xl p-6 backdrop-blur-sm">
         <Header title={title} titleClassName={titleClassName} subtitle={subtitle} />
         {children}
       </div>

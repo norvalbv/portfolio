@@ -6,7 +6,7 @@ const Background = (): ReactElement => {
   // const windowData = useWindowSize();
 
   // eslint-disable-next-line no-constant-condition
-  const skillsRepeated = Array(false ? 3 : 7)
+  const skillsRepeated = Array(false ? 3 : 10)
     .fill(MY_SKILLS.split(','))
     .flat();
 
@@ -37,7 +37,7 @@ const Background = (): ReactElement => {
             key={i}
           >
             <div
-              className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-primary"
+              className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-secondary/70 dark:text-accent-primary/70"
               style={{
                 left: `${Math.round(Math.random() * 100)}%`,
                 animationDuration: `${duration}s`,

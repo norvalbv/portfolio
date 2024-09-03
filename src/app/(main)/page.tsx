@@ -12,17 +12,19 @@ const Landing = (): ReactElement => {
     setIsMounted(true);
   }, []);
 
+  const headingText = 'Hello';
   const heading = useRandomReveal({
     isPlaying: true,
     duration: 1,
-    characters: 'Hello',
+    characters: headingText,
     revealDuration: 0.8,
   });
 
-  const heading2 = useRandomReveal({
+  const headingTwoText = 'I am Benji';
+  const headingTwo = useRandomReveal({
     isPlaying: true,
     duration: 2,
-    characters: 'I am Benjamin',
+    characters: headingTwoText,
   });
 
   const summaryText = 'A 25-year-old Full Stack Developer from the United Kingdom';
@@ -37,10 +39,10 @@ const Landing = (): ReactElement => {
       <div className="flex flex-col gap-2 lg:gap-8">
         <h1 className="mb-4 text-4xl font-semibold tracking-wide md:text-6xl lg:text-8xl lg:font-normal">
           <span className="mb-2 inline-block text-accent-primary lg:mb-6">
-            {isMounted ? heading : 'Hello'}
+            {isMounted ? heading : headingText}
           </span>
           <br />
-          {isMounted ? heading2 : 'I am Benjamin'}
+          {isMounted ? headingTwo : headingTwoText}
         </h1>
         <h2
           className={classNames(

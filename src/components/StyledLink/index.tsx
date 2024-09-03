@@ -9,7 +9,7 @@ const StyledLink = ({ link, label }: StyledLinkProps): ReactElement => {
   return (
     <a
       href={link}
-      className="text-accent-secondary hover:underline"
+      className="text-accent-primary underline underline-offset-4 hover:text-accent-secondary"
       target="_blank"
       rel="noreferrer noopener"
     >
