@@ -15,6 +15,8 @@ const NavBar = (): ReactElement => {
   const { isDarkMode } = useTheme();
   // const { isMobile } = useWindowSize();
 
+  console.log(isDarkMode, '2');
+
   const isMobile = false;
 
   const navbarTabs = [

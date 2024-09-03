@@ -17,25 +17,26 @@ type ThemeProviderProps = {
 };
 
 export const ThemeContextProvider = ({ children }: ThemeProviderProps): ReactElement => {
-  const theme = localStorage.getItem('theme');
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const theme = localStorage.getItem('portfolio-theme');
+      return theme ? (JSON.parse(theme) as boolean) : true;
+    }
+    return true;
+  });
 
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(
-    theme ? (JSON.parse(theme) as boolean) : true
-  );
-
-  const toggleDarkMode = (): void => setIsDarkMode(!isDarkMode);
+  const toggleDarkMode = (): void => setIsDarkMode((p) => !p);
 
   const value = useMemo(
     () => ({
       isDarkMode,
       toggleDarkMode,
     }),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     [isDarkMode]
   );
 
   useEffect(() => {
-    localStorage.setItem('theme', JSON.stringify(isDarkMode));
+    localStorage.setItem('portfolio-theme', JSON.stringify(isDarkMode));
   }, [isDarkMode]);
 
   return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;

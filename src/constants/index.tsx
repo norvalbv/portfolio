@@ -1,5 +1,5 @@
 export const MY_SKILLS =
-  'JavaScript, TypeScript, Redux, Jest, Cypress, D3, Visx, HTML, CSS, TailwindCSS, Node, Express, AWS Serverless, CI/CD, Git, Bash, GitHub, Azure DevOps, Agile/Scrum/Kanban, SEO';
+  'JavaScript, TypeScript, Next.JS, Redux, Jest, Cypress, D3, Visx, HTML, CSS, TailwindCSS, Node, Express, AWS Serverless, CI/CD, Git, Bash, GitHub, Azure DevOps, Agile/Scrum/Kanban, SEO';
 export const PARISN_DESCRIPTION =
   'A work-in-progress e-commerce full stack webapp with unique add-ons including real-time data and chat using web sockets and automatic pricing that decreases over time using mathematical algorithms giving a better user experience.';
 export const PARISN_SKILLS =

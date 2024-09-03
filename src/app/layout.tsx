@@ -19,7 +19,11 @@ const MainLayout = ({ children }: Props): ReactElement => {
   return (
     <html lang="en">
       <body>
-        <div id="root">{children}</div>
+        <div id="root">
+
+                    {children}
+          
+          </div>
         {/* <script type="module" src="/src/index.tsx"></script> */}
         {/* <script>
       var global = global || window;
