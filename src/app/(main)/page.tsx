@@ -38,7 +38,7 @@ const Landing = (): ReactElement => {
     <CardWrapper centered className="uppercase">
       <div className="flex flex-col gap-2 lg:gap-8">
         <h1 className="mb-4 text-4xl font-semibold tracking-wide md:text-6xl lg:text-8xl lg:font-normal">
-          <span className="mb-2 inline-block text-accent-primary lg:mb-6">
+          <span className="linear-gradient-background mb-2 inline-block bg-clip-text text-transparent lg:mb-6">
             {isMounted ? heading : headingText}
           </span>
           <br />

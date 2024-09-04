@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        gradient: 'gradient 8s linear infinite',
+        gradient: 'gradient 12s linear infinite',
         fall: 'fall linear infinite',
       },
       colors: {
@@ -30,7 +30,7 @@ module.exports = {
         accent: {
           primary: '#11883B',
           secondary: '#006466',
-          tertiary: '#9F3FBF',
+          tertiary: '#3b83f6',
         },
       },
       fontFamily: { sans: ['Victor Mono', 'monospace'] },
