@@ -9,6 +9,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        gradient: 'gradient 8s linear infinite',
+        fall: 'fall linear infinite',
+      },
       colors: {
         // Numbers represent the darkness / lightness compared to the main colour.
         dark: {
@@ -31,6 +35,9 @@ module.exports = {
       },
       fontFamily: { sans: ['Victor Mono', 'monospace'] },
       keyframes: {
+        gradient: {
+          to: { 'background-position': '200% center' },
+        },
         fall: {
           '0%': { top: '-10%' },
           '100%': { top: `110%` },
@@ -46,7 +53,6 @@ module.exports = {
           },
         },
       },
-      animation: { fall: 'fall linear infinite' },
     },
   },
   plugins: [],

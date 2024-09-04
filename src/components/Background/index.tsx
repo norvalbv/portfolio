@@ -24,7 +24,7 @@ const Background = (): ReactElement => {
 
         // const opacity = (1.05 - fontSize / 1.5).toFixed(2); // The bigger the font, the smaller the opacity (max 1)
         const opacity = fontSize / 2.5; // The bigger the font, the higher the opacity (max 1)
-        const duration = (2 - fontSize) * 20; // The smaller the font, the longer the duration of the animation
+        const duration = (2 - fontSize) * 25; // The smaller the font, the longer the duration of the animation
 
         // Start point of text before the animation starts.
         const startPoint = exponentialDistribution(0.01);
@@ -37,7 +37,7 @@ const Background = (): ReactElement => {
             key={i}
           >
             <div
-              className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-secondary/70 dark:text-accent-primary/70"
+              className="absolute -top-96 animate-fall select-none font-semibold uppercase tracking-wider text-accent-secondary/80 dark:text-accent-primary/80"
               style={{
                 left: `${Math.round(Math.random() * 100)}%`,
                 animationDuration: `${duration}s`,

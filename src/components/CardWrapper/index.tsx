@@ -29,7 +29,7 @@ const CardWrapper = ({
       )}
       id={id}
     >
-      <div className="rounded-3xl p-6 backdrop-blur-sm">
+      <div className="rounded-3xl p-6 backdrop-blur-[2px]">
         <Header title={title} titleClassName={titleClassName} subtitle={subtitle} />
         {children}
       </div>
