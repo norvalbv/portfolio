@@ -1,12 +1,12 @@
 'use client';
 
 import { AnimatePresence, motion } from 'framer-motion';
-import { ChevronRight, File, Folder } from 'lucide-react';
+import { ChevronRight, File, Folder, Newspaper } from 'lucide-react';
 import { ReactElement, useState } from 'react';
 
 export type TreeNode = {
   name: string;
-  type: 'file' | 'folder';
+  type: 'file' | 'folder' | 'blog';
   children?: TreeNode[];
 };
 
@@ -39,10 +39,12 @@ const Tree = ({ data }: Props): ReactElement => {
         )}
         {data.type === 'folder' ? (
           <Folder className="mr-2 h-4 w-4 text-yellow-500" />
-        ) : (
+        ) : data.type === 'file' ? (
           <File className="mr-2 h-4 w-4 text-gray-500" />
+        ) : (
+          <Newspaper className="mr-2 h-4 w-4 text-gray-500" />
         )}
-        <span>{data.name}</span>
+        <span className="flex-1">{data.name}</span>
       </motion.div>
       <AnimatePresence initial={false}>
         {data.type === 'folder' && isOpen && (

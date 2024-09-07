@@ -1,3 +1,4 @@
+import { TreeNode } from 'components/FileTree/Tree';
 import { ReactNode } from 'react';
 
 export type BlogType = {
@@ -18,6 +19,24 @@ export type BlogType = {
 };
 
 type DefBlogs = BlogType[];
+
+export const blogTreeData: TreeNode[] = [
+  {
+    name: 'How Memory (RAM) Works',
+    type: 'blog',
+    children: [],
+  },
+  {
+    name: 'Call Stack',
+    type: 'blog',
+    children: [],
+  },
+  {
+    name: 'Legal ramifications with web accessibility',
+    type: 'blog',
+    children: [],
+  },
+];
 
 export const allBlogs: DefBlogs = [
   {
