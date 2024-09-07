@@ -1,39 +1,10 @@
+import { blogMockData } from '__mocks__/blogMockData';
 import Anchor from 'components/Markdown/Anchor';
 import Code from 'components/Markdown/Code';
 import List from 'components/Markdown/List';
 import UnorderedList from 'components/Markdown/UnorderedList';
 import Markdown, { MarkdownToJSX } from 'markdown-to-jsx';
 import { Fragment, ReactElement } from 'react';
-
-const BLOGG = `
-## Overview
-
-The *call stack*, or commonly called just **stack**, \`oooo\` operates on a LIFO basis. It is handy to visualise this with the famous Tower of Hanoi game:
-
-![[Tower of Hanoi Memory - Stack example.png]]
-
-\`\`\`
-const test = () => {}
-\`\`\`
-
-So from the example above, if you want to remove item '2' you would have to remove item '1' prior to the removal, therefore, you will always have older items nearer the base of the stack. 
-
-\`\`\`
-const test = () => {}
-const test = () => {}
-\`\`\`
-
-- Hi
-- How are you
-- okay
-
-[link](https://www.google.com)
-
-> What is this?
-
-"Are you oaky?"
-
-`;
 
 const Blog = (): ReactElement | null => {
   return (
@@ -105,7 +76,7 @@ const Blog = (): ReactElement | null => {
             } as MarkdownToJSX.Overrides,
           }}
         >
-          {BLOGG}
+          {blogMockData}
         </Markdown>
       </section>
     </article>

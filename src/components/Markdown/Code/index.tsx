@@ -1,5 +1,6 @@
+import useTheme from 'hooks/useTheme';
 import { ClipboardCheckIcon, ClipboardIcon } from 'lucide-react';
-import { Highlight } from 'prism-react-renderer';
+import { Highlight, themes } from 'prism-react-renderer';
 import { ReactElement, useCallback, useRef, useState } from 'react';
 
 type Props = {
@@ -7,6 +8,8 @@ type Props = {
 };
 
 const Code = ({ children }: Props): ReactElement => {
+  const { isDarkMode } = useTheme();
+
   const isMultiline = /\n/.test(children);
   const [isCopied, setIsCopied] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -24,7 +27,11 @@ const Code = ({ children }: Props): ReactElement => {
 
   if (!isMultiline) {
     return (
-      <Highlight language="tsx" code={children}>
+      <Highlight
+        language="tsx"
+        theme={isDarkMode ? themes.jettwaveDark : themes.jettwaveLight}
+        code={children}
+      >
         {({ style }): React.ReactElement => (
           <code style={style} className="rounded-lg px-2 py-1">
             {children}
@@ -35,7 +42,11 @@ const Code = ({ children }: Props): ReactElement => {
   }
 
   return (
-    <Highlight language="tsx" code={children}>
+    <Highlight
+      language="tsx"
+      theme={isDarkMode ? themes.jettwaveDark : themes.jettwaveLight}
+      code={children}
+    >
       {({ style, tokens, getLineProps, getTokenProps }): React.ReactElement => (
         <pre
           style={{ ...style }}
