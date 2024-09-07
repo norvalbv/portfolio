@@ -70,7 +70,8 @@ const Blog = (): ReactElement | null => {
               },
               blockquote: {
                 props: {
-                  className: 'border-l-4 border-accent-tertiary pl-4 py-2 mb-6 bg-gray-800 rounded',
+                  className:
+                    'border-l-4 border-accent-tertiary pl-4 py-2 mb-6 bg-light-neutral dark:bg-gray-800 rounded',
                 },
               },
             } as MarkdownToJSX.Overrides,
