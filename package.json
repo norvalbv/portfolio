@@ -16,7 +16,9 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "framer-motion": "^11.5.4",
     "hamburger-react": "^2.5.0",
+    "lucide-react": "^0.439.0",
     "markdown-to-jsx": "^7.3.2",
     "mixpanel-browser": "^2.48.1",
     "next": "^14.2.7",

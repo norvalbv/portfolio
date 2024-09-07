@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactElement } from 'react';
+import { ReactElement, useEffect, useState } from 'react';
 import Title from 'components/Header/Title';
 import Subtitle from 'components/Header/SubTitle';
 import { useRandomReveal } from 'hooks/useRandomReveal';
@@ -36,6 +36,12 @@ const Header = ({
   animation = true,
   level = 1,
 }: HeaderProps): ReactElement | null => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const processedTitle = useRandomReveal({
     isPlaying: true,
     duration: 1,
@@ -51,7 +57,7 @@ const Header = ({
     <header className={className}>
       <section className="flex w-full flex-col gap-1">
         <Title className={titleClassName} level={level}>
-          {animation ? processedTitle : title}
+          {animation && mounted ? processedTitle : title}
         </Title>
         <Subtitle className={subtitleClassName}>{subtitle}</Subtitle>
         <Description className={descriptionClassName}>{description}</Description>

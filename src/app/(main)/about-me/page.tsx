@@ -14,8 +14,8 @@ const AboutMe = (): ReactElement => (
       entire&nbsp;
       <StyledLink label="Elysia" link="https://elysia.co" />
       &nbsp;(a Williams Advanced Engineering subsidiary) cloud platform. I code, write blogs, and
-      build web-related applications. I would <em>love</em> for you to check out my projects, blogs
-      or reach reach out!
+      build web-related applications. I would <em>love</em> for you to check out my projects, blogs,
+      or even reach out!
     </p>
     <p className="my-10 text-accent-primary">
       My skills? They&apos;re floating around on the background. Have a look around 😼

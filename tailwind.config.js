@@ -17,7 +17,7 @@ module.exports = {
         // Numbers represent the darkness / lightness compared to the main colour.
         dark: {
           dark: '#000000',
-          neutral: '#232323',
+          neutral: '#111',
           text: '#E9EBE6',
           code: '#222222',
         },

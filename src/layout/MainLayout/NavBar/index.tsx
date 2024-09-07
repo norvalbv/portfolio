@@ -1,6 +1,6 @@
 'use client';
 
-import ThemeToggle from 'components/ThemeToggle';
+import ThemeToggle from 'components/Theme/ThemeToggle';
 import Hamburger from 'hamburger-react';
 import useTheme from 'hooks/useTheme';
 // import useWindowSize from 'hooks/useWindowSize';
@@ -14,8 +14,6 @@ const NavBar = (): ReactElement => {
   const [navOpen, setNavOpen] = useState(false);
   const { isDarkMode } = useTheme();
   // const { isMobile } = useWindowSize();
-
-  console.log(isDarkMode, '2');
 
   const isMobile = false;
 
