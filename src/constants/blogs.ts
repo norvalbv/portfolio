@@ -1,48 +1,11 @@
-import { TreeNode } from 'components/FileTree/Tree';
-import { ReactNode } from 'react';
-
-export type BlogType = {
-  accessor?: ReactNode;
-  description?: string;
-  file: string | URL;
-  frontMatter?: {
-    showFrontMatter?: boolean;
-    delimiter?: string;
-    position?: 'start' | 'end';
-  };
-  imagePath?: string;
-  metadata?: Record<string, string>;
-  readonly id: string;
-  subtitle?: string;
-  title: string;
-  url: string;
-};
-
-type DefBlogs = BlogType[];
+import { TreeNode } from 'components/FileTree/Tree/BlogNavigation';
 
 export const blogTreeData: TreeNode[] = [
   {
     name: 'How Memory (RAM) Works',
     type: 'blog',
-    children: [],
-  },
-  {
-    name: 'Call Stack',
-    type: 'blog',
-    children: [],
-  },
-  {
-    name: 'Legal ramifications with web accessibility',
-    type: 'blog',
-    children: [],
-  },
-];
-
-export const allBlogs: DefBlogs = [
-  {
     id: 'Memory (RAM)',
     file: '/blogs/memory.md',
-    // ! Classnames not working.
     title: 'How Memory (RAM) Works',
     subtitle: 'A deep insight to what RAM is and how it interacts with the computer.',
     url: 'how-memory-works',
@@ -54,9 +17,10 @@ export const allBlogs: DefBlogs = [
     },
   },
   {
+    name: 'Call Stack',
+    type: 'blog',
     id: 'Call Stack',
     file: '/blogs/call-stack.md',
-    // ! Classnames not working.
     title: 'Call Stack',
     subtitle: 'A quick overview of what the call stack is.',
     description:
@@ -70,9 +34,10 @@ export const allBlogs: DefBlogs = [
     url: 'call-stack',
   },
   {
+    name: 'Legal ramifications with web accessibility',
+    type: 'blog',
     id: 'Legal ramifications with web accessibility',
     file: '/blogs/legal-ramifications-with-web-accessibility.md',
-    // ! Classnames not working.
     title: 'Legal ramifications with web accessibility',
     subtitle: 'A quick analysis of why you need to have an accessible website.',
     description: 'This blog mainly covers UK law',
@@ -83,16 +48,4 @@ export const allBlogs: DefBlogs = [
     },
     url: 'web-accessibility',
   },
-  // {
-  //   id: 'Asynchronous JavaScript',
-  //   file: '/blogs/asynchronous-javascript.md',
-  //   // ! Classnames not working.
-  //   title: 'Asynchronous JavaScript',
-  //   metadata: {
-  //     'read time': '20 minutes',
-  //     level: '🧠🧠',
-  //     'Date Posted': 'Saturday, 16th December 2023',
-  //   },
-  //   url: 'asynchronous-javascript',
-  // },
 ];

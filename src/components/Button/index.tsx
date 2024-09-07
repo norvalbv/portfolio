@@ -13,8 +13,8 @@ const Button = ({ text, onClick, className = 'rounded-lg' }: Props): ReactElemen
       type="button"
       onClick={onClick}
       className={classNames(
-        'border border-light-text/50 bg-white shadow-lg dark:border-dark-text/50 dark:bg-dark-dark/30',
-        'my-4 w-full px-4 py-2 shadow transition-all duration-200 hover:scale-95',
+        'border border-light-text/50 bg-white dark:border-dark-text/50 dark:bg-dark-dark/30',
+        'w-full px-4 py-2 shadow-lg transition-all duration-200 hover:scale-95',
         className
       )}
     >

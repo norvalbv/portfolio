@@ -1,20 +1,15 @@
 'use client';
 
 import { AnimatePresence, motion } from 'framer-motion';
-import { ChevronRight, File, Folder, Newspaper } from 'lucide-react';
+import { ChevronRight, File, Folder } from 'lucide-react';
 import { ReactElement, useState } from 'react';
+import BlogNavigation, { TreeNode } from './BlogNavigation';
 
-export type TreeNode = {
-  name: string;
-  type: 'file' | 'folder' | 'blog';
-  children?: TreeNode[];
-};
-
-type Props = {
+type TreeProps = {
   data: TreeNode;
 };
 
-const Tree = ({ data }: Props): ReactElement => {
+const Tree = ({ data }: TreeProps): ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = (): void => {
@@ -24,7 +19,7 @@ const Tree = ({ data }: Props): ReactElement => {
   return (
     <div>
       <motion.div
-        className="flex cursor-pointer items-center rounded-md p-2 transition-colors duration-200 hover:bg-gray-100 dark:hover:text-dark-dark"
+        className="flex cursor-pointer items-start rounded-md p-2 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-700"
         onClick={toggleOpen}
         whileTap={{ scale: 0.98 }}
       >
@@ -33,18 +28,25 @@ const Tree = ({ data }: Props): ReactElement => {
             initial={false}
             animate={{ rotate: isOpen ? 90 : 0 }}
             transition={{ duration: 0.2 }}
+            className="mt-1"
           >
             <ChevronRight className="mr-1 h-4 w-4" />
           </motion.div>
         )}
         {data.type === 'folder' ? (
-          <Folder className="mr-2 h-4 w-4 text-yellow-500" />
+          <Folder className="mr-2 mt-1 h-4 w-4 shrink-0 text-yellow-500" />
         ) : data.type === 'file' ? (
-          <File className="mr-2 h-4 w-4 text-gray-500" />
+          <File className="mr-2 mt-1 h-4 w-4 shrink-0 text-gray-500" />
         ) : (
-          <Newspaper className="mr-2 h-4 w-4 text-gray-500" />
+          <BlogNavigation
+            name={data.name}
+            title={data.title}
+            subtitle={data.subtitle}
+            metadata={data.metadata}
+            description={data.description}
+          />
         )}
-        <span className="flex-1">{data.name}</span>
+        {data.type !== 'blog' && <span className="flex-1">{data.name}</span>}
       </motion.div>
       <AnimatePresence initial={false}>
         {data.type === 'folder' && isOpen && (
@@ -53,11 +55,10 @@ const Tree = ({ data }: Props): ReactElement => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="ml-4 mt-1 overflow-hidden border-l border-gray-300 pl-2"
+            className="ml-4 mt-1 overflow-hidden border-l border-gray-300 pl-2 dark:border-gray-600"
           >
-            {data.children?.map((child, index) => (
-              // eslint-disable-next-line react/no-array-index-key
-              <Tree key={`${child.name} ${index}`} data={child} />
+            {data.children?.map((childData) => (
+              <Tree key={childData.id || childData.name} data={childData} />
             ))}
           </motion.div>
         )}

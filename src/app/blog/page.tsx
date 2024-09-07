@@ -28,7 +28,7 @@ const Blog = (): ReactElement => {
       <div>
         <ButtonGroup buttons={buttons} className="mb-6" />
         <FileTree
-          title={selected === 'notes' ? 'Files' : 'Blogs'}
+          title={selected === 'notes' ? 'Notes' : 'Blogs'}
           data={selected === 'notes' ? fileTreeData : blogTreeData}
         />
       </div>
