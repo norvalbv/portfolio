@@ -22,7 +22,7 @@ const NavBar = (): ReactElement => {
     { id: '/about-me', title: 'About Me' },
     { id: '/my-work', title: 'My Work' },
     { id: '/contact-me', title: 'Contact Me' },
-    { id: '/blogs', title: 'My Blog' },
+    { id: '/blog', title: 'My Blog' },
   ];
 
   return (

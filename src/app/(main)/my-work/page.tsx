@@ -31,7 +31,7 @@ const MyWorkCard = ({
   skills,
 }: MyWorkCardProps): ReactElement => {
   return (
-    <div className="before:linear-gradient-background-with-blue relative mb-10 rounded-t-xl border-light-text bg-black/20 py-6 text-center before:absolute before:bottom-[-0.25rem] before:left-0 before:h-1 before:w-full dark:border-dark-text dark:bg-dark-dark/30 md:px-6">
+    <div className="before:linear-gradient-background-with-blue relative mb-10 rounded-t-xl border border-light-text bg-black/20 py-6 text-center before:absolute before:bottom-[-0.08rem] before:left-0 before:h-1 before:w-full dark:border-dark-text/50 dark:bg-dark-dark/30 md:px-6">
       <h3
         className={classNames('px-6 text-lg uppercase underline md:p-0 lg:text-xl', {
           'mb-4': !subTitle,
@@ -51,13 +51,13 @@ const MyWorkCard = ({
           />
         </a>
       ) : (
-        <a href={link.to} rel="noopener noreferrer" target="_blank">
-          <button
-            type="button"
-            className="my-4 rounded-lg bg-accent-primary px-4 py-2 text-white shadow shadow-accent-secondary hover:bg-accent-secondary"
-          >
-            {link.label}
-          </button>
+        <a
+          href={link.to}
+          rel="noopener noreferrer"
+          target="_blank"
+          className="my-4 inline-block rounded-lg bg-accent-primary px-4 py-2 text-white shadow shadow-accent-secondary transition-all duration-200 hover:bg-accent-secondary active:scale-95"
+        >
+          {link.label}
         </a>
       )}
       <p className="px-6 text-sm md:p-0 lg:text-base">Built with: {skills}</p>

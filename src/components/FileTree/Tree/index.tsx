@@ -24,7 +24,7 @@ const Tree = ({ data }: Props): ReactElement => {
   return (
     <div>
       <motion.div
-        className="flex cursor-pointer items-center rounded-md p-2 transition-colors duration-200 hover:bg-gray-100"
+        className="flex cursor-pointer items-center rounded-md p-2 transition-colors duration-200 hover:bg-gray-100 dark:hover:text-dark-dark"
         onClick={toggleOpen}
         whileTap={{ scale: 0.98 }}
       >
