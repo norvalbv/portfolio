@@ -48,6 +48,7 @@ const Background = (): ReactElement => {
                 fontSize: `${fontSize}rem`,
                 opacity: opacity > 0.6 ? 0.6 : opacity,
               }}
+              aria-hidden="true"
             >
               {item}
             </div>

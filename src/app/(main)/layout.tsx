@@ -1,16 +1,20 @@
 'use client';
 
-import Background from 'components/Background';
 import GranularIcon from 'components/SVG/Granular';
 import ThemedContent from 'components/Theme/ThemeContent';
 import { ThemeContextProvider } from 'context/theme';
-import Footer from 'layout/MainLayout/Footer';
-import NavBar from 'layout/MainLayout/NavBar';
+import Footer from 'app/Layout/Footer';
+import NavBar from 'app/Layout/NavBar';
+import dynamic from 'next/dynamic';
 import { ReactElement } from 'react';
 
 type Props = {
   children: ReactElement;
 };
+
+const Background = dynamic(() => import('components/Background'), {
+  ssr: false,
+});
 
 const MainLayout = ({ children }: Props): ReactElement => {
   return (
