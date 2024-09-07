@@ -55,7 +55,7 @@ const Tree = ({ data }: TreeProps): ReactElement => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="ml-4 mt-1 overflow-hidden border-l border-gray-300 pl-2 dark:border-gray-600"
+            className="ml-4 mt-1 border-l border-gray-300 pl-2 dark:border-gray-600"
           >
             {data.children?.map((childData) => (
               <Tree key={childData.id || childData.name} data={childData} />
