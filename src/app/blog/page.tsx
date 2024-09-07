@@ -8,8 +8,9 @@ import Header from 'components/Header';
 import { blogTreeData } from 'constants/blogs';
 import { BLOG_DESCRIPTION, BLOG_DISCLAIMER } from 'constants/index';
 import React, { ReactElement, useState } from 'react';
+import Blog from './[slug]/page';
 
-const Blog = (): ReactElement => {
+const BlogPage = (): ReactElement => {
   const [active, setActive] = useState<'notes' | 'blogs'>('notes');
 
   const buttons: ButtonProps[] = [
@@ -34,7 +35,7 @@ const Blog = (): ReactElement => {
           data={active === 'notes' ? fileTreeData : blogTreeData}
         />
       </div>
-      <div className="flex flex-1 flex-col gap-6 overflow-scroll rounded-xl border border-light-text/50 bg-white p-6 shadow-lg dark:border-dark-text/50 dark:bg-dark-dark/30">
+      <div className="flex h-[calc(100vh-13.875rem)] flex-1 flex-col gap-6 overflow-scroll rounded-xl border border-light-text/50 bg-white p-6 shadow-lg dark:border-dark-text/50 dark:bg-dark-dark/30">
         {active === 'notes' && (
           <>
             <Header title="Benji's notes" animation={false} description={BLOG_DESCRIPTION} />
@@ -45,9 +46,10 @@ const Blog = (): ReactElement => {
             </p>
           </>
         )}
+        <Blog />
       </div>
     </div>
   );
 };
 
-export default Blog;
+export default BlogPage;

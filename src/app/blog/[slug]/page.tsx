@@ -1,161 +1,100 @@
+import Anchor from 'components/Markdown/Anchor';
+import Code from 'components/Markdown/Code';
+import List from 'components/Markdown/List';
+import UnorderedList from 'components/Markdown/UnorderedList';
 import Markdown, { MarkdownToJSX } from 'markdown-to-jsx';
-import { Fragment, ReactElement, useState } from 'react';
+import { Fragment, ReactElement } from 'react';
+import { classNames } from 'utils';
 
-export type Props = {
-  callback?: () => void;
-  paramKey?: string;
-};
+const BLOGG = `
+## Overview
 
-type BlogState = {
-  blog: string | null;
-};
+The *call stack*, or commonly called just *stack*, is a logical (not physical) region within [[Memory (RAM)|memory]] that is controlled by the [[Kernel#Kernel Vs Operating System|operating system]]. It is a data structure that functions on a Last in First Out (LIFO) principle, where the addition and removal of items always take place at the top and is designed this way due to a combination of efficiency and functionality. Primitive and non-complex types are stored within the stack, [[How Data is Stored in JavaScript|the storing of types in JavaScript]], for example, types such as boolean, string, number, etc. are all stored in the call stack. Whereas, function definitions and complex types such as objects are stored within the [[Memory Heap|heap]]. The call stack just has a reference (or a pointer) where these function definitions and objects are stored. This is due to the simple, static nature of the stack, whereas the heap is dynamic and can shrink or expand in size as and when.
 
-const Blog = ({
-  allBlogs,
-}: Props): ReactElement | null => {
-  const [blog, setBlog] = useState<BlogState>({
-    blog: null,
-  });
+As per above, the call stack operates on a LIFO basis. It is handy to visualise this with the famous Tower of Hanoi game:
 
-  /**
-   * Fetch blog from static files based by id.
-//    */
-//   const currentBlogIndex = allBlogs?.findIndex((b) => b.id === currentBlogId) || 0;
+![[Tower of Hanoi Memory - Stack example.png]]
 
-//   const currentBlog =
-//     individualBlog || (allBlogs && (currentBlogIndex >= 0 ? allBlogs[currentBlogIndex] : null));
+\`\`\`
+const test = () => {}
+\`\`\`
 
-  /**
-   * Dynamically import blogs based on the current blog URL.
-   */
-  //   useEffect(() => {
-  //     if (!currentBlog) {
-  //       if (callback) {
-  //         return callback();
-  //       }
-  //       return;
-  //     }
+So from the example above, if you want to remove item '2' you would have to remove item '1' prior to the removal, therefore, you will always have older items nearer the base of the stack. 
 
-  //     const { file } = currentBlog;
+\`\`\`
+const test = () => {}
+const test = () => {}
+\`\`\`
 
-  //     const fileLink = new URL(file, import.meta.url);
+If that doesn't help, as an example: when you use a mobile app or browser and press the back button, it will take you to the previous page. As you navigate from page to page, those pages are placed on a stack with the current page always on the top and the first page you looked at on the base. When you click on the back button you will remove your current page (on the top) from the stack and the previous will become current. Whilst the page details itself will not all be part of the call stack, it helps visualise how it works.
 
-  //     fetch(fileLink)
-  //       .then((res) => {
-  //         return res.text();
-  //       })
-  //       .then((res) => {
-  //         if (allBlogs && !individualBlog) {
-  //           const blogWithProcessedImageLinks = processImageLinks({
-  //             blog: res,
-  //             imagePath: currentBlog.imagePath,
-  //           });
+## What is Stored on the Stack`;
 
-  //           const blogWithProcessedLinks = processLinks({
-  //             allBlogs,
-  //             blog: blogWithProcessedImageLinks,
-  //             paramKey,
-  //           });
-
-  //           const { blog, frontMatter } = processBlog({
-  //             metadata: currentBlog.metadata,
-  //             blog: blogWithProcessedLinks,
-  //             delimiter: currentBlog.frontMatter?.delimiter,
-  //             showFrontMatter: currentBlog.frontMatter?.showFrontMatter,
-  //           });
-
-  //           return setBlog({
-  //             blog,
-  //             frontMatter,
-  //           });
-  //         }
-
-  //         const { blog, frontMatter } = processBlog({
-  //           metadata: currentBlog.metadata,
-  //           blog: res,
-  //           delimiter: currentBlog.frontMatter?.delimiter,
-  //           showFrontMatter: currentBlog.frontMatter?.showFrontMatter,
-  //         });
-
-  //         setBlog({
-  //           blog,
-  //           frontMatter,
-  //         });
-  //       })
-  //       .catch(() => {});
-  //     // eslint-disable-next-line react-hooks/exhaustive-deps
-  //   }, [currentBlogIndex, currentBlog]);
-
-  if (!blog.blog) return null;
-
+const Blog = (): ReactElement | null => {
   return (
     <article>
-      <h1 className={getClassName({ tag: 'h1' }) || styles.h1}>{currentBlog?.title}</h1>
-    
-        <section>
-          <Markdown
-            options={{
-              wrapper: Fragment,
-              overrides: {
-                ...defTheme?.overrides,
-                h1: defTheme?.overrides?.h1 || {
-                  component: AnchorWrapper,
-                  props: { className: getClassName({ tag: 'h1' }), level: 1 },
-                },
-                h2: defTheme?.overrides?.h2 || {
-                  component: AnchorWrapper,
-                  props: { className: getClassName({ tag: 'h2' }), level: 2 },
-                },
-                h3: defTheme?.overrides?.h3 || {
-                  component: AnchorWrapper,
-                  props: { className: getClassName({ tag: 'h3' }), level: 3 },
-                },
-                h4: defTheme?.overrides?.h4 || {
-                  component: AnchorWrapper,
-                  props: { className: getClassName({ tag: 'h4' }), level: 4 },
-                },
-                h5: defTheme?.overrides?.h5 || {
-                  component: AnchorWrapper,
-                  props: { level: 5 },
-                },
-                h6: defTheme?.overrides?.h6 || {
-                  component: AnchorWrapper,
-                  props: { level: 6 },
-                },
-                p: defTheme?.overrides?.p || { props: { className: getClassName({ tag: 'p' }) } },
-                ul: defTheme?.overrides?.ul || {
-                  component: UnorderedListComponent,
-                  props: { className: getClassName({ tag: 'ul' }) },
-                },
-                li: defTheme?.overrides?.li || {
-                  component: ListComponent,
-                  props: { className: getClassName({ tag: 'li' }) },
-                },
-                code: {
-                  component: CodeComponent,
-                  props: { theme: defTheme },
-                },
-                a: defTheme?.overrides?.a || {
-                  props: { className: getClassName({ tag: 'a' }) },
-                },
-                ol: defTheme?.overrides?.ol || {
-                  props: { className: getClassName({ tag: 'ol' }) },
-                },
-                strong: defTheme?.overrides?.strong || {
-                  props: { className: getClassName({ tag: 'strong' }) },
-                },
-                em: defTheme?.overrides?.em || {
-                  props: { className: getClassName({ tag: 'em' }) },
-                },
-                blockquote: defTheme?.overrides?.blockquote || {
-                  props: { className: getClassName({ tag: 'blockquote' }) },
-                },
-              } as MarkdownToJSX.Overrides,
-            }}
-          >
-            {blog.blog}
-          </Markdown>
-        </section>
+      <section>
+        <Markdown
+          options={{
+            wrapper: Fragment,
+            overrides: {
+              h1: {
+                component: Anchor,
+                props: { className: classNames({ tag: 'h1' }), level: 1 },
+              },
+              h2: {
+                component: Anchor,
+                props: { className: classNames({ tag: 'h2' }), level: 2 },
+              },
+              h3: {
+                component: Anchor,
+                props: { className: classNames({ tag: 'h3' }), level: 3 },
+              },
+              h4: {
+                component: Anchor,
+                props: { className: classNames({ tag: 'h4' }), level: 4 },
+              },
+              h5: {
+                component: Anchor,
+                props: { level: 5 },
+              },
+              h6: {
+                component: Anchor,
+                props: { level: 6 },
+              },
+              p: { props: { className: classNames({ tag: 'p' }) } },
+              ul: {
+                component: UnorderedList,
+                props: { className: classNames({ tag: 'ul' }) },
+              },
+              li: {
+                component: List,
+                props: { className: classNames({ tag: 'li' }) },
+              },
+              code: {
+                component: Code,
+              },
+              a: {
+                props: { className: classNames({ tag: 'a' }) },
+              },
+              ol: {
+                props: { className: classNames({ tag: 'ol' }) },
+              },
+              strong: {
+                props: { className: classNames({ tag: 'strong' }) },
+              },
+              em: {
+                props: { className: classNames({ tag: 'em' }) },
+              },
+              blockquote: {
+                props: { className: classNames({ tag: 'blockquote' }) },
+              },
+            } as MarkdownToJSX.Overrides,
+          }}
+        >
+          {BLOGG}
+        </Markdown>
+      </section>
     </article>
   );
 };
