@@ -4,14 +4,11 @@ import List from 'components/Markdown/List';
 import UnorderedList from 'components/Markdown/UnorderedList';
 import Markdown, { MarkdownToJSX } from 'markdown-to-jsx';
 import { Fragment, ReactElement } from 'react';
-import { classNames } from 'utils';
 
 const BLOGG = `
 ## Overview
 
-The *call stack*, or commonly called just *stack*, is a logical (not physical) region within [[Memory (RAM)|memory]] that is controlled by the [[Kernel#Kernel Vs Operating System|operating system]]. It is a data structure that functions on a Last in First Out (LIFO) principle, where the addition and removal of items always take place at the top and is designed this way due to a combination of efficiency and functionality. Primitive and non-complex types are stored within the stack, [[How Data is Stored in JavaScript|the storing of types in JavaScript]], for example, types such as boolean, string, number, etc. are all stored in the call stack. Whereas, function definitions and complex types such as objects are stored within the [[Memory Heap|heap]]. The call stack just has a reference (or a pointer) where these function definitions and objects are stored. This is due to the simple, static nature of the stack, whereas the heap is dynamic and can shrink or expand in size as and when.
-
-As per above, the call stack operates on a LIFO basis. It is handy to visualise this with the famous Tower of Hanoi game:
+The *call stack*, or commonly called just **stack**, \`oooo\` operates on a LIFO basis. It is handy to visualise this with the famous Tower of Hanoi game:
 
 ![[Tower of Hanoi Memory - Stack example.png]]
 
@@ -26,9 +23,17 @@ const test = () => {}
 const test = () => {}
 \`\`\`
 
-If that doesn't help, as an example: when you use a mobile app or browser and press the back button, it will take you to the previous page. As you navigate from page to page, those pages are placed on a stack with the current page always on the top and the first page you looked at on the base. When you click on the back button you will remove your current page (on the top) from the stack and the previous will become current. Whilst the page details itself will not all be part of the call stack, it helps visualise how it works.
+- Hi
+- How are you
+- okay
 
-## What is Stored on the Stack`;
+[link](https://www.google.com)
+
+> What is this?
+
+"Are you oaky?"
+
+`;
 
 const Blog = (): ReactElement | null => {
   return (
@@ -40,19 +45,19 @@ const Blog = (): ReactElement | null => {
             overrides: {
               h1: {
                 component: Anchor,
-                props: { className: classNames({ tag: 'h1' }), level: 1 },
+                props: { level: 1 },
               },
               h2: {
                 component: Anchor,
-                props: { className: classNames({ tag: 'h2' }), level: 2 },
+                props: { level: 2 },
               },
               h3: {
                 component: Anchor,
-                props: { className: classNames({ tag: 'h3' }), level: 3 },
+                props: { level: 3 },
               },
               h4: {
                 component: Anchor,
-                props: { className: classNames({ tag: 'h4' }), level: 4 },
+                props: { level: 4 },
               },
               h5: {
                 component: Anchor,
@@ -62,32 +67,40 @@ const Blog = (): ReactElement | null => {
                 component: Anchor,
                 props: { level: 6 },
               },
-              p: { props: { className: classNames({ tag: 'p' }) } },
+              p: {
+                props: {
+                  className: 'mb-6 leading-6 text-sm text-light-text/90 dark:text-dark-text/90',
+                },
+              },
               ul: {
                 component: UnorderedList,
-                props: { className: classNames({ tag: 'ul' }) },
+                props: { className: 'list-disc pl-6 mb-6' },
               },
               li: {
                 component: List,
-                props: { className: classNames({ tag: 'li' }) },
+                props: { className: 'mb-2' },
               },
               code: {
                 component: Code,
               },
               a: {
-                props: { className: classNames({ tag: 'a' }) },
+                props: {
+                  className: 'text-blue-400 hover:text-blue-300 transition-colors duration-200',
+                },
               },
               ol: {
-                props: { className: classNames({ tag: 'ol' }) },
+                props: { className: 'list-decimal pl-6 mb-6' },
               },
               strong: {
-                props: { className: classNames({ tag: 'strong' }) },
+                props: { className: 'font-bold text-accent-primary' },
               },
               em: {
-                props: { className: classNames({ tag: 'em' }) },
+                props: { className: 'italic text-accent-primary' },
               },
               blockquote: {
-                props: { className: classNames({ tag: 'blockquote' }) },
+                props: {
+                  className: 'border-l-4 border-accent-tertiary pl-4 py-2 mb-6 bg-gray-800 rounded',
+                },
               },
             } as MarkdownToJSX.Overrides,
           }}
