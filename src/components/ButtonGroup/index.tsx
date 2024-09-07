@@ -1,16 +1,17 @@
 import Button, { Props as ButtonProps } from 'components/Button';
 import React, { ReactElement } from 'react';
+import { classNames } from 'utils';
 
-type Props = { buttons: ButtonProps[] };
+type Props = { buttons: ButtonProps[]; className?: string };
 
-const ButtonGroup = ({ buttons }: Props): ReactElement => {
+const ButtonGroup = ({ buttons, className }: Props): ReactElement => {
   return (
-    <div className="inline-flex rounded-md shadow-sm" role="group">
+    <div className={classNames('flex shadow-sm', className)} role="group">
       {buttons.map((button, idx) => (
         <Button
-          {...button}
+          className={idx === 0 ? 'rounded-l-lg' : idx === buttons.length - 1 ? 'rounded-r-lg' : ''}
           key={button.text}
-          className={idx === 0 ? 'rounded-s-lg' : idx === buttons.length - 1 ? 'rounded' : ''}
+          {...button}
         />
       ))}
     </div>

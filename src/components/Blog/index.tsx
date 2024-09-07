@@ -4,12 +4,9 @@ import useTheme from 'hooks/useTheme';
 import { ReactElement } from 'react';
 import { DefTheme, Blog, useTheme as useReactBlogsTheme } from 'react-blogs';
 import { toast } from 'react-hot-toast';
-import { useLocation } from 'react-router-dom';
 
 const BlogPage = (): ReactElement | null => {
   const { isDarkMode } = useTheme();
-
-  const { pathname } = useLocation();
 
   const theme: DefTheme = {
     theme: isDarkMode ? 'SHADES_OF_GREEN' : 'GENTLE_GRAPE',
@@ -43,9 +40,9 @@ const BlogPage = (): ReactElement | null => {
 
   useReactBlogsTheme(theme);
 
-  const id = allBlogs.find((blog) => blog.url === pathname.slice(7))?.id;
+  // const id = allBlogs.find((blog) => blog.url === pathname.slice(7))?.id;
 
-  if (!id) return null;
+  if (!false) return null;
 
   return (
     <div className="z-10 mx-auto w-10/12 scroll-smooth font-mono md:w-8/12">

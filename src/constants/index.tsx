@@ -13,4 +13,6 @@ export const CONTACT_EMAIL = 'benjinorval@gmail.com';
 export const LINKED_IN = 'https://www.linkedin.com/in/benjamin-norval/';
 export const GITHUB = 'https://github.com/norvalbv/';
 export const BLOG_DESCRIPTION =
-  "The way I learn and explore is weird. I either have to build from the ground up, and if I can't do that, I have to write from the ground up otherwise what I have learnt won't stick in my mind. I have therefore, over time have written numerous blogs and detailed notes since I've started programming and these are my edited notes that are more blog-ready. I hope you find them useful.";
+  "Whilst not officially blogs, like many other learners inside and outside of tech, I write notes to aid the process. As I've been learning software for a long time, I've got a LOT of notes, some of them being comphrensive. I've only published notes that I feel are detailed enough to fully understand the topic at hand. I hope you find them as useful as I do.";
+export const BLOG_DISCLAIMER =
+  'Not all of the work in my notes I own. As they were originally created to aid my learning, screenshots and text may of been taken from other sources that were apt. If you own or have the rights to any of the data within my notes, just send me an email and I will gladly take that note down.';
