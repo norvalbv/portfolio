@@ -19,11 +19,11 @@ const Blog = ({
 
   /**
    * Fetch blog from static files based by id.
-   */
-  const currentBlogIndex = allBlogs?.findIndex((b) => b.id === currentBlogId) || 0;
+//    */
+//   const currentBlogIndex = allBlogs?.findIndex((b) => b.id === currentBlogId) || 0;
 
-  const currentBlog =
-    individualBlog || (allBlogs && (currentBlogIndex >= 0 ? allBlogs[currentBlogIndex] : null));
+//   const currentBlog =
+//     individualBlog || (allBlogs && (currentBlogIndex >= 0 ? allBlogs[currentBlogIndex] : null));
 
   /**
    * Dynamically import blogs based on the current blog URL.
@@ -88,26 +88,10 @@ const Blog = ({
 
   if (!blog.blog) return null;
 
-  const FrontMatterOverrideComponent = defTheme?.overrides?.frontmatter?.component;
-
   return (
     <article>
       <h1 className={getClassName({ tag: 'h1' }) || styles.h1}>{currentBlog?.title}</h1>
-      <div
-        {...(currentBlog?.frontMatter?.position === 'end'
-          ? { style: { display: 'flex', flexDirection: 'column-reverse' } }
-          : {})}
-      >
-        {blog.frontMatter && FrontMatterOverrideComponent ? (
-          <FrontMatterOverrideComponent
-            frontmatter={blog.frontMatter}
-            // TODO fix this so we can ensure users can override colours.
-            // className={getClassName({ tag: 'frontmatter' }) || styles.metadata}
-            {...defTheme?.overrides?.frontmatter?.props}
-          />
-        ) : (
-          <FrontMatter frontmatter={blog.frontMatter} />
-        )}
+    
         <section>
           <Markdown
             options={{
@@ -172,7 +156,6 @@ const Blog = ({
             {blog.blog}
           </Markdown>
         </section>
-      </div>
     </article>
   );
 };

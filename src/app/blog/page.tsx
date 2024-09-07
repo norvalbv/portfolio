@@ -10,16 +10,18 @@ import { BLOG_DESCRIPTION, BLOG_DISCLAIMER } from 'constants/index';
 import React, { ReactElement, useState } from 'react';
 
 const Blog = (): ReactElement => {
-  const [selected, setSelected] = useState<'notes' | 'blogs'>('notes');
+  const [active, setActive] = useState<'notes' | 'blogs'>('notes');
 
   const buttons: ButtonProps[] = [
     {
       text: 'Notes',
-      onClick: (): void => setSelected('notes'),
+      onClick: (): void => setActive('notes'),
+      active: active === 'notes',
     },
     {
       text: 'Blogs',
-      onClick: (): void => setSelected('blogs'),
+      onClick: (): void => setActive('blogs'),
+      active: active === 'blogs',
     },
   ];
 
@@ -28,12 +30,12 @@ const Blog = (): ReactElement => {
       <div>
         <ButtonGroup buttons={buttons} className="mb-6" />
         <FileTree
-          title={selected === 'notes' ? 'Notes' : 'Blogs'}
-          data={selected === 'notes' ? fileTreeData : blogTreeData}
+          title={active === 'notes' ? 'Notes' : 'Blogs'}
+          data={active === 'notes' ? fileTreeData : blogTreeData}
         />
       </div>
-      <div className="flex flex-1 flex-col gap-6">
-        {selected === 'notes' && (
+      <div className="flex flex-1 flex-col gap-6 overflow-scroll rounded-xl border border-light-text/50 bg-white p-6 shadow-lg dark:border-dark-text/50 dark:bg-dark-dark/30">
+        {active === 'notes' && (
           <>
             <Header title="Benji's notes" animation={false} description={BLOG_DESCRIPTION} />
             <p className="text-xs">
