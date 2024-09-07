@@ -33,12 +33,16 @@ const Blog = (): ReactElement => {
         />
       </div>
       <div className="flex flex-1 flex-col gap-6">
-        <Header title="Benji's notes" animation={false} description={BLOG_DESCRIPTION} />
-        <p className="text-xs">
-          <span className="text-red-500 underline underline-offset-2">A quick disclaimer:</span>
-          &nbsp;
-          {BLOG_DISCLAIMER}
-        </p>
+        {selected === 'notes' && (
+          <>
+            <Header title="Benji's notes" animation={false} description={BLOG_DESCRIPTION} />
+            <p className="text-xs">
+              <span className="text-red-500 underline underline-offset-2">A quick disclaimer:</span>
+              &nbsp;
+              {BLOG_DISCLAIMER}
+            </p>
+          </>
+        )}
       </div>
     </div>
   );

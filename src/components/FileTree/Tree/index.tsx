@@ -17,7 +17,7 @@ const Tree = ({ data }: TreeProps): ReactElement => {
   };
 
   return (
-    <div>
+    <>
       <motion.div
         className="flex cursor-pointer items-start rounded-md p-2 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-700"
         onClick={toggleOpen}
@@ -40,7 +40,6 @@ const Tree = ({ data }: TreeProps): ReactElement => {
         ) : (
           <BlogNavigation
             name={data.name}
-            title={data.title}
             subtitle={data.subtitle}
             metadata={data.metadata}
             description={data.description}
@@ -63,7 +62,7 @@ const Tree = ({ data }: TreeProps): ReactElement => {
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </>
   );
 };
 

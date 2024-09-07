@@ -22,6 +22,7 @@
     "markdown-to-jsx": "^7.3.2",
     "mixpanel-browser": "^2.48.1",
     "next": "^14.2.7",
+    "prism-react-renderer": "^2.4.0",
     "react": "^18.2.0",
     "react-blogs": "^0.1.0",
     "react-dom": "^18.2.0",
