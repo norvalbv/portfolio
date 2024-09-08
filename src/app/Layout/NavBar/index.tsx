@@ -27,11 +27,11 @@ const NavBar = (): ReactElement => {
 
   return (
     <nav
-      className="sticky top-0 z-50 flex h-16 w-full flex-row-reverse items-end justify-between px-4 pt-20 lg:px-10"
+      className="sticky top-0 z-40 flex h-16 w-full flex-row-reverse items-end justify-between px-4 pt-20 lg:px-10"
       role="navigation"
       aria-label="Main"
     >
-      <div className="z-50 flex flex-row-reverse items-center gap-2 md:gap-4" role="menubar">
+      <div className="flex flex-row-reverse items-center gap-2 md:gap-4" role="menubar">
         <Hamburger
           toggled={navOpen}
           toggle={(): void => setNavOpen(!navOpen)}
@@ -52,7 +52,7 @@ const NavBar = (): ReactElement => {
         onClick={(): void => {
           setNavOpen(false);
         }}
-        className="z-50 mb-2.5 h-8 md:mb-1.5 md:h-10"
+        className="mb-2.5 h-8 md:mb-1.5 md:h-10"
       >
         <img
           src={isDarkMode ? BenjaminNorvalWhite.src : BenjaminNorvalBlack.src}
