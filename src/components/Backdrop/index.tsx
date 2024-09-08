@@ -54,7 +54,7 @@ const Backdrop = ({
         <motion.div
           className={classNames(
             'fixed h-screen overflow-y-auto overscroll-contain',
-            { 'bg-black/70': dimmedBackground, dark: isDarkMode },
+            { 'bg-black/75': dimmedBackground, dark: isDarkMode },
             className
           )}
           initial={{ opacity: 0 }}

@@ -33,7 +33,7 @@ const SidePeepView = ({
         <AnimatePresence>
           {isOpened && (
             <motion.div
-              className="absolute top-0 h-screen w-full bg-light-neutral dark:bg-dark-neutral"
+              className="absolute top-0 h-screen w-full border-r border-light-text/50 bg-light-neutral dark:border-dark-text/50 dark:bg-dark-neutral"
               onClick={blockClosingModalWindow}
               initial={{ left: -width }}
               animate={{ left: 0 }}
