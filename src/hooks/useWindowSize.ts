@@ -1,13 +1,15 @@
+'use client';
+
 import { useEffect, useState } from 'react';
 
-const getIsMobile = (): boolean => window.innerWidth <= 768;
+const getIsMobile = (): boolean => typeof window !== 'undefined' && window.innerWidth <= 768;
 
 type UseWindowSizeReturnType = { isMobile: boolean; windowSize: number };
 
 const useWindowSize = (): UseWindowSizeReturnType => {
   const [windowData, setWindowData] = useState({
     isMobile: getIsMobile(),
-    windowSize: window.innerWidth,
+    windowSize: typeof window !== 'undefined' ? window.innerWidth : 0,
   });
 
   useEffect(() => {

@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Backdrop /> should render correctly with all props 1`] = `
+<div
+  className="fixed h-screen overflow-y-auto overscroll-contain bg-neutral-N600/50 z-50 w-screen inset-0"
+  data-testid="Backdrop"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  style={
+    {
+      "opacity": 0,
+    }
+  }
+>
+  <div
+    data-focus-guard={true}
+    style={
+      {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={-1}
+  />
+  <div
+    className="relative h-full overflow-y-auto"
+    data-focus-lock-disabled="disabled"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <div
+      aria-label="Popup"
+      className="sr-only"
+      data-testid="Initial Focus"
+      tabIndex={0}
+    />
+    Test
+  </div>
+  <div
+    data-focus-guard={true}
+    style={
+      {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={-1}
+  />
+</div>
+`;

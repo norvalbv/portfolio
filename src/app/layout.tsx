@@ -26,6 +26,7 @@ const MainLayout = ({ children }: Props): ReactElement => {
     <html lang="en" className={victor.className}>
       <body>
         <div id="root">{children}</div>
+        <div id="backdrop" />
         {/* <script type="module" src="/src/index.tsx"></script> */}
         {/* <script>
       var global = global || window;

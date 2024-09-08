@@ -15,6 +15,7 @@ const ThemeToggle = ({ size = 24 }: ThemeToggleProps): ReactElement => {
       className="cursor-pointer hover:fill-light-dark"
       size={size}
       role="button"
+      tabIndex={0}
     />
   ) : (
     <SunIcon
@@ -22,6 +23,7 @@ const ThemeToggle = ({ size = 24 }: ThemeToggleProps): ReactElement => {
       className="cursor-pointer hover:fill-dark-dark"
       size={size}
       role="button"
+      tabIndex={0}
     />
   );
 };

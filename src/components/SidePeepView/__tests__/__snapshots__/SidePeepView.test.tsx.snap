@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SidePeepView /> should render correctly with all props 1`] = `
+<div
+  className="fixed h-screen overflow-y-auto overscroll-contain bg-neutral-N600/50 z-50 w-screen inset-0"
+  data-testid="Backdrop"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  style={
+    {
+      "opacity": 0,
+    }
+  }
+>
+  <div
+    data-focus-guard={true}
+    style={
+      {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={-1}
+  />
+  <div
+    className="relative h-full overflow-y-auto"
+    data-focus-lock-disabled="disabled"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <div
+      aria-label="Popup"
+      className="sr-only"
+      data-testid="Initial Focus"
+      tabIndex={0}
+    />
+    <div
+      className="relative z-50 min-h-screen max-w-[100vw] overflow-hidden"
+    >
+      <div
+        className="absolute top-0 h-screen w-full bg-white"
+        data-testid="Side Peep View"
+        onClick={[Function]}
+        style={
+          {
+            "maxWidth": 800,
+            "right": 0,
+          }
+        }
+      >
+        <div
+          className="relative h-full overflow-y-auto"
+          data-testid="Side Peep View"
+        >
+          <button
+            className="group absolute left-4 top-4 flex min-h-4 items-center text-neutral-N600 transition"
+            data-testid="Side Peep View Close Button"
+            onClick={[MockFunction]}
+            onKeyDown={[Function]}
+            type="button"
+          >
+            <svg
+              className="text-neutral-N600"
+              color="#58585C"
+              fill="none"
+              height={16}
+              viewBox="0 0 16 16"
+              width={16}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                clipPath="url(#0506cbdda73c368)"
+              >
+                <path
+                  d="M14.3899 8C12.9899 9.4 8.38989 14 8.38989 14"
+                  stroke="url(#0506cbdda73c368)"
+                  strokeLinecap="round"
+                  strokeMiterlimit="10"
+                />
+                <path
+                  d="M8.38989 2C8.38989 2 12.9899 6.6 14.3899 8"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeMiterlimit="10"
+                />
+                <path
+                  d="M7.75 8C6.35 9.4 1.75 14 1.75 14"
+                  stroke="url(#0506cbdda73c368)"
+                  strokeLinecap="round"
+                  strokeMiterlimit="10"
+                />
+                <path
+                  d="M1.75 2C1.75 2 6.35 6.6 7.75 8"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeMiterlimit="10"
+                />
+              </g>
+              <defs>
+                <linearGradient
+                  gradientUnits="userSpaceOnUse"
+                  id="0506cbdda73c368"
+                  x1="7.88989"
+                  x2="14.8899"
+                  y1="11"
+                  y2="11"
+                >
+                  <stop
+                    stopColor="currentColor"
+                    stopOpacity="0"
+                  />
+                  <stop
+                    offset="0.7"
+                    stopColor="currentColor"
+                  />
+                </linearGradient>
+                <linearGradient
+                  gradientUnits="userSpaceOnUse"
+                  id="0506cbdda73c368"
+                  x1="1.25"
+                  x2="8.25"
+                  y1="4741.5"
+                  y2="4741.5"
+                >
+                  <stop
+                    stopColor="currentColor"
+                    stopOpacity="0"
+                  />
+                  <stop
+                    offset="0.7"
+                    stopColor="currentColor"
+                  />
+                </linearGradient>
+                <clipPath
+                  id="0506cbdda73c368"
+                >
+                  <rect
+                    fill="white"
+                    height="13"
+                    transform="translate(1.25 1.5)"
+                    width="13.64"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <span
+              className="min-w-0 max-w-0 overflow-hidden text-left text-sm opacity-0 transition-all duration-500 ease-productive group-hover:min-w-12 group-hover:opacity-100 group-focus:min-w-12 group-focus:opacity-100"
+            >
+              <span
+                className="pl-0 transition-all duration-500 group-hover:pl-2 group-focus:pl-2"
+              >
+                Close
+              </span>
+            </span>
+          </button>
+          <div
+            className="px-10 pt-16"
+          >
+            Test
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-focus-guard={true}
+    style={
+      {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={-1}
+  />
+</div>
+`;

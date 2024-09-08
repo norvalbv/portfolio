@@ -3,7 +3,7 @@
 import ThemeToggle from 'components/Theme/ThemeToggle';
 import Hamburger from 'hamburger-react';
 import useTheme from 'hooks/useTheme';
-// import useWindowSize from 'hooks/useWindowSize';
+import useWindowSize from 'hooks/useWindowSize';
 import Link from 'next/link';
 import { ReactElement, useState } from 'react';
 import { classNames } from 'utils';
@@ -13,9 +13,7 @@ import BenjaminNorvalWhite from '../../../assets/images/BNWhite.webp';
 const NavBar = (): ReactElement => {
   const [navOpen, setNavOpen] = useState(false);
   const { isDarkMode } = useTheme();
-  // const { isMobile } = useWindowSize();
-
-  const isMobile = false;
+  const { isMobile } = useWindowSize();
 
   const navbarTabs = [
     { id: '/', title: 'Home' },
