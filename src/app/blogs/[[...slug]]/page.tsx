@@ -6,9 +6,9 @@ import { Props as LinkProps } from '@/src/components/Link';
 import LinkGroup from '@/src/components/LinkGroup';
 import SidePeepView from '@/src/components/SidePeepView';
 import { blogTreeData } from 'constants/blogs';
-import { BLOG_DESCRIPTION, BLOG_DISCLAIMER } from 'constants/index';
+import { BLOG_DESCRIPTION, BLOG_DISCLAIMER } from '@/src/constants/index';
 import Hamburger from 'hamburger-react';
-import useWindowSize from 'hooks/useWindowSize';
+import useWindowSize from '@/src/hooks/useWindowSize';
 import React, { ReactElement, Suspense, useState } from 'react';
 import Blog from './blog';
 

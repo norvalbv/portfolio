@@ -1,5 +1,5 @@
 import CardWrapper from '@/src/components/CardWrapper';
-import { PARISN_DESCRIPTION, PARISN_SKILLS } from 'constants/index';
+import { PARISN_DESCRIPTION, PARISN_SKILLS } from '@/src/constants/index';
 import { ReactElement } from 'react';
 import Arian from '../../../../public/projects/arian.png';
 import ArianApp from '../../../../public/projects/arianapp.png';

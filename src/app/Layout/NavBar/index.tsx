@@ -2,8 +2,8 @@
 
 import ThemeToggle from '@/src/components/Theme/ThemeToggle';
 import Hamburger from 'hamburger-react';
-import useTheme from 'hooks/useTheme';
-import useWindowSize from 'hooks/useWindowSize';
+import useTheme from '@/src/hooks/useTheme';
+import useWindowSize from '@/src/hooks/useWindowSize';
 import Link from 'next/link';
 import { ReactElement, useState, useEffect } from 'react';
 import { classNames } from '@/src/utils';

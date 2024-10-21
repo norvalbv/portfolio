@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 import { MoonIcon, SunIcon } from '@/src/components/SVG';
-import useTheme from 'hooks/useTheme';
+import useTheme from '@/src/hooks/useTheme';
 
 type ThemeToggleProps = {
   size?: number;

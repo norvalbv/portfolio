@@ -1,4 +1,4 @@
-import useTheme from 'hooks/useTheme';
+import useTheme from '@/src/hooks/useTheme';
 import { ReactElement } from 'react';
 
 type Props = {

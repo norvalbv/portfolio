@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { GITHUB, LINKED_IN } from 'constants/index';
+import { GITHUB, LINKED_IN } from '@/src/constants/index';
 // import CV from '../../assets/Benjamin_Norval_CV.pdf';
 import StyledLink from '@/src/components/StyledLink';
 

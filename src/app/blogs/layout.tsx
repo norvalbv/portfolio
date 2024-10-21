@@ -1,9 +1,9 @@
 'use client';
 
 import ThemedContent from '@/src/components/Theme/ThemeContent';
-import { ThemeContextProvider } from 'context/theme';
-import Footer from 'app/Layout/Footer';
-import NavBar from 'app/Layout/NavBar';
+import { ThemeContextProvider } from '@/src/context/theme';
+import Footer from '@/src/app/Layout/Footer';
+import NavBar from '@/src/app/Layout/NavBar';
 import { ReactElement } from 'react';
 
 type Props = {

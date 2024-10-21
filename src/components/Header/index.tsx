@@ -3,7 +3,7 @@
 import { ReactElement, useEffect, useState } from 'react';
 import Title from '@/src/components/Header/Title';
 import Subtitle from '@/src/components/Header/SubTitle';
-import { useRandomReveal } from 'hooks/useRandomReveal';
+import { useRandomReveal } from '@/src/hooks/useRandomReveal';
 import Description from './Description';
 
 export type HeaderProps = {

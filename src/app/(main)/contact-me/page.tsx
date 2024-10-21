@@ -18,21 +18,21 @@ const ContactMe = (): ReactElement => {
     setQuery({ ...query, [key]: value });
   };
 
-  const submitEmail = async (e: SyntheticEvent): void => {
+  const submitEmail = async (e: SyntheticEvent): Promise<void> => {
     e.preventDefault();
 
-    await sendEmail();
-    // emailjs
-    //   .send(SERVICE_ID || '', TEMPLATE_ID || '', query, API_KEY)
-    //   .then(() => {
-    //     setQuery({
-    //       name: '',
-    //       email: '',
-    //       message: '',
-    //     });
-    //     toast.success('Message Sent!');
-    //   })
-    //   .catch(() => toast.error('Message Was Not Able To Be Sent!'));
+    try {
+      await sendEmail(query);
+      setQuery({
+        name: '',
+        email: '',
+        message: '',
+      });
+      toast.success('Message Sent!');
+    } catch (error) {
+      toast.error('Message Was Not Able To Be Sent!');
+      console.error('Error sending email:', error);
+    }
   };
 
   return (

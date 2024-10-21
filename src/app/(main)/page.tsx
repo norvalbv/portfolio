@@ -1,7 +1,7 @@
 'use client';
 
 import { ReactElement, useEffect, useState } from 'react';
-import { useRandomReveal } from 'hooks/useRandomReveal';
+import { useRandomReveal } from '@/src/hooks/useRandomReveal';
 import { classNames } from '@/src/utils';
 import CardWrapper from '@/src/components/CardWrapper';
 

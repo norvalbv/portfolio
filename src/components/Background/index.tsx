@@ -1,5 +1,5 @@
-import { MY_SKILLS } from 'constants/index';
-import useWindowSize from 'hooks/useWindowSize';
+import { MY_SKILLS } from '@/src/constants/index';
+import useWindowSize from '@/src/hooks/useWindowSize';
 import React, { Fragment, ReactElement } from 'react';
 
 const Background = (): ReactElement => {
