@@ -5,7 +5,6 @@ import React, { Fragment, ReactElement } from 'react';
 const Background = (): ReactElement => {
   const { isMobile } = useWindowSize();
 
-  // eslint-disable-next-line no-constant-condition
   const skillsRepeated = Array(isMobile ? 4 : 8)
     .fill(MY_SKILLS.split(','))
     .flat();
@@ -24,7 +23,7 @@ const Background = (): ReactElement => {
 
         // const opacity = (1.05 - fontSize / 1.5).toFixed(2); // The bigger the font, the smaller the opacity (max 1)
         const opacity = fontSize / 2.5; // The bigger the font, the higher the opacity (max 1)
-        const duration = (2 - fontSize) * 25; // The smaller the font, the longer the duration of the animation
+        const duration = (2 - fontSize) * 30; // The smaller the font, the longer the duration of the animation
 
         // Start point of text before the animation starts.
         const startPoint = exponentialDistribution(0.01);
