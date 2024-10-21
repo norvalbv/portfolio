@@ -9,7 +9,6 @@ import { Fragment, ReactElement, useEffect, useState } from 'react';
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
 const fetchBlogContent = async (blog?: string, type?: 'notes' | 'blog'): Promise<string | null> => {
-  console.log(blog, type)
   if (!blog) return null;
 
   if (type === 'notes') {

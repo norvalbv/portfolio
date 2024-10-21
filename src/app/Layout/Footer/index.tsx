@@ -1,6 +1,5 @@
 import { ReactElement } from 'react';
 import { GITHUB, LINKED_IN } from '@/src/constants/index';
-// import CV from '../../../assets/Benjamin_Norval_CV.pdf';
 
 const footerLinks = [
   {
@@ -9,7 +8,6 @@ const footerLinks = [
     link: GITHUB,
   },
   { id: 'linkedin', label: 'Linked In', link: LINKED_IN },
-  // { id: 'cv', label: 'CV', link: CV },
 ];
 
 const Footer = (): ReactElement => {
