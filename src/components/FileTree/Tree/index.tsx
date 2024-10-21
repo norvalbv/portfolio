@@ -7,6 +7,7 @@ import { useParams } from 'next/navigation';
 import { ReactElement, useState } from 'react';
 import BlogNavigation, { TreeNode } from './BlogNavigation';
 import { listS3Objects } from '@/lib/actions/listS3Objects';
+import Link from 'next/link';
 
 type TreeProps = {
   data: TreeNode;
@@ -14,7 +15,7 @@ type TreeProps = {
 
 const Tree = ({ data }: TreeProps): ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
-  const [children, setChildren] = useState<TreeNode[]>([]);
+  const [children, setChildren] = useState<TreeNode[]>(data.children || []);
 
   const toggleOpen = async (): Promise<void> => {
     if (data.type === 'folder' && !isOpen && children.length === 0) {
@@ -46,11 +47,15 @@ const Tree = ({ data }: TreeProps): ReactElement => {
   const params = useParams();
   const isActive = data.url && params.slug?.[1] === data.url;
 
+  if (data.type === 'blog') {
+    return <BlogNavigation {...data} />;
+  }
+
   return (
     <>
       <motion.div
         className={classNames(
-          'flex cursor-pointer items-start rounded-md p-2 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-700',
+          'flex cursor-pointer items-start rounded-md px-2 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-700',
           isActive && 'bg-accent-tertiary/10',
         )}
         onClick={toggleOpen}
@@ -68,18 +73,16 @@ const Tree = ({ data }: TreeProps): ReactElement => {
         )}
         {data.type === 'folder' ? (
           <Folder className="mr-2 mt-1 h-4 w-4 shrink-0 text-yellow-500" />
-        ) : data.type === 'file' ? (
-          <File className="mr-2 mt-1 h-4 w-4 shrink-0 text-gray-500" />
         ) : (
-          <BlogNavigation
-            name={data.name}
-            subtitle={data.subtitle}
-            metadata={data.metadata}
-            description={data.description}
-            url={data?.url}
-          />
+          <File className="mr-2 mt-1 h-4 w-4 shrink-0 text-gray-500" />
         )}
-        {data.type !== 'blog' && <span className="flex-1">{data.name}</span>}
+        {data.type === 'file' ? (
+          <Link href={`/blogs/notes/${data.url?.slice(0, -3)}`}>
+            <span className="flex-1">{data.name}</span>
+          </Link>
+        ) : (
+          <span className="flex-1">{data.name}</span>
+        )}
       </motion.div>
       <AnimatePresence initial={false}>
         {data.type === 'folder' && isOpen && (
@@ -88,7 +91,7 @@ const Tree = ({ data }: TreeProps): ReactElement => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="ml-4 mt-1 border-l border-gray-300 pl-2 dark:border-gray-600"
+            className="ml-4 mt-1 border-l border-gray-300 pl-2 dark:border-gray-600 flex flex-col gap-4"
           >
             {children.map((childData) => (
               <Tree key={childData.url} data={childData} />

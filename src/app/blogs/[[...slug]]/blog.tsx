@@ -1,3 +1,4 @@
+import { getS3ObjectByUrl } from '@/lib/actions/getS3Objects';
 import Anchor from '@/src/components/Markdown/Anchor';
 import Code from '@/src/components/Markdown/Code';
 import List from '@/src/components/Markdown/List';
@@ -7,32 +8,49 @@ import { Fragment, ReactElement, useEffect, useState } from 'react';
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
-const fetchBlogContent = async (blog?: string): Promise<string | null> => {
+const fetchBlogContent = async (blog?: string, type?: 'notes' | 'blog'): Promise<string | null> => {
+  console.log(blog, type)
   if (!blog) return null;
+
+  if (type === 'notes') {
+    const url = await getS3ObjectByUrl(blog);
+    return url ? filterFrontMatterAndTitle(url) : null;
+  } 
 
   try {
     const response = await fetch(`${BASE_URL}/${blog}`);
     return await response.text();
   } catch (error) {
-    console.error('Failed to fetch blog content:', error);
     return null;
   }
 };
 
-const BlogContent = ({ blog }: { blog?: string }): ReactElement => {
+const filterFrontMatterAndTitle = (content: string): string => {
+  // Remove front matter
+  const frontMatterRegex = /^---\s*[\s\S]*?\s*---/;
+  let filteredContent = content.replace(frontMatterRegex, '').trim();
+
+  // Remove title and optional #Complete
+  const titleRegex = /^\s*(.+?)(?:\s+#Complete)?\s*---/;
+  filteredContent = filteredContent.replace(titleRegex, '').trim();
+
+  return filteredContent;
+};
+
+const BlogContent = ({ blog, type }: { blog?: string; type?: 'notes' | 'blog' }): ReactElement => {
   const [content, setContent] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const getContent = async () => {
       setIsLoading(true);
-      const fetchedContent = await fetchBlogContent(blog);
+      const fetchedContent = await fetchBlogContent(blog, type);
       setContent(fetchedContent);
       setIsLoading(false);
     };
 
     getContent();
-  }, [blog]);
+  }, [blog, type]);
 
   return (
     <article className="w-full h-full flex">

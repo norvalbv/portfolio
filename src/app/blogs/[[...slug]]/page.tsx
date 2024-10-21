@@ -1,7 +1,6 @@
 'use client';
 
 import { listS3Objects } from '@/lib/actions/listS3Objects';
-import { fileTreeData } from '@/src/__mocks__/fileTreeData';
 import FileTree from '@/src/components/FileTree';
 import { TreeNode } from '@/src/components/FileTree/Tree/BlogNavigation';
 import { Props as LinkProps } from '@/src/components/Link';
@@ -13,12 +12,10 @@ import useWindowSize from '@/src/hooks/useWindowSize';
 import Hamburger from 'hamburger-react';
 import React, { ReactElement, useEffect, useState } from 'react';
 import Blog from './blog';
-import { getS3Object } from '@/lib/actions/getS3Objects';
 
 
 const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
-  const currentBlog = params.slug?.[1] || blogTreeData[0].url;
-  const filePath = blogTreeData.find((blog) => blog.url === currentBlog)?.file;
+  const currentBlog = params.slug?.[1]
   const blogName = blogTreeData.find((blog) => blog.url === currentBlog)?.name;
   const type = (params.slug?.[0] as 'notes' | 'blog') || 'notes';
 
@@ -44,6 +41,7 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
 
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState<TreeNode[]>([]);
+
 
   useEffect(() => {
     const fetchS3Data = async () => {
@@ -72,8 +70,12 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
       }
     };
 
-    fetchS3Data();
-  }, []);
+    if (type === 'notes') {
+      fetchS3Data();
+    }
+  }, [type] );
+
+  const filePath = type !== 'notes' ? data.find((blog) => blog.url === currentBlog)?.url : currentBlog;
 
   return (
     <div className="relative mx-auto flex max-w-7xl flex-col px-4 py-6 sm:px-6 lg:flex-row lg:gap-10 lg:px-8">
@@ -116,7 +118,7 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
           </button>
         </div>
         <div className="w-full p-6 flex flex-col h-[calc(100%-4rem)]">
-          {type === 'notes' && (
+          {type === 'notes' && !filePath && (
             <>
               <p className="mb-6">{BLOG_DESCRIPTION}</p>
               <div className="mb-6 text-xs text-gray-600 dark:text-gray-400">
@@ -128,7 +130,7 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
               </div>
             </>
           )}
-          <Blog blog={filePath} />
+          <Blog blog={filePath} type={type} />
         </div>
       </div>
     </div>
