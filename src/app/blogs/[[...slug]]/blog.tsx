@@ -4,6 +4,7 @@ import Code from '@/src/components/Markdown/Code';
 import List from '@/src/components/Markdown/List';
 import UnorderedList from '@/src/components/Markdown/UnorderedList';
 import { replaceImageReferences } from '@/src/utils/replaceImageReferences';
+import processObsidianLinks from '@/src/utils/processObsidianLinks';
 import Markdown, { MarkdownToJSX } from 'markdown-to-jsx';
 import { Fragment, ReactElement, useEffect, useState } from 'react';
 
@@ -39,7 +40,12 @@ const BlogContent = ({ blog, type }: { blog?: string; type?: 'notes' | 'blog' })
     const getContent = async () => {
       setIsLoading(true);
       const fetchedContent = await fetchBlogContent(blog, type);
-      setContent(fetchedContent);
+      if (fetchedContent) {
+        const processedContent = processObsidianLinks({
+          content: fetchedContent
+        });
+        setContent(processedContent);
+      }
       setIsLoading(false);
     };
 

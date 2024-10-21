@@ -11,7 +11,7 @@ import { BLOG_DESCRIPTION, BLOG_DISCLAIMER } from '@/src/constants/index';
 import useWindowSize from '@/src/hooks/useWindowSize';
 import Hamburger from 'hamburger-react';
 import React, { ReactElement, useCallback, useEffect, useMemo, useState } from 'react';
-import Blog from './blog';
+import BlogContent from './blog';
 
 const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
   const { slug = [] } = params;
@@ -74,7 +74,7 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
   }, [type]);
 
   return (
-    <div className="relative mx-auto flex max-w-7xl flex-col px-4 py-6 sm:px-6 lg:flex-row lg:gap-10 lg:px-8">
+    <div className="relative mx-auto flex max-w-7xl w-full flex-col px-4 py-6 sm:px-6 lg:flex-row lg:gap-10 lg:px-8">
       <SidePeepView
         isOpened={blogMenuOpen}
         className="block lg:hidden"
@@ -96,7 +96,7 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
           loading={loading}
         />
       </div>
-      <div className="relative h-[calc(100vh-13.875rem)] flex-1 overflow-x-hidden rounded-xl border border-light-text/50 bg-white shadow-xl dark:border-dark-text/50 dark:bg-dark-dark/30">
+      <div className="relative h-[calc(100vh-13.875rem)] w-full flex-1 overflow-x-hidden rounded-xl border border-light-text/50 bg-white shadow-xl dark:border-dark-text/50 dark:bg-dark-dark/30">
         <div className="sticky top-0 z-10 flex items-center justify-between border-b border-light-text/50 bg-white px-6 py-4 dark:border-gray-700 dark:bg-dark-dark">
           <h1 className="text-xl font-semibold lg:text-4xl">
             {type === 'notes'
@@ -128,7 +128,7 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
               </div>
             </>
           )}
-          <Blog blog={filePath} type={type} />
+          <BlogContent blog={filePath} type={type} />
         </div>
       </div>
     </div>

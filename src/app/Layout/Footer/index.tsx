@@ -12,10 +12,10 @@ const footerLinks = [
 
 const Footer = (): ReactElement => {
   return (
-    <footer className="relative text-center text-xs text-gray-500 dark:text-gray-400 sm:text-sm">
+    <footer className="relative text-xs text-gray-500 dark:text-gray-400 sm:text-sm">
       <div className="mx-auto w-full max-w-screen-2xl p-4 md:py-6 lg:py-8">
-        <div className="flex flex-col items-center gap-4 sm:gap-6">
-          <ul className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+        <div className="flex flex-col items-start gap-4 sm:gap-6 md:flex-row md:justify-between">
+          <ul className="flex flex-wrap items-center gap-4 sm:gap-6">
             {footerLinks.map((link) => (
               <li
                 key={link.id}
