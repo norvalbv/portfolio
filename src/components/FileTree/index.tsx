@@ -65,8 +65,6 @@ const FileTree = ({ title, data, loading }: Props): ReactElement => {
     setTreeData(buildTree(data));
   }, [data]);
 
-  console.log(treeData);
-
   return (
     <div className="relative h-[calc(100vh-18rem)] w-72 overflow-visible">
       <div className="absolute inset-0 overflow-y-auto overflow-x-visible rounded-xl border border-light-text/50 bg-white p-4 shadow-lg dark:border-dark-text/50 dark:bg-dark-dark/30">
@@ -77,7 +75,9 @@ const FileTree = ({ title, data, loading }: Props): ReactElement => {
               <Loader />
             </div>
           ) : (
-            treeData.map((node, index) => <Tree key={`${node.name}-${index}`} data={node} />)
+            treeData.map((node, index) => (
+              <Tree key={`${node.name}-${index}`} data={node} />
+            ))
           )}
         </div>
       </div>

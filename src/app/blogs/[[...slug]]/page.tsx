@@ -10,75 +10,70 @@ import { blogTreeData } from '@/src/constants/blogs';
 import { BLOG_DESCRIPTION, BLOG_DISCLAIMER } from '@/src/constants/index';
 import useWindowSize from '@/src/hooks/useWindowSize';
 import Hamburger from 'hamburger-react';
-import React, { ReactElement, useEffect, useState } from 'react';
+import React, { ReactElement, useCallback, useEffect, useMemo, useState } from 'react';
 import Blog from './blog';
 
 const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
-  const currentBlog = params.slug?.[1];
-  const blogName =
-    blogTreeData.find((blog) => blog.url === currentBlog)?.name || blogTreeData[0].name;
-  const type = (params.slug?.[0] as 'notes' | 'blog') || 'notes';
-  const filePath =
-    type !== 'notes'
-      ? blogTreeData.find((blog) => blog.url === (currentBlog || blogTreeData[0].url))?.file
-      : currentBlog;
-
+  const { slug = [] } = params;
+  const [loading, setLoading] = useState(false);
+  const [data, setData] = useState<TreeNode[]>([]);
   const [blogMenuOpen, setBlogMenuOpen] = useState(false);
   const { isMobile } = useWindowSize();
 
-  const links: LinkProps[] = [
-    {
-      text: 'Notes',
-      href: '/blogs/notes',
-      active: type === 'notes',
-    },
-    {
-      text: 'Blogs',
-      href: '/blogs/blog',
-      active: type === 'blog',
-    },
-  ];
+  const type = (slug[0] as 'notes' | 'blog') || 'notes';
+  const currentBlog = type === 'notes' ? slug.slice(1).join('/') : slug.at(-1);
 
-  const toggleBlogMenu = (): void => {
-    setBlogMenuOpen(!blogMenuOpen);
-  };
+  const blogData = useMemo(() => {
+    return blogTreeData.find((blog) => blog.url === currentBlog) || blogTreeData[0];
+  }, [currentBlog]);
 
-  const [loading, setLoading] = useState(false);
-  const [data, setData] = useState<TreeNode[]>([]);
+  const blogName = blogData.name;
+  const filePath = type !== 'notes' ? blogData.file : currentBlog;
+
+  const links: LinkProps[] = useMemo(
+    () => [
+      {
+        text: 'Notes',
+        href: '/blogs/notes',
+        active: type === 'notes',
+      },
+      {
+        text: 'Blogs',
+        href: '/blogs/blog',
+        active: type === 'blog',
+      },
+    ],
+    [type]
+  );
+
+  const toggleBlogMenu = useCallback((): void => {
+    setBlogMenuOpen((prev) => !prev);
+  }, []);
 
   useEffect(() => {
+    if (type !== 'notes') return;
+
     const fetchS3Data = async () => {
+      setLoading(true);
       try {
-        setLoading(true);
         const objects = await listS3Objects();
-
         if (objects) {
-          const treeData: TreeNode[] = objects.map((object): TreeNode => {
-            const key = object.Key || '';
-            const name = key.split('/').pop() || '';
-            const type = key.endsWith('/') ? 'folder' : 'file';
-
-            return {
-              name,
-              type,
-              url: key,
-            };
-          });
+          const treeData: TreeNode[] = objects.map(({ Key }) => ({
+            name: Key?.split('/').pop() || '',
+            type: Key?.endsWith('/') ? 'folder' : 'file',
+            url: Key || '',
+          }));
           setData(treeData);
         }
-      } catch (err) {
-        console.error(err);
+      } catch (error) {
+        console.error(error);
       } finally {
         setLoading(false);
       }
     };
 
-    if (type === 'notes') {
-      fetchS3Data();
-    }
+    fetchS3Data();
   }, [type]);
-
-  console.log(data);
 
   return (
     <div className="relative mx-auto flex max-w-7xl flex-col px-4 py-6 sm:px-6 lg:flex-row lg:gap-10 lg:px-8">
@@ -107,13 +102,13 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
         <div className="sticky top-0 z-10 flex items-center justify-between border-b border-light-text/50 bg-white px-6 py-4 dark:border-gray-700 dark:bg-dark-dark">
           <h1 className="text-xl font-semibold lg:text-4xl">
             {type === 'notes'
-              ? `Benji's notes - ${decodeURIComponent(filePath || '') || 'Introduction'}`
+              ? `Benji's notes - ${decodeURIComponent(params.slug?.at(-1) || '') || 'Introduction'}`
               : `Blogs - ${blogName}`}
           </h1>
           <button type="button" className="lg:hidden" onClick={toggleBlogMenu}>
             <Hamburger
               toggled={blogMenuOpen}
-              toggle={(): void => setBlogMenuOpen(!blogMenuOpen)}
+              toggle={toggleBlogMenu}
               size={isMobile ? 24 : 28}
               rounded
               aria-expanded={blogMenuOpen}

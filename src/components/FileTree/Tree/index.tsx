@@ -3,7 +3,7 @@
 import { classNames } from '@/src/utils';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ChevronRight, File, Folder } from 'lucide-react';
-import { useParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { ReactElement, useState } from 'react';
 import BlogNavigation, { TreeNode } from './BlogNavigation';
 import { listS3Objects } from '@/lib/actions/listS3Objects';
@@ -14,38 +14,44 @@ type TreeProps = {
 };
 
 const Tree = ({ data }: TreeProps): ReactElement => {
-  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(() => {
+    if (data.type === 'folder') {
+      return pathname.startsWith(`/blogs/notes/${data.url || ''}`);
+    }
+    return false;
+  });
   const [children, setChildren] = useState<TreeNode[]>(data.children || []);
 
   const toggleOpen = async (): Promise<void> => {
-    if (data.type === 'folder' && !isOpen && children.length === 0) {
-      try {
-        const objects = await listS3Objects(data.url);
+    if (data.type === 'folder') {
+      if (!isOpen && children.length === 0) {
+        try {
+          const objects = await listS3Objects(data.url);
+          if (objects) {
+            const newChildren: TreeNode[] = objects.map((object): TreeNode => {
+              const key = object.Key || '';
+              const name = key.split('/').pop() || '';
+              const type = key.endsWith('/') ? 'folder' : 'file';
 
-        if (objects) {
-          const newChildren: TreeNode[] = objects.map((object): TreeNode => {
-            const key = object.Key || '';
-            const name = key.split('/').pop() || '';
-            const type = key.endsWith('/') ? 'folder' : 'file';
-
-            return {
-              name,
-              type,
-              url: key,
-              children: type === 'folder' ? [] : undefined,
-            };
-          });
-          setChildren(newChildren);
+              return {
+                name,
+                type,
+                url: key,
+                children: type === 'folder' ? [] : undefined,
+              };
+            });
+            setChildren(newChildren);
+          }
+        } catch (error) {
+          console.error('Error fetching folder contents:', error);
         }
-      } catch (error) {
-        console.error('Error fetching folder contents:', error);
       }
+      setIsOpen(!isOpen);
     }
-    setIsOpen(!isOpen);
   };
 
-  const params = useParams();
-  const isActive = data.url && params.slug?.[1] === data.url;
+  const isActive = data.url && decodeURIComponent(pathname) === `/blogs/notes/${data.url.slice(0, -3)}`;
 
   if (data.type === 'blog') {
     return <BlogNavigation {...data} />;
@@ -56,7 +62,7 @@ const Tree = ({ data }: TreeProps): ReactElement => {
       <motion.div
         className={classNames(
           'flex cursor-pointer items-start rounded-md px-2 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-700',
-          isActive && 'bg-accent-tertiary/10'
+          isActive && 'bg-accent-tertiary/10 font-semibold'
         )}
         onClick={toggleOpen}
         whileTap={{ scale: 0.98 }}
@@ -78,7 +84,7 @@ const Tree = ({ data }: TreeProps): ReactElement => {
         )}
         {data.type === 'file' ? (
           <Link href={`/blogs/notes/${data.url?.slice(0, -3)}`}>
-            <span className="flex-1">{data.name}</span>
+            <span className={classNames("flex-1", isActive && "text-accent-primary")}>{data.name}</span>
           </Link>
         ) : (
           <span className="flex-1">{data.name}</span>

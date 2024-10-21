@@ -45,6 +45,7 @@ const BlogContent = ({ blog, type }: { blog?: string; type?: 'notes' | 'blog' })
     const getContent = async () => {
       setIsLoading(true);
       const fetchedContent = await fetchBlogContent(blog, type);
+      console.log(fetchedContent, blog, type);
       setContent(fetchedContent);
       setIsLoading(false);
     };
