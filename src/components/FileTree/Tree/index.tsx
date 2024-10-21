@@ -6,6 +6,7 @@ import { ChevronRight, File, Folder } from 'lucide-react';
 import { useParams } from 'next/navigation';
 import { ReactElement, useState } from 'react';
 import BlogNavigation, { TreeNode } from './BlogNavigation';
+import { listS3Objects } from '@/lib/actions/listS3Objects';
 
 type TreeProps = {
   data: TreeNode;
@@ -13,8 +14,32 @@ type TreeProps = {
 
 const Tree = ({ data }: TreeProps): ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
+  const [children, setChildren] = useState<TreeNode[]>([]);
 
-  const toggleOpen = (): void => {
+  const toggleOpen = async (): Promise<void> => {
+    if (data.type === 'folder' && !isOpen && children.length === 0) {
+      try {
+        const objects = await listS3Objects(data.url);
+
+        if (objects) {
+          const newChildren: TreeNode[] = objects.map((object): TreeNode => {
+            const key = object.Key || '';
+            const name = key.split('/').pop() || '';
+            const type = key.endsWith('/') ? 'folder' : 'file';
+
+            return {
+              name,
+              type,
+              url: key,
+              children: type === 'folder' ? [] : undefined,
+            };
+          });
+          setChildren(newChildren);
+        }
+      } catch (error) {
+        console.error('Error fetching folder contents:', error);
+      }
+    }
     setIsOpen(!isOpen);
   };
 
@@ -65,8 +90,8 @@ const Tree = ({ data }: TreeProps): ReactElement => {
             transition={{ duration: 0.3 }}
             className="ml-4 mt-1 border-l border-gray-300 pl-2 dark:border-gray-600"
           >
-            {data.children?.map((childData) => (
-              <Tree key={childData.id || childData.name} data={childData} />
+            {children.map((childData) => (
+              <Tree key={childData.url} data={childData} />
             ))}
           </motion.div>
         )}
