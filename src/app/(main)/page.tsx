@@ -2,8 +2,8 @@
 
 import { ReactElement, useEffect, useState } from 'react';
 import { useRandomReveal } from 'hooks/useRandomReveal';
-import { classNames } from 'utils';
-import CardWrapper from 'components/CardWrapper';
+import { classNames } from '@/src/utils';
+import CardWrapper from '@/src/components/CardWrapper';
 
 const Landing = (): ReactElement => {
   const [isMounted, setIsMounted] = useState(false);

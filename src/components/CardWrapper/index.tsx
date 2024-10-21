@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
-import Header, { HeaderProps } from 'components/Header';
-import { classNames } from 'utils';
+import Header, { HeaderProps } from '@/src/components/Header';
+import { classNames } from '@/src/utils';
 
 type ProcessedHeaderProps = Pick<HeaderProps, 'title' | 'titleClassName' | 'subtitle'>;
 

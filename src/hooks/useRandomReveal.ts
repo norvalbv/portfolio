@@ -1,7 +1,7 @@
 import { useRef, isValidElement, cloneElement } from 'react';
 import { useElapsedTime } from 'use-elapsed-time';
 import { Characters, Props } from 'types';
-import { getCharactersData, getRandomCharacter } from 'utils';
+import { getCharactersData, getRandomCharacter } from '@/src/utils';
 
 export const useRandomReveal = (props: Props): Characters => {
   const prevTimeRef = useRef<number>();

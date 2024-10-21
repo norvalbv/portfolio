@@ -642,10 +642,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emailjs/browser@npm:^3.11.0":
-  version: 3.11.0
-  resolution: "@emailjs/browser@npm:3.11.0"
-  checksum: fdeb780f49ed5ee75ad2d197ae2fcc77c266dcffe1204b6450d01df7db2e9a17d12af97a460eaf33f777c569935aa83285c184d63c59c03387a2c326e90ba5e9
+"@emailjs/nodejs@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "@emailjs/nodejs@npm:5.0.0"
+  checksum: 64a8e0127e1fac7da4e8505fb78b63060daa03cf923deae89c1e3554f3c113bb183f3bab68c5baf90a84f60587d97bfc46c7b04a6a2d85b664d10c929c98b9b3
   languageName: node
   linkType: hard
 
@@ -2051,7 +2051,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "application@workspace:."
   dependencies:
-    "@emailjs/browser": ^3.11.0
+    "@emailjs/nodejs": ^5.0.0
     "@types/dotenv-flow": ^3.3.3
     "@types/jest": ^29.5.10
     "@types/mixpanel-browser": ^2.47.5

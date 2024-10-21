@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
-import { CodeIcon } from 'components/SVG';
-import { classNames } from 'utils';
+import { CodeIcon } from '@/src/components/SVG';
+import { classNames } from '@/src/utils';
 
 export type CodeLinkProps = {
   requireIcon?: boolean;

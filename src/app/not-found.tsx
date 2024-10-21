@@ -1,8 +1,8 @@
 'use client';
 
 import { ReactElement, useEffect, useState } from 'react';
-import { useRandomReveal } from 'hooks/useRandomReveal';
-import CardWrapper from 'components/CardWrapper';
+import { useRandomReveal } from '@/src/hooks/useRandomReveal';
+import CardWrapper from '@/src/components/CardWrapper';
 
 const NotFound = (): ReactElement => {
   const [mounted, setMounted] = useState(false);

@@ -1,10 +1,10 @@
 'use client';
 
 import { fileTreeData } from '__mocks__/fileTreeData';
-import FileTree from 'components/FileTree';
-import { Props as LinkProps } from 'components/Link';
-import LinkGroup from 'components/LinkGroup';
-import SidePeepView from 'components/SidePeepView';
+import FileTree from '@/src/components/FileTree';
+import { Props as LinkProps } from '@/src/components/Link';
+import LinkGroup from '@/src/components/LinkGroup';
+import SidePeepView from '@/src/components/SidePeepView';
 import { blogTreeData } from 'constants/blogs';
 import { BLOG_DESCRIPTION, BLOG_DISCLAIMER } from 'constants/index';
 import Hamburger from 'hamburger-react';

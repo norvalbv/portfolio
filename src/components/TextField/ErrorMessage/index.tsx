@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { classNames } from 'utils';
+import { classNames } from '@/src/utils';
 
 interface ErrorMessageProps {
   message: string;

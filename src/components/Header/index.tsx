@@ -1,8 +1,8 @@
 'use client';
 
 import { ReactElement, useEffect, useState } from 'react';
-import Title from 'components/Header/Title';
-import Subtitle from 'components/Header/SubTitle';
+import Title from '@/src/components/Header/Title';
+import Subtitle from '@/src/components/Header/SubTitle';
 import { useRandomReveal } from 'hooks/useRandomReveal';
 import Description from './Description';
 

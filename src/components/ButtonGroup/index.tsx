@@ -1,6 +1,6 @@
-import Button, { Props as ButtonProps } from 'components/Button';
+import Button, { Props as ButtonProps } from '@/src/components/Button';
 import React, { ReactElement } from 'react';
-import { classNames } from 'utils';
+import { classNames } from '@/src/utils';
 
 type Props = { buttons: ButtonProps[]; className?: string };
 

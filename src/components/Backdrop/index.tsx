@@ -3,8 +3,8 @@ import useTheme from 'hooks/useTheme';
 import React, { KeyboardEvent, ReactNode, ReactPortal, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import FocusLock from 'react-focus-lock';
-import { isExitKey } from 'utils';
-import classNames from 'utils/classNames';
+import { isExitKey } from '@/src/utils';
+import classNames from '@/src/utils/classNames';
 
 export type Props = {
   children: ReactNode;

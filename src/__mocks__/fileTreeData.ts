@@ -1,4 +1,4 @@
-import { TreeNode } from 'components/FileTree/Tree/BlogNavigation';
+import { TreeNode } from '@/src/components/FileTree/Tree/BlogNavigation';
 
 export const fileTreeData: TreeNode[] = [
   {

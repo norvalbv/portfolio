@@ -1,15 +1,11 @@
 'use client';
 
+import sendEmail from '@/lib/actions/sendEmail';
+import CardWrapper from '@/src/components/CardWrapper';
+import ContactDetails from '@/src/components/ContactDetails';
+import TextField from '@/src/components/TextField';
 import { ReactElement, SyntheticEvent, useState } from 'react';
-import emailjs from '@emailjs/browser';
 import { toast } from 'react-hot-toast';
-import CardWrapper from 'components/CardWrapper';
-import TextField from 'components/TextField';
-import ContactDetails from 'components/ContactDetails';
-
-const API_KEY = process.env.NEXT_PUBLIC_EMAILJS_API_KEY;
-const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
 
 const ContactMe = (): ReactElement => {
   const [query, setQuery] = useState({
@@ -22,20 +18,21 @@ const ContactMe = (): ReactElement => {
     setQuery({ ...query, [key]: value });
   };
 
-  const submitEmail = (e: SyntheticEvent): void => {
+  const submitEmail = async (e: SyntheticEvent): void => {
     e.preventDefault();
 
-    emailjs
-      .send(SERVICE_ID || '', TEMPLATE_ID || '', query, API_KEY)
-      .then(() => {
-        setQuery({
-          name: '',
-          email: '',
-          message: '',
-        });
-        toast.success('Message Sent!');
-      })
-      .catch(() => toast.error('Message Was Not Able To Be Sent!'));
+    await sendEmail();
+    // emailjs
+    //   .send(SERVICE_ID || '', TEMPLATE_ID || '', query, API_KEY)
+    //   .then(() => {
+    //     setQuery({
+    //       name: '',
+    //       email: '',
+    //       message: '',
+    //     });
+    //     toast.success('Message Sent!');
+    //   })
+    //   .catch(() => toast.error('Message Was Not Able To Be Sent!'));
   };
 
   return (

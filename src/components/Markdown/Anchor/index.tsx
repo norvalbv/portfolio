@@ -1,6 +1,6 @@
 'use client';
 
-import Title from 'components/Header/Title';
+import Title from '@/src/components/Header/Title';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ReactElement } from 'react';

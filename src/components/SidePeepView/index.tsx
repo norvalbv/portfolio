@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import Backdrop, { Props as BackdropProps } from 'components/Backdrop';
+import Backdrop, { Props as BackdropProps } from '@/src/components/Backdrop';
 import { ReactElement, SyntheticEvent } from 'react';
-import { isSubmitKey } from 'utils';
+import { isSubmitKey } from '@/src/utils';
 import { X } from 'lucide-react';
 
 export type Props = {

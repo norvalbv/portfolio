@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
-import { LoaderIcon } from 'components/SVG';
-import CardWrapper from 'components/CardWrapper';
+import { LoaderIcon } from '@/src/components/SVG';
+import CardWrapper from '@/src/components/CardWrapper';
 
 const Loader = (): ReactElement => {
   return (

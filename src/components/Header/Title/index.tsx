@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 import { Characters } from 'types';
-import { classNames } from 'utils';
+import { classNames } from '@/src/utils';
 
 export type TitleProps = {
   children?: string | JSX.Element | Characters;

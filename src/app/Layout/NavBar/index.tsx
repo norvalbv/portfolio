@@ -1,14 +1,14 @@
 'use client';
 
-import ThemeToggle from 'components/Theme/ThemeToggle';
+import ThemeToggle from '@/src/components/Theme/ThemeToggle';
 import Hamburger from 'hamburger-react';
 import useTheme from 'hooks/useTheme';
 import useWindowSize from 'hooks/useWindowSize';
 import Link from 'next/link';
 import { ReactElement, useState, useEffect } from 'react';
-import { classNames } from 'utils';
-import BenjaminNorvalBlack from '../../../assets/images/BNBlack.webp';
-import BenjaminNorvalWhite from '../../../assets/images/BNWhite.webp';
+import { classNames } from '@/src/utils';
+import BenjaminNorvalBlack from '../../../../public/logos/BNBlack.webp';
+import BenjaminNorvalWhite from '../../../../public/logos/BNWhite.webp';
 
 const NavBar = (): ReactElement => {
   const [navOpen, setNavOpen] = useState(false);

@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { classNames } from 'utils';
+import { classNames } from '@/src/utils';
 
 export type Props = {
   text: string;

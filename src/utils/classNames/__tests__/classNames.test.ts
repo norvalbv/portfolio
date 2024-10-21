@@ -1,4 +1,4 @@
-import classNames from 'utils/classNames';
+import classNames from '@/src/utils/classNames';
 
 describe('classNames should return a string when', () => {
   test('an argument of type string is provided', () => {

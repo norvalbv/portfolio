@@ -7,7 +7,7 @@ import {
   useRef,
   useState,
 } from 'react';
-import { classNames } from 'utils';
+import { classNames } from '@/src/utils';
 import ErrorMessage from './ErrorMessage';
 
 interface RefObject<T> {
@@ -173,7 +173,7 @@ const TextField = ({
             <input
               autoComplete={autoComplete}
               className={classNames(
-                'appearance-none rounded focus:text-accent-secondary focus:outline focus:outline-light-text focus:ring-transparent dark:focus:outline-dark-text',
+                'appearance-none rounded focus:outline focus:outline-light-text focus:ring-transparent dark:focus:outline-dark-text',
                 'borber-b h-12 w-full bg-dark-dark/20 p-4 transition-[height] duration-300 dark:bg-white/20'
               )}
               data-testid={dataAtt}

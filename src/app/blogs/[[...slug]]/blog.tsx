@@ -1,7 +1,7 @@
-import Anchor from 'components/Markdown/Anchor';
-import Code from 'components/Markdown/Code';
-import List from 'components/Markdown/List';
-import UnorderedList from 'components/Markdown/UnorderedList';
+import Anchor from '@/src/components/Markdown/Anchor';
+import Code from '@/src/components/Markdown/Code';
+import List from '@/src/components/Markdown/List';
+import UnorderedList from '@/src/components/Markdown/UnorderedList';
 import Markdown, { MarkdownToJSX } from 'markdown-to-jsx';
 import { Fragment, ReactElement } from 'react';
 

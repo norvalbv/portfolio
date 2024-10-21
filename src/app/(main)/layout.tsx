@@ -1,7 +1,7 @@
 'use client';
 
-// import GranularIcon from 'components/SVG/Granular';
-import ThemedContent from 'components/Theme/ThemeContent';
+// import GranularIcon from '@/src/components/SVG/Granular';
+import ThemedContent from '@/src/components/Theme/ThemeContent';
 import { ThemeContextProvider } from 'context/theme';
 import Footer from 'app/Layout/Footer';
 import NavBar from 'app/Layout/NavBar';
@@ -12,7 +12,7 @@ type Props = {
   children: ReactElement;
 };
 
-const Background = dynamic(() => import('components/Background'), {
+const Background = dynamic(() => import('@/src/components/Background'), {
   ssr: false,
 });
 

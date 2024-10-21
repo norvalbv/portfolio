@@ -1,6 +1,6 @@
-import Link, { Props as LinkProps } from 'components/Link';
+import Link, { Props as LinkProps } from '@/src/components/Link';
 import React, { ReactElement } from 'react';
-import { classNames } from 'utils';
+import { classNames } from '@/src/utils';
 
 type Props = { links: LinkProps[]; className?: string };
 

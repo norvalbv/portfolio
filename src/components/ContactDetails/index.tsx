@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 import { GITHUB, LINKED_IN } from 'constants/index';
 // import CV from '../../assets/Benjamin_Norval_CV.pdf';
-import StyledLink from 'components/StyledLink';
+import StyledLink from '@/src/components/StyledLink';
 
 type ContactDetailsProps = {
   className?: string;

@@ -1,6 +1,6 @@
 'use client';
 
-import ThemedContent from 'components/Theme/ThemeContent';
+import ThemedContent from '@/src/components/Theme/ThemeContent';
 import { ThemeContextProvider } from 'context/theme';
 import Footer from 'app/Layout/Footer';
 import NavBar from 'app/Layout/NavBar';

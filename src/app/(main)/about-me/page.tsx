@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
-import CardWrapper from 'components/CardWrapper';
-import StyledLink from 'components/StyledLink';
+import CardWrapper from '@/src/components/CardWrapper';
+import StyledLink from '@/src/components/StyledLink';
 import { MY_SKILLS } from 'constants/index';
 
 const AboutMe = (): ReactElement => (
