@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { Characters } from 'types';
+import { Characters } from '@/src/types';
 import { classNames } from '@/src/utils';
 
 export type TitleProps = {

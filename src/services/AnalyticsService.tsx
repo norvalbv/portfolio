@@ -1,5 +1,5 @@
 import mixpanel from 'mixpanel-browser';
-import * as Analytics from 'types/analytics';
+import * as Analytics from '@/src/types/analytics';
 
 // These functions are prefixed with As to namespace the AnalyticsService calls
 

@@ -1,4 +1,4 @@
-import { Characters } from 'types';
+import { Characters } from '@/src/types';
 
 export const getEasingInterval = (
   charactersArray: Characters,

@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { Props } from 'types';
+import { Props } from '@/src/types';
 import { getPartsTime } from './getPartsTime';
 import { getEasingInterval } from './getEasingInterval';
 import { easing } from './easing';

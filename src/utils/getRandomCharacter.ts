@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { Characters } from 'types';
+import { Characters } from '@/src/types';
 
 const DEFAULT_CHARACTER_SET = [
   'a',
