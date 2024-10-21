@@ -20,10 +20,7 @@ const Anchor = ({ children, className, level, id }: Props): ReactElement => {
   }
 
   return (
-    <Link 
-      href={`${currentPath}#${id}`} 
-      className={`group relative inline-block ${className}`}
-    >
+    <Link href={`${currentPath}#${id}`} className={`group relative inline-block ${className}`}>
       <Title level={level} className="transition-colors duration-200 hover:text-accent-primary">
         {children}
       </Title>

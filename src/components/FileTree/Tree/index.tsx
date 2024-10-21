@@ -43,14 +43,14 @@ const Tree = ({ data }: TreeProps): ReactElement => {
             });
             setChildren(newChildren);
           }
-        } catch (error) {
-        }
+        } catch (error) {}
       }
       setIsOpen(!isOpen);
     }
   };
 
-  const isActive = data.url && decodeURIComponent(pathname) === `/blogs/notes/${data.url.slice(0, -3)}`;
+  const isActive =
+    data.url && decodeURIComponent(pathname) === `/blogs/notes/${data.url.slice(0, -3)}`;
 
   if (data.type === 'blog') {
     return <BlogNavigation {...data} />;
@@ -83,7 +83,9 @@ const Tree = ({ data }: TreeProps): ReactElement => {
         )}
         {data.type === 'file' ? (
           <Link href={`/blogs/notes/${data.url?.slice(0, -3)}`}>
-            <span className={classNames("flex-1", isActive && "text-accent-primary")}>{data.name}</span>
+            <span className={classNames('flex-1', isActive && 'text-accent-primary')}>
+              {data.name}
+            </span>
           </Link>
         ) : (
           <span className="flex-1">{data.name}</span>

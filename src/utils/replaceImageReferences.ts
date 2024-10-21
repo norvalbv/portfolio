@@ -1,4 +1,4 @@
-import { getS3ObjectByUrl } from "@/lib/actions/getS3Objects";
+import { getS3ObjectByUrl } from '@/lib/actions/getS3Objects';
 
 export const replaceImageReferences = async (content: string): Promise<string> => {
   const regex = /!\[\[(.*?)\]\]/g;
@@ -10,7 +10,7 @@ export const replaceImageReferences = async (content: string): Promise<string> =
     matches.map(async (match) => {
       const fileName = match.slice(3, -2).slice(0, -4);
       const imageUrl = `images/${fileName}`;
-      
+
       const s3Url = await getS3ObjectByUrl(imageUrl, 'png');
       return { match, s3Url, fileName };
     })

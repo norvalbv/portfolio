@@ -42,7 +42,7 @@ const BlogContent = ({ blog, type }: { blog?: string; type?: 'notes' | 'blog' })
       const fetchedContent = await fetchBlogContent(blog, type);
       if (fetchedContent) {
         const processedContent = processObsidianLinks({
-          content: fetchedContent
+          content: fetchedContent,
         });
         setContent(processedContent);
       }
@@ -148,7 +148,7 @@ const fetchBlogContent = async (blog?: string, type?: 'notes' | 'blog'): Promise
   try {
     let content: string;
     if (type === 'notes') {
-      content = await getS3ObjectByUrl(blog) || '';
+      content = (await getS3ObjectByUrl(blog)) || '';
     } else {
       const response = await fetch(`${BASE_URL}/${blog}`);
       content = await response.text();

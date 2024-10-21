@@ -66,7 +66,7 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
           setData(treeData);
         }
       } finally {
-      setLoading(false);
+        setLoading(false);
       }
     };
 
@@ -74,7 +74,7 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
   }, [type]);
 
   return (
-    <div className="relative mx-auto flex max-w-7xl w-full flex-col px-4 py-6 sm:px-6 lg:flex-row lg:gap-10 lg:px-8">
+    <div className="relative mx-auto flex w-full max-w-7xl flex-col px-4 py-6 sm:px-6 lg:flex-row lg:gap-10 lg:px-8">
       <SidePeepView
         isOpened={blogMenuOpen}
         className="block lg:hidden"
