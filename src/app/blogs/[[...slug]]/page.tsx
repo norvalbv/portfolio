@@ -65,10 +65,8 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
           }));
           setData(treeData);
         }
-      } catch (error) {
-        console.error(error);
       } finally {
-        setLoading(false);
+      setLoading(false);
       }
     };
 

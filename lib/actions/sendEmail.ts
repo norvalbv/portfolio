@@ -9,8 +9,6 @@ const {
   EMAILJS_PUBLIC_API_KEY: PUBLIC_API_KEY,
 } = process.env;
 
-console.log(API_KEY, SERVICE_ID, TEMPLATE_ID, PUBLIC_API_KEY);
-
 if (!API_KEY || !SERVICE_ID || !TEMPLATE_ID || !PUBLIC_API_KEY) {
   throw new Error('Missing environment variables for emailjs');
 }

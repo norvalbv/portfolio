@@ -31,7 +31,7 @@ const CardWrapper = ({
       )}
       id={id}
     >
-      <div className="w-full rounded-3xl bg-white/10 p-6 backdrop-blur-sm dark:bg-black/10 sm:p-8 md:p-10">
+      <div className="w-full rounded-3xl p-6 backdrop-blur-sm sm:p-8 md:p-10">
         <Header
           title={title}
           titleClassName={classNames(

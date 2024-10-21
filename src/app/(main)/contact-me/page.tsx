@@ -23,7 +23,6 @@ const ContactMe = (): ReactElement => {
 
     try {
       const { message } = await sendEmail(query);
-      console.log(message);
       successfulToast(message);
 
       setQuery({

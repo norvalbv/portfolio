@@ -19,7 +19,6 @@ export const listS3Objects = async (prefix: string = '') => {
     const response = await s3Client.send(command);
     return response.Contents;
   } catch (error) {
-    console.error("Error listing S3 objects:", error);
     throw error;
   }
 };

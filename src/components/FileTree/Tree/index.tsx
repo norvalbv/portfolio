@@ -44,7 +44,6 @@ const Tree = ({ data }: TreeProps): ReactElement => {
             setChildren(newChildren);
           }
         } catch (error) {
-          console.error('Error fetching folder contents:', error);
         }
       }
       setIsOpen(!isOpen);

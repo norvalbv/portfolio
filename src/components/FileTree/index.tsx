@@ -19,9 +19,8 @@ const FileTree = ({ title, data, loading }: Props): ReactElement => {
 
       flatData.forEach((node) => {
         if (node.type === 'blog') {
-          // For blog nodes, add them directly to the root
           root.push(node);
-        } else {
+        } else if (!node.url?.startsWith('images/')) { // Exclude /images directory
           const parts = node.url?.split('/').filter(Boolean) || [];
           let currentLevel = root;
 
@@ -52,7 +51,6 @@ const FileTree = ({ title, data, loading }: Props): ReactElement => {
             currentLevel = map[currentPath].children as TreeNode[];
           });
 
-          // Add any additional properties from the original node
           if (node.url) {
             Object.assign(map[node.url], node);
           }
