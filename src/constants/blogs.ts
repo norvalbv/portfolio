@@ -13,7 +13,7 @@ export const blogTreeData: TreeNode[] = [
     metadata: {
       'read time': '20 minutes',
       level: '🧠',
-      'Date Posted': 'Friday, 22nd September 2023',
+      'Date Posted': 'Friday, 1st March 2024',
     },
   },
   {
@@ -29,7 +29,7 @@ export const blogTreeData: TreeNode[] = [
     metadata: {
       'read time': '4 minutes',
       level: '🧠',
-      'Date Posted': 'Tuesday, 31th October 2023',
+      'Date Posted': 'Tuesday, 30th March 2024',
     },
     url: 'call-stack',
   },
@@ -44,8 +44,25 @@ export const blogTreeData: TreeNode[] = [
     metadata: {
       'read time': '7 minutes',
       level: '🧠',
-      'Date Posted': 'Thursday, 16th November 2023',
+      'Date Posted': 'Thursday, 7th May 2024',
     },
     url: 'web-accessibility',
+  },
+  {
+    name: 'Memory Heap',
+    type: 'blog',
+    id: 'Memory Heap',
+    file: '/blogs/memory-heap.md',
+    title: 'Memory Heap',
+    subtitle: 'A quick overview of what the memory heap is.',
+    description:
+      'Explore memory management through the memory heap, its differences from stack memory, and its role in dynamic allocation across programming languages.',
+    imagePath: '/blogImages/memoryHeap',
+    metadata: {
+      'read time': '10 minutes',
+      level: '🧠🧠',
+      'Date Posted': 'Tuesday, 10th July 2024',
+    },
+    url: 'memory-heap',
   },
 ];

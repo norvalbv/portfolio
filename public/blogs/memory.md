@@ -1,18 +1,3 @@
----
-tags: 
-- Programming
-- How Computers Work
-- Memory
-Aliases: 
-- Memory
-- RAM
-title: Memory (RAM)
-date created: Thursday, December 22nd 2022, 10:09:55 pm
-date modified: Monday, August 31th 2023, 11:33:58 pm
-blogged: true
-blogged modified: Monday, August 28th 2023
-read time: 20 mins
----
 ## Overview
 
 In computers, there are various types of memory for different functions, two of which are ROM and RAM. **ROM**, standing for read-only memory, is non-volatile meaning it can retain data even without power and is used mainly to start or boot up a computer.  Once the [[Kernel#Kernel Vs Operating System|operating system]] is loaded, the computer uses **RAM**. RAM (Random Access Memory) is your computer's short-term memory and exists as a *high-speed and temporary storage for your [[CPU]]* - a form of volatile memory. Typically holding the data of your current running [[Process|processes]], active memory is filled with data your computer is actively working with, which usually comes from apps that are currently running or files you’re currently looking at. The more data your computer is using at once, the more RAM it will utilise.

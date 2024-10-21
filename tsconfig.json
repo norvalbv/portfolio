@@ -1,9 +1,21 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "plugins": [{ "name": "next" }],
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "types": ["vite/client", "node", "jest"],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "types": [
+      "vite/client",
+      "node",
+      "jest"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -33,7 +45,10 @@
     "globals.d.ts",
     "public/blogs",
     "./dist/types/**/*.ts",
-    "./next-env.d.ts"
+    "./next-env.d.ts",
+    ".next/types/**/*.ts"
   ],
-  "exclude": ["./node_modules"]
+  "exclude": [
+    "./node_modules"
+  ]
 }

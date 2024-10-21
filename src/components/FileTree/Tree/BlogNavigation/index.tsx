@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { Brain, Clock, Info, Newspaper } from 'lucide-react';
-import React, { ReactElement, useState } from 'react';
+import Link from 'next/link';
+import React, { ReactElement, useState, useRef, useEffect } from 'react';
 
 export type TreeNode = {
   name: string;
@@ -21,18 +22,33 @@ export type TreeNode = {
   imagePath?: string;
 };
 
-type BlogNavigationProps = Pick<TreeNode, 'name' | 'subtitle' | 'metadata' | 'description'>;
+type BlogNavigationProps = Pick<TreeNode, 'name' | 'subtitle' | 'metadata' | 'description' | 'url'>;
 
 export default function BlogNavigation({
   name,
   subtitle,
   metadata,
   description,
+  url,
 }: BlogNavigationProps): ReactElement {
   const [isHovered, setIsHovered] = useState(false);
+  const [tooltipPosition, setTooltipPosition] = useState({ top: 0, left: 0 });
+  const blogItemRef = useRef<HTMLAnchorElement>(null);
+
+  useEffect(() => {
+    if (isHovered && blogItemRef.current) {
+      const rect = blogItemRef.current.getBoundingClientRect();
+      setTooltipPosition({
+        top: rect.top + window.scrollY,
+        left: rect.right + window.scrollX + 16, // 16px offset from the right edge
+      });
+    }
+  }, [isHovered]);
 
   return (
-    <div
+    <Link
+      href={`/blogs/blog/${url || ''}`}
+      ref={blogItemRef}
       className="relative w-full py-1"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -54,11 +70,15 @@ export default function BlogNavigation({
       <AnimatePresence>
         {isHovered && metadata && (
           <motion.div
-            initial={{ opacity: 0, y: 10, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 10, scale: 0.95 }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="absolute left-full top-0 z-50 ml-4 w-72 rounded-lg bg-gray-800 p-4 shadow-lg"
+            className="fixed z-50 w-72 rounded-lg bg-gray-800 p-4 shadow-lg"
+            style={{
+              top: `${tooltipPosition.top}px`,
+              left: `${tooltipPosition.left}px`,
+            }}
           >
             <div className="space-y-2 text-xs">
               <div className="flex items-center text-gray-300">
@@ -79,6 +99,6 @@ export default function BlogNavigation({
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </Link>
   );
 }

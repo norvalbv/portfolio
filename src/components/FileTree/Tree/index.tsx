@@ -43,6 +43,7 @@ const Tree = ({ data }: TreeProps): ReactElement => {
             subtitle={data.subtitle}
             metadata={data.metadata}
             description={data.description}
+            url={data?.url}
           />
         )}
         {data.type !== 'blog' && <span className="flex-1">{data.name}</span>}

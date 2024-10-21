@@ -1,3 +1,5 @@
+'use client';
+
 import useTheme from 'hooks/useTheme';
 import { ClipboardCheckIcon, ClipboardIcon } from 'lucide-react';
 import { Highlight, themes } from 'prism-react-renderer';

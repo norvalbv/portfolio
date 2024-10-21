@@ -5,7 +5,7 @@ import Hamburger from 'hamburger-react';
 import useTheme from 'hooks/useTheme';
 import useWindowSize from 'hooks/useWindowSize';
 import Link from 'next/link';
-import { ReactElement, useState } from 'react';
+import { ReactElement, useState, useEffect } from 'react';
 import { classNames } from 'utils';
 import BenjaminNorvalBlack from '../../../assets/images/BNBlack.webp';
 import BenjaminNorvalWhite from '../../../assets/images/BNWhite.webp';
@@ -20,16 +20,30 @@ const NavBar = (): ReactElement => {
     { id: '/about-me', title: 'About Me' },
     { id: '/my-work', title: 'My Work' },
     { id: '/contact-me', title: 'Contact Me' },
-    { id: '/blog', title: 'My Blog' },
+    { id: '/blogs', title: 'My Blog' },
   ];
+
+  useEffect(() => {
+    const handleEscape = (event: KeyboardEvent): void => {
+      if (event.key === 'Escape') {
+        setNavOpen(false);
+      }
+    };
+
+    document.addEventListener('keydown', handleEscape);
+
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
+    };
+  }, []);
 
   return (
     <nav
-      className="sticky top-0 z-40 flex h-16 w-full flex-row-reverse items-end justify-between px-4 pt-20 lg:px-10"
+      className="sticky top-0 z-40 mx-auto flex h-16 w-full max-w-screen-2xl flex-row-reverse items-end justify-between px-4 pt-20 lg:px-10"
       role="navigation"
       aria-label="Main"
     >
-      <div className="flex flex-row-reverse items-center gap-2 md:gap-4" role="menubar">
+      <div className="z-10 flex flex-row-reverse items-center gap-2 md:gap-4" role="menubar">
         <Hamburger
           toggled={navOpen}
           toggle={(): void => setNavOpen(!navOpen)}
@@ -50,7 +64,7 @@ const NavBar = (): ReactElement => {
         onClick={(): void => {
           setNavOpen(false);
         }}
-        className="mb-2.5 h-8 md:mb-1.5 md:h-10"
+        className="z-10 mb-2.5 h-8 md:mb-1.5 md:h-10"
       >
         <img
           src={isDarkMode ? BenjaminNorvalWhite.src : BenjaminNorvalBlack.src}
@@ -62,11 +76,11 @@ const NavBar = (): ReactElement => {
         className={classNames(
           { hidden: !navOpen },
           // positioning
-          'absolute inset-0 flex flex-col items-center justify-center text-center',
+          'fixed inset-0 flex flex-col items-center justify-center text-center',
           // colours
           'divide-y divide-light-text bg-gradient-to-br from-white to-[#e0dce6] dark:divide-dark-text dark:from-dark-neutral dark:to-[#130926]',
           // sizing
-          'h-screen w-screen'
+          'size-dvh'
         )}
         role="menu"
         aria-hidden={!navOpen}
