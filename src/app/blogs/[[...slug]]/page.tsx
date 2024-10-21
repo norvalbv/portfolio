@@ -51,34 +51,22 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
         setLoading(true);
         const objects = await listS3Objects();
 
-        console.log(objects)
-
         if (objects) {
-          const treeData: TreeNode[] = await Promise.all(
-            objects.map(async (object): Promise<TreeNode> => {
-              const key = object.Key || '';
-              const name = key.split('/').pop() || '';
-              const type = key.endsWith('/') ? 'folder' : 'file';
+          const treeData: TreeNode[] = objects.map((object): TreeNode => {
+            const key = object.Key || '';
+            const name = key.split('/').pop() || '';
+            const type = key.endsWith('/') ? 'folder' : 'file';
 
-              let content: string | undefined = undefined;
-              if (type === 'file') {
-                content = await getS3Object(key);
-              }
-
-              return {
-                name,
-                type,
-                url: key,
-                children: type === 'folder' ? [] : undefined,
-                content: content || '',
-              };
-            })
-          );
+            return {
+              name,
+              type,
+              url: key,
+            };
+          });
           setData(treeData);
         }
       } catch (err) {
         console.error(err);
-        setLoading(false);
       } finally {
         setLoading(false);
       }
@@ -98,7 +86,7 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
         <LinkGroup links={links} className="mb-6 w-full" />
         <FileTree
           title={type === 'notes' ? 'Notes' : 'Blogs'}
-          data={type === 'notes' ? fileTreeData : blogTreeData}
+          data={type === 'notes' ? data : blogTreeData}
           loading={loading}
         />
       </SidePeepView>
@@ -106,7 +94,7 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
         <LinkGroup links={links} className="mb-6 w-full" />
         <FileTree
           title={type === 'notes' ? 'Notes' : 'Blogs'}
-          data={data}
+          data={type === 'notes' ? data : blogTreeData}
           loading={loading}
         />
       </div>
