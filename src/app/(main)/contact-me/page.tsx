@@ -1,11 +1,11 @@
 'use client';
 
 import sendEmail from '@/lib/actions/sendEmail';
+import { erroneousToast, successfulToast } from '@/lib/toasts';
 import CardWrapper from '@/src/components/CardWrapper';
 import ContactDetails from '@/src/components/ContactDetails';
 import TextField from '@/src/components/TextField';
 import { ReactElement, SyntheticEvent, useState } from 'react';
-import { toast } from 'react-hot-toast';
 
 const ContactMe = (): ReactElement => {
   const [query, setQuery] = useState({
@@ -22,16 +22,17 @@ const ContactMe = (): ReactElement => {
     e.preventDefault();
 
     try {
-      await sendEmail(query);
+      const { message } = await sendEmail(query);
+      console.log(message);
+      successfulToast(message);
+
       setQuery({
         name: '',
         email: '',
         message: '',
       });
-      toast.success('Message Sent!');
-    } catch (error) {
-      toast.error('Message Was Not Able To Be Sent!');
-      console.error('Error sending email:', error);
+    } catch (e) {
+      erroneousToast('Error sending email');
     }
   };
 

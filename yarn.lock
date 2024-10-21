@@ -2471,6 +2471,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"clsx@npm:^2.1.0":
+  version: 2.1.1
+  resolution: "clsx@npm:2.1.1"
+  checksum: acd3e1ab9d8a433ecb3cc2f6a05ab95fe50b4a3cfc5ba47abb6cbf3754585fcb87b84e90c822a1f256c4198e3b41c7f6c391577ffc8678ad587fc0976b24fd57
+  languageName: node
+  linkType: hard
+
 "co@npm:^4.6.0":
   version: 4.6.0
   resolution: "co@npm:4.6.0"
@@ -4176,15 +4183,6 @@ __metadata:
     merge2: ^1.4.1
     slash: ^3.0.0
   checksum: b4be8885e0cfa018fc783792942d53926c35c50b3aefd3fdcfb9d22c627639dc26bd2327a40a0b74b074100ce95bb7187bfeae2f236856aa3de183af7a02aea6
-  languageName: node
-  linkType: hard
-
-"goober@npm:^2.1.10":
-  version: 2.1.13
-  resolution: "goober@npm:2.1.13"
-  peerDependencies:
-    csstype: ^3.0.10
-  checksum: 0c00b90d26d1a2fad432e311fd4f47bc9fef1eee2a733158d9e2c72a89cf76d414090d063a8d20fe378f2b2b8087df0a83b0f00a3244d1466b97a0d3b14344a7
   languageName: node
   linkType: hard
 
@@ -7031,10 +7029,10 @@ __metadata:
     react: ^18.3.1
     react-dom: ^18.3.1
     react-focus-lock: ^2.13.2
-    react-hot-toast: ^2.4.1
     react-markdown: ^9.0.1
     react-syntax-highlighter: ^15.5.0
     react-test-renderer: ^18.2.0
+    react-toastify: ^10.0.6
     rollup-plugin-node-polyfills: ^0.2.1
     tailwindcss: ^3.3.5
     ts-jest: ^29.1.1
@@ -7375,18 +7373,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-hot-toast@npm:^2.4.1":
-  version: 2.4.1
-  resolution: "react-hot-toast@npm:2.4.1"
-  dependencies:
-    goober: ^2.1.10
-  peerDependencies:
-    react: ">=16"
-    react-dom: ">=16"
-  checksum: 3e337816db574782454bf09c63a8aca546bf9c5be3f83d0494d24bdcfd97ca2db64d4c151c4ab0184d2342d7a7226403e6812e70caf03c8b55a07787bb4ad0f2
-  languageName: node
-  linkType: hard
-
 "react-is@npm:^16.12.0 || ^17.0.0 || ^18.0.0, react-is@npm:^18.0.0, react-is@npm:^18.2.0":
   version: 18.2.0
   resolution: "react-is@npm:18.2.0"
@@ -7459,6 +7445,18 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
   checksum: 6b6980ced93fa2b72662d5e4ab3b4896833586940047ce52ca9aca801e5432adf05fcbe28289b0af3ce6a2a7c590974e25dcc8aa43d0de658bfe8bbcd686f958
+  languageName: node
+  linkType: hard
+
+"react-toastify@npm:^10.0.6":
+  version: 10.0.6
+  resolution: "react-toastify@npm:10.0.6"
+  dependencies:
+    clsx: ^2.1.0
+  peerDependencies:
+    react: ">=18"
+    react-dom: ">=18"
+  checksum: 89fa24718eba0800e2bc1f88121a6e119efd87df26344d5b3c86442d4a13fbd65b67932e01bd6442758f4fe3f5eca6c8fc80c1dfb51c8dc2a4ec06bdaf9762da
   languageName: node
   linkType: hard
 
