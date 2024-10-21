@@ -194,7 +194,7 @@ const TextField = ({
           <textarea
             autoComplete={autoComplete}
             className={classNames(
-              'appearance-none rounded focus:text-accent-secondary focus:outline focus:outline-light-text focus:ring-transparent dark:focus:outline-dark-text',
+              'appearance-none rounded focus:text-light-text focus:outline focus:outline-light-text focus:ring-transparent dark:focus:text-dark-text dark:focus:outline-dark-text',
               'borber-b w-full bg-dark-dark/20 p-4 transition-[height] duration-300 dark:bg-white/20',
               active || value ? 'h-52' : 'h-12'
             )}

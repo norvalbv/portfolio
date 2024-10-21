@@ -1,49 +1,34 @@
 import { ReactElement } from 'react';
-import { CONTACT_EMAIL, GITHUB, LINKED_IN } from 'constants/index';
+import { GITHUB, LINKED_IN } from 'constants/index';
+// import CV from '../../assets/Benjamin_Norval_CV.pdf';
+import StyledLink from 'components/StyledLink';
 
-const contactDetails = [
-  {
-    id: 'email',
-    key: 'Email',
-    hrefLink: `mailto:${CONTACT_EMAIL}`,
-    label: CONTACT_EMAIL,
-  },
-  {
-    id: 'linkedin',
-    key: 'Linked In',
-    hrefLink: LINKED_IN,
-    label: 'Benjamin Norval',
-  },
-  {
-    id: 'github',
-    key: 'GitHub',
-    hrefLink: GITHUB,
-    label: 'norvalbv',
-  },
-];
-
-const ContactDetails = (): ReactElement => {
-  return (
-    <div className="flex flex-col gap-2 rounded-lg bg-white/70 p-6 dark:bg-dark-dark/30 lg:w-2/5">
-      <h2 className="mb-6 underline underline-offset-8">Contact Details:</h2>
-      <p className="mb-4">If you would like to contact me directly;</p>
-      {contactDetails.map((contact) => (
-        <span className="my-1 text-sm md:text-base" key={contact.id}>
-          {contact.key}:&nbsp;
-          <a
-            rel="noreferrer"
-            target="_blank"
-            href={contact.hrefLink}
-            className="my-4 underline transition duration-150 ease-linear hover:text-accent-secondary"
-            download={contact.id === 'cv'}
-          >
-            {contact.label}
-          </a>
-        </span>
-      ))}
-      <p className="mt-6 text-sm">I look forward to hearing from you!</p>
-    </div>
-  );
+type ContactDetailsProps = {
+  className?: string;
 };
+
+const ContactDetails = ({ className = '' }: ContactDetailsProps): ReactElement => (
+  <div
+    className={`flex flex-col gap-2 rounded-lg bg-white/70 p-4 dark:bg-dark-dark/30 sm:p-6 ${className}`}
+  >
+    <h2 className="mb-4 text-xl underline underline-offset-8 sm:mb-6 sm:text-2xl">
+      Contact Details:
+    </h2>
+    <p className="mb-4 text-sm sm:text-base">If you would like to contact me directly;</p>
+    {/* <span className="my-1 text-sm md:text-base">
+        Email: <StyledLink label="benjinorval@gmail.com" link={`mailto:${EMAIL}`} />
+      </span> */}
+    <span className="my-1 text-sm md:text-base">
+      Linked In: <StyledLink label="Benjamin Norval" link={LINKED_IN} />
+    </span>
+    <span className="my-1 text-sm md:text-base">
+      GitHub: <StyledLink label="norvalbv" link={GITHUB} />
+    </span>
+    {/* <span className="my-1 text-sm md:text-base">
+      My CV: <StyledLink label="Download Here" link={CV} />
+    </span> */}
+    <p className="mt-4 text-sm sm:mt-6 sm:text-base">I look forward to hearing from you!</p>
+  </div>
+);
 
 export default ContactDetails;

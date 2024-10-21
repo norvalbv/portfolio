@@ -14,27 +14,24 @@ const footerLinks = [
 
 const Footer = (): ReactElement => {
   return (
-    <footer className="relative text-center text-sm text-gray-500 dark:text-gray-400">
-      <div className="mx-auto w-full max-w-screen-2xl p-4 md:py-8 lg:px-10">
-        <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
-          <ul className="flex items-center justify-center gap-6">
+    <footer className="relative text-center text-xs text-gray-500 dark:text-gray-400 sm:text-sm">
+      <div className="mx-auto w-full max-w-screen-2xl p-4 md:py-6 lg:py-8">
+        <div className="flex flex-col items-center gap-4 sm:gap-6">
+          <ul className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
             {footerLinks.map((link) => (
               <li
                 key={link.id}
                 className="cursor-pointer uppercase hover:text-accent-secondary hover:underline"
               >
-                <a
-                  href={link.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  download={link.id === 'cv'}
-                >
+                <a href={link.link} target="_blank" rel="noopener noreferrer">
                   {link.label}
                 </a>
               </li>
             ))}
           </ul>
-          <p className="text-[10px] lg:text-sm">© 2024 Designed and Created By Benjamin Norval.</p>
+          <p className="text-[10px] sm:text-xs lg:text-sm">
+            © 2024 Designed and Created By Benjamin Norval.
+          </p>
         </div>
       </div>
     </footer>

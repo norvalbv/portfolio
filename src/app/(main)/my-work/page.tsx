@@ -31,23 +31,32 @@ const MyWorkCard = ({
   skills,
 }: MyWorkCardProps): ReactElement => {
   return (
-    <div className="before:linear-gradient-background-with-blue relative mb-10 rounded-t-xl border border-light-text bg-black/20 py-6 text-center before:absolute before:bottom-[-0.08rem] before:left-0 before:h-1 before:w-full dark:border-dark-text/50 dark:bg-dark-dark/30 md:px-6">
+    <div className="before:linear-gradient-background-with-blue relative mb-6 rounded-t-xl border border-light-text bg-black/20 px-4 py-4 text-center before:absolute before:bottom-[-0.08rem] before:left-0 before:h-1 before:w-full dark:border-dark-text/50 dark:bg-dark-dark/30 sm:mb-8 sm:px-5 sm:py-5 md:mb-10 md:px-6 md:py-6">
       <h3
-        className={classNames('px-6 text-lg uppercase underline md:p-0 lg:text-xl', {
-          'mb-4': !subTitle,
+        className={classNames('text-base uppercase underline sm:text-lg md:text-xl lg:text-2xl', {
+          'mb-2 sm:mb-3 md:mb-4': !subTitle,
         })}
       >
         {title}
       </h3>
-      {subTitle && <h2 className="mb-6 mt-2 text-sm uppercase underline lg:text-lg">{subTitle}</h2>}
-      <CodeLink link={link.to} className="my-6 lg:absolute lg:right-12 lg:top-1" />
-      <p className="px-6 text-sm md:p-0 lg:text-base">{description}</p>
+      {subTitle && (
+        <h2 className="mb-3 mt-2 text-xs uppercase underline sm:mb-4 sm:text-sm md:mb-5 md:text-base">
+          {subTitle}
+        </h2>
+      )}
+      <CodeLink link={link.to} className="my-3 sm:my-4 md:my-5 lg:absolute lg:right-6 lg:top-4" />
+      <p className="text-xs sm:text-sm md:text-base">{description}</p>
       {image ? (
-        <a href={link.to} rel="noopener noreferrer" target="_blank">
+        <a
+          href={link.to}
+          rel="noopener noreferrer"
+          target="_blank"
+          className="my-4 block sm:my-5 md:my-6"
+        >
           <img
             src={image.image}
             alt={image.alt}
-            className="mx-auto my-6 max-h-[40rem] min-h-[14em]"
+            className="mx-auto max-h-[20rem] w-full object-cover sm:max-h-[30rem] md:max-h-[40rem]"
           />
         </a>
       ) : (
@@ -55,12 +64,12 @@ const MyWorkCard = ({
           href={link.to}
           rel="noopener noreferrer"
           target="_blank"
-          className="my-4 inline-block rounded-lg bg-accent-primary px-4 py-2 text-white shadow shadow-accent-secondary transition-all duration-200 hover:bg-accent-secondary active:scale-95"
+          className="my-3 inline-block rounded-lg bg-accent-primary px-3 py-2 text-xs text-white shadow shadow-accent-secondary transition-all duration-200 hover:bg-accent-secondary active:scale-95 sm:my-4 sm:px-4 sm:text-sm md:my-5 md:text-base"
         >
           {link.label}
         </a>
       )}
-      <p className="px-6 text-sm md:p-0 lg:text-base">Built with: {skills}</p>
+      <p className="text-xs sm:text-sm md:text-base">Built with: {skills}</p>
     </div>
   );
 };
@@ -69,7 +78,7 @@ const MyWork = (): ReactElement => {
   return (
     <CardWrapper
       title="My Work"
-      titleClassName="md:ml-0 ml-6 mb-[4.5rem] w-max border-b pb-2 text-5xl font-semibold md:text-6xl"
+      titleClassName="mb-6 sm:mb-8 md:mb-10 w-max border-b pb-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold"
     >
       <MyWorkCard
         title="React Blogs"

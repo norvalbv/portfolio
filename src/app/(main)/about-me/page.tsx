@@ -7,9 +7,9 @@ const AboutMe = (): ReactElement => (
   <CardWrapper
     title="About Me"
     centered
-    titleClassName="mx-auto mb-[4.5rem] w-max border-b pb-2 text-5xl font-semibold md:text-6xl"
+    titleClassName="mx-auto mb-6 sm:mb-8 md:mb-10 w-max border-b pb-2 text-3xl font-semibold sm:text-4xl md:text-5xl"
   >
-    <p>
+    <p className="text-sm sm:text-base">
       Experienced Full Stack software engineer. I am part of the core team that developed the
       entire&nbsp;
       <StyledLink label="Elysia" link="https://elysia.co" />
@@ -17,11 +17,11 @@ const AboutMe = (): ReactElement => (
       build web-related applications. I would <em>love</em> for you to check out my projects, blogs,
       or even reach out!
     </p>
-    <p className="my-10 text-accent-primary">
+    <p className="my-6 text-sm text-accent-primary sm:my-8 sm:text-base">
       My skills? They&apos;re floating around on the background. Have a look around 😼
     </p>
-    <div className="mx-auto w-6/12 rounded-xl bg-black/20 p-4 shadow-lg backdrop-blur-[5.6px] dark:bg-white/20">
-      <p className="text-xs">OR, they are: {MY_SKILLS}</p>
+    <div className="mx-auto w-full rounded-xl bg-black/20 p-3 shadow-lg backdrop-blur-[5.6px] dark:bg-white/20 sm:w-10/12 sm:p-4 md:w-8/12">
+      <p className="text-xs sm:text-sm">OR, they are: {MY_SKILLS}</p>
     </div>
   </CardWrapper>
 );
