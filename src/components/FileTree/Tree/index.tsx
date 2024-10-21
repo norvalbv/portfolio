@@ -56,7 +56,7 @@ const Tree = ({ data }: TreeProps): ReactElement => {
       <motion.div
         className={classNames(
           'flex cursor-pointer items-start rounded-md px-2 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-700',
-          isActive && 'bg-accent-tertiary/10',
+          isActive && 'bg-accent-tertiary/10'
         )}
         onClick={toggleOpen}
         whileTap={{ scale: 0.98 }}
@@ -91,7 +91,7 @@ const Tree = ({ data }: TreeProps): ReactElement => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="ml-4 mt-1 border-l border-gray-300 pl-2 dark:border-gray-600 flex flex-col gap-4"
+            className="ml-4 mt-1 flex flex-col gap-4 border-l border-gray-300 pl-2 dark:border-gray-600"
           >
             {children.map((childData) => (
               <Tree key={childData.url} data={childData} />

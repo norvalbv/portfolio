@@ -5,9 +5,7 @@ import NavBar from '..';
 
 describe('<NavBar />', () => {
   test('should render correctly', () => {
-    const tree = renderer
-      .create(<NavBar />)
-      .toJSON();
+    const tree = renderer.create(<NavBar />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

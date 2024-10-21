@@ -13,11 +13,15 @@ import Hamburger from 'hamburger-react';
 import React, { ReactElement, useEffect, useState } from 'react';
 import Blog from './blog';
 
-
 const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
-  const currentBlog = params.slug?.[1]
-  const blogName = blogTreeData.find((blog) => blog.url === currentBlog)?.name;
+  const currentBlog = params.slug?.[1];
+  const blogName =
+    blogTreeData.find((blog) => blog.url === currentBlog)?.name || blogTreeData[0].name;
   const type = (params.slug?.[0] as 'notes' | 'blog') || 'notes';
+  const filePath =
+    type !== 'notes'
+      ? blogTreeData.find((blog) => blog.url === (currentBlog || blogTreeData[0].url))?.file
+      : currentBlog;
 
   const [blogMenuOpen, setBlogMenuOpen] = useState(false);
   const { isMobile } = useWindowSize();
@@ -39,9 +43,8 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
     setBlogMenuOpen(!blogMenuOpen);
   };
 
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [data, setData] = useState<TreeNode[]>([]);
-
 
   useEffect(() => {
     const fetchS3Data = async () => {
@@ -73,9 +76,9 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
     if (type === 'notes') {
       fetchS3Data();
     }
-  }, [type] );
+  }, [type]);
 
-  const filePath = type !== 'notes' ? data.find((blog) => blog.url === currentBlog)?.url : currentBlog;
+  console.log(data);
 
   return (
     <div className="relative mx-auto flex max-w-7xl flex-col px-4 py-6 sm:px-6 lg:flex-row lg:gap-10 lg:px-8">
@@ -100,10 +103,12 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
           loading={loading}
         />
       </div>
-      <div className="h-[calc(100vh-13.875rem)] relative flex-1 overflow-x-hidden rounded-xl border border-light-text/50 bg-white shadow-xl dark:border-dark-text/50 dark:bg-dark-dark/30">
+      <div className="relative h-[calc(100vh-13.875rem)] flex-1 overflow-x-hidden rounded-xl border border-light-text/50 bg-white shadow-xl dark:border-dark-text/50 dark:bg-dark-dark/30">
         <div className="sticky top-0 z-10 flex items-center justify-between border-b border-light-text/50 bg-white px-6 py-4 dark:border-gray-700 dark:bg-dark-dark">
           <h1 className="text-xl font-semibold lg:text-4xl">
-            {type === 'notes' ? "Benji's notes" : `Blogs - ${blogName}`}
+            {type === 'notes'
+              ? `Benji's notes - ${decodeURIComponent(filePath || '') || 'Introduction'}`
+              : `Blogs - ${blogName}`}
           </h1>
           <button type="button" className="lg:hidden" onClick={toggleBlogMenu}>
             <Hamburger
@@ -117,7 +122,7 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
             <span className="sr-only">Toggle blog menu</span>
           </button>
         </div>
-        <div className="w-full p-6 flex flex-col h-[calc(100%-4rem)]">
+        <div className="flex h-[calc(100%-4rem)] w-full flex-col p-6">
           {type === 'notes' && !filePath && (
             <>
               <p className="mb-6">{BLOG_DESCRIPTION}</p>

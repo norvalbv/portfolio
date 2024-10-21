@@ -14,7 +14,7 @@ const fetchBlogContent = async (blog?: string, type?: 'notes' | 'blog'): Promise
   if (type === 'notes') {
     const url = await getS3ObjectByUrl(blog);
     return url ? filterFrontMatterAndTitle(url) : null;
-  } 
+  }
 
   try {
     const response = await fetch(`${BASE_URL}/${blog}`);
@@ -41,6 +41,7 @@ const BlogContent = ({ blog, type }: { blog?: string; type?: 'notes' | 'blog' })
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    if (!blog) return;
     const getContent = async () => {
       setIsLoading(true);
       const fetchedContent = await fetchBlogContent(blog, type);
@@ -52,10 +53,10 @@ const BlogContent = ({ blog, type }: { blog?: string; type?: 'notes' | 'blog' })
   }, [blog, type]);
 
   return (
-    <article className="w-full h-full flex">
+    <article className="flex h-full w-full">
       <div className="w-full flex-grow">
         {isLoading ? (
-          <div className="flex items-center justify-center h-full">
+          <div className="flex h-full items-center justify-center">
             <p>Loading...</p>
           </div>
         ) : content ? (
@@ -131,7 +132,7 @@ const BlogContent = ({ blog, type }: { blog?: string; type?: 'notes' | 'blog' })
             {content}
           </Markdown>
         ) : (
-          <div className="flex items-center justify-center h-full">
+          <div className="flex h-full items-center justify-center">
             <p>No content found.</p>
           </div>
         )}
