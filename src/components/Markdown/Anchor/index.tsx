@@ -15,6 +15,10 @@ type Props = {
 export default function Anchor({ children, className, level, id }: Props): ReactElement {
   const currentPath = usePathname();
 
+  if (typeof children[0] !== 'string') {
+    return <Title level={level}>{children}</Title>;
+  }
+
   return (
     <Link href={`${currentPath}#${id}`} className={className}>
       <Title level={level}>{children}</Title>

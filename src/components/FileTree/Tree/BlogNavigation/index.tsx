@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { Brain, Clock, Info, Newspaper } from 'lucide-react';
 import Link from 'next/link';
-import React, { ReactElement, useState, useRef, useEffect } from 'react';
+import React, { ReactElement, useEffect, useRef, useState } from 'react';
 
 export type TreeNode = {
   name: string;

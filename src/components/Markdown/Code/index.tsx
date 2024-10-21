@@ -75,8 +75,8 @@ const Code = ({ children }: Props): ReactElement => {
           {tokens.map((line, i) => (
             <div key={line.toString() + i.toString()} {...getLineProps({ line })}>
               <span style={{ marginRight: '.5rem' }}>{i + 1}.</span>
-              {line.map((token) => (
-                <span key={token.content} {...getTokenProps({ token })} />
+              {line.map((token, i) => (
+                <span key={`${token.content}-${i}`} {...getTokenProps({ token })} />
               ))}
             </div>
           ))}

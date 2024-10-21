@@ -7,8 +7,9 @@ import useWindowSize from '@/src/hooks/useWindowSize';
 import Link from 'next/link';
 import { ReactElement, useState, useEffect } from 'react';
 import { classNames } from '@/src/utils';
-import BenjaminNorvalBlack from '../../../../public/logos/BNBlack.webp';
-import BenjaminNorvalWhite from '../../../../public/logos/BNWhite.webp';
+import BenjaminNorvalBlack from '@/public/logos/BNBlack.webp';
+import BenjaminNorvalWhite from '@/public/logos/BNWhite.webp';
+import Image from 'next/image';
 
 const NavBar = (): ReactElement => {
   const [navOpen, setNavOpen] = useState(false);
@@ -66,10 +67,11 @@ const NavBar = (): ReactElement => {
         }}
         className="z-10 mb-2.5 h-8 md:mb-1.5 md:h-10"
       >
-        <img
+        <Image
           src={isDarkMode ? BenjaminNorvalWhite.src : BenjaminNorvalBlack.src}
-          className="h-full"
           alt="Benjamin Norval logo"
+          width={60}
+          height={60}
         />
       </Link>
       <ul

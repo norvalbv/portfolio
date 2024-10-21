@@ -1,7 +1,9 @@
 'use client';
 
+import { classNames } from '@/src/utils';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ChevronRight, File, Folder } from 'lucide-react';
+import { useParams } from 'next/navigation';
 import { ReactElement, useState } from 'react';
 import BlogNavigation, { TreeNode } from './BlogNavigation';
 
@@ -16,10 +18,16 @@ const Tree = ({ data }: TreeProps): ReactElement => {
     setIsOpen(!isOpen);
   };
 
+  const params = useParams();
+  const isActive = data.url && params.slug?.[1] === data.url;
+
   return (
     <>
       <motion.div
-        className="flex cursor-pointer items-start rounded-md p-2 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+        className={classNames(
+          'flex cursor-pointer items-start rounded-md p-2 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-700',
+          isActive && 'bg-accent-tertiary/10',
+        )}
         onClick={toggleOpen}
         whileTap={{ scale: 0.98 }}
       >

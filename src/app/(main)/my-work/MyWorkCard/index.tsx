@@ -73,7 +73,7 @@ const MyWorkCard = ({
         <div className="relative h-full w-full overflow-hidden">
           {images.map((image, index) => (
             <Image
-              key={`image-${image.alt}`}
+              key={`image-${index}-${image.alt}`}
               src={image.image}
               alt={image.alt}
               fill
@@ -132,7 +132,7 @@ const MyWorkCard = ({
               {images.map((image, index) => (
                 <button
                   type="button"
-                  key={`dot-${image.alt}`}
+                  key={`dot-${index}-${image.alt}`}
                   onClick={() => setCurrentImageIndex(index)}
                   className={`h-3 w-3 rounded-full transition-colors duration-300 ${
                     index === currentImageIndex

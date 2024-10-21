@@ -3,15 +3,33 @@ import Code from '@/src/components/Markdown/Code';
 import List from '@/src/components/Markdown/List';
 import UnorderedList from '@/src/components/Markdown/UnorderedList';
 import Markdown, { MarkdownToJSX } from 'markdown-to-jsx';
-import { Fragment, ReactElement } from 'react';
+import { Fragment, ReactElement, useEffect, useState } from 'react';
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
-const BlogContent = async ({ blog }: { blog?: string }): Promise<ReactElement | null> => {
+const fetchBlogContent = async (blog?: string): Promise<string | null> => {
   if (!blog) return null;
 
-  const response = await fetch(`${BASE_URL}/${blog}`);
-  const content = await response.text();
+  try {
+    const response = await fetch(`${BASE_URL}/${blog}`);
+    return await response.text();
+  } catch (error) {
+    console.error('Failed to fetch blog content:', error);
+    return null;
+  }
+};
+
+const BlogContent = ({ blog }: { blog?: string }): ReactElement | null => {
+  const [content, setContent] = useState<string | null>(null);
+
+  useEffect(() => {
+    const getContent = async () => {
+      const fetchedContent = await fetchBlogContent(blog);
+      setContent(fetchedContent);
+    };
+
+    getContent();
+  }, [blog]);
 
   if (!content) return null;
 
@@ -64,6 +82,8 @@ const BlogContent = async ({ blog }: { blog?: string }): Promise<ReactElement | 
             a: {
               props: {
                 className: 'text-blue-400 hover:text-blue-300 transition-colors duration-200',
+                target: '_blank',
+                rel: 'noopener noreferrer',
               },
             },
             ol: {

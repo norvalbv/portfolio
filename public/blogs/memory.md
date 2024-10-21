@@ -1,6 +1,6 @@
 ## Overview
 
-In computers, there are various types of memory for different functions, two of which are ROM and RAM. **ROM**, standing for read-only memory, is non-volatile meaning it can retain data even without power and is used mainly to start or boot up a computer.  Once the [[Kernel#Kernel Vs Operating System|operating system]] is loaded, the computer uses **RAM**. RAM (Random Access Memory) is your computer's short-term memory and exists as a *high-speed and temporary storage for your [[CPU]]* - a form of volatile memory. Typically holding the data of your current running [[Process|processes]], active memory is filled with data your computer is actively working with, which usually comes from apps that are currently running or files you’re currently looking at. The more data your computer is using at once, the more RAM it will utilise.
+In computers, there are various types of memory for different functions, two of which are ROM and RAM. **ROM**, standing for read-only memory, is non-volatile meaning it can retain data even without power and is used mainly to start or boot up a computer.  Once the [[Kernel#Kernel Vs Operating System|operating system]] is loaded, the computer uses **RAM**. RAM (Random Access Memory) is your computer's short-term memory and exists as a *high-speed and temporary storage for your [[CPU]]* - a form of volatile memory. Typically holding the data of your current running [[Process|processes]], active memory is filled with data your computer is actively working with, which usually comes from apps that are currently running or files you're currently looking at. The more data your computer is using at once, the more RAM it will utilise.
 
 The RAM and ROM are not the only data storage points within a computer, there are others such as storage drives (HDD and SDD), CPU cache and more. Data is only stored in RAM while your PC is turned on and once it is turned off, all the data is lost and as RAM only holds the data you need for the processes that are currently active, closing or shutting down the app will clear the data out of memory. Therefore, data will be lost if not saved correctly.
 
@@ -14,17 +14,17 @@ Whilst the RAM and storage drives are both forms of data storage, the CPU does n
 
 Any time you perform a task on your computer, such as playing a film or a game, your computer will load the data that the CPU needs for those applications into the RAM. Memory is much faster than storage, so having data accessible here helps keep the system running quickly. RAMs are way faster than storage drives, and CPU caches are much faster again, meaning the storage drives are usually the slowest among all memories used for computing.
 
-When the storage drive receives the file request, the file is copied from the platter sectors (platter sectors are only in HHD and not SSD) to the drive’s cache and, from there, to the system RAM. The CPU manipulates the file into tiny pieces by copying bits of it to the CPU cache and then sends the new version of the data back to the system's RAM. When you are done with the file, it gets sent back to the storage that copies it immediately to the storage drive cache and tells you the file is saved. When the drive is idle, the cached version of the file is written back to the sectors on the drive.
+When the storage drive receives the file request, the file is copied from the platter sectors (platter sectors are only in HHD and not SSD) to the drive's cache and, from there, to the system RAM. The CPU manipulates the file into tiny pieces by copying bits of it to the CPU cache and then sends the new version of the data back to the system's RAM. When you are done with the file, it gets sent back to the storage that copies it immediately to the storage drive cache and tells you the file is saved. When the drive is idle, the cached version of the file is written back to the sectors on the drive.
 
-All of this caching and copying might make a straightforward process seem complicated, but there’s a very good reason for it - to *reduce the amount of time any single process was waiting for data from another part.*
+All of this caching and copying might make a straightforward process seem complicated, but there's a very good reason for it - to *reduce the amount of time any single process was waiting for data from another part.*
 
 ### Understanding RAM in Simple Terms
 
 RAM can be confusing. To put it simply, think of it all like maths homework. The storage drive is your textbook, it has all the maths problems, formulas, and information you might need stored inside.
 
-When you’ve got a homework assignment, you write down all the questions and maybe note some of the relevant formulas you’ll use on a blank sheet of paper, that sheet of paper is your RAM. At any given moment, you're not thinking about every single problem you’ve written on that paper, but you’ve got near-immediate access to them as needed – no need to flip around in your textbook to find what you need.
+When you've got a homework assignment, you write down all the questions and maybe note some of the relevant formulas you'll use on a blank sheet of paper, that sheet of paper is your RAM. At any given moment, you're not thinking about every single problem you've written on that paper, but you've got near-immediate access to them as needed – no need to flip around in your textbook to find what you need.
 
-When you work on solving one of the problems, you’re thinking about that data right inside your brain, that’s your CPU and cache at work.
+When you work on solving one of the problems, you're thinking about that data right inside your brain, that's your CPU and cache at work.
 
 ### Dealing with Large Datasets or Files
 
@@ -34,7 +34,7 @@ Different tasks or applications have different requirements. For example:
 - **Gaming**: While it does need a fair amount of RAM, it's more reliant on a combination of CPU and GPU (Graphics Processing Unit) power.
 - **General Office Work**: Browsing, word processing, and light multitasking may not require a high-end CPU or vast amounts of RAM.
 
-If you ask your computer to perform a task, such as opening a photo to edit, and you don’t have enough available RAM, your computer has to begin shuffling data around to open the file - it has to move data between the slower storage drive, RAM, and the CPU, which causes everything to slow down.
+If you ask your computer to perform a task, such as opening a photo to edit, and you don't have enough available RAM, your computer has to begin shuffling data around to open the file - it has to move data between the slower storage drive, RAM, and the CPU, which causes everything to slow down.
 
 When you open a file, **it doesn't always mean the entire file is loaded into RAM.** For instance, if you opened a hypothetical image with an inflated file size of 10 GB, photo editing software might not load the entire photo into RAM at once. It might load only the parts you're currently viewing or editing. Software can be designed to load data into RAM in chunks or as needed and *it is up to the software that is opening the file to put the data into RAM*. Therefore, efficiently designed tools may not put the entire file into RAM at one time, as the RAM is volatile, it will have different parts of data in it at different times. All pieces of hardware and software play critical and different parts in effective memory management, for example:
 
@@ -85,19 +85,21 @@ In both cases, if you had to choose between adding more RAM or upgrading to a be
 
 ## Types of RAM
 
-While RAM can come in a lot of different forms, you’ll often get a clue that you’re looking at some kind of RAM if you see “DDR” listed followed by a number that denotes the generation. You can find many computers using DDR3, DDR4, and now even DDR5 memory. Some thin-and-light laptops and [smartphones](https://www.ign.com/articles/best-smartphone) use low-power or LPDDR# memory. Graphics cards have their own memory, too, with GDDR#.
+While RAM can come in a lot of different forms, you'll often get a clue that you're looking at some kind of RAM if you see "DDR" listed followed by a number that denotes the generation. You can find many computers using DDR3, DDR4, and now even DDR5 memory. Some thin-and-light laptops and [smartphones](https://www.ign.com/articles/best-smartphone) use low-power or LPDDR# memory. Graphics cards have their own memory, too, with GDDR#.
 
 [The standards of RAM include, the DDR specification; DDR1, DDR2, DDR3, DDR4, and DDR5.](https://en.wikipedia.org/wiki/DDR_SDRAM) DDR4 is the fourth generation and features a higher bandwidth, data integrity, and capacity compared to previous generations. Alternatively, DDR5 is the fifth generation and has double the capacity and density again, along with reduced power consumption. This makes it more efficient whilst boasting ultra-fast speeds.
 
 ### SRAM (Static RAM) and DRAM (Dynamic RAM)
 
-- **DRAM** (pronounced DEE-RAM), is widely used as a computer’s main memory. Each DRAM memory cell is made up of a transistor and a capacitor within an integrated circuit, and a data bit is stored in the capacitor. Since transistors always leak a small amount, the capacitors will slowly discharge, causing information stored in it to drain; hence, DRAM has to be refreshed (given a new electronic charge) every few milliseconds to retain data.
+- **DRAM** (pronounced DEE-RAM), is widely used as a computer's main memory. Each DRAM memory cell is made up of a transistor and a capacitor within an integrated circuit, and a data bit is stored in the capacitor. Since transistors always leak a small amount, the capacitors will slowly discharge, causing information stored in it to drain; hence, DRAM has to be refreshed (given a new electronic charge) every few milliseconds to retain data.
 - **SRAM** (pronounced ES-RAM) is made up of four to six transistors. It keeps data in the memory as long as power is supplied to the system unlike DRAM, which has to be refreshed periodically. As such, SRAM is faster but also more expensive, making DRAM the more prevalent memory in computer systems.
 
 ### Form Factors of DRAM
 
 There are multiple different [form factors of RAM](https://www.overclockers.co.uk/blog/ram-form-factors-explained-everything-you-need-to-know/), including: 
 
+- **SIMM** - Single In-Line Memory Module - were used in the late 1980s to 1990s, are now obsolete.
+- **Soldered RAM** - Typically used in laptops, small PCs, or home theatre set-ups. The main advantages include space savings and potentially better power efficiency.
 - **DIMM** – The most common form factor. Primarily used in desktop PCs.
 
 DIMMs (Dual In-line Memory Modules) are commonly used in larger computers and they allow for swapping and upgrading system RAM. These are modular, meaning they can be inserted into or removed from dedicated slots on the motherboard.
@@ -105,10 +107,6 @@ DIMMs (Dual In-line Memory Modules) are commonly used in larger computers and th
 DIMMs themselves come in various types/form factors, including:
  - UDIMM (Unbuffered DIMM): The most common type of memory module for desktop PCs.
  - SODIMM (Small Outline DIMM): A smaller variant of DIMM, typically used in laptops.
-
-- **SIMM** - Single In-Line Memory Module - were used in the late 1980s to 1990s, are now obsolete.
-
-- **Soldered RAM** – Typically used in laptops, small PCs, or home theatre set-ups. The main advantages include space savings and potentially better power efficiency.
 
 ### Unified and System RAM and VRAM
 
