@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  experimental: {
+    serverComponentsExternalPackages: ['@smithy/util-retry'],
+  },
+};
 
-  export default nextConfig
+export default nextConfig;
