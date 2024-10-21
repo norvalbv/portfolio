@@ -2312,15 +2312,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@smithy/service-error-classification@npm:^3.0.8":
-  version: 3.0.8
-  resolution: "@smithy/service-error-classification@npm:3.0.8"
-  dependencies:
-    "@smithy/types": ^3.6.0
-  checksum: cba6d33eb0e7482e557c303638416ea8678f80fa5782c97dd67e5b72741f22e2446370dc0ef9b16802d73cdfb7a5e4e5587c1d4abb5aa5ca9c33525137b4cf2b
-  languageName: node
-  linkType: hard
-
 "@smithy/shared-ini-file-loader@npm:^3.1.8":
   version: 3.1.8
   resolution: "@smithy/shared-ini-file-loader@npm:3.1.8"
@@ -2367,15 +2358,6 @@ __metadata:
   dependencies:
     tslib: ^2.6.2
   checksum: 5d297005549991f6928daf038e0610c959423add6e435af970b8c8dcac988bf62b0cdbf4dd5df43197d9bc7af5c290792f17af6e2f5051be2ffa40dd98ab4659
-  languageName: node
-  linkType: hard
-
-"@smithy/types@npm:^3.6.0":
-  version: 3.6.0
-  resolution: "@smithy/types@npm:3.6.0"
-  dependencies:
-    tslib: ^2.6.2
-  checksum: 4f581dc1c3e2dee8e1134fafb47de2c301330ea668214eb1a81d26b85acdb48a7e52008da0d15a402e998a79bed285a74b88949a5a4a3fe0aef38c28620ab795
   languageName: node
   linkType: hard
 
@@ -2514,17 +2496,6 @@ __metadata:
     "@smithy/types": ^3.5.0
     tslib: ^2.6.2
   checksum: 8af7ed849a7db65e9229a885490cd843c3f9b35248c661d6197a31d7cc0aa33c1790734b716e80e19b569d8149b1f6d8a3dfab4d887a155e64a3ea03bd7d504d
-  languageName: node
-  linkType: hard
-
-"@smithy/util-retry@npm:^3.0.8":
-  version: 3.0.8
-  resolution: "@smithy/util-retry@npm:3.0.8"
-  dependencies:
-    "@smithy/service-error-classification": ^3.0.8
-    "@smithy/types": ^3.6.0
-    tslib: ^2.6.2
-  checksum: 5c0c63beb867828e6fd54f5fd83de412180df02de42f678df0f5a4412d10bfb5a74c22aa83a6f364c8292b5c82be94fe7af35d1ebe4e50a2c05946520f2ea870
   languageName: node
   linkType: hard
 
@@ -8703,7 +8674,6 @@ __metadata:
     "@aws-sdk/client-s3": ^3.675.0
     "@aws-sdk/s3-request-presigner": ^3.675.0
     "@emailjs/nodejs": ^5.0.2
-    "@smithy/util-retry": ^3.0.8
     "@types/dotenv-flow": ^3.3.3
     "@types/jest": ^29.5.13
     "@types/mixpanel-browser": ^2.50.1
