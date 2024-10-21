@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import { AsInitialize, AsPageLoadProps, AsTrack } from 'services/AnalyticsService';
+import { AsInitialize, AsPageLoadProps, AsTrack } from '@/src/services/AnalyticsService';
 import useGenerateUUID from './useGenerateUUID';
+import { usePathname } from 'next/navigation';
 
 const useTrackUser = (): void => {
-  const location = useLocation();
+  const location = usePathname();
 
   const userId = useGenerateUUID();
 
@@ -14,10 +14,10 @@ const useTrackUser = (): void => {
 
   useEffect(() => {
     const props: AsPageLoadProps = {
-      Path: location.pathname,
+      Path: location,
     };
-    AsTrack(location.pathname, props);
-  }, [location.pathname]);
+    AsTrack(location, props);
+  }, [location]);
 };
 
 export default useTrackUser;
