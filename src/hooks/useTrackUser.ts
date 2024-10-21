@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
-import { AsInitialize, AsPageLoadProps, AsTrack } from '@/src/services/AnalyticsService';
-import useGenerateUUID from './useGenerateUUID';
+import { AsInitialize, AsTrack } from '@/lib/actions/analyticsService';
 import { usePathname } from 'next/navigation';
+import { useEffect } from 'react';
+import useGenerateUUID from './useGenerateUUID';
 
 const useTrackUser = (): void => {
   const location = usePathname();
@@ -13,10 +13,7 @@ const useTrackUser = (): void => {
   }, [userId]);
 
   useEffect(() => {
-    const props: AsPageLoadProps = {
-      Path: location,
-    };
-    AsTrack(location, props);
+    AsTrack(location);
   }, [location]);
 };
 
