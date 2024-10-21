@@ -5,10 +5,7 @@ import { classNames } from '@/src/utils';
 export type TitleProps = {
   children?: string | JSX.Element | Characters;
   className?: string;
-  /**
-   * Default 2.
-   */
-  level?: 1 | 2 | 3;
+  level?: 1 | 2 | 3 | 4 | 5 | 6;
 };
 
 const Title = ({ children, className, level = 2 }: TitleProps): ReactElement | null => {
@@ -16,37 +13,22 @@ const Title = ({ children, className, level = 2 }: TitleProps): ReactElement | n
     return null;
   }
 
-  // Level 1
-  if (level === 1) {
-    return (
-      <h1
-        className={classNames(
-          className || 'mb-[4.5rem] w-max border-b pb-2 text-4xl font-semibold md:text-6xl'
-        )}
-      >
-        {children}
-      </h1>
-    );
-  }
+  const baseClasses = 'font-semibold';
+  const classes = {
+    1: 'text-3xl md:text-5xl mb-6 pb-2 border-b',
+    2: 'text-2xl md:text-4xl mb-5 pb-2 border-b',
+    3: 'text-xl md:text-3xl mb-4',
+    4: 'text-lg md:text-2xl mb-3',
+    5: 'text-base md:text-xl mb-2',
+    6: 'text-sm md:text-lg mb-2',
+  };
 
-  // Level 2. Default
-  if (level === 2) {
-    return (
-      <h2
-        className={classNames(
-          className || 'mb-8 border-b pb-2 text-3xl font-semibold md:mb-[4.5rem] md:text-5xl'
-        )}
-      >
-        {children}
-      </h2>
-    );
-  }
+  const HeadingTag = `h${level}` as keyof JSX.IntrinsicElements;
 
-  // Level 3
   return (
-    <h3 className={classNames(className || 'mb-10 text-2xl font-semibold md:text-4xl')}>
+    <HeadingTag className={classNames(baseClasses, classes[level], className)}>
       {children}
-    </h3>
+    </HeadingTag>
   );
 };
 

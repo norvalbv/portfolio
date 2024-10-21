@@ -25,22 +25,22 @@ const CardWrapper = ({
       className={classNames(
         'relative mx-auto min-w-[20rem] max-w-4xl flex-1 px-4 sm:px-6 lg:px-8',
         centered
-          ? '-mt-4 grid place-items-center text-center sm:-mt-6 md:-mt-10 lg:mt-0'
+          ? 'grid place-items-center text-center'
           : 'mt-4 sm:mt-6 md:mt-8 lg:mt-10',
         className
       )}
       id={id}
     >
-      <div className="w-full rounded-3xl p-4 backdrop-blur-[2px] sm:p-6 md:p-8">
+      <div className="w-full rounded-3xl bg-white/10 p-6 backdrop-blur-sm dark:bg-black/10 sm:p-8 md:p-10">
         <Header
           title={title}
           titleClassName={classNames(
-            'text-2xl sm:text-3xl md:text-4xl lg:text-5xl',
+            'text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl',
             titleClassName
           )}
           subtitle={subtitle}
         />
-        <div className="mt-4 sm:mt-6 md:mt-8">{children}</div>
+        <div className="mt-6 sm:mt-8 md:mt-10">{children}</div>
       </div>
     </div>
   );

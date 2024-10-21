@@ -13,7 +13,7 @@ const fetchBlogContent = async (blog?: string, type?: 'notes' | 'blog'): Promise
 
   if (type === 'notes') {
     const url = await getS3ObjectByUrl(blog);
-    return url ? filterFrontMatterAndTitle(url) : null;
+    return url ? filterContent(url) : null;
   }
 
   try {
@@ -24,7 +24,7 @@ const fetchBlogContent = async (blog?: string, type?: 'notes' | 'blog'): Promise
   }
 };
 
-const filterFrontMatterAndTitle = (content: string): string => {
+const filterContent = (content: string): string => {
   // Remove front matter
   const frontMatterRegex = /^---\s*[\s\S]*?\s*---/;
   let filteredContent = content.replace(frontMatterRegex, '').trim();
@@ -32,6 +32,10 @@ const filterFrontMatterAndTitle = (content: string): string => {
   // Remove title and optional #Complete
   const titleRegex = /^\s*(.+?)(?:\s+#Complete)?\s*---/;
   filteredContent = filteredContent.replace(titleRegex, '').trim();
+
+  // Remove path information at the end
+  const pathRegex = /\n---\n\n> Path:.+$/;
+  filteredContent = filteredContent.replace(pathRegex, '').trim();
 
   return filteredContent;
 };

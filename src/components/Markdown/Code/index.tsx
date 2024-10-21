@@ -22,7 +22,7 @@ const Code = ({ children }: Props): ReactElement => {
       .writeText(children)
       .then(() => {
         setIsCopied(true);
-        setTimeout(() => setIsCopied(false), 2000); // Reset after 2 seconds
+        setTimeout(() => setIsCopied(false), 2000);
       })
       .catch(() => {});
   }, [children]);
@@ -31,12 +31,21 @@ const Code = ({ children }: Props): ReactElement => {
     return (
       <Highlight
         language="tsx"
-        theme={isDarkMode ? themes.jettwaveDark : themes.jettwaveLight}
+        theme={isDarkMode ? themes.nightOwl : themes.nightOwlLight}
         code={children}
       >
-        {({ style }): React.ReactElement => (
-          <code style={style} className="rounded-lg px-2 py-1">
-            {children}
+        {({ style, tokens, getLineProps, getTokenProps }) => (
+          <code
+            style={style}
+            className="rounded-md bg-gray-100 px-2 py-1 font-mono text-sm dark:bg-gray-800"
+          >
+            {tokens.map((line, i) => (
+              <span key={i} {...getLineProps({ line })}>
+                {line.map((token, key) => (
+                  <span key={key} {...getTokenProps({ token })} />
+                ))}
+              </span>
+            ))}
           </code>
         )}
       </Highlight>
@@ -46,38 +55,37 @@ const Code = ({ children }: Props): ReactElement => {
   return (
     <Highlight
       language="tsx"
-      theme={isDarkMode ? themes.jettwaveDark : themes.jettwaveLight}
+      theme={isDarkMode ? themes.nightOwl : themes.nightOwlLight}
       code={children}
     >
-      {({ style, tokens, getLineProps, getTokenProps }): React.ReactElement => (
+      {({ style, tokens, getLineProps, getTokenProps }) => (
         <pre
-          style={{ ...style }}
-          className="relative mb-2 rounded-lg p-4"
+          style={style}
+          className="relative mb-4 overflow-x-auto rounded-lg p-4 font-mono text-sm"
           ref={ref}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
           <div
-            className={`absolute right-4 top-4 cursor-pointer transition-opacity ${
+            className={`absolute right-2 top-2 cursor-pointer transition-opacity ${
               isHovered ? 'opacity-100' : 'opacity-0'
             }`}
             onClick={copyToClipBoard}
           >
-            {isCopied ? <ClipboardCheckIcon /> : <ClipboardIcon />}
-            <span
-              className={`absolute right-0 top-6 rounded bg-gray-800 px-2 py-1 text-xs text-white ${
-                isCopied ? 'opacity-100' : 'opacity-0'
-              } transition-opacity`}
-            >
-              Copied!
-            </span>
+            {isCopied ? (
+              <ClipboardCheckIcon className="h-5 w-5 text-green-500" />
+            ) : (
+              <ClipboardIcon className="h-5 w-5 text-gray-400" />
+            )}
           </div>
           {tokens.map((line, i) => (
-            <div key={line.toString() + i.toString()} {...getLineProps({ line })}>
-              <span style={{ marginRight: '.5rem' }}>{i + 1}.</span>
-              {line.map((token, i) => (
-                <span key={`${token.content}-${i}`} {...getTokenProps({ token })} />
-              ))}
+            <div key={i} {...getLineProps({ line })} className="table-row">
+              <span className="table-cell pr-4 text-right opacity-50">{i + 1}</span>
+              <span className="table-cell">
+                {line.map((token, key) => (
+                  <span key={key} {...getTokenProps({ token })} />
+                ))}
+              </span>
             </div>
           ))}
         </pre>

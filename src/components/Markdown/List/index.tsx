@@ -1,9 +1,12 @@
 import { ReactElement } from 'react';
 
 const List = ({ children, ...props }: { children: ReactElement[] }): ReactElement => (
-  <li {...props} style={{ display: 'flex', alignItems: 'start', gap: '8px' }}>
-    <span className={children[0].type === 'p' ? 'mt-3' : ''}>&bull;</span>
-    <div>{children}</div>
+  <li
+    {...props}
+    className="mb-2 flex items-start gap-2 text-sm leading-relaxed text-gray-700 dark:text-gray-300"
+  >
+    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-accent-primary" />
+    <span>{children}</span>
   </li>
 );
 
