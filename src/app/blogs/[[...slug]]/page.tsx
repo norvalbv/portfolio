@@ -106,7 +106,6 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
           <button type="button" className="lg:hidden" onClick={toggleBlogMenu}>
             <Hamburger
               toggled={blogMenuOpen}
-              toggle={toggleBlogMenu}
               size={isMobile ? 24 : 28}
               rounded
               aria-expanded={blogMenuOpen}
