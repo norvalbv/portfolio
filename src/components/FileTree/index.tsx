@@ -65,7 +65,7 @@ const FileTree = ({ title, data, loading }: Props): ReactElement => {
   }, [data]);
 
   return (
-    <div className="relative h-[calc(100vh-18rem)] w-72 overflow-visible">
+    <div className="relative h-[calc(100vh-14.6rem)] w-72 overflow-visible">
       <div className="absolute inset-0 overflow-y-auto overflow-x-visible rounded-xl border border-light-text/50 bg-white p-4 shadow-lg dark:border-dark-text/50 dark:bg-dark-dark/30">
         <h2 className="mb-4 text-xl font-bold underline underline-offset-4">{title}</h2>
         <div className="flex flex-col gap-4">
