@@ -1,13 +1,22 @@
-import { v4 as uuidv4 } from 'uuid';
+'use client';
+
+import { v4 as uuid4 } from 'uuid';
+import { useEffect, useState } from 'react';
 
 const useGenerateUUID = (): string => {
-  let userId = localStorage.getItem('userId');
+  const [userId, setUserId] = useState<string>('');
 
-  if (!userId) {
-    // Only save the first 8 chars of the uuid. Won't exactly have many users so this is fine.
-    userId = uuidv4().slice(0, 7);
-    localStorage.setItem('userId', userId);
-  }
+  useEffect(() => {
+    let storedUserId = localStorage.getItem('userId');
+
+    if (!storedUserId) {
+      // Only save the first 8 chars of the uuid. Won't exactly have many users so this is fine.
+      storedUserId = uuid4().slice(0, 7);
+      localStorage.setItem('userId', storedUserId);
+    }
+
+    setUserId(storedUserId);
+  }, []);
 
   return userId;
 };
