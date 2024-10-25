@@ -151,7 +151,7 @@ const fetchBlogContent = async (blog?: string, type?: 'notes' | 'blog'): Promise
       content = (await getS3ObjectByUrl(blog)) || '';
     } else {
       console.log(BASE_URL, blog);
-      const response = await fetch(`${BASE_URL}/${blog.replace(/^\/+/, '')}`);
+      const response = await fetch(`${BASE_URL}/${blog}`);
       content = await response.text();
     }
 
@@ -160,8 +160,8 @@ const fetchBlogContent = async (blog?: string, type?: 'notes' | 'blog'): Promise
       return null;
     }
 
-    const contentWithImages = await replaceImageReferences(content);
-    return filterContent(contentWithImages);
+    // const contentWithImages = await replaceImageReferences(content);
+    return filterContent(content);
   } catch (error) {
     console.error('Error fetching blog content:', error);
     return null;
