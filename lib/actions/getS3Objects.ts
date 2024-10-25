@@ -11,6 +11,7 @@ if (!BUCKET) {
 }
 
 export const getS3ObjectByUrl = async (url: string, type: 'md' | 'png' = 'md'): Promise<string | undefined> => {
+  console.log(url, 'url');
   try {
     // List objects to find the key corresponding to the URL
     const listCommand = new ListObjectsV2Command({
