@@ -11,13 +11,14 @@ if (!BUCKET) {
 }
 
 export const getS3ObjectByUrl = async (url: string, type: 'md' | 'png' = 'md'): Promise<string | undefined> => {
-  // List objects to find the key corresponding to the URL
-  const listCommand = new ListObjectsV2Command({
-    Bucket: BUCKET,
-    Prefix: decodeURIComponent(url),
-  });
-
   try {
+    // List objects to find the key corresponding to the URL
+    const listCommand = new ListObjectsV2Command({
+      Bucket: BUCKET,
+      Prefix: decodeURIComponent(url),
+    });
+    console.log(listCommand);
+
     const listResponse = await s3Client.send(listCommand);
     const matchingObject = listResponse.Contents?.find(obj => obj.Key?.endsWith(`${decodeURIComponent(url)}.${type}`));
 
