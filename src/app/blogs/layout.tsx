@@ -5,12 +5,16 @@ import { ThemeContextProvider } from '@/src/context/theme';
 import Footer from '@/src/app/Layout/Footer';
 import NavBar from '@/src/app/Layout/NavBar';
 import { ReactElement } from 'react';
+import useTrackUser from '@/src/hooks/useTrackUser';
 
 type Props = {
   children: ReactElement;
 };
 
 const MainLayout = ({ children }: Props): ReactElement => {
+
+  useTrackUser();
+
   return (
     <ThemeContextProvider>
       <ThemedContent>

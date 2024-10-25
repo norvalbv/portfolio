@@ -6,6 +6,8 @@ import s3Client from "@/lib/s3Client";
 
 const BUCKET = process.env.S3_BUCKET_NAME;
 
+console.log(BUCKET, 'bucket');
+
 if (!BUCKET) {
   console.log('bucket is not defined');
   throw new Error('bucket is not defined');

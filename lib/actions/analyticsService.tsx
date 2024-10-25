@@ -23,7 +23,6 @@ export const AsInitialize = ({
   userId,
 }: AsInitializeProps): void => {
   mixpanel.people.set(userId, {
-    
     $created: new Date().toISOString(),
   });
 };
@@ -41,5 +40,6 @@ export const AsTrack = (
   event: Analytics.AnalyticsEvent | string,
   props?: AsGeneralProps | AsPageLoadProps
 ): void => {
+  console.log(event, 'event');
   mixpanel.track(event);
 };

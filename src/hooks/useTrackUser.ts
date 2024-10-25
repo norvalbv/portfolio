@@ -5,7 +5,6 @@ import useGenerateUUID from './useGenerateUUID';
 
 const useTrackUser = (): void => {
   const location = usePathname();
-
   const userId = useGenerateUUID();
 
   useEffect(() => {

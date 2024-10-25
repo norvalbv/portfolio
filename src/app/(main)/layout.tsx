@@ -9,6 +9,7 @@ import dynamic from 'next/dynamic';
 import { ReactElement } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import useTrackUser from '@/src/hooks/useTrackUser';
 
 type Props = {
   children: ReactElement;
@@ -19,6 +20,9 @@ const Background = dynamic(() => import('@/src/components/Background'), {
 });
 
 const MainLayout = ({ children }: Props): ReactElement => {
+
+  useTrackUser();
+
   return (
     <ThemeContextProvider>
       <ThemedContent>
