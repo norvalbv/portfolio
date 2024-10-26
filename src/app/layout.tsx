@@ -28,14 +28,6 @@ const MainLayout = ({ children }: Props): ReactElement => {
       <body>
         <div id="root">{children}</div>
         <div id="backdrop" />
-        {/* <script>
-      var global = global || window;
-      var Buffer = Buffer || [];
-      var process = process || {
-        env: { DEBUG: undefined },
-        version: [],
-      };
-      </script> */}
       </body>
     </html>
   );
