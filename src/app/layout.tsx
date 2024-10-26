@@ -9,8 +9,9 @@ const victor = Victor_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'My App',
-  description: 'Portfolio.',
+  title: 'Benji Norval | Full Stack Developer',
+  description:
+    'Full stack developer specialising in modern web technologies. Explore my projects, skills, and professional journey.',
 };
 
 export const viewport: Viewport = {
@@ -27,7 +28,6 @@ const MainLayout = ({ children }: Props): ReactElement => {
       <body>
         <div id="root">{children}</div>
         <div id="backdrop" />
-        {/* <script type="module" src="/src/index.tsx"></script> */}
         {/* <script>
       var global = global || window;
       var Buffer = Buffer || [];

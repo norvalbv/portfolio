@@ -12,7 +12,6 @@ type Props = {
 };
 
 const MainLayout = ({ children }: Props): ReactElement => {
-
   useTrackUser();
 
   return (

@@ -74,7 +74,7 @@ const Page = ({ params }: { params: { slug?: string[] } }): ReactElement => {
   }, [type]);
 
   return (
-    <div className="relative mx-auto flex w-full max-w-7xl px-2 flex-col lg:flex-row lg:gap-10">
+    <div className="relative mx-auto flex w-full max-w-7xl flex-col px-2 lg:flex-row lg:gap-10">
       <SidePeepView
         isOpened={blogMenuOpen}
         className="block lg:hidden"

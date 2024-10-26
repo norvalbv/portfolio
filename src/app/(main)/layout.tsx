@@ -20,7 +20,6 @@ const Background = dynamic(() => import('@/src/components/Background'), {
 });
 
 const MainLayout = ({ children }: Props): ReactElement => {
-
   useTrackUser();
 
   return (

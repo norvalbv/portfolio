@@ -17,9 +17,7 @@ mixpanel.init(mixpanelToken);
 /**
  * Initialises the connection to Mixpanel with the environment token
  */
-export const AsInitialize = ({
-  userId,
-}: AsInitializeProps): void => {
+export const AsInitialize = ({ userId }: AsInitializeProps): void => {
   mixpanel.identify(userId);
   mixpanel.people.set({
     $created: new Date().toISOString(),
