@@ -1,7 +1,7 @@
-import { AsInitialize, AsTrack } from '@/lib/actions/analyticsService';
 import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
 import useGenerateUUID from './useGenerateUUID';
+import { AsInitialize, AsTrack } from '../utils/analytics';
 
 const useTrackUser = (): void => {
   const location = usePathname();
