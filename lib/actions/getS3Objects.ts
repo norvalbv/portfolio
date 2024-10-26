@@ -40,7 +40,7 @@ export const getS3ObjectByUrl = async (url: string, type: 'md' | 'png' = 'md'): 
         Key: matchingObject.Key,
       });
 
-      const presignedUrl = await getSignedUrl(s3Client, getCommand, { expiresIn: 3600 }); // URL expires in 1 hour
+      const presignedUrl = await getSignedUrl(s3Client, getCommand, { expiresIn:  3600 }); // URL expires in 1 hour
       return presignedUrl;
     } else {
       // For MD files, return the content as before
