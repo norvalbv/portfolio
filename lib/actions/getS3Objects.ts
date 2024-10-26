@@ -6,15 +6,11 @@ import s3Client from "@/lib/s3Client";
 
 const BUCKET = process.env.S3_BUCKET_NAME;
 
-console.log(BUCKET, 'bucket');
-
 if (!BUCKET) {
-  console.log('bucket is not defined');
   throw new Error('bucket is not defined');
 }
 
 export const getS3ObjectByUrl = async (url: string, type: 'md' | 'png' = 'md'): Promise<string | undefined> => {
-  console.log(url, type, 'url and type');
   try {
     // List objects to find the key corresponding to the URL
     const listCommand = new ListObjectsV2Command({
@@ -26,7 +22,6 @@ export const getS3ObjectByUrl = async (url: string, type: 'md' | 'png' = 'md'): 
     const matchingObject = listResponse.Contents?.find(
       (obj) => obj.Key?.endsWith(`${decodeURIComponent(url)}.${type}`)
     );
-    console.log(matchingObject, 'matchingObject');
 
     if (!matchingObject || !matchingObject.Key) {
       console.error(`Object not found for URL: ${url}`);
