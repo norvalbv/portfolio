@@ -150,7 +150,6 @@ const fetchBlogContent = async (blog?: string, type?: 'notes' | 'blog'): Promise
     if (type === 'notes') {
       content = (await getS3ObjectByUrl(blog)) || '';
     } else {
-      console.log(BASE_URL, blog, 'blog');
       const response = await fetch(`${BASE_URL}/${blog}`);
       content = await response.text();
     }

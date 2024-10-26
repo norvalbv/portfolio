@@ -37,6 +37,5 @@ export const AsTrack = (
   event: Analytics.AnalyticsEvent | string,
   props?: AsGeneralProps | AsPageLoadProps
 ): void => {
-  console.log(event, props, 'event and props');
   mixpanel.track(event, props);
 };

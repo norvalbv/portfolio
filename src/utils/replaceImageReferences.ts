@@ -9,10 +9,10 @@ export const replaceImageReferences = async (content: string): Promise<string> =
 
   const replacements = await Promise.all(
     matches.map(async (match) => {
-      console.log(match);
       const fileName = match.slice(3, -2).slice(0, -4);
       const imageUrl = `images/${fileName}`;
 
+      console.log(match, imageUrl);
       const s3Url = await getS3ObjectByUrl(imageUrl, 'png');
       return { match, s3Url, fileName };
     })
