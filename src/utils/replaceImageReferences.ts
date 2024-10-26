@@ -1,8 +1,8 @@
 import { getS3ObjectByUrl } from '@/lib/actions/getS3Objects';
 
 export const replaceImageReferences = async (content: string): Promise<string> => {
-  const regex = /!\[\[(.*?)\]\]/g;
-  const matches = content.match(regex);
+  const localImageRegex = /!\[\[(.*?)\]\]/g;
+  const matches = content.match(localImageRegex);
 
   if (!matches) return content;
 
