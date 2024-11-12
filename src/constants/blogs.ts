@@ -17,23 +17,6 @@ export const blogTreeData: TreeNode[] = [
     },
   },
   {
-    name: 'Call Stack',
-    type: 'blog',
-    id: 'Call Stack',
-    file: '/blogs/call-stack.md',
-    title: 'Call Stack',
-    subtitle: 'A quick overview of what the call stack is.',
-    description:
-      "For a more in depth overview of the differentiations between call stack and memory heap check out the my blog about 'The Event Loop in JavaScript'. (coming soon)",
-    imagePath: '/blogImages/callStack',
-    metadata: {
-      'read time': '4 minutes',
-      level: '🧠',
-      'Date Posted': 'Tuesday, 30th March 2024',
-    },
-    url: 'call-stack',
-  },
-  {
     name: 'Legal ramifications with web accessibility',
     type: 'blog',
     id: 'Legal ramifications with web accessibility',
