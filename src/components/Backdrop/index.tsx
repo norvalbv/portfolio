@@ -53,7 +53,7 @@ const Backdrop = ({
       {isOpened && (
         <motion.div
           className={classNames(
-            'fixed h-screen overflow-y-auto overscroll-contain',
+            'fixed h-svh overflow-y-auto overscroll-contain',
             { 'bg-black/75': dimmedBackground, dark: isDarkMode },
             className
           )}

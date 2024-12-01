@@ -17,7 +17,7 @@ const MainLayout = ({ children }: Props): ReactElement => {
   return (
     <ThemeContextProvider>
       <ThemedContent>
-        <div className="relative min-h-screen bg-gradient-to-br from-white to-[#e0dce6] text-light-text dark:from-dark-neutral dark:to-[#130926] dark:text-dark-text">
+        <div className="relative min-h-svh bg-gradient-to-br from-white to-[#e0dce6] text-light-text dark:from-dark-neutral dark:to-[#130926] dark:text-dark-text">
           <NavBar />
           <main className="z-10 mx-auto flex h-full min-h-[calc(100vh-10.25rem)] max-w-screen-2xl flex-col leading-6">
             {children}

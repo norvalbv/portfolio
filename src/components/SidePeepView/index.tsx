@@ -29,11 +29,11 @@ const SidePeepView = ({
 
   return (
     <Backdrop isOpened={isOpened} close={close} testId={testId}>
-      <div className="relative z-50 min-h-screen max-w-[100vw] overflow-hidden">
+      <div className="relative z-50 min-h-svh max-w-[100vw] overflow-hidden">
         <AnimatePresence>
           {isOpened && (
             <motion.div
-              className="absolute top-0 h-screen w-full border-r border-light-text/50 bg-light-neutral dark:border-dark-text/50 dark:bg-dark-neutral"
+              className="absolute top-0 h-svh w-full border-r border-light-text/50 bg-light-neutral dark:border-dark-text/50 dark:bg-dark-neutral"
               onClick={blockClosingModalWindow}
               initial={{ left: -width }}
               animate={{ left: 0 }}
