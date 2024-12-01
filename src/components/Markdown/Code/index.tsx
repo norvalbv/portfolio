@@ -20,7 +20,8 @@ const Code = ({ children, language = 'tsx' }: Props): ReactElement => {
   const ref = useRef<HTMLPreElement>(null);
 
   const copyToClipBoard = useCallback(() => {
-    navigator.clipboard.writeText(children)
+    navigator.clipboard
+      .writeText(children)
       .then(() => {
         setIsCopied(true);
         setTimeout(() => setIsCopied(false), 2000);
@@ -30,7 +31,7 @@ const Code = ({ children, language = 'tsx' }: Props): ReactElement => {
 
   return (
     <Highlight theme={theme} code={children} language={language}>
-      {({ className, style, tokens, getLineProps, getTokenProps }) => (
+      {({ className, style, tokens, getLineProps, getTokenProps }) =>
         isMultiline ? (
           <pre
             className={`${className} relative mb-4 overflow-x-auto rounded-lg p-4 font-mono text-sm`}
@@ -77,7 +78,7 @@ const Code = ({ children, language = 'tsx' }: Props): ReactElement => {
             ))}
           </code>
         )
-      )}
+      }
     </Highlight>
   );
 };
